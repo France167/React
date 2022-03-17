@@ -18,21 +18,25 @@ export default function Todo({ todos, setTodos }) {
     <div>
       {todos.map((todo, index) => (
         <div key={todo.id}>
-          <ul className="list-group list-group-flush w-50 m-auto mb-5">
+          <ul className="list-group container w-50 my-5">
             <li
               onClick={handleComplete(index)}
               className={` ${
                 todo.completed
-                  ? "list-group-item list-group-item-dark text-decoration-line-through d-flex justify-content-between border-top border-bottom"
-                  : "list-group-item d-flex justify-content-between border-top border-bottom"
+                  ? "list-group-item list-group-item-dark text-decoration-line-through d-flex justify-content-between"
+                  : "list-group-item d-flex justify-content-between"
               }`}
             >
-              {todo.title}
-              <button
-                onClick={handleDelete(todo.id)}
-                className="btn btn-close"
-                type="button"
-              ></button>
+              {index + 1} <b>{todo.title}</b>
+              <span>
+                <button
+                  onClick={handleDelete(todo.id)}
+                  className="btn btn-danger"
+                  type="button"
+                >
+                  Delete
+                </button>
+              </span>
             </li>
             {/* <li className="list-group-item">
               <button

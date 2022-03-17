@@ -27,6 +27,7 @@ export default function NewItem({ setTodos }) {
           className="form-control w-25 m-auto mt-5 mb-5"
           id="todo"
           placeholder="Insert new To do"
+          required
         ></input>
       </form>
     </div>

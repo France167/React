@@ -20,9 +20,8 @@ function App() {
   return (
     <div className="App">
       <h1 className="mt-5">To do list</h1>
-      <NewItem setTodos={setTodos} todos={todos}/>
+      <NewItem setTodos={setTodos} todos={todos} />
       <Todo todos={todos} setTodos={setTodos} />
-      
     </div>
   );
 }
