@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Nav({ characters, setCharacters }) {
   function handleInput(event) {
     setCharacters(
@@ -8,13 +10,15 @@ export default function Nav({ characters, setCharacters }) {
   }
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-light">
         <div className="container-fluid">
-          <img
-            src="https://www.freeiconspng.com/thumbs/rick-and-morty-folder-icon/rick-and-morty-icon-png-images-29.png"
-            width="100px"
-            alt="..."
-          />
+          <Link to="/">
+            <img
+              src="https://www.freeiconspng.com/thumbs/rick-and-morty-folder-icon/rick-and-morty-icon-png-images-29.png"
+              width="100px"
+              alt="..."
+            />
+          </Link>
           <h1>Rick & Morty</h1>
           <div className="input-group rounded w-25">
             <input
