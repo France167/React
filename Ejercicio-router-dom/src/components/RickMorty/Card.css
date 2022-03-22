@@ -1,0 +1,16 @@
+/* h1 {
+  color: #6b705c;
+  text-shadow: 5px 5px 8px #888888;
+  position: relative;
+  left: 60px;
+} */
+
+.card {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.card:hover {
+  top: -10px;
+  box-shadow: 5px 5px 10px #888888;
+}
