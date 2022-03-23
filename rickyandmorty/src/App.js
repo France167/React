@@ -1,15 +1,15 @@
 import "./App.css";
 import "./components/Card.css";
-import Nav from "./components/Nav";
-import { Outlet } from "react-router-dom";
+
+import { SwitchModeContextProvider } from "./contexts/SwitchMode";
+
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="container">
-      <Nav />
-      <hr />
-      <Outlet />
-    </div>
+    <SwitchModeContextProvider>
+      <Layout />
+    </SwitchModeContextProvider>
   );
 }
 

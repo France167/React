@@ -33,9 +33,9 @@ export default function Detalle() {
     );
   }
   return (
-    <div className="">
+    <div className="container">
       <h2 className="mt-5">Details for {character.name}</h2>
-      <div className="card mb-3  my-5" style={{ minWidth: "800px" }}>
+      <div className="card mb-3 my-5" style={{ minWidth: "800px" }}>
         <div className="row g-0">
           <div className="col-md-4">
             <img

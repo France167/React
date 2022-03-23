@@ -26,7 +26,7 @@ export default function Card() {
           key={character.id}
           className="col my-5 d-flex justify-content-between-evenly"
         >
-          <div className="card" style={{ width: "15rem" }}>
+          <div className="card" style={{ width: "18rem" }}>
             <img src={character.image} className="card-img-top" alt="..." />
             <div className="card-body">
               <h5 className="card-title">{character.name}</h5>
