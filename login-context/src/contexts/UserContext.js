@@ -1,4 +1,5 @@
-import { createContext } from "react";
+import { createContext,useState } from "react";
+
 
 const UserContext = createContext({
   user: {
@@ -19,6 +20,7 @@ export function UserContextProvider({ children }) {
   function loggedUser(user) {
     setUser(function () {
       if (user.email === "francesco@mail.com" && user.password === "1234") {
+        console.log(user)
         return user;
       }
     });
