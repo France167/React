@@ -1,14 +1,15 @@
 import "./App.css";
 import Home from "./components/Home";
-
 import { LoginContextProvider } from "./contexts/LoginContext";
 
-export default function App() {
+function App() {
   return (
     <LoginContextProvider>
-      <div className="App d-flex justify-content-center">
+      <div className="App">
         <Home />
       </div>
     </LoginContextProvider>
   );
 }
+
+export default App;

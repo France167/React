@@ -1,42 +1,49 @@
-import  UserContext  from "../contexts/UserContext";
-import {useContext} from "react"
+import { useState } from "react";
+import { useLoginContext } from "../contexts/LoginContext";
 
 export default function Login() {
-const {loggedUser, user} = useContext(UserContext)
+  const { login, errorMessage } = useLoginContext();
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
 
-function handleUser(e) {
-  loggedUser({ ...user, [e.target.name]: e.target.value });
-}
+  function handleUser(e) {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    login(user);
+  }
+
   return (
-    <div>
-      <h1>Login</h1>
-      <form className="form-control" onSubmit={loggedUser(user)}>
-      <div className="mb-3 w-50 m-auto mt-5">
-       
-        <input
-        onChange={handleUser}
+    <form className="form-group w-50 my-5" onSubmit={handleSubmit}>
+      <h1 className="my-4">Login</h1>
+      <input
+        className="form-control mb-3 "
+        type="text"
         name="email"
-          type="email"
-          className="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div className="mb-3 w-50 m-auto my-5">
-        
-        <input
+        value={user.email}
+        placeholder="Introduce email"
         onChange={handleUser}
+      />
+      <input
+        className="form-control mb-3 "
+        type="text"
         name="password"
-          type="password"
-          className="form-control"
-          id="exampleFormControlInput2"
-          placeholder="Password"
-        />
-      </div>
-      <button type="button" className="btn btn-secondary my-3">
-        Login
-      </button>
-      </form>
-    </div>
+        value={user.password}
+        placeholder="Introduce contraseña"
+        onChange={handleUser}
+      />
+      <input
+        className="form-control mb-3  ml-auto btn-success"
+        type="submit"
+        value="Iniciar sesión"
+      />
+      {errorMessage !== "" && (
+        <h2>Error al introducir el email o la paswword</h2>
+      )}
+    </form>
   );
 }
