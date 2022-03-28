@@ -38,15 +38,6 @@ export default function Todo({ todos, setTodos }) {
                 </button>
               </span>
             </li>
-            {/* <li className="list-group-item">
-              <button
-                onClick={handleDelete(todo.id)}
-                className="btn btn-danger"
-                type="button"
-              >
-                x
-              </button>
-            </li> */}
           </ul>
         </div>
       ))}

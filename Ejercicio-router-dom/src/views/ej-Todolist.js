@@ -1,22 +1,10 @@
-
+import { useGlobalContext } from "../context/GlobalContext";
 import Todo from "../components/Todolist/Todo";
 import NewItem from "../components/Todolist/NewItem";
-import { useState, useEffect } from "react";
 
 function Todolist() {
-  const [todos, setTodos] = useState([]);
-
-  useEffect(function () {
-    async function fetchApi() {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos"
-      );
-      const json = await response.json();
-      setTodos(json.splice(0, 20));
-    }
-    fetchApi();
-  }, []);
-
+  const { todos, setTodos } = useGlobalContext();
+  console.log(todos);
   return (
     <div className="App">
       <h1 className="mt-5">To do list</h1>

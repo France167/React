@@ -1,15 +1,18 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import { Outlet } from "react-router-dom"
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import { Outlet } from "react-router-dom";
+import { GlobalContextProvider } from "./context/GlobalContext";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <GlobalContextProvider>
+      <div className="App">
+        <Navbar />
         <div>
           <Outlet />
         </div>
-    </div>
+      </div>
+    </GlobalContextProvider>
   );
 }
 

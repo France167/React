@@ -1,44 +1,13 @@
-
 import Agenda from "../components/Usuarios/Agenda";
 import Formulario from "../components/Usuarios/Formulario";
-import { useState } from "react";
-
-const contactos = [
-  {
-    id: 1,
-    nombre: "Adrian",
-    apellido: "Molina",
-    direccion: "Calle Lario 2",
-    ciudad: "Malaga",
-    cod: "29130",
-    telefono: "654786907",
-  },
-  {
-    id: 2,
-    nombre: "Francesco",
-    apellido: "Fava",
-    direccion: "Calle Oceanio 1",
-    ciudad: "Madrid",
-    cod: "29003",
-    telefono: "654567890",
-  },
-  {
-    id: 3,
-    nombre: "Nacho",
-    apellido: "Viano",
-    direccion: "Calle Indico 3",
-    ciudad: "Cordoba",
-    cod: "29456",
-    telefono: "6547567856",
-  },
-];
+import { useGlobalContext } from "../context/GlobalContext";
 
 function Usuarios() {
-  const [usuarios, setUsuarios] = useState(contactos);
+  const { contactos, setContactos } = useGlobalContext();
   return (
     <div className="App">
-      <Agenda contactos={usuarios} setUsuarios={setUsuarios} />
-      <Formulario setUsuarios={setUsuarios} />
+      <Agenda contactos={contactos} setUsuarios={setContactos} />
+      <Formulario setUsuarios={setContactos} />
     </div>
   );
 }
