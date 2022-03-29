@@ -1,24 +1,14 @@
-import { useEffect, useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import "../App.css";
+import { useGlobalContext } from "../context/GlobalContext";
+import Pagination from "../components/Pagination";
 
 export default function Peliculas() {
-  const [peliculas, setPeliculas] = useState([]);
-
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch(
-        "https://api.themoviedb.org/3/movie/upcoming?api_key=1ac2aba9270704bf465b9c3a770cb6f8&language=en-US"
-      );
-      let json = await response.json();
-      json = json.results;
-      setPeliculas(json);
-    }
-    fetchApi();
-  }, []);
+  const { peliculas } = useGlobalContext();
 
   return (
     <div className="container">
+      <h1 className="mt-5"> Upcoming Movies </h1>
       <div className="row">
         {peliculas.map((pelicula) => (
           <div
@@ -27,25 +17,26 @@ export default function Peliculas() {
           >
             <div className="card" style={{ width: "18rem" }}>
               <img
-                src={pelicula.poster_path}
+                src={`https://image.tmdb.org/t/p/w500${pelicula.poster_path}`}
                 className="card-img-top"
                 alt="movie"
               />
               <div className="card-body">
                 <h5 className="card-title">{pelicula.title}</h5>
-                <p className="card-text">{pelicula.overview}</p>
+                <p className="card-text overview">{pelicula.overview}</p>
                 <Link
-                to={`details/${pelicula.id}`}
-                type="button"
-                className="btn btn-outline-dark w-100  mb-3"
-              >
-                Details
-              </Link>
+                  to={`details/${pelicula.id}`}
+                  type="button"
+                  className="btn btn-outline-dark w-50  mb-3"
+                >
+                  Details
+                </Link>
               </div>
             </div>
           </div>
         ))}
       </div>
+      <Pagination />
     </div>
   );
 }
