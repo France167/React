@@ -3,8 +3,10 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { GlobalContextProvider } from "./context/GlobalContext";
 import Footer from "./components/Footer";
+import {useGlobalContext} from "./context/GlobalContext"
 
 function App() {
+  const {currentMovies} = useGlobalContext()
   return (
     <GlobalContextProvider>
       <div className="App">

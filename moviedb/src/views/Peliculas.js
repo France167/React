@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context/GlobalContext";
 import Pagination from "../components/Pagination";
 
 export default function Peliculas() {
-  const { peliculas } = useGlobalContext();
+  const { peliculas, moviesPerPage, paginate } = useGlobalContext();
 
   return (
     <div className="container">
@@ -36,7 +36,7 @@ export default function Peliculas() {
           </div>
         ))}
       </div>
-      <Pagination />
+      <Pagination  />
     </div>
   );
 }

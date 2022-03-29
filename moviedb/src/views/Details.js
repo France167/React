@@ -43,7 +43,7 @@ export default function Details() {
       />
       <h1 className="mt-3">
         {pelicula.title}{" "}
-        <span class="badge rounded-pill bg-warning text-dark">
+        <span className="badge rounded-pill bg-warning text-dark">
           {pelicula.vote_average}
         </span>
       </h1>

@@ -1,33 +1,23 @@
+import { useGlobalContext } from "../context/GlobalContext";
+
 export default function Pagination() {
+const { moviesPerPage, total_results } = useGlobalContext()
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(total_results / moviesPerPage); i++) {
+    pageNumbers.push(i);
+  }
   return (
-    <div className="mx-3 mb-5">
-      <nav aria-label="Page navigation example">
-        <ul className="pagination justify-content-end">
-          <li className="page-item disabled">
-            <a className="page-link">Previous</a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              1
+    <nav>
+      <ul className="pagination">
+        {pageNumbers.map((number) => (
+          <li key={number} className="page-item">
+            <a href="!#" className="page-link">
+              {number}
             </a>
           </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        ))}
+      </ul>
+    </nav>
   );
 }

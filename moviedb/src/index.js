@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Peliculas from "./views/Peliculas";
 import Details from "./views/Details";
 
+
+
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
