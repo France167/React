@@ -5,12 +5,16 @@ export default function Search() {
   const { peliculas, setPeliculas } = useGlobalContext();
   const [inputText, setInputText] = useState("");
 
+  const [searched, setSearched] = useState("")
   const [searchedFilm, setSearchedFilm] = useState(null);
 
   function search(e) {
+    /* if(inputText === "" || inputText == null){
+      setPeliculas(peliculas)
+    } else { */
     setInputText(e.target.value);
   }
-
+  
   useEffect(
     function () {
       async function fetchApi() {
