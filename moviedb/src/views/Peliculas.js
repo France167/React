@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import { useGlobalContext } from "../context/GlobalContext";
 import Pagination from "../components/Pagination";
+import Search from "../components/Search";
 
 export default function Peliculas() {
-  const { peliculas, moviesPerPage, paginate } = useGlobalContext();
+  const { peliculas } = useGlobalContext();
 
   return (
     <div className="container">
       <h1 className="mt-5"> Upcoming Movies </h1>
+      <Search />
       <div className="row">
         {peliculas.map((pelicula) => (
           <div
@@ -36,7 +38,7 @@ export default function Peliculas() {
           </div>
         ))}
       </div>
-      <Pagination  />
+      <Pagination />
     </div>
   );
 }

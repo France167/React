@@ -3,7 +3,8 @@ import { createContext, useContext, useState, useEffect } from "react";
 const globalContext = createContext({
   peliculas: [],
   setPeliculas: () => {},
-  currentMovies: []
+  changePage: () => {},
+  pages: 1,
 });
 
 export const useGlobalContext = () => {
@@ -12,14 +13,17 @@ export const useGlobalContext = () => {
 
 export function GlobalContextProvider({ children }) {
   const [peliculas, setPeliculas] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [moviesPerPage, setMoviesPerPage] = useState(20)
+  const [pages, setPages] = useState(1);
+
+  function changePage(num) {
+    setPages(num);
+  }
 
   useEffect(
     function () {
       async function fetchApi() {
         let response = await fetch(
-          `https://api.themoviedb.org/3/movie/upcoming?api_key=1ac2aba9270704bf465b9c3a770cb6f8&language=en-US`
+          `https://api.themoviedb.org/3/movie/upcoming?api_key=1ac2aba9270704bf465b9c3a770cb6f8&language=en-US&page=${pages}`
         );
         let json = await response.json();
         json = json.results;
@@ -27,21 +31,14 @@ export function GlobalContextProvider({ children }) {
       }
       fetchApi();
     },
-    []
+    [pages]
   );
-
-  //Get current movie
-  const indexOfLastMovie = currentPage * moviesPerPage;
-  const indexOfFirstMovie = indexOfLastMovie - moviesPerPage;
-  const currentMovies = peliculas.slice(indexOfFirstMovie,indexOfLastMovie);
-
-  // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber);
 
   const value = {
     peliculas,
     setPeliculas,
-    currentMovies
+    changePage,
+    pages,
   };
 
   return (

@@ -1,23 +1,32 @@
 import { useGlobalContext } from "../context/GlobalContext";
 
 export default function Pagination() {
-const { moviesPerPage, total_results } = useGlobalContext()
+  const { changePage, pages } = useGlobalContext();
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(total_results / moviesPerPage); i++) {
+  for (let i = 1; i <= 22; i++) {
     pageNumbers.push(i);
   }
   return (
-    <nav>
-      <ul className="pagination">
-        {pageNumbers.map((number) => (
-          <li key={number} className="page-item">
-            <a href="!#" className="page-link">
-              {number}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div className="position-relative">
+      <nav
+        aria-label="Page navigation example"
+        className="position-absolute top-0 start-50 translate-middle"
+      >
+        <ul className="pagination">
+          <li className="page-item page-link">Previews</li>
+          {pageNumbers.map((number) => (
+            <li
+              onClick={() => changePage(number)}
+              key={number}
+              className={pages === number ? "page-item active" : "page-item"}
+            >
+              <span className="page-link"> {number} </span>
+            </li>
+          ))}
+          <li className="page-item page-link">Next</li>
+        </ul>
+      </nav>
+    </div>
   );
 }
