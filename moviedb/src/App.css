@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+img .image {
+  object-fit: cover;
+}
+
 .overview {
   overflow: hidden;
   line-height: 2rem;

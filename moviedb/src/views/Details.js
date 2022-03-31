@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "../App.css";
 
 export default function Details() {
   const [pelicula, setPelicula] = useState(null);
@@ -36,7 +37,7 @@ export default function Details() {
     <div className="container">
       <img
         src={`https://image.tmdb.org/t/p/w500${pelicula.backdrop_path}`}
-        className="img-fluid rounded-start mt-5 mb-4"
+        className="img-fluid rounded-start mt-5 mb-4 image"
         width={"80%"}
         height={"400px"}
         alt="details"
