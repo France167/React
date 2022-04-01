@@ -2,16 +2,13 @@ import { useGlobalContext } from "../context/GlobalContext";
 import { useEffect, useState } from "react";
 
 export default function Search() {
-  const { peliculas, setPeliculas } = useGlobalContext();
+  const { setPeliculas } = useGlobalContext();
   const [inputText, setInputText] = useState("");
-
-  const [searched, setSearched] = useState("")
-  const [searchedFilm, setSearchedFilm] = useState(null);
 
   function search(e) {
     setInputText(e.target.value);
   }
-  
+
   useEffect(
     function () {
       async function fetchApi() {
@@ -21,11 +18,22 @@ export default function Search() {
         let json = await response.json();
         json = json.results;
         setPeliculas(json);
-        
       }
-      fetchApi();
+      async function fetchPrimeraPeliculas() {
+        let response = await fetch(
+          `https://api.themoviedb.org/3/movie/upcoming?api_key=1ac2aba9270704bf465b9c3a770cb6f8&language=en-US`
+        );
+        let json = await response.json();
+        json = json.results;
+        setPeliculas(json);
+      }
+      if (inputText !== "") {
+        fetchApi();
+      } else {
+        fetchPrimeraPeliculas();
+      }
     },
-    [inputText]
+    [inputText, setPeliculas]
   );
 
   return (
