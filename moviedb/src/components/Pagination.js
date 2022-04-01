@@ -1,12 +1,26 @@
 import { useGlobalContext } from "../context/GlobalContext";
+import {useState, useEffect} from "react"
 
 export default function Pagination() {
   const { changePage, pages } = useGlobalContext();
   const pageNumbers = [];
- 
+  const [pagination, setPagination ] = useState({})
+
+  useEffect(
+    function () {
+      async function fetchApi() {
+        let response = await fetch(
+          `https://api.themoviedb.org/3/movie/upcoming?api_key=1ac2aba9270704bf465b9c3a770cb6f8&language=en-US`
+        );
+        let json = await response.json();
+        setPagination(json);
+      }
+      fetchApi();
+    },
+    [])
  
 
-  for (let i = 1; i <= 22; i++) {
+  for (let i = 1; i <= pagination.total_pages; i++) {
     pageNumbers.push(i);
   }
   return (

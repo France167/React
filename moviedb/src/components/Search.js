@@ -9,9 +9,6 @@ export default function Search() {
   const [searchedFilm, setSearchedFilm] = useState(null);
 
   function search(e) {
-    /* if(inputText === "" || inputText == null){
-      setPeliculas(peliculas)
-    } else { */
     setInputText(e.target.value);
   }
   
@@ -24,6 +21,7 @@ export default function Search() {
         let json = await response.json();
         json = json.results;
         setPeliculas(json);
+        
       }
       fetchApi();
     },
