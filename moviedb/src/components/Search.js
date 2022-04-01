@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../context/GlobalContext";
 import { useEffect, useState } from "react";
+import debounceFunction from "../utils/debounceFunction";
 
 export default function Search() {
   const { setPeliculas } = useGlobalContext();
