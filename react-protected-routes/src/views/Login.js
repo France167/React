@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback, useRef } from "react";
-import { useAuthContext } from "../contexts/AuthContext";
+import { useState, useEffect, useRef } from "react";
+import { useAuthContext } from "../context/AuthContext";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function Login() {
@@ -15,9 +15,9 @@ function Login() {
     password: "",
   });
 
-  useEffect(function(){
+  useEffect(function () {
     return userRef.current.focus();
-  },[])
+  }, []);
 
   function handleInputs(e) {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -27,7 +27,7 @@ function Login() {
     e.preventDefault();
     login(user);
     setUser({ email: "", password: "" });
-    navigate(from, {replace: true});
+    navigate(from, { replace: true });
   }
 
   return (

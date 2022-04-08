@@ -2,11 +2,11 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Login from "./views/Login";
-import RequireAuth from "./components/RequireAuth";
+import RequireAuth from "./context/AuthContext";
 import Home from "./views/Home";
 import About from "./views/About";
 import Profile from "./views/Profile";
-import Missing from "./Missing";
+import Missing from "./views/Missing";
 
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
         {/*protected routes */}
         <Route element={<RequireAuth />}>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About/>}/>
-          <Route path="profile" element={<Profile/>}/>
+          <Route path="about" element={<About />} />
+          <Route path="profile" element={<Profile />} />
         </Route>
-        
-         {/*missing routes */}
-         <Route path="*" element={<Missing/>}/>
+
+        {/*missing routes */}
+        <Route path="*" element={<Missing />} />
       </Route>
     </Routes>
   );
