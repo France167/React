@@ -1,199 +1,508 @@
 img {
-    margin-left: 2rem;
-    margin-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 h1 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 5rem;
-    color: white;
-    margin-left: 2rem;
-    margin-top: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 5rem;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .heading5 {
-    font-size: 2.8rem;
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    margin-left: 2rem;
-    margin-top: 0.5rem;
+  font-size: 2.8rem;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
 }
 
 /* ======================== */
-.button{
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: #d85081;
-    color: white;
-    padding: 10px 30px;
-    position: relative;
-    overflow: hidden;
-    transition: color 1s;
-    font-weight: 700;
-    margin-left: 8rem;
-    margin-top: 0;
-    cursor: pointer;
-    transition: 1s;
-    
+.button {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #d85081;
+  color: white;
+  padding: 10px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  font-weight: 700;
+  margin-left: 8rem;
+  margin-top: 0;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.button:hover{
-    color: #d85081;
-    background-color: white;
-    transition: 1s;
+.button:hover {
+  color: #d85081;
+  background-color: white;
+  transition: 1s;
 }
 
-.button::before{
-    content: '';
-    position: absolute;
-    font-family: 'Roboto Mono', monospace;
-    top: 0;
-    left: -50px;
-    width: 150%;
-    height: 100%;
-    background-color: #fff;
-    transform: scaleX(0) skewX(35deg);
-    transform-origin: left;
-    z-index: -1;
-    transition: transform 1s;
+.button::before {
+  content: "";
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+  top: 0;
+  left: -50px;
+  width: 150%;
+  height: 100%;
+  background-color: #fff;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  z-index: -1;
+  transition: transform 1s;
 }
 
-.button:hover::before{
-    transform: scaleX(1) skewX(35deg);
+.button:hover::before {
+  transform: scaleX(1) skewX(35deg);
 }
 
 /*** Form CSS ***/
 
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
 .form-h2 {
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    font-size: 3rem;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .form-h4 {
-    color: white;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
 }
 
 .form-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgba(14, 12, 12, 0.90);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    border-radius: 10px;
-    display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(14, 12, 12, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: none;
 }
 
 .form-box-visible {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60%;
-    padding: 30px;
-    transform: translate(-50%, -50%);
-    background: rgba(14, 12, 12, 0.90);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
-    border-radius: 10px;
-    margin: 5% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: rgba(14, 12, 12, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  /* margin: 5% auto; */
 }
 
-.form-box, .form-box-visible .user-box{
-    position: relative;
+.form-box,
+.form-box-visible .user-box {
+  position: relative;
 }
 
-.form-box, .form-box-visible .user-box input {
-    width: 50%;
-    font-family: 'Roboto Mono', monospace;
-    padding: 10px 0;
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
+.form-box,
+.form-box-visible .user-box input {
+  width: 50%;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
 
-.form-box , .form-box-visible .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: 'Roboto Mono', monospace;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: 0.5s;
+.form-box,
+.form-box-visible .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto Mono", monospace;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.form-box, .form-box-visible .user-box input:focus ~ label,
-.fomr-box, .form-box-visible .user-box input:valid ~ label {
-    top: -20%;
-    left: 0;
-    color: #03e9f4;
-    font-size: 12px;
+.form-box,
+.form-box-visible .user-box input:focus ~ label,
+.fomr-box,
+.form-box-visible .user-box input:valid ~ label {
+  top: -20%;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
 }
 
-.form-box, .form-box-visible form button {
-    padding: 10px 20px;
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.5s;
-    margin-top: 10px;
-    letter-spacing: 2px;
-    cursor: pointer;
+.form-box,
+.form-box-visible form button {
+  padding: 10px 20px;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
-.form-box, .form-box-visible form button:hover {
-    box-shadow: 0 0 15px #03e9f4;
+.form-box,
+.form-box-visible form button:hover {
+  box-shadow: 0 0 15px #03e9f4;
 }
 
 .close {
-    position: absolute;
-    top: 0;
-    right: 14px;
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 3rem;
+  transform: rotate(45deg);
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+p {
+  font-size: large;
+  font-family: source-code-pro;
+  color: rgba(204, 58, 58, 0.642);
+  position: relative;
+  bottom: 40px;
+}
+
+.correct {
+  font-size: x-large;
+  color: rgba(117, 226, 7, 0.737);
+  font-family: "Roboto Mono", monospace;
+  margin: 5% auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 2000px) {
+
+      .form-box-visible {
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .form-h2 {
+        font-size: 2rem;
+      }
+      .form-h4 {
+        font-size: 1.5rem;
+      }
+      .form-box,
+      .form-box-visible .user-box input {
+        width: 50%;
+      }
+      .form-box,
+      .form-box-visible .user-box label {
+        font-size: 0.8rem;
+      }
+      .correct{
+        font-size:1.1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .heading5 {
+        color: white;
+        font-size: 3rem;
+        margin-left: 5%;
+      }
+      .head {
+        display: flex;
+      }
+      .button {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 101px;
+        left: 30%;
+      }
+      .form-box-visible {
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .form-h2 {
+        font-size: 1.5rem;
+      }
+      .form-h4 {
+        font-size: 1rem;
+      }
+      .form-box,
+      .form-box-visible .user-box input {
+        width: 100%;
+      }
+      .form-box,
+      .form-box-visible .user-box label {
+        font-size: 0.8rem;
+      }
+      .correct{
+        font-size:1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .heading5 {
+        color: black;
+        font-size: 3rem;
+        margin-top: 20%;
+      }
+      .head {
+        display: flex;
+      }
+      .button {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 70px;
+        left: 30%;
+      }
+      .form-box-visible {
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .form-h2 {
+        font-size: 1.5rem;
+      }
+      .form-h4 {
+        font-size: 1rem;
+      }
+      .form-box,
+      .form-box-visible .user-box input {
+        width: 100%;
+      }
+      .form-box,
+      .form-box-visible .user-box label {
+        font-size: 0.8rem;
+      }
+      .correct{
+        font-size:1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+  .heading5 {
+    color: black;
     font-size: 3rem;
-    transform: rotate(45deg);
-    color: white;
-    cursor: pointer;
-    background:  none;
-    border: none;
-}
-
-p{
-    font-size:large;
-    font-family: source-code-pro;
-    color: rgba(204, 58, 58, 0.642);
+    margin-top: 15%;
+  }
+  .head {
+    display: flex;
+  }
+  .button {
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 40px;
+    bottom: 70px;
+    left: 30%;
+  }
+  .form-box-visible {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .form-h2 {
+    font-size: 1.5rem;
+  }
+  .form-h4 {
+    font-size: 1rem;
+  }
+  .form-box,
+  .form-box-visible .user-box input {
+    width: 100%;
+  }
+  .form-box,
+  .form-box-visible .user-box label {
+    font-size: 0.8rem;
+  }
+  .correct{
+    font-size:1.1rem;
+}
 }
 
-.correct{
-    font-size:x-large;
-    color: rgba(117, 226, 7, 0.737);
-    font-family: 'Roboto Mono', monospace;
-    margin: 5% auto;
-    text-align: center;
+@media screen and (max-width: 700px) {
+  img {
+    width: 70%;
+    margin: 25% 16%;
+  }
+  h1 {
+    color: black;
+    font-size: 3.5rem;
+    margin-top: 10%;
+  }
+  .heading5 {
+    color: black;
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+  .head {
+    display: flex;
+  }
+  .button {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    left: 3px;
+  }
+  .form-box-visible {
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .form-h2 {
+    font-size: 1.5rem;
+  }
+  .form-h4 {
+    font-size: 1rem;
+  }
+  .form-box,
+  .form-box-visible .user-box input {
+    width: 100%;
+  }
+  .form-box,
+  .form-box-visible .user-box label {
+    font-size: 0.8rem;
+  }
+  .correct{
+    font-size:1rem;
 }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+      width: 70%;
+      margin: 25% 16%;
+    }
+    h1 {
+      color: black;
+      font-size: 2.5rem;
+    }
+    .heading5 {
+      color: black;
+      font-size: 1.5rem;
+    }
+    .head {
+      display: flex;
+    }
+    .button {
+      position: relative;
+      bottom: 20px;
+      left: 1px;
+      border-radius: 10px;
+    }
+    .form-box-visible {
+      width: 75%;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .form-h2 {
+      font-size: 1.3rem;
+    }
+    .form-h4 {
+      font-size: 0.9rem;
+    }
+    .form-box,
+    .form-box-visible .user-box input {
+      width: 100%;
+    }
+    .form-box,
+    .form-box-visible .user-box label {
+      font-size: 0.8rem;
+    }
+    .correct{
+        font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 380px) {
+    img {
+      width: 70%;
+      margin: 25% 16%;
+    }
+    h1 {
+      color: black;
+      font-size: 2rem;
+    }
+    .heading5 {
+      color: black;
+      font-size: 1.3rem;
+    }
+    .head {
+      display: flex;
+    }
+    .button {
+      position: relative;
+      bottom: 20px;
+      left: 1px;
+      border-radius: 10px;
+    }
+    .form-box-visible {
+      width: 75%;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    .form-h2 {
+      font-size: 1.2rem;
+    }
+    .form-h4 {
+      font-size: 0.8rem;
+    }
+    .form-box,
+    .form-box-visible .user-box input {
+      width: 100%;
+    }
+    .form-box,
+    .form-box-visible .user-box label {
+      font-size: 0.7rem;
+    }
+    .correct{
+        font-size: 0.6rem;
+    }
+  }

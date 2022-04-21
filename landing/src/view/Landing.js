@@ -17,8 +17,10 @@ function Landing() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const validado = validate(formValues);
+    setFormErrors(validate(formValues));
     if (Object.keys(validado).length === 0) {
       setIsSubmit(true);
+      setFormValues(initialValues)
       emailjs
         .sendForm(
           "service_miiwiqw",
@@ -31,9 +33,7 @@ function Landing() {
           console.log(res);
         });
     } else {
-      console.log("aqui");
-      setFormErrors(validado);
-      console.log(validado);
+      setFormErrors(validate(formValues));
     }
   };
 
@@ -42,11 +42,11 @@ function Landing() {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
     }
-  }, [formErrors]);
+  }, [formErrors,formValues,isSubmit]);
 
   const validate = (values) => {
     const errors = {};
-
+    const regexPhone = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i;
     const regex = /^[^\s@]+@[^\s@].[^\s@]{2,}$/i;
     if (!values.nombre) {
       errors.nombre = "Introducir un nombre!";
@@ -61,7 +61,7 @@ function Landing() {
     }
     if (!values.telefono) {
       errors.telefono = "Introducir un numero de telefono!";
-    } else if (values.telefono.length < 9 || values.telefono.length > 10) {
+    } else if (!regexPhone.test(values.telefono) || values.telefono.length < 9) {
       errors.telefono = "Introducir un numero de telefono valido!";
     }
     return errors;
@@ -88,10 +88,12 @@ function Landing() {
           Desarrollo Web
         </h1>
         <h5 className="heading5">Cambia tu futuro en 5 meses</h5>
+        <div className="head">
         <button onClick={toggle} className="button">
           {" "}
-          QUIERO MÁS INFORMACIÓN{" "}
+          QUIERO MÁS INFO{" "}
         </button>
+        </div>
       </div>
       <div className={`${toggleButton ? "form-box-visible" : "form-box"}`}>
         <button onClick={toggle} className="close">
@@ -147,7 +149,7 @@ function Landing() {
             <input
               autocomplete="off"
               onChange={handleChange}
-              type="text"
+              type="phone"
               name="telefono"
               value={formValues.telefono}
               required
@@ -155,7 +157,9 @@ function Landing() {
             <label name="tel">Teléfono</label>
             <p>{formErrors.telefono}</p>
           </div>
+          <div className="info">
           <button type="submit">Quiero Info</button>
+          </div>
         </form>
       </div>
     </div>
