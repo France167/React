@@ -20,7 +20,7 @@ function Landing() {
     setFormErrors(validate(formValues));
     if (Object.keys(validado).length === 0) {
       setIsSubmit(true);
-      setFormValues(initialValues)
+      setFormValues(initialValues);
       emailjs
         .sendForm(
           "service_miiwiqw",
@@ -42,11 +42,12 @@ function Landing() {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       console.log(formValues);
     }
-  }, [formErrors,formValues,isSubmit]);
+  }, [formErrors, formValues, isSubmit]);
 
   const validate = (values) => {
     const errors = {};
-    const regexPhone = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i;
+    const regexPhone =
+      /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i;
     const regex = /^[^\s@]+@[^\s@].[^\s@]{2,}$/i;
     if (!values.nombre) {
       errors.nombre = "Introducir un nombre!";
@@ -61,7 +62,10 @@ function Landing() {
     }
     if (!values.telefono) {
       errors.telefono = "Introducir un numero de telefono!";
-    } else if (!regexPhone.test(values.telefono) || values.telefono.length < 9) {
+    } else if (
+      !regexPhone.test(values.telefono) ||
+      values.telefono.length < 9
+    ) {
       errors.telefono = "Introducir un numero de telefono valido!";
     }
     return errors;
@@ -89,10 +93,10 @@ function Landing() {
         </h1>
         <h5 className="heading5">Cambia tu futuro en 5 meses</h5>
         <div className="head">
-        <button onClick={toggle} className="button">
-          {" "}
-          QUIERO MÁS INFO{" "}
-        </button>
+          <button onClick={toggle} className="button">
+            {" "}
+            QUIERO MÁS INFO{" "}
+          </button>
         </div>
       </div>
       <div className={`${toggleButton ? "form-box-visible" : "form-box"}`}>
@@ -158,7 +162,7 @@ function Landing() {
             <p>{formErrors.telefono}</p>
           </div>
           <div className="info">
-          <button type="submit">Quiero Info</button>
+            <button type="submit">Quiero Info</button>
           </div>
         </form>
       </div>

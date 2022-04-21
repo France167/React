@@ -6,6 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../../landing/public/bodyimage.jpeg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size:     cover;  
+  /* background-color: rgb(70, 88, 103); */
   /* background-position: bottom; */
 }

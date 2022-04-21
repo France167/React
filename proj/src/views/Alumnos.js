@@ -39,7 +39,7 @@ function Alumnos() {
       {alumnos?.map((alumno) => {
         return (
           <div className="col d-flex justify-content-around" key={alumno._id}>
-            <div className="card" style={{ width: "20rem" }}>
+            <div className="card mb-5" style={{ width: "20rem" }}>
               <img
                 src={alumno.datosPersonales.foto}
                 className="card-img-top"
@@ -51,13 +51,10 @@ function Alumnos() {
                 <p className="card-text">{alumno.curso}</p>
                 <Link
                   to={`detalles/${alumno._id}`}
-                  className="btn btn-outline-dark mr-5"
+                  className="btn btn-outline-dark w-100 m-auto"
                 >
                   Details
                 </Link>
-                {/*  <Link to="/update" className="btn btn-outline-dark">
-                  Update
-                </Link> */}
               </div>
             </div>
           </div>
