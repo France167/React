@@ -77,109 +77,133 @@ function Detalles() {
           <h3 className="my-4">
             <b>{alumno[0].datosPersonales.nombre}</b>
           </h3>
-          <h5 className="my-3">
-            <u>Datos Personales</u>:
-          </h5>
-          <p>
-            <b>Curso</b>: {alumno[0].curso}
-          </p>
-          <p>
-            <b>Fecha de nacimiento</b>:{" "}
-            {new Date(alumno[0].datosPersonales.fechaNacimiento).toString()}
-          </p>
-          <p>
-            <b>Residencia</b>: {alumno[0].datosPersonales.residencia}
-          </p>
-          <p>
-            <b>Telefono</b>: {alumno[0].datosPersonales.telefono}
-          </p>
-          <p>
-            <b>Email</b>: {alumno[0].datosPersonales.email}
-          </p>
-          <h5 className="my-3">
-            <u>Info Bootcamp</u>:
-          </h5>
-          <p>
-            <b>Fecha de falta</b>: <br />
-            {new Date(alumno[0].infoBootcamp.fechaFalta[0]).toString()} <br />
-            {new Date(alumno[0].infoBootcamp.fechaFalta[1]).toString()}
-          </p>
-          <p>
-            {" "}
-            <b>Proyecto Final</b>: {alumno[0].infoBootcamp.proyectoFinal.titulo}{" "}
-          </p>
-          <p>
-            <b>Detalles</b>: {alumno[0].infoBootcamp.proyectoFinal.detalles}{" "}
-          </p>
-          <h5 className="my-3">
-            <u>Comentarios Profesorado</u>:
-          </h5>
-          <h6>
-            {alumno[0].infoBootcamp.proyectoFinal.comentariosProf.profesores[0]}
-          </h6>
-          <p>
-            {
-              alumno[0].infoBootcamp.proyectoFinal.comentariosProf
-                .comentarios[0]
-            }
-          </p>
-          <h6>
-            {alumno[0].infoBootcamp.proyectoFinal.comentariosProf.profesores[1]}
-          </h6>
-          <p>
-            {
-              alumno[0].infoBootcamp.proyectoFinal.comentariosProf
-                .comentarios[1]
-            }
-          </p>
-          <h5 className="my-3">
-            <u>Info Releevant</u>:
-          </h5>
-          <p>
-            {" "}
-            <b>Origen</b>: {alumno[0].infoReleevant.origen}{" "}
-          </p>
-          <p>
-            {" "}
-            <b>Origen</b>: {alumno[0].infoReleevant.pc}{" "}
-          </p>
-          <p>
-            <b>Matricula</b>:{" "}
-            <a href={alumno[0].infoReleevant.matricula}>Click Here!</a>
-          </p>
-          {alumno[0].infoReleevant.tipoDePago[0].directo !== null && (
-            <>
-              <p>
-                <b>Tipo de pago</b>: Directo
-              </p>
-              <p>
-                {" "}
-                <b>Fecha</b>:{" "}
-                {alumno[0].infoReleevant.tipoDePago[0].directo.fecha}
-              </p>
-            </>
-          )}
-          {alumno[0].infoReleevant.tipoDePago[0].cuota && (
-            <>
-              <p>
-                <b>Numero cuotas</b>:{" "}
-                {alumno[0].infoReleevant.tipoDePago[0].cuota.numerosCuotas}
-              </p>
-              <p>
-                <b>Fechas de pago</b>:
+          <div className="accordion" id="accordionExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Datos Personales
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
                 <p>
-                  {alumno[0].infoReleevant.tipoDePago[0].cuota.fechas[0]} /
-                  {alumno[0].infoReleevant.tipoDePago[0].cuota.fechas[1]} /
-                  {alumno[0].infoReleevant.tipoDePago[0].cuota.fechas[2]}
-                </p>
-              </p>
-              {/* <p>
-              {" "}
-              <b>Validacion</b>:{" "}
-              {alumno[0].infoReleevant.tipoDePago[0].cuota.validacion}
-            </p> */}
-            </>
-          )}
+                    <b>Curso</b>: {alumno[0].curso}
+                  </p>
+                  <p>
+                    <b>Fecha de nacimiento</b>:{" "}
+                    {new Date(
+                      alumno[0].datosPersonales.fechaNacimiento
+                    ).toString()}
+                  </p>
+                  <p>
+                    <b>Residencia</b>: {alumno[0].datosPersonales.residencia}
+                  </p>
+                  <p>
+                    <b>Telefono</b>: {alumno[0].datosPersonales.telefono}
+                  </p>
+                  <p>
+                    <b>Email</b>: {alumno[0].datosPersonales.email}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Info Bootcamp
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                <p>
+                    <b>Fecha de falta</b>: <br />
+                    {new Date(
+                      alumno[0].infoBootcamp.fechaFalta[0]
+                    ).toString()}{" "}
+                    <br />
+                    {new Date(alumno[0].infoBootcamp.fechaFalta[1]).toString()}
+                  </p>
+                  <p>
+                    {" "}
+                    <b>Proyecto Final</b>:{" "}
+                    {alumno[0].infoBootcamp.proyectoFinal.titulo}{" "}
+                  </p>
+                  <p>
+                    <b>Detalles</b>:{" "}
+                    {alumno[0].infoBootcamp.proyectoFinal.detalles}{" "}
+                  </p>
+                  <p>
+                    <b>Comentarios Profesorado</b>:{" "}
+                    {alumno[0].infoBootcamp.proyectoFinal.comentariosProf
+}{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Info Releevant
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                <p>
+                    {" "}
+                    <b>Origen</b>: {alumno[0].infoReleevant.origen}{" "}
+                  </p>
+                  <p>
+                    {" "}
+                    <b>Pc</b>: {alumno[0].infoReleevant.pc}{" "}
+                  </p>
+                  <p>
+                    <b>Matricula</b>:{" "}
+                    <a href={alumno[0].infoReleevant.matricula}>Click Here!</a>
+                  </p>
+                  <p>
+                    {" "}
+                    <b>Tipo de pago</b>: {alumno[0].infoReleevant.tipoDePago}{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

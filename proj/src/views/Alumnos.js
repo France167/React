@@ -34,7 +34,22 @@ function Alumnos() {
   }
   return (
     <div className="row mb-5">
-      <h1 className="my-5 mx-5">Alumnos Releevant</h1>
+      <div className="container">
+      <div className="row justify-content-between">
+        <div className="col-10">
+      <h1 className="h1 my-5 mx-5">Alumnos Releevant</h1>
+      </div>
+      <div className="col">
+        <button className="btn btn-outline-warning my-5">
+          Añadir nuevo alumno
+        </button>
+        </div>
+      </div>
+      </div>
+
+
+
+
       <Buscador />
       {alumnos?.map((alumno) => {
         return (
