@@ -67,7 +67,7 @@ function Detalles() {
             </Link>
             <button
               onClick={() => handleDelete(_id)}
-              className="btn btn-outline-danger w-100"
+              className="btn btn-outline-danger w-100 my-3"
             >
               Delete Alumno
             </button>
@@ -98,7 +98,7 @@ function Detalles() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                <p>
+                  <p>
                     <b>Curso</b>: {alumno[0].curso}
                   </p>
                   <p>
@@ -139,7 +139,7 @@ function Detalles() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                <p>
+                  <p>
                     <b>Fecha de falta</b>: <br />
                     {new Date(
                       alumno[0].infoBootcamp.fechaFalta[0]
@@ -158,8 +158,7 @@ function Detalles() {
                   </p>
                   <p>
                     <b>Comentarios Profesorado</b>:{" "}
-                    {alumno[0].infoBootcamp.proyectoFinal.comentariosProf
-}{" "}
+                    {alumno[0].infoBootcamp.proyectoFinal.comentariosProf}{" "}
                   </p>
                 </div>
               </div>
@@ -184,7 +183,7 @@ function Detalles() {
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body">
-                <p>
+                  <p>
                     {" "}
                     <b>Origen</b>: {alumno[0].infoReleevant.origen}{" "}
                   </p>
@@ -200,9 +199,20 @@ function Detalles() {
                     {" "}
                     <b>Tipo de pago</b>: {alumno[0].infoReleevant.tipoDePago}{" "}
                   </p>
+                  <p>
+                    {" "}
+                    <b>Detalles sobre el pago</b>:{" "}
+                    {alumno[0].infoReleevant.detallesPago}{" "}
+                  </p>
                 </div>
               </div>
             </div>
+            <Link
+              to={`/send/${_id}`}
+              className="btn btn-outline-dark w-100 mt-5"
+            >
+              Send to Alumni
+            </Link>
           </div>
         </div>
       </div>
@@ -211,5 +221,3 @@ function Detalles() {
 }
 
 export default Detalles;
-{
-}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function Search() {
-  const [alumnos, setAlumnos] = useState([]);
+  const [alumno, setAlumno] = useState([]);
   const [inputText, setInputText] = useState("");
 
   function search(e) {
@@ -16,14 +16,14 @@ export default function Search() {
           mode: "cors",
         });
         let json = await response.json();
-        setAlumnos(json);
+        setAlumno(json);
       }
       async function fetchAlumnos() {
         let response = await fetch("http://localhost:8080/", {
           mode: "cors",
         });
         let json = await response.json();
-        setAlumnos(json);
+        setAlumno(json);
       }
       if (inputText !== "") {
         fetchApi();
@@ -32,19 +32,21 @@ export default function Search() {
         fetchAlumnos();
       }
     },
-    [inputText, setAlumnos]
+    [inputText, setAlumno]
   );
 
   return (
-    <form className="d-flex mb-5">
-      <input
-        onChange={search}
-        className="form-control m w-75 m-auto"
-        type="search"
-        placeholder="Busca un alumno"
-        aria-label="Search"
-        value={inputText}
-      />
-    </form>
+    <div>
+      <form className="d-flex mb-5">
+        <input
+          onChange={search}
+          className="form-control m w-75 m-auto"
+          type="search"
+          placeholder="Busca un alumno"
+          aria-label="Search"
+          value={inputText}
+        />
+      </form>
+    </div>
   );
 }

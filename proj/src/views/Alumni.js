@@ -4,22 +4,22 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Buscador from "../components/Buscador";
 
-function Alumnos() {
-  const [alumnos, setAlumnos] = useState([]);
+function Alumni() {
+  const [alumni, setAlumni] = useState([]);
 
   useEffect(function () {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/", {
+      let response = await fetch("http://localhost:8080/alumni", {
         mode: "cors",
       });
       let json = await response.json();
       console.log(json);
-      setAlumnos(json);
+      setAlumni(json);
     }
     fetchApi();
   }, []);
 
-  if (!alumnos) {
+  if (!alumni) {
     return (
       <div className="text-center">
         <div
@@ -37,32 +37,30 @@ function Alumnos() {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-10">
-            <h1 className="h1 my-5 mx-5">Alumnos Releevant</h1>
-          </div>
-          <div className="col">
-            <Link to="/anadir" className="btn btn-outline-warning my-5">
-              Añadir nuevo alumno
-            </Link>
+            <h1 className="h1 my-5 mx-5">Alumni Releevant</h1>
           </div>
         </div>
       </div>
 
       <Buscador />
-      {alumnos?.map((alumno) => {
+      {alumni?.map((alumno) => {
+        console.log(alumno);
         return (
           <div className="col d-flex justify-content-around" key={alumno._id}>
             <div className="card mb-5" style={{ width: "20rem" }}>
               <img
-                src={alumno.datosPersonales.foto}
+                src={alumno.alumno.datosPersonales.foto}
                 className="card-img-top"
                 alt="..."
                 width={"15%"}
               />
               <div className="card-body">
-                <h5 className="card-title">{alumno.datosPersonales.nombre}</h5>
-                <p className="card-text">{alumno.curso}</p>
+                <h5 className="card-title">
+                  {alumno.alumno.datosPersonales.nombre}
+                </h5>
+                <p className="card-text">{alumno.alumno.curso}</p>
                 <Link
-                  to={`detalles/${alumno._id}`}
+                  to={`detalles/alumni/${alumno.alumno._id}`}
                   className="btn btn-outline-dark w-100 m-auto"
                 >
                   Details
@@ -76,4 +74,4 @@ function Alumnos() {
   );
 }
 
-export default Alumnos;
+export default Alumni;

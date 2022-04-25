@@ -33,9 +33,9 @@ function Navbar() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <NavLink className="nav-link" aria-current="page" to="/alumni">
               Alumni
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
