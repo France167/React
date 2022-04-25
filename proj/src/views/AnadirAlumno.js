@@ -5,31 +5,32 @@ import { useNavigate } from "react-router-dom";
 function AnadirAlumno() {
   const [data, setData] = useState({
     alumno: {
-    curso: "",
-    datosPersonales: {
-      nombre: "",
-      foto: "",
-      fechaNacimiento: "",
-      residencia: "",
-      telefono: "",
-      email: "",
-    },
-    infoBootcamp: {
-      fechaFalta: "",
-      proyectoFinal: {
-        titulo: "",
-        detalles: "",
-        comentariosProf: "",
+      curso: "",
+      datosPersonales: {
+        nombre: "",
+        foto: "",
+        fechaNacimiento: "",
+        residencia: "",
+        telefono: "",
+        email: "",
+      },
+      infoBootcamp: {
+        fechaFalta: "",
+        proyectoFinal: {
+          titulo: "",
+          detalles: "",
+          comentariosProf: "",
+        },
+      },
+      infoReleevant: {
+        origen: "",
+        pc: "",
+        matricula: "",
+        tipoDePago: "",
+        detallesPago: "",
       },
     },
-    infoReleevant: {
-      origen: "",
-      pc: "",
-      matricula: "",
-      tipoDePago: "",
-      detallesPago: "",
-    },
-  }});
+  });
   let navigate = useNavigate();
 
   async function submit(e) {
@@ -38,32 +39,38 @@ function AnadirAlumno() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        alumno:{
-        curso: data.alumno.curso,
-        datosPersonales: {
-          nombre: data.alumno.datosPersonales.nombre,
-          foto: data.alumno.datosPersonales.foto,
-          fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
-          residencia: data.alumno.datosPersonales.residencia,
-          telefono: data.alumno.datosPersonales.telefono,
-          email: data.alumno.datosPersonales.email,
-        },
-        infoBootcamp: {
-          fechaFalta: data.alumno.infoBootcamp.fechaFalta,
-          proyectoFinal: {
-            titulo: data.alumno.infoBootcamp.proyectoFinal.titulo,
-            detalles: data.alumno.infoBootcamp.proyectoFinal.detalles,
-            comentariosProf: data.alumno.infoBootcamp.proyectoFinal.comentariosProf,
+        alumno: {
+          curso: data.alumno.curso,
+          datosPersonales: {
+            nombre: data.alumno.datosPersonales.nombre,
+            foto:
+              "http://localhost:8080/photos/" +
+              data.alumno.datosPersonales.foto,
+            fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
+            residencia: data.alumno.datosPersonales.residencia,
+            telefono: data.alumno.datosPersonales.telefono,
+            email: data.alumno.datosPersonales.email,
+          },
+          infoBootcamp: {
+            fechaFalta: data.alumno.infoBootcamp.fechaFalta,
+            proyectoFinal: {
+              titulo: data.alumno.infoBootcamp.proyectoFinal.titulo,
+              detalles: data.alumno.infoBootcamp.proyectoFinal.detalles,
+              comentariosProf:
+                data.alumno.infoBootcamp.proyectoFinal.comentariosProf,
+            },
+          },
+          infoReleevant: {
+            origen: data.alumno.infoReleevant.origen,
+            pc: data.alumno.infoReleevant.pc,
+            matricula:
+              "http://localhost:8080/docs/" +
+              data.alumno.infoReleevant.matricula,
+            tipoDePago: data.alumno.infoReleevant.tipoDePago,
+            detallesPago: data.alumno.infoReleevant.detallesPago,
           },
         },
-        infoReleevant: {
-          origen: data.alumno.infoReleevant.origen,
-          pc: data.alumno.infoReleevant.pc,
-          matricula: data.alumno.infoReleevant.matricula,
-          tipoDePago: data.alumno.infoReleevant.tipoDePago,
-          detallesPago: data.alumno.infoReleevant.detallesPago,
-        },
-      }}),
+      }),
     };
     let response = await fetch("http://localhost:8080/new", requestOptions);
     let json = await response.json();
@@ -129,6 +136,7 @@ function AnadirAlumno() {
           placeholder="Curso"
           required
         />
+
         <input
           onChange={(e) => handleDatosPersonales(e)}
           id="foto"
@@ -138,6 +146,7 @@ function AnadirAlumno() {
           placeholder="Foto"
           required
         />
+
         <input
           onChange={(e) => handleDatosPersonales(e)}
           id="nombre"
@@ -189,17 +198,17 @@ function AnadirAlumno() {
         <h3 className="text-center my-5">Info Bootcamp </h3>
         <div className="w-50 m-auto">
           <textarea
-          onChange={(e) => handleInfoBootcamp(e)}
-          id="fechaFalta"
-          value={data.alumno.infoBootcamp.fechaFalta}
-          wrap="hard"
-          className="form-control w-100 m-auto  my-3"
-          placeholder="Detalles sobre las faltas"
-          rows="3"
-          cols="5"
-        ></textarea>
-          </div>
-        
+            onChange={(e) => handleInfoBootcamp(e)}
+            id="fechaFalta"
+            value={data.alumno.infoBootcamp.fechaFalta}
+            wrap="hard"
+            className="form-control w-100 m-auto  my-3"
+            placeholder="Detalles sobre las faltas"
+            rows="3"
+            cols="5"
+          ></textarea>
+        </div>
+
         <input
           onChange={(e) => handleProyectoFinal(e)}
           id="titulo"

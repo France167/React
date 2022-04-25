@@ -46,7 +46,7 @@ function Update() {
         curso: data.alumno.curso,
         datosPersonales: {
           nombre: data.alumno.datosPersonales.nombre,
-          foto: data.alumno.datosPersonales.foto,
+          foto: "http://localhost:8080/photos/" + data.alumno.datosPersonales.foto,
           fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
           residencia: data.alumno.datosPersonales.residencia,
           telefono: data.alumno.datosPersonales.telefono,
@@ -63,7 +63,7 @@ function Update() {
         infoReleevant: {
           origen: data.alumno.infoReleevant.origen,
           pc: data.alumno.infoReleevant.pc,
-          matricula: data.alumno.infoReleevant.matricula,
+          matricula: "http://localhost:8080/docs/" + data.alumno.infoReleevant.matricula,
           tipoDePago: data.alumno.infoReleevant.tipoDePago,
           detallesPago: data.alumno.infoReleevant.detallesPago,
         },

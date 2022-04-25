@@ -22,7 +22,7 @@ function AnadirDocente() {
         bio: data.bio,
         posicion: data.posicion,
         LinkedIn: data.LinkedIn,
-        foto: data.foto
+        foto: "http://localhost:8080/photos/" + data.foto
       }),
     };
     let response = await fetch("http://localhost:8080/new/docente", requestOptions);

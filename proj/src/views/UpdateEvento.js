@@ -30,7 +30,7 @@ function UpdateEvento() {
         descripcion: data.descripcion,
         ponentes: data.ponentes,
         enlace: data.enlace,
-        foto: data.foto,
+        foto: "http://localhost:8080/photos/" + data.foto,
         marketing: data.marketing,
         asistentes: {
           inscrito: data.asistentes.inscrito,
