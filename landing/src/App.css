@@ -6,6 +6,15 @@ img {
 h1 {
   font-family: "Roboto Mono", monospace;
   font-size: 5rem;
+  color: #d85081;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 4rem;
   color: white;
   margin-left: 2rem;
   margin-top: 1rem;
@@ -456,17 +465,27 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+
     img {
       width: 70%;
-      margin: 25% 16%;
+      margin: 6% 16%;
     }
     h1 {
+      color: #d85081;
+      font-size: 2.3rem;
+      margin-top: -1%;
+    }
+
+    h2{
       color: white;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: 20%;
     }
     .heading5 {
       color: white;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 24%;
     }
     .head {
       width: 100%;

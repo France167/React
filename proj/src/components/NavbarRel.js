@@ -30,22 +30,22 @@ function Navbar() {
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item float-end">
             <NavLink className="nav-link" aria-current="page" to="/">
-              Alumnos
+              Alumnosss
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" aria-current="page" to="/alumni">
-              Alumni
+              Alumniiii
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/eventos">
-              Eventos
+              Eventossss
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/expertos">
-              Expertos
+              Expertossss
             </NavLink>
           </li>
           <li className="nav-item">

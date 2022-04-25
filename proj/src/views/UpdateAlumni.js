@@ -2,34 +2,38 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-function Update() {
+function UpdateAlumni() {
   const [data, setData] = useState({
-    alumno:{
-    curso: "",
-    datosPersonales: {
-      nombre: "",
-      foto: "",
-      fechaNacimiento: "",
-      residencia: "",
-      telefono: "",
-      email: "",
-    },
-    infoBootcamp: {
-      fechaFalta: "",
-      proyectoFinal: {
-        titulo: "",
-        detalles: "",
-        comentariosProf: "",
+    alumno: {
+      curso: "",
+      datosPersonales: {
+        nombre: "",
+        foto: "",
+        fechaNacimiento: "",
+        residencia: "",
+        telefono: "",
+        email: "",
+      },
+      infoBootcamp: {
+        fechaFalta: "",
+        proyectoFinal: {
+          titulo: "",
+          detalles: "",
+          comentariosProf: "",
+        },
+      },
+      infoReleevant: {
+        origen: "",
+        pc: "",
+        matricula: "",
+        tipoDePago: "",
+        detallesPago: "",
       },
     },
-    infoReleevant: {
-      origen: "",
-      pc: "",
-      matricula: "",
-      tipoDePago: "",
-      detallesPago: "",
-    },
-  }});
+    LinkedIn: "",
+    empresa: "",
+    comienzo: "",
+  });
 
   let navigate = useNavigate();
   const { _id } = useParams();
@@ -42,47 +46,56 @@ function Update() {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        alumno:{
-        curso: data.alumno.curso,
-        datosPersonales: {
-          nombre: data.alumno.datosPersonales.nombre,
-          foto: data.alumno.datosPersonales.foto,
-          fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
-          residencia: data.alumno.datosPersonales.residencia,
-          telefono: data.alumno.datosPersonales.telefono,
-          email: data.alumno.datosPersonales.email,
-        },
-        infoBootcamp: {
-          fechaFalta: data.alumno.infoBootcamp.fechaFalta,
-          proyectoFinal: {
-            titulo: data.alumno.infoBootcamp.proyectoFinal.titulo,
-            detalles: data.alumno.infoBootcamp.proyectoFinal.detalles,
-            comentariosProf: data.alumno.infoBootcamp.proyectoFinal.comentariosProf,
+        alumno: {
+          curso: data.curso,
+          datosPersonales: {
+            nombre: data.alumno.datosPersonales.nombre,
+            foto: data.alumno.datosPersonales.foto,
+            fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
+            residencia: data.alumno.datosPersonales.residencia,
+            telefono: data.alumno.datosPersonales.telefono,
+            email: data.alumno.datosPersonales.email,
+          },
+          infoBootcamp: {
+            fechaFalta: data.alumno.infoBootcamp.fechaFalta,
+            proyectoFinal: {
+              titulo: data.alumno.infoBootcamp.proyectoFinal.titulo,
+              detalles: data.alumno.infoBootcamp.proyectoFinal.detalles,
+              comentariosProf: data.alumno.infoBootcamp.proyectoFinal.comentariosProf,
+            },
+          },
+          infoReleevant: {
+            origen: data.alumno.infoReleevant.origen,
+            pc: data.alumno.infoReleevant.pc,
+            matricula: data.alumno.infoReleevant.matricula,
+            tipoDePago: data.alumno.infoReleevant.tipoDePago,
+            detallesPago: data.alumno.infoReleevant.detallesPago,
           },
         },
-        infoReleevant: {
-          origen: data.alumno.infoReleevant.origen,
-          pc: data.alumno.infoReleevant.pc,
-          matricula: data.alumno.infoReleevant.matricula,
-          tipoDePago: data.alumno.infoReleevant.tipoDePago,
-          detallesPago: data.alumno.infoReleevant.detallesPago,
-        },
-      }}),
+        LinkedIn: data.LinkedIn,
+        empresa: data.empresa,
+        comienzo: data.comienzo,
+      }),
     };
     let response = await fetch(
-      `http://localhost:8080/updateone/${_id}`,
+      `http://localhost:8080/update/alumni/${_id}`,
       requestOptions
     );
     let json = await response.json();
     setData(json);
-    navigate(`/detalles/${_id}`);
+    navigate(`/detalles/alumni/${_id}`);
   }
 
   function handleForm(e) {
     const newData = { ...data };
+    newData[e.target.id] = e.target.value;
+    setData(newData);
+    console.log(newData);
+  }
+
+  function handleCurso(e){
+    const newData = { ...data };
     newData.alumno[e.target.id] = e.target.value;
-    console.log(e.target);
-    console.log(e.target.value);
     setData(newData);
     console.log(newData);
   }
@@ -90,8 +103,6 @@ function Update() {
   function handleDatosPersonales(e) {
     const newData = { ...data };
     newData.alumno.datosPersonales[e.target.id] = e.target.value;
-    console.log(e.target);
-    console.log(e.target.value);
     setData(newData);
     console.log(newData);
   }
@@ -99,8 +110,6 @@ function Update() {
   function handleInfoBootcamp(e) {
     const newData = { ...data };
     newData.alumno.infoBootcamp[e.target.id] = e.target.value;
-    console.log(e.target);
-    console.log(e.target.value);
     setData(newData);
     console.log(newData);
   }
@@ -108,8 +117,6 @@ function Update() {
   function handleProyectoFinal(e) {
     const newData = { ...data };
     newData.alumno.infoBootcamp.proyectoFinal[e.target.id] = e.target.value;
-    console.log(e.target);
-    console.log(e.target.value);
     setData(newData);
     console.log(newData);
   }
@@ -117,8 +124,6 @@ function Update() {
   function handleInfoReleevant(e) {
     const newData = { ...data };
     newData.alumno.infoReleevant[e.target.id] = e.target.value;
-    console.log(e.target);
-    console.log(e.target.value);
     setData(newData);
     console.log(newData);
   }
@@ -128,7 +133,7 @@ function Update() {
       <h3 className="text-center my-5">Detalles personales </h3>
       <form onSubmit={(e) => submit(e)}>
         <input
-          onChange={(e) => handleForm(e)}
+          onChange={(e) => handleCurso(e)}
           id="curso"
           value={data.alumno.curso}
           className="form-control form-control-sm w-50 m-auto my-3"
@@ -136,7 +141,6 @@ function Update() {
           placeholder="Curso"
           required
         />
-       
         <input
           onChange={(e) => handleDatosPersonales(e)}
           id="foto"
@@ -207,6 +211,7 @@ function Update() {
           cols="5"
         ></textarea>
           </div>
+        
         <input
           onChange={(e) => handleProyectoFinal(e)}
           id="titulo"
@@ -293,6 +298,33 @@ function Update() {
           rows="3"
           cols="5"
         ></textarea>
+        <input
+          onChange={(e) => handleForm(e)}
+          id="LinkedIn"
+          value={data.LinkedIn}
+          className="form-control form-control-sm w-50 m-auto my-3"
+          type="text"
+          placeholder="LinkedIn"
+        />
+        <input
+          onChange={(e) => handleForm(e)}
+          id="empresa"
+          value={data.empresa}
+          className="form-control form-control-sm w-50 m-auto my-3"
+          type="text"
+          placeholder="Empresa"
+        />
+        <div className="w-50 m-auto">
+          <h6>Fechas de comienzo</h6>
+          <input
+            onChange={(e) => handleForm(e)}
+            id="comienzo"
+            value={data.comienzo}
+            className="form-control form-control-sm w-100 m-auto my-3"
+            type="date"
+            required
+          ></input>
+        </div>
         <div className="d-grid gap-2 col-2 mx-auto">
           <button className="btn btn-primary mb-5 mt-3" type="submit">
             Enviar
@@ -302,4 +334,4 @@ function Update() {
     </div>
   );
 }
-export default Update;
+export default UpdateAlumni;

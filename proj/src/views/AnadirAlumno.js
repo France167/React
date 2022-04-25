@@ -1,10 +1,10 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Update() {
+function AnadirAlumno() {
   const [data, setData] = useState({
-    alumno:{
+    alumno: {
     curso: "",
     datosPersonales: {
       nombre: "",
@@ -30,16 +30,12 @@ function Update() {
       detallesPago: "",
     },
   }});
-
   let navigate = useNavigate();
-  const { _id } = useParams();
-  console.log(_id);
 
-  useEffect(function () {});
   async function submit(e) {
     e.preventDefault();
     const requestOptions = {
-      method: "PUT",
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         alumno:{
@@ -69,13 +65,10 @@ function Update() {
         },
       }}),
     };
-    let response = await fetch(
-      `http://localhost:8080/updateone/${_id}`,
-      requestOptions
-    );
+    let response = await fetch("http://localhost:8080/new", requestOptions);
     let json = await response.json();
     setData(json);
-    navigate(`/detalles/${_id}`);
+    navigate("/");
   }
 
   function handleForm(e) {
@@ -136,7 +129,6 @@ function Update() {
           placeholder="Curso"
           required
         />
-       
         <input
           onChange={(e) => handleDatosPersonales(e)}
           id="foto"
@@ -156,12 +148,12 @@ function Update() {
           required
         />
         <div className="w-50 m-auto">
-          <h6>Fechas de nacimiento</h6>
+          <h6>Fecha de nacimiento</h6>
           <input
             onChange={(e) => handleDatosPersonales(e)}
             id="fechaNacimiento"
             value={data.alumno.datosPersonales.fechaNacimiento}
-            className="form-control form-control-sm w-100 m-auto my-3"
+            className="form-control form-control-sm w-100 my-3"
             type="date"
             required
           ></input>
@@ -207,6 +199,7 @@ function Update() {
           cols="5"
         ></textarea>
           </div>
+        
         <input
           onChange={(e) => handleProyectoFinal(e)}
           id="titulo"
@@ -302,4 +295,5 @@ function Update() {
     </div>
   );
 }
-export default Update;
+
+export default AnadirAlumno;

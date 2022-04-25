@@ -3,21 +3,22 @@ import "../App.css";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function Detalles() {
-  const [alumno, setAlumno] = useState(null);
+function DetallesAlumni() {
+  const [alumni, setAlumni] = useState(null);
   const { _id } = useParams();
+  console.log(_id)
 
   let navigate = useNavigate();
 
   useEffect(
     function () {
       async function fetchApi() {
-        let response = await fetch(`http://localhost:8080/buscar/${_id}`, {
+        let response = await fetch(`http://localhost:8080/buscare/alumni/${_id}`, {
           mode: "cors",
         });
         let json = await response.json();
         console.log(json);
-        setAlumno(json);
+        setAlumni(json);
       }
       fetchApi();
     },
@@ -25,16 +26,16 @@ function Detalles() {
   );
 
   async function handleDelete(_id) {
-    let response = await fetch(`http://localhost:8080/delete/alumno/${_id}`, {
+    let response = await fetch(`http://localhost:8080/delete/alumni/${_id}`, {
       mode: "cors",
       method: "DELETE",
     });
     let json = response.json();
-    setAlumno(json);
-    navigate("/");
+    setAlumni(json);
+    navigate("/alumni");
   }
 
-  if (!alumno) {
+  if (!alumni) {
     return (
       <div className="text-center my-5">
         <div
@@ -52,29 +53,29 @@ function Detalles() {
       <div className="row">
         <div className="col">
           <img
-            src={alumno[0].alumno.datosPersonales.foto}
+            src={alumni[0].alumno.datosPersonales.foto}
             className="mx-5 my-5"
             alt="foto de alumno"
             width={"70%"}
           />
           <div className="">
             <Link
-              to={`/update/${_id}`}
+              to={`/update/alumni/${_id}`}
               className="btn btn-secondary w-100 my-3"
             >
-              Update Alumno
+              Update Alumni
             </Link>
             <button
               onClick={() => handleDelete(_id)}
               className="btn btn-warning w-100 mb-5"
             >
-              Delete Alumno
+              Delete Alumni
             </button>
           </div>
         </div>
         <div className="col float-end mx-5 my-5">
           <h3 className="my-4">
-            <b>{alumno[0].alumno.datosPersonales.nombre}</b>
+            <b>{alumni[0].alumno.datosPersonales.nombre}</b>
           </h3>
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
@@ -98,22 +99,31 @@ function Detalles() {
               >
                 <div className="accordion-body">
                   <p>
-                    <b>Curso</b>: {alumno[0].alumno.curso}
+                    <b>Curso</b>: {alumni[0].alumno.curso}
                   </p>
                   <p>
                     <b>Fecha de nacimiento</b>:{" "}
                     {
-                      alumno[0].alumno.datosPersonales.fechaNacimiento
+                      alumni[0].alumno.datosPersonales.fechaNacimiento
                     }
                   </p>
                   <p>
-                    <b>Residencia</b>: {alumno[0].alumno.datosPersonales.residencia}
+                    <b>Residencia</b>: {alumni[0].alumno.datosPersonales.residencia}
                   </p>
                   <p>
-                    <b>Telefono</b>: {alumno[0].alumno.datosPersonales.telefono}
+                    <b>Telefono</b>: {alumni[0].alumno.datosPersonales.telefono}
                   </p>
                   <p>
-                    <b>Email</b>: {alumno[0].alumno.datosPersonales.email}
+                    <b>Email</b>: {alumni[0].alumno.datosPersonales.email}
+                  </p>
+                  <p>
+                    <b>LinkedIn</b>: <a href={alumni[0].LinkedIn}>{alumni[0].LinkedIn}</a>
+                  </p>
+                  <p>
+                    <b>Empresa</b>: {alumni[0].empresa}
+                  </p>
+                  <p>
+                    <b>Comienzo</b>: {alumni[0].comienzo}
                   </p>
                 </div>
               </div>
@@ -139,24 +149,24 @@ function Detalles() {
               >
                 <div className="accordion-body">
                   <p>
-                    <b>Fecha de falta</b>: <br />
+                    <b>Detalles sobre las faltas</b>: <br />
                     {
-                      alumno[0].alumno.infoBootcamp.fechaFalta
+                      alumni[0].alumno.infoBootcamp.fechaFalta
                     }{" "}
-                   
+                    <br />
                   </p>
                   <p>
                     {" "}
                     <b>Proyecto Final</b>:{" "}
-                    {alumno[0].alumno.infoBootcamp.proyectoFinal.titulo}{" "}
+                    {alumni[0].alumno.infoBootcamp.proyectoFinal.titulo}{" "}
                   </p>
                   <p>
                     <b>Detalles</b>:{" "}
-                    {alumno[0].alumno.infoBootcamp.proyectoFinal.detalles}{" "}
+                    {alumni[0].alumno.infoBootcamp.proyectoFinal.detalles}{" "}
                   </p>
                   <p>
                     <b>Comentarios Profesorado</b>:{" "}
-                    {alumno[0].alumno.infoBootcamp.proyectoFinal.comentariosProf}{" "}
+                    {alumni[0].alumno.infoBootcamp.proyectoFinal.comentariosProf}{" "}
                   </p>
                 </div>
               </div>
@@ -183,34 +193,28 @@ function Detalles() {
                 <div className="accordion-body">
                   <p>
                     {" "}
-                    <b>Origen</b>: {alumno[0].alumno.infoReleevant.origen}{" "}
+                    <b>Origen</b>: {alumni[0].alumno.infoReleevant.origen}{" "}
                   </p>
                   <p>
                     {" "}
-                    <b>Pc</b>: {alumno[0].alumno.infoReleevant.pc}{" "}
+                    <b>Pc</b>: {alumni[0].alumno.infoReleevant.pc}{" "}
                   </p>
                   <p>
                     <b>Matricula</b>:{" "}
-                    <a href={alumno[0].alumno.infoReleevant.matricula}>Click Here!</a>
+                    <a href={alumni[0].alumno.infoReleevant.matricula}>Click Here!</a>
                   </p>
                   <p>
                     {" "}
-                    <b>Tipo de pago</b>: {alumno[0].alumno.infoReleevant.tipoDePago}{" "}
+                    <b>Tipo de pago</b>: {alumni[0].alumno.infoReleevant.tipoDePago}{" "}
                   </p>
                   <p>
                     {" "}
                     <b>Detalles sobre el pago</b>:{" "}
-                    {alumno[0].alumno.infoReleevant.detallesPago}{" "}
+                    {alumni[0].alumno.infoReleevant.detallesPago}{" "}
                   </p>
                 </div>
               </div>
             </div>
-            <Link
-              to={`/send/${_id}`}
-              className="btn btn-dark w-100 mt-5"
-            >
-              Send to Alumni
-            </Link>
           </div>
         </div>
       </div>
@@ -218,4 +222,4 @@ function Detalles() {
   );
 }
 
-export default Detalles;
+export default DetallesAlumni;

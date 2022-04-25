@@ -87,10 +87,11 @@ function Landing() {
         <a href="https://www.releevant.com" target="_blank" rel="noreferrer">
           <img src="../../LogoDef.png" alt="logo releevant" width={"25%"} />
         </a>
-        <h1>
-          Bootcamp de <br />
+        <h1>¡Tu trabajo te está  esperando!</h1>
+        <h2>
+          Bootcamp de
           Desarrollo Web
-        </h1>
+        </h2>
         <h5 className="heading5">Cambia tu futuro en 5 meses</h5>
         <div className="head">
           <button onClick={toggle} className="button">
@@ -115,7 +116,7 @@ function Landing() {
         <form onSubmit={handleSubmit}>
           <div className="user-box">
             <input
-              autocomplete="off"
+              autoComplete="off"
               onChange={handleChange}
               type="text"
               name="nombre"
@@ -127,7 +128,7 @@ function Landing() {
           </div>
           <div className="user-box">
             <input
-              autocomplete="off"
+              autoComplete="off"
               onChange={handleChange}
               type="text"
               name="apellido"
@@ -139,7 +140,7 @@ function Landing() {
           </div>
           <div className="user-box">
             <input
-              autocomplete="off"
+              autoComplete="off"
               onChange={handleChange}
               type="text"
               name="email"
@@ -151,7 +152,7 @@ function Landing() {
           </div>
           <div className="user-box">
             <input
-              autocomplete="off"
+              autoComplete="off"
               onChange={handleChange}
               type="phone"
               name="telefono"
