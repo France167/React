@@ -1,30 +1,34 @@
-/* CSS Bootcamps*/
-
-
-
-body
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #1d061a
+html {
+  scroll-behavior: smooth;
 }
 
-.container
+/* NAVBAR */
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100; 
+}
+
+.navbar.scrolled {
+  background: rgb(218, 212, 212); 
+  transition: background 500ms
+}
+
+/* CSS Bootcamps*/
+.container-bootcamp
 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 40px 0;
+  background-color: #1d061a;
 }
 
-.container .box
+.container-bootcamp .box
 {
   position: relative;
   width: 320px;
-  height: 400px;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +36,7 @@ body
   transition: 0.5s;
 }
 
-.container .box::before
+.container-bootcamp .box::before
 {
   content:' ';
   position: absolute;
@@ -47,7 +51,7 @@ body
   transition: 0.5s;
 }
 
-.container .box::after
+.container-bootcamp .box::after
 {
   content:'';
   position: absolute;
@@ -62,8 +66,8 @@ body
   filter: blur(30px);
 }
 
-.container .box:hover:before,
-.container .box:hover:after
+.container-bootcamp .box:hover:before,
+.container-bootcamp .box:hover:after
 {
   transform: skewX(0deg);
   left: 20px;
@@ -71,25 +75,24 @@ body
   
 }
 
-.container .box:nth-child(1):before,
-.container .box:nth-child(1):after
+.container-bootcamp .box:nth-child(1):before,
+.container-bootcamp .box:nth-child(1):after
 {
   background: linear-gradient(315deg, #ffbc00, #ff0058)
 }
 
-.container .box:nth-child(2):before,
-.container .box:nth-child(2):after
+.container-bootcamp .box:nth-child(2):before,
+.container-bootcamp .box:nth-child(2):after
 {
   background: linear-gradient(315deg, #03a9f4, #ff0058)
 }
 
-.container .box:nth-child(3):before,
-.container .box:nth-child(3):after
+.container-bootcamp .box:nth-child(3):before,
+.container-bootcamp .box:nth-child(3):after
 {
   background: linear-gradient(315deg, #4dff03, #00d0ff)
 }
-
-.container .box span
+.container-bootcamp .box span
 {
   display: block;
   position: absolute;
@@ -101,7 +104,7 @@ body
   pointer-events: none;
 }
 
-.container .box span::before
+.container-bootcamp .box span::before
 {
   content:'';
   position: absolute;
@@ -118,7 +121,7 @@ body
   box-shadow: 0 5px 15px rgba(0,0,0,0.08)
 }
 
-.container .box:hover span::before
+.container-bootcamp .box:hover span::before
 {
   top: -50px;
   left: 50px;
@@ -127,7 +130,7 @@ body
   opacity: 1;
 }
 
-.container .box span::after
+.container-bootcamp .box span::after
 {
   content:'';
   position: absolute;
@@ -145,7 +148,7 @@ body
   animation-delay: -1s;
 }
 
-.container .box:hover span:after
+.container-bootcamp .box:hover span:after
 {
   bottom: -50px;
   right: 50px;
@@ -167,7 +170,7 @@ body
   }
 }
 
-.container .box .content
+.container-bootcamp .box .content
 {
   position: relative;
   left: 0;
@@ -181,7 +184,7 @@ body
   color: #fff;
 }
 
-.container .box:hover .content
+.container-bootcamp .box:hover .content
 {
   left: -25px;
   padding: 60px 40px;
@@ -194,14 +197,14 @@ body
   margin-bottom: 10px;
 }
 
-.container .box .content p
+.container-bootcamp .box .content p
 {
   font-size: 1.1em;
   margin-bottom: 10px;
   line-height: 1.4em;
 }
 
-.container .box .content a
+.container-bootcamp .box .content a
 {
   display: inline-block;
   font-size: 1.1em;
@@ -214,7 +217,7 @@ body
   margin-top: 5px;
 }
 
-.container .box .content a:hover
+.container-bootcamp .box .content a:hover
 {
   background: #ffcf4d;
   border: 1px solid rgba(255, 0, 88, 0.4);
@@ -222,7 +225,7 @@ body
 }
 
 
-
+ 
 
 
 /**************************/
@@ -232,25 +235,30 @@ body
 }
 
 .title{
-  margin-top: 8%;
+  margin-top: 18%;
   color: white;
   font-size: 5rem;
 }
 
 .p-title{
+  margin: 8rem;
   margin-top: 3%;
   color: white;
   font-size: 2rem;
 }
 
 .title-h2{
-  margin-top: 15%;
+  margin-top: 20%;
   margin-bottom: 5%;
   color: #d85081;
+  font-size: 2.5rem;
 }
 
+
 .h2-curso{
-  color: #d85081
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .h5-curso{
@@ -258,7 +266,8 @@ body
 }
 
 .p-formacion{
-  color:gray
+  color:gray;
+  margin: 3vh 10vh
 }
 
 .h3{
@@ -268,7 +277,15 @@ body
 .formacion{
   display: flex;
   justify-content: space-evenly;
-  margin: 5vh;
+  width: 70%;
+  margin: 10vh auto;
+}
+
+.h2-carousel{
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .card{
@@ -424,3 +441,4 @@ body
   bottom:0;
   width:100%; 
 }
+

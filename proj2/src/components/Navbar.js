@@ -4,7 +4,7 @@ import "../App.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light mb-10">
+    <nav id="mainNavbar" className="navbar navbar-expand-md navbar-dark fixed-top">
       <div className="container w-50">
         <NavLink to="/">
           {" "}
@@ -17,10 +17,8 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
+          data-toggle="collapse"
+          data-target="#navLinks"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
@@ -28,7 +26,7 @@ function Navbar() {
       </div>
       <div
         className="collapse navbar-collapse d-flex justify-content-end collapse navbar-collapse"
-        id="navbarText"
+        id="navLinks" 
       >
         <ul className="navbar-nav">
           <li className="nav-item">
