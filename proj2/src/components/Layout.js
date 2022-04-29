@@ -9,7 +9,7 @@ function Layout() {
     <div>
       {!auth && <Navbar />}
       {auth && (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light mb-10">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <NavLink to="/">
               {" "}

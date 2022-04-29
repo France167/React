@@ -1,5 +1,6 @@
 import React from "react";
 import Powerslap from "../../components/video/video.mp4";
+import FooterRel from "../../components/FooterRel";
 
 function Inicio() {
   return (
@@ -13,7 +14,7 @@ function Inicio() {
           position: "absolute",
           width: "100%",
           left: "50%",
-          top: "400px",
+          top: "350px",
           minHeight: "100%",
           objectFit: "cover",
           transform: "translate(-50%, -50%",
@@ -28,13 +29,13 @@ function Inicio() {
         oportunidad. Te ayudamos a introducirte en el mundo de la programación.
         Te preparamos para comenzar a trabajar en el sector tecnológico.
       </p>
-      <h2 className="title-h2 text-center">
+      <h2 className="title-h2 text-center module">
         SOMOS PROGRAMADORES, TE ENSEÑAMOS A PROGRAMAR.
       </h2>
       <div className="formacion">
         <div>
-          <h3 className="text-center">Profesionales</h3>
-          <p className="p-formacion">
+          <h3 className="h3 text-center module">Profesionales</h3>
+          <p className="p-formacion module">
             Nuestro equipo no son docentes al uso, son programadores en activo
             del sector, que acumulan muchos años de experiencia y compaginan su
             trabajo con la docencia. Sólo de esta forma tendrás asegurada la
@@ -43,8 +44,8 @@ function Inicio() {
           </p>
         </div>
         <div>
-          <h3 className="h3 text-center">Tú eres único</h3>
-          <p className="p-formacion">
+          <h3 className="h3 text-center module">Tú eres único</h3>
+          <p className="p-formacion module">
             Sabemos que cada persona tiene un nivel de conocimientos o una
             destreza particular. Si vienes desde cero, o tienes ya una
             experiencia en el sector de la programación, nuestra metodología nos
@@ -55,8 +56,8 @@ function Inicio() {
       </div>
       <div className="formacion">
         <div>
-          <h3 className="text-center">Presencialidad</h3>
-          <p className="p-formacion">
+          <h3 className="h3 text-center module">Presencialidad</h3>
+          <p className="p-formacion module">
             Creemos en la presencialidad. El streaming fue imprescindible en lo
             más duro de la pandemia, pero la vuelta a la normalidad ya está
             aquí. El contacto real con los profesores es la mejor forma de
@@ -65,8 +66,8 @@ function Inicio() {
           </p>
         </div>
         <div>
-          <h3 className="text-center">Empleabilidad</h3>
-          <p className="p-formacion">
+          <h3 className="h3 text-center module">Empleabilidad</h3>
+          <p className="p-formacion module">
             Terminarás tu formación con unos conocimientos sólidos y
             actualizados, y estarás en disposición de empezar a trabajar como
             desarrollador junior. Te acompañamos en tu camino, no sólo
@@ -77,15 +78,15 @@ function Inicio() {
           </p>
         </div>
       </div>
-      <h2 className="h2-curso text-center">LOS BOOTCAMPS RELEEVANT</h2>
-      <h5 className="h5-curso text-center mb-5">
+      <h2 className="h2-curso text-center module">LOS BOOTCAMPS RELEEVANT</h2>
+      <h5 className="h5-curso text-center mb-5 module">
         Las últimas tecnologías te acompañan
       </h5>
-      <div className="container-bootcamp">
+      <div className="container-bootcamp module">
         <div className="box">
           <span></span>
           <div className="content">
-            <h2 className="">DESARROLLO WEB</h2>
+            <h2 className="h2-title-curso">DESARROLLO WEB</h2>
             <p>
               Con este Bootcamp serás capaz de aprender y desarrollar tus
               habilidades como programador web desde cero hasta poder tener la
@@ -102,8 +103,8 @@ function Inicio() {
         </div>
         <div className="box">
           <span></span>
-          <div class="content">
-            <h2>JAVA Y ANGLULAR</h2>
+          <div className="content">
+            <h2 className="h2-title-curso">JAVA Y ANGLULAR</h2>
             <p>
               En este Bootcamp de Java y Angular te enseñaremos el stack J.A.M
               (Java, Angular y MongoDB), perfil es muy demandado por las
@@ -117,10 +118,10 @@ function Inicio() {
             <a href="#">En desarrollo</a>
           </div>
         </div>
-        <div class="box">
+        <div className="box">
           <span></span>
-          <div class="content">
-            <h2>INTELIGENCIA ARTIFICIAL</h2>
+          <div className="content">
+            <h2 className="h2-title-curso">INTELIGENCIA ARTIFICIAL</h2>
             <p>
               Nuestro Bootcamp de Inteligencia Artificial te ofrece una visión
               inicial -pero detallada- sobre el uso de la IA en la gestión de
@@ -136,76 +137,205 @@ function Inicio() {
           </div>
         </div>
       </div>
-      <h2 className="h2-carousel text-center">EL ESPACIO RELEEVANT</h2>
-      <h5 className="h5-curso text-center mb-5">
-      Las mejores instalaciones para nuestros alumnos y nuestra comunidad
+      <h2 className="h2-carousel text-center module">EL ESPACIO RELEEVANT</h2>
+      <h5 className="h5-curso text-center mb-5 module">
+        Las mejores instalaciones para nuestros alumnos y nuestra comunidad
       </h5>
       <div
-        id="carouselExampleInterval"
-        class="carousel slide"
+        id="carouselExampleIndicators"
+        className="carousel carousel-dark slide module"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="700">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/12/web3-2048x1181.jpg"
-              class="d-block w-50 m-auto"
+              className="d-block w-50 m-auto"
               alt="..."
-              width={"20%"}
             />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/12/IMG_20211129_194754-2048x1152.jpg"
-              class="d-block w-50 m-auto"
+              className="d-block w-50 m-auto"
               alt="..."
-              width={"20%"}
             />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_115930-2048x1152.jpg"
-              class="d-block w-50 m-auto"
+              className="d-block w-50 m-auto"
               alt="..."
-              width={"20%"}
             />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_120213-2048x1152.jpg"
-              class="d-block w-50 m-auto"
+              className="d-block w-50 m-auto"
               alt="..."
-              width={"20%"}
             />
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_115812-2048x1152.jpg"
-              class="d-block w-50 m-auto"
+              className="d-block w-50 m-auto"
               alt="..."
-              width={"20%"}
             />
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          className="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          className="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleInterval"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next"
-        > 
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
+      <h2 className="h2-compania text-center module">
+        COMPAÑÍAS QUE HAN CONFIADO EN NOSOTROS
+      </h2>
+      <h5 className="h5-curso text-center mb-5 module">
+        Tenemos la confianza de muchas compañías con las que han trabajado
+        nuestros equipos
+      </h5>
+      <div className="container mt-5 module">
+        <div className="row">
+          <div className="col d-flex justify-content-evenly">
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/tel-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/minis-ind-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/lot-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/com-madrid-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/Logo_Caja_Rural-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/bank-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+            <img
+              src="https://www.releevant.com/wp-content/uploads/2021/08/aepd-logo-300x279.png"
+              alt="companies"
+              width={"10%"}
+            />
+          </div>
+        </div>
+      </div>
+      <h2 className="h2-compania text-center module">
+        ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
+      </h2>
+      <h5 className="h5-curso text-center mb-5 module">
+        ¡Escríbenos y te llamamos!
+      </h5>
+
+      <form className="module">
+        <input
+          id="nombre"
+          className="form-control form-control-sm w-50 m-auto my-3"
+          type="text"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          id="nombre"
+          className="form-control form-control-sm w-50 m-auto my-3"
+          type="email"
+          placeholder="Correo Eletronico"
+          required
+        />
+        <input
+          id="nombre"
+          className="form-control form-control-sm w-50 m-auto my-3"
+          type="text"
+          placeholder="Numero de telefono"
+          required
+        />
+        <div className="w-50 m-auto">
+          <textarea
+            id="fechaFalta"
+            wrap="hard"
+            className="form-control w-100 m-auto  my-3"
+            placeholder="Quiero más información acerca de vuestros bootcamps."
+            rows="3"
+            cols="5"
+          ></textarea>
+        </div>
+        <div className="d-grid gap-2 col-2 mx-auto">
+          <button className="btn btn-secondary mb-5 mt-3" type="submit">
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+      <FooterRel />
     </div>
   );
 }
