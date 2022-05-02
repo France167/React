@@ -1,12 +1,15 @@
 import React from "react";
 import Powerslap from "../../components/video/video.mp4";
 import FooterRel from "../../components/FooterRel";
+import "../../style/css-inicio.css";
+import { Link } from "react-router-dom";
 
 function Inicio() {
   return (
     <div>
       <video
         className="videoInicio"
+        id="video-inicio"
         autoPlay
         loop
         muted
@@ -14,27 +17,28 @@ function Inicio() {
           position: "absolute",
           width: "100%",
           left: "50%",
-          top: "350px",
+          top: "50vh",
           minHeight: "100%",
           objectFit: "cover",
-          transform: "translate(-50%, -50%",
+          transform: "translate(-50%, -50%)",
           zIndex: -1,
         }}
       >
         <source src={Powerslap} type="video/mp4" />
       </video>
       <h1 className="title text-center">CAMBIA TU FUTURO</h1>
-      <p className="p-title text-center">
+      <p className="p-title-inicio text-center">
         ¿Quieres dar un cambio a tu carrera profesional? En Releevant tienes esa
         oportunidad. Te ayudamos a introducirte en el mundo de la programación.
         Te preparamos para comenzar a trabajar en el sector tecnológico.
       </p>
       <h2 className="title-h2 text-center module">
-        SOMOS PROGRAMADORES, TE ENSEÑAMOS A PROGRAMAR.
+        RELEEVANT CAMBIA EL MUNDO DE LA FORMACIÓN: SOMOS PROGRAMADORES, TE
+        ENSEÑAMOS A PROGRAMAR.
       </h2>
-      <div className="formacion">
-        <div>
-          <h3 className="h3 text-center module">Profesionales</h3>
+      <div className="formacion module">
+        <div className="formacion-divs module">
+          <h3 className="h3 text-center module mt-3">Profesionales</h3>
           <p className="p-formacion module">
             Nuestro equipo no son docentes al uso, son programadores en activo
             del sector, que acumulan muchos años de experiencia y compaginan su
@@ -43,8 +47,8 @@ function Inicio() {
             día.
           </p>
         </div>
-        <div>
-          <h3 className="h3 text-center module">Tú eres único</h3>
+        <div className="formacion-divs module">
+          <h3 className="h3 text-center module mt-3">Tú eres único</h3>
           <p className="p-formacion module">
             Sabemos que cada persona tiene un nivel de conocimientos o una
             destreza particular. Si vienes desde cero, o tienes ya una
@@ -54,9 +58,9 @@ function Inicio() {
           </p>
         </div>
       </div>
-      <div className="formacion">
-        <div>
-          <h3 className="h3 text-center module">Presencialidad</h3>
+      <div className="formacion module">
+        <div className="formacion-divs module">
+          <h3 className="h3 text-center module mt-3">Presencialidad</h3>
           <p className="p-formacion module">
             Creemos en la presencialidad. El streaming fue imprescindible en lo
             más duro de la pandemia, pero la vuelta a la normalidad ya está
@@ -65,8 +69,8 @@ function Inicio() {
             momento una persona a tu lado para resolver tus dudas.
           </p>
         </div>
-        <div>
-          <h3 className="h3 text-center module">Empleabilidad</h3>
+        <div className="formacion-divs module">
+          <h3 className="h3 text-center module mt-3">Empleabilidad</h3>
           <p className="p-formacion module">
             Terminarás tu formación con unos conocimientos sólidos y
             actualizados, y estarás en disposición de empezar a trabajar como
@@ -98,7 +102,7 @@ function Inicio() {
               SCRUM. También te asesoraremos y acompañaremos en tu primer
               trabajo como Programador Junior.
             </p>
-            <a href="#">Saber más</a>
+            <Link to="/curso-desarrollo">Saber más</Link>
           </div>
         </div>
         <div className="box">
@@ -115,7 +119,7 @@ function Inicio() {
               framework Spring, bases de datos relacionales y no relacionales,
               para acabar aprendiendo Angular y diseñando tu proyecto final.
             </p>
-            <a href="#">En desarrollo</a>
+            <Link to="/curso-desarrollo">En desarrollo</Link>
           </div>
         </div>
         <div className="box">
@@ -133,7 +137,7 @@ function Inicio() {
               Python, Tensorflow y muchos lenguajes más. ¿A qué esperas para
               unirte al futuro de la tecnología?
             </p>
-            <a href="#">En desarrollo</a>
+            <Link to="/curso-desarrollo">En desarrollo</Link>
           </div>
         </div>
       </div>
@@ -242,7 +246,7 @@ function Inicio() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <h2 className="h2-compania text-center module">
+      <h2 className="h2-compania-inicio text-center module">
         COMPAÑÍAS QUE HAN CONFIADO EN NOSOTROS
       </h2>
       <h5 className="h5-curso text-center mb-5 module">
@@ -290,51 +294,53 @@ function Inicio() {
           </div>
         </div>
       </div>
-      <h2 className="h2-compania text-center module">
+      <h2 className="h2-compania-inicio text-center module">
         ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
       </h2>
-      <h5 className="h5-curso text-center mb-5 module">
-        ¡Escríbenos y te llamamos!
-      </h5>
+      <div className="form-inicio mb-5">
+        <h5 className="h5-curso text-center my-5 module">
+          ¡Escríbenos y te llamamos!
+        </h5>
 
-      <form className="module">
-        <input
-          id="nombre"
-          className="form-control form-control-sm w-50 m-auto my-3"
-          type="text"
-          placeholder="Nombre Completo"
-          required
-        />
-        <input
-          id="nombre"
-          className="form-control form-control-sm w-50 m-auto my-3"
-          type="email"
-          placeholder="Correo Eletronico"
-          required
-        />
-        <input
-          id="nombre"
-          className="form-control form-control-sm w-50 m-auto my-3"
-          type="text"
-          placeholder="Numero de telefono"
-          required
-        />
-        <div className="w-50 m-auto">
-          <textarea
-            id="fechaFalta"
-            wrap="hard"
-            className="form-control w-100 m-auto  my-3"
-            placeholder="Quiero más información acerca de vuestros bootcamps."
-            rows="3"
-            cols="5"
-          ></textarea>
-        </div>
-        <div className="d-grid gap-2 col-2 mx-auto">
-          <button className="btn btn-secondary mb-5 mt-3" type="submit">
-            Enviar mensaje
-          </button>
-        </div>
-      </form>
+        <form className="module">
+          <input
+            id="nombre"
+            className="form-control form-control-sm w-50 m-auto my-3"
+            type="text"
+            placeholder="Nombre Completo"
+            required
+          />
+          <input
+            id="nombre"
+            className="form-control form-control-sm w-50 m-auto my-3"
+            type="email"
+            placeholder="Correo Eletronico"
+            required
+          />
+          <input
+            id="nombre"
+            className="form-control form-control-sm w-50 m-auto my-3"
+            type="text"
+            placeholder="Numero de telefono"
+            required
+          />
+          <div className="w-50 m-auto">
+            <textarea
+              id="fechaFalta"
+              wrap="hard"
+              className="form-control w-100 m-auto  my-3"
+              placeholder="Quiero más información acerca de vuestros bootcamps."
+              rows="3"
+              cols="5"
+            ></textarea>
+          </div>
+          <div className="d-grid gap-2 col-2 mx-auto">
+            <button className="btn btn-secondary mb-5 mt-3" type="submit">
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
+      </div>
       <FooterRel />
     </div>
   );

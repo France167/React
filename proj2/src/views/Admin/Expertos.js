@@ -2,23 +2,14 @@ import React, { useState, useEffect } from "react";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import "animate.css";
+import { useGlobalContext } from "../../contexts/GlobalContext";
 
 function Expertos() {
-  const [expertos, setExpertos] = useState([]);
+  const {expertos, setExpertos} = useGlobalContext();
   const [biografia, setBiografia] = useState("");
   const [nombreBio, setNombreBio] = useState("");
 
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch("http://localhost:8080/expertos", {
-        mode: "cors",
-      });
-      let json = await response.json();
-      setExpertos(json);
-    }
-
-    fetchApi();
-  }, []);
+  
 
   async function handleDelete(_id) {
     let response = await fetch(`http://localhost:8080/delete/experto/${_id}`, {
@@ -52,7 +43,7 @@ function Expertos() {
   return (
     <div className="container">
       <div className="row mb-5">
-        <h1 className="h1 my-5 text-center animate__animated animate__fadeInLeftBig">
+        <h1 className="h1-admin my-5 text-center animate__animated animate__fadeInLeftBig">
           Expertos Releevant
         </h1>
         <div className="container">

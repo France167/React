@@ -1,0 +1,70 @@
+.title-des{
+    margin-top: 18%;
+    color: white;
+    font-size: 7rem;
+    font-family: 'Prototype', sans-serif;
+  }
+
+.title-h2-des{
+    margin-top: 65vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #d85081;
+    font-family: 'Prototype', sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  .title-h2-plat{
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #d85081;
+    font-family: 'Prototype', sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  .accordion-title{
+    font-family: 'Prototype', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .p{
+    font-size: 1.2rem;
+    color: gray;
+  }
+
+  .p-des {
+    color: gray;
+    margin: 5vh 20vh;
+    font-size: larger;
+  }
+
+.proyecto {
+    width: 100%;
+    min-height: 400px;
+    background-image: url("https://img.freepik.com/vector-gratis/flujo-diseno-codigo-binario_53876-97406.jpg?t=st=1651265879~exp=1651266479~hmac=1ed12f42540a7b55dbb5425cf1d16e184f5f4bea45f90d93e9a91a36ff64431c&w=740");
+    object-fit: contain;
+  }
+
+  .title-proyecto{
+    color: white;
+    font-size: 4rem;
+    font-family: "Prototype", sans-serif;
+    position: relative;
+    top: 100px;
+  }
+  
+  .bottone-proyecto{
+    position: relative;
+    top: 12vh
+  }
+  
+  .h2-desarrollo {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: black;
+    font-family: "Prototype", sans-serif;
+    font-size: 2.5rem;
+  }
+  

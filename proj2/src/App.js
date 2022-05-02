@@ -29,6 +29,9 @@ import Cursos from "./views/Releevant/Cursos";
 import Desarrollo from "./views/Releevant/Desarrollo";
 import Startups from "./views/Releevant/Startups";
 import Releevant from "./views/Releevant/Releevant";
+import CorsoWeb from "./views/Releevant/CorsoWeb";
+import PoliticaCookies from "./views/Releevant/PoliticaCookies";
+import PoliticaPrivacy from "./views/Releevant/PoliticaPrivacy";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
         <Route path="desarrollo" element={<Desarrollo />} />
         <Route path="startups" element={<Startups />} />
         <Route path="releevant" element={<Releevant />} />
+        <Route path="curso-desarrollo" element={<CorsoWeb />} />
+        <Route path="politica-cookie" element={<PoliticaCookies />} />
+        <Route path="politica-privacy" element={<PoliticaPrivacy />} />
         <Route path="login" element={<Login />} />
         <Route element={<RequireAuth />}>
           <Route index element={<Alumnos />} />

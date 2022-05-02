@@ -1,7 +1,7 @@
 export default function Error() {
   return (
     <div>
-      <h1>Esta pagina no esiste</h1>
+      <h1 className="h1-admin">Esta pagina no esiste</h1>
     </div>
   );
 }

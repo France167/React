@@ -1,7 +1,7 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useAuthContext } from "../contexts/AuthContext";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+import FooterRel from "./FooterRel";
 
 function Layout() {
   const { auth, logout } = useAuthContext();
@@ -74,7 +74,7 @@ function Layout() {
       )}
       <main className="App">
         <Outlet />
-        {auth && <Footer />}
+        {auth && <FooterRel />}
       </main>
     </div>
   );

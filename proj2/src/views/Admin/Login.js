@@ -14,6 +14,7 @@ function Login() {
   const [user, setUser] = useState({
     email: "",
     password: "",
+    token: ""
   });
 
   function handleInputs(e) {
@@ -28,6 +29,7 @@ function Login() {
   }
 
   return (
+    <div className="foto-container">
     <div className="form-box">
       <h2 className="form-h2">Welcome to Releevant</h2>
       <form onSubmit={handleSubmit}>
@@ -58,6 +60,7 @@ function Login() {
           <button type="submit">Login</button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

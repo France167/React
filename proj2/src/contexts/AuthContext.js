@@ -1,4 +1,5 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext({
   auth: {},
@@ -14,17 +15,28 @@ export const useAuthContext = () => {
 export default function AuthContextProvider({ children }) {
   const [auth, setAuth] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
+  let navigate = useNavigate()
 
   function logout() {
     setAuth(null);
+    window.localStorage.removeItem('loggedIn')
     setErrorMessage("");
+    navigate("/inicio")
   }
+
+  useEffect(() => {
+    const loggedUserJSON = window.localStorage.getItem('loggedIn')
+    if(loggedUserJSON){
+      const user = JSON.parse(loggedUserJSON)
+      setAuth(user)
+    }
+  }, [])
 
   async function fetchApi(user) {
     let response = await fetch("http://localhost:8080/login", {
       mode: "cors",
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "authorization" : "ejemplo" },
       body: JSON.stringify({
         email: user.email,
         password: user.password,
@@ -32,6 +44,9 @@ export default function AuthContextProvider({ children }) {
     });
     let json = await response.json();
     console.log(json);
+    window.localStorage.setItem(
+      'loggedIn', JSON.stringify(json)
+    )
     setAuth(json);
   }
 

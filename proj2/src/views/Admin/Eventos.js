@@ -35,7 +35,7 @@ function Eventos() {
   return (
     <div className="container">
       <div className="row mb-5">
-        <h1 className="h1 my-5 text-center animate__animated animate__fadeInLeftBig">
+        <h1 className="h1-admin my-5 text-center animate__animated animate__fadeInLeftBig">
           Eventos Releevant
         </h1>
         <div className="container">

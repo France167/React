@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function FooterRel() {
   return (
@@ -65,44 +66,44 @@ function FooterRel() {
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/desarrollo/#foto-curso" className="link-foot text-reset">
                     Desarrolla con nosotros
-                  </a>
+                  </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/startups/#foto-startup" className="link-foot text-reset">
                     Ideas y Startups
-                  </a>
+                  </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/releevant/#foto-releevant" className="link-foot text-reset">
                     Releevant?
-                  </a>
+                  </HashLink>
                 </p>
               </div>
 
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Releevant</h6>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink smooth to="/curso-desarrollo/#faq" className="link-foot text-reset">
                     FAQs
-                  </a>
+                  </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/politica-cookie/#cookies" className="link-foot text-reset">
                     Política de Cookies
-                  </a>
+                  </HashLink>
                 </p>
                 <p>
                   <a href="#!" className="link-foot text-reset">
                     Política de Privacidad
                   </a>
                 </p>
-                <p>
+               {/*  <p>
                   <a href="#!" className="link-foot text-reset">
                     Help
                   </a>
-                </p>
+                </p> */}
               </div>
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

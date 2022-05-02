@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../App.css";
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
   return (
@@ -9,14 +10,14 @@ function Navbar() {
       className="navbar navbar-expand-md navbar-dark fixed-top"
     >
       <div className="container w-50">
-        <NavLink to="/">
+        <HashLink to="/inicio/#video-inicio">
           {" "}
           <img
             src="../../LogoDef.png"
             alt="logo Releevant"
             style={{ width: "40%" }}
           />
-        </NavLink>
+        </HashLink>
         <button
           className="navbar-toggler"
           type="button"

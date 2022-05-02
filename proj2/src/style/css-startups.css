@@ -1,0 +1,104 @@
+.foto-startups {
+    opacity: 0.95;
+  }
+
+  .title-startups {
+    margin-top: 18%;
+    color: white;
+    font-size: 7rem;
+    font-family: "Prototype", sans-serif;
+  }
+
+  .lanzamos{
+    color: #d85081;
+  }
+
+  .title-h2-startups {
+    margin-top: 28%;
+    margin-bottom: 2%;
+    color: #d85081;
+    font-family: "Prototype", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .p-rel-startups {
+    color: gray;
+    margin: 5vh 25vh;
+    font-size: 1.5rem;
+  }
+  
+
+  .formacion-startups{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0.5vh auto;
+  }
+  
+  .formacion-divs-startups{
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+  }
+  
+  .p-formacion-startups{
+    color:gray;
+    margin: 3vh 5vh;
+    font-size: 1.2rem;
+  }
+  
+  .h3-startups{
+    margin-bottom: 1.1vh;
+    margin-top: 20px;
+    font-family: 'Prototype', sans-serif;
+  }
+  
+  .startups-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4vh auto;
+    flex-wrap: wrap;
+    background-color: #616161;
+  }
+
+  .title-section{
+    font-family: 'Prototype', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 3vh 10vh
+  }
+
+  .section-one{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 30%
+  }
+
+  .p-section{
+      color: white;
+      font-size: 1.1rem;
+      font-family: 'Poppins', sans-serif;
+  }
+
+
+  .h2-startups{
+    color: #d85081;
+    font-family: 'Prototype', sans-serif;
+    font-size: 2.5rem;
+    margin: 10vh 5vh;
+  }
+
+  .h5-startups{
+    color: gray;
+  }
+
+  .form-startups{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  

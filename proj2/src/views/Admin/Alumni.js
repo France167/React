@@ -27,7 +27,7 @@ function Alumni() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="my-5 text-center animate__animated animate__fadeInLeftBig">
+              <h1 className="h1-admin my-5 text-center animate__animated animate__fadeInLeftBig">
                 Alumni Releevant
               </h1>
             </div>

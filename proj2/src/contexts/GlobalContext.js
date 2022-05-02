@@ -3,16 +3,16 @@ import { createContext, useContext, useState, useEffect } from "react";
 const globalContext = createContext({
   alumnos: [],
   setAlumnos: () => {},
-  promocion1: [],
-  setPromocion1: () => {},
-  promocion2: [],
-  setPromocion2: () => {},
   alumni: [],
   setAlumni: () => {},
   candidatos: [],
   setCandidatos: () => {},
   eventos: [],
   setEventos: () => {},
+  docentes: [],
+  setDocentes: () => {},
+  expertos: [],
+  setExpertos: () => {},
 });
 
 export const useGlobalContext = () => {
@@ -21,12 +21,12 @@ export const useGlobalContext = () => {
 
 export function GlobalContextProvider({ children }) {
   const [alumnos, setAlumnos] = useState([]);
-  const [promocion1, setPromocion1] = useState([]);
-  const [promocion2, setPromocion2] = useState([]);
   const [alumni, setAlumni] = useState([]);
   const [candidatos, setCandidatos] = useState([]);
   const [eventos, setEventos] = useState([]);
-  const [filtros, setFiltros] = useState([]);
+  const [docentes, setDocentes] = useState([]);
+  const [expertos, setExpertos] = useState([]);
+
 
   useEffect(function () {
     async function fetchApi() {
@@ -40,29 +40,7 @@ export function GlobalContextProvider({ children }) {
     fetchApi();
   }, []);
 
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch("http://localhost:8080/promocion1", {
-        mode: "cors",
-      });
-      let json = await response.json();
-      setPromocion1(json);
-    }
 
-    fetchApi();
-  }, []);
-
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch("http://localhost:8080/promocion2", {
-        mode: "cors",
-      });
-      let json = await response.json();
-      setPromocion2(json);
-    }
-
-    fetchApi();
-  }, []);
 
   useEffect(function () {
     async function fetchApi() {
@@ -100,19 +78,43 @@ export function GlobalContextProvider({ children }) {
     fetchApi();
   }, []);
 
+  useEffect(function () {
+    async function fetchApi() {
+      let response = await fetch("http://localhost:8080/docentes", {
+        mode: "cors",
+      });
+      let json = await response.json();
+      setDocentes(json);
+    }
+
+    fetchApi();
+  }, []);
+
+  useEffect(function () {
+    async function fetchApi() {
+      let response = await fetch("http://localhost:8080/expertos", {
+        mode: "cors",
+      });
+      let json = await response.json();
+      setExpertos(json);
+    }
+
+    fetchApi();
+  }, []);
+
   const value = {
     alumnos,
     setAlumnos,
-    promocion1,
-    setPromocion1,
-    promocion2,
-    setPromocion2,
     alumni,
     setAlumni,
     candidatos,
     setCandidatos,
     eventos,
     setEventos,
+    docentes,
+    setDocentes,
+    expertos,
+    setExpertos
   };
 
   return (

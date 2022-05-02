@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#mainNavbar {
+  font-size: 1.7rem;
+}
+
+#mainNavbar .nav-link:hover {
+  color: #d85081;
+}
+.navbar.scrolled {
+  background: #f8f9fa;
+  transition: background 500ms;
+}
+
+#mainNavbar .navLink {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+}
+
+#mainNavbar .navLink:hover {
+  color: #d85081;
+}
+
+#mainNavbar .navLink.scrolled {
+  color: #343a40;
+  transition: background 500ms;
+}
+
+/**********************/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/**************************/
+
+.foto-releevant {
+  opacity: 0.95;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: "Prototype", sans-serif;
+  font-size: 8rem;
+  color: #d85081;
+}
+
+.title-releevant {
+  margin-top: 18%;
+  color: white;
+  font-size: 7rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.p-title {
+  margin: 8rem;
+  margin-top: 3%;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.title-h2-releevant {
+  margin-top: 25%;
+  margin-bottom: 5%;
+  color: #d85081;
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+}
+
+.formacion-releevant{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0.5vh auto;
+}
+
+.formacion-divs-releevant{
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 5vh 2vh;
+}
+
+.p-formacion-rel{
+  color:gray;
+  margin: 3vh 5vh;
+}
+
+.h3-releevant{
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: 'Prototype', sans-serif;
+}
+
+.h5-releevant {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: "Prototype", sans-serif;
+  color: #2a60a9;
+}
+
+.h2-expertos {
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.h5-expertos {
+  color: gray;
+}
+
+.container-expertos {
+  position: relative;
+  width: 22rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3f4142a2;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  border-radius: 15px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.container-expertos:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 46%;
+  left: 35%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nombre-experto {
+  font-size: 1.5rem;
+}
+
+.colore-empresa{
+    color: #2a60a9;
+    font-family: 'Prototype', sans-serif;
+}
+
+.nombre-alumno{
+    font-family: 'Prototype', sans-serif;
+}
+
+.donde-estamos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5vh auto;
+    margin-bottom: 5vh;
+    position: relative;
+}

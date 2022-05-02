@@ -1,0 +1,23 @@
+.h2-cookies{
+    margin-top: 20vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-cookies{
+    margin-left: 30vh;
+    margin-right: 30vh;
+    color:gray;
+}
+
+.h2-cookies-dos{
+    margin-top: 1%;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+p a{
+    text-decoration: none;
+}
