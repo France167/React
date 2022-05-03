@@ -8,7 +8,7 @@ function Startups() {
     <div>
       <img
         className="foto-startups"
-        id="foto-startup"
+        id="startup"
         src={Image}
         alt="code"
         style={{
@@ -36,33 +36,33 @@ function Startups() {
       </p>
       <div className="formacion-startups module">
         <div className="formacion-divs-startups module">
-          <h3 className="h3-releevant text-center module mt-3">
+          <h3 className="h3-startups text-center mt-3">
             Confianza en tus ideas
           </h3>
-          <p className="p-formacion-startups module">
+          <p className="p-formacion-startups">
             Tenemos <b>con nosotros</b> inversores para propulsar startups
             originales y con ideas innovadoras. Queremos darte ese impulso para
             hacer real tu proyecto.
           </p>
         </div>
         <div className="formacion-divs-startups module">
-          <h3 className="h3-startups text-center module mt-3">
+          <h3 className="h3-startups text-center mt-3">
             Contacto con nuestros partners
           </h3>
-          <p className="p-formacion-startups module">
+          <p className="p-formacion-startups">
             Nuestra <b>red de partners</b> lanza tu startup al siguiente nivel.
             Aportan los recursos que necesitas, además de asesoramiento,
             mentorización y viabilidad a tu proyecto.
           </p>
         </div>
         <div className="formacion-divs-startups module">
-          <h3 className="h3-startups text-center module mt-3">
+          <h3 className="h3-startups text-center mt-3">
             Ayuda con el desarrollo
           </h3>
 
-          <p className="p-formacion-startups module">
+          <p className="p-formacion-startups">
             Si no tienes un equipo de desarrollo no te preocupes. Puedes tener
-            <b>nuestro equipo de profesionales</b> para hacer que tu idea sea
+            <b> nuestro equipo de profesionales</b> para hacer que tu idea sea
             una realidad.
           </p>
         </div>
@@ -105,12 +105,12 @@ function Startups() {
         SI TIENES UNA STARTUP CON POTENCIAL DE SUBIR AL SIGUIENTE NIVEL,
         HABLEMOS.
       </h2>
-      <div className="form-startups mb-5">
-        <h5 className="h5-startups text-center my-5 module">
+      <div className="form-startups mb-5 module">
+        <h5 className="h5-startups text-center my-5">
           ¡No lo dudes y contáctanos!
         </h5>
 
-        <form className="module">
+        <form className="">
           <input
             id="nombre"
             className="form-control form-control-sm w-50 m-auto my-3"
@@ -149,7 +149,7 @@ function Startups() {
           </div>
         </form>
       </div>
-      <FooterRel/>
+      <FooterRel />
     </div>
   );
 }

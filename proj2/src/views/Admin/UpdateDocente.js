@@ -25,7 +25,7 @@ function UpdateDocente() {
         bio: data.bio,
         posicion: data.email,
         LinkedIn: data.LinkedIn,
-        foto: splitFoto[2],
+        foto: "http://localhost:8080/photos/" + splitFoto[2],
       }),
     };
     let response = await fetch(

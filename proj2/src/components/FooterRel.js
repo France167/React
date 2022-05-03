@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 function FooterRel() {
   return (
@@ -16,27 +16,40 @@ function FooterRel() {
             <a
               href="https://www.facebook.com/releevant.tech"
               className="me-4 text-reset"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://www.releevant.com/" className="me-4 text-reset">
+            <a
+              href="https://www.releevant.com/"
+              target="_blank"
+              className="me-4 text-reset"
+              rel="noreferrer"
+            >
               <i className="fab fa-google"></i>
             </a>
             <a
               href="https://www.instagram.com/accounts/login/?next=/_releevant/"
               className="me-4 text-reset"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-instagram"></i>
             </a>
             <a
               href="https://www.linkedin.com/company/releevant/"
               className="me-4 text-reset"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-linkedin"></i>
             </a>
             <a
               href="https://www.meetup.com/es-ES/releevant/?_cookie-check=Xd_hTaHLTwr8rzUr"
               className="me-4 text-reset"
+              target="_blank"
+              rel="noreferrer"
             >
               <i className="fab fa-meetup"></i>
             </a>
@@ -66,17 +79,26 @@ function FooterRel() {
                   </a>
                 </p>
                 <p>
-                  <HashLink to="/desarrollo/#foto-curso" className="link-foot text-reset">
+                  <HashLink
+                    to="/desarrollo/#desarrollo"
+                    className="link-foot text-reset"
+                  >
                     Desarrolla con nosotros
                   </HashLink>
                 </p>
                 <p>
-                  <HashLink to="/startups/#foto-startup" className="link-foot text-reset">
+                  <HashLink
+                    to="/startups/#startup"
+                    className="link-foot text-reset"
+                  >
                     Ideas y Startups
                   </HashLink>
                 </p>
                 <p>
-                  <HashLink to="/releevant/#foto-releevant" className="link-foot text-reset">
+                  <HashLink
+                    to="/releevant/#releevant"
+                    className="link-foot text-reset"
+                  >
                     Releevant?
                   </HashLink>
                 </p>
@@ -85,12 +107,19 @@ function FooterRel() {
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Releevant</h6>
                 <p>
-                  <HashLink smooth to="/curso-desarrollo/#faq" className="link-foot text-reset">
+                  <HashLink
+                    smooth
+                    to="/curso-desarrollo/#faq"
+                    className="link-foot text-reset"
+                  >
                     FAQs
                   </HashLink>
                 </p>
                 <p>
-                  <HashLink to="/politica-cookie/#cookies" className="link-foot text-reset">
+                  <HashLink
+                    to="/politica-cookie/#cookies"
+                    className="link-foot text-reset"
+                  >
                     Política de Cookies
                   </HashLink>
                 </p>
@@ -99,7 +128,7 @@ function FooterRel() {
                     Política de Privacidad
                   </a>
                 </p>
-               {/*  <p>
+                {/*  <p>
                   <a href="#!" className="link-foot text-reset">
                     Help
                   </a>

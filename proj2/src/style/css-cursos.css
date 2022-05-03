@@ -245,12 +245,12 @@ html {
 .title-curso {
   margin-top: 18%;
   color: white;
-  font-size: 7rem;
+  font-size: 6rem;
   font-family: "Prototype", sans-serif;
 }
 
 .p-title-curso {
-  margin: 8rem;
+  margin: 7rem;
   margin-top: 3%;
   color: white;
   font-size: 2rem;
@@ -258,7 +258,7 @@ html {
 }
 
 .title-h2-curso {
-  margin-top: 20%;
+  margin-top: 14%;
   margin-bottom: 5%;
   color: #d85081;
   font-family: "Prototype", sans-serif;

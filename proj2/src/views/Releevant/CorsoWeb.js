@@ -5,7 +5,7 @@ import { useGlobalContext } from "../../contexts/GlobalContext";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import FooterRel from "../../components/FooterRel";
-import {HashLink} from "react-router-hash-link"
+import { HashLink } from "react-router-hash-link";
 
 function CorsoWeb() {
   const { docentes } = useGlobalContext();
@@ -314,10 +314,10 @@ function CorsoWeb() {
       </h2>
       <div className="formacion-bootcamp module">
         <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center module mt-3">
+          <h3 className="h3-bootcamp text-center mt-3">
             SI TE HAS GRADUADO RECIENTEMENTE
           </h3>
-          <p className="p-formacion-bootcamp module">
+          <p className="p-formacion-bootcamp">
             Si te acabas de graduar en FP o en la universidad, este{" "}
             <b>bootcamp de programación</b> orientado a desarrollo web te
             proporcionará las habilidades imprescindibles para poder iniciar tu
@@ -329,10 +329,10 @@ function CorsoWeb() {
           </p>
         </div>
         <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center module mt-3">
+          <h3 className="h3-bootcamp text-center mt-3">
             BUSCAS IMPULSAR TU CARRERA
           </h3>
-          <p className="p-formacion-bootcamp module">
+          <p className="p-formacion-bootcamp">
             Este <b>bootcamp de programación en Málaga</b> complementará los
             conocimientos que ya tienes adquiridos, podrás optar a perfiles o
             roles más técnicos, además tendrás una perspectiva más enfocada a
@@ -342,10 +342,10 @@ function CorsoWeb() {
       </div>
       <div className="formacion-bootcamp module">
         <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center module mt-3">
+          <h3 className="h3-bootcamp text-center mt-3">
             SI BUSCAS UN CAMBIO DE VIDA LABORAL
           </h3>
-          <p className="p-formacion-bootcamp module">
+          <p className="p-formacion-bootcamp">
             Este <b>bootcamp de programación para desarrollo web</b> es perfecto
             para alguien que está buscando entrar en el sector tecnológico. Te
             ayudará a conseguir los conocimientos necesarios para poder
@@ -353,10 +353,10 @@ function CorsoWeb() {
           </p>
         </div>
         <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center module mt-3">
+          <h3 className="h3-bootcamp text-center mt-3">
             … O CUALQUIER TIPO DE PERSONA
           </h3>
-          <p className="p-formacion-bootcamp module">
+          <p className="p-formacion-bootcamp">
             En realidad, para iniciarte en el mundo tecnológico y llegar a ser
             un{" "}
             <b>
@@ -374,10 +374,10 @@ function CorsoWeb() {
         </h2>
         <div className="formacion-bootcamp module">
           <div className="formacion-divs-sec module">
-            <h3 className="h3-sec text-center module mt-3">
+            <h3 className="h3-sec text-center mt-3">
               APRENDERÁS LAS TECNOLOGÍAS MÁS VALORADAS
             </h3>
-            <p className="p-formacion-sec module">
+            <p className="p-formacion-sec">
               Hemos diseñado un temario para que aprendas desde cero las
               tecnologías que más demandadas las empresas. Con tus conocimientos
               en HTML, CSS, Javascript, Node.js, MySQL, MongoDB, Git, GitHub,
@@ -390,10 +390,10 @@ function CorsoWeb() {
             </p>
           </div>
           <div className="formacion-divs-sec module">
-            <h3 className="h3-sec text-center module mt-3">
+            <h3 className="h3-sec text-center mt-3">
               DESARROLLARÁS TUS SOFT-SKILLS
             </h3>
-            <p className="p-formacion-sec module">
+            <p className="p-formacion-sec">
               La programación es importante, pero también las empresas valoran
               mucho las llamadas <i>soft-skills</i>. Por eso en Releevant,
               dentro de
@@ -406,10 +406,10 @@ function CorsoWeb() {
         </div>
         <div className="formacion-bootcamp module">
           <div className="formacion-divs-sec module">
-            <h3 className="h3-sec text-center module mt-3">
+            <h3 className="h3-sec text-center mt-3">
               LA MEJOR METODOLOGÍA PARA APRENDER
             </h3>
-            <p className="p-formacion-sec module">
+            <p className="p-formacion-sec">
               Desde nuestra experiencia, la mejor forma de aprender programación
               es… programando. Parece evidente, pero no suele ser como se hacen
               las cosas. En Releevant presentamos una experiencia muy práctica
@@ -419,17 +419,17 @@ function CorsoWeb() {
             </p>
           </div>
           <div className="formacion-divs-sec module">
-            <h3 className="h3-sec text-center module mt-3">
+            <h3 className="h3-sec text-center mt-3">
               PERTENECERÁS A LA FAMILIA RELEEVANT
             </h3>
-            <p className="p-formacion-sec module">
+            <p className="p-formacion-sec">
               Tenemos una gran comunidad de desarrolladores del sector dispuesta
               a acogerte con los brazos abiertos. Además del{" "}
               <b>bootcamp de programación en Málaga</b>, con nosotros también
-              tendrás accceso a los meetups, masterclassName y eventos. Releevant es
-              mucho más que un sitio para formarte. Te sentirás desde el primer
-              día dentro del sector tecnológico, y te integrarás en el entorno
-              con nosotros.
+              tendrás accceso a los meetups, masterclassName y eventos.
+              Releevant es mucho más que un sitio para formarte. Te sentirás
+              desde el primer día dentro del sector tecnológico, y te integrarás
+              en el entorno con nosotros.
             </p>
           </div>
         </div>
@@ -838,7 +838,11 @@ function CorsoWeb() {
                 del Bootcamp. Explícanos cuáles son las tuyas y te asesoraremos.
                 Además, trabajamos con entidades bancarias que te proporcionan
                 <b>préstamo de estudios</b> con unas condiciones y un periodo de
-                carencia muy atractivas. <HashLink to="/curso-desarrollo/#financiacion">Tienes más información en esta página</HashLink>.
+                carencia muy atractivas.{" "}
+                <HashLink to="/curso-desarrollo/#financiacion">
+                  Tienes más información en esta página
+                </HashLink>
+                .
               </p>
             </div>
           </div>
@@ -913,17 +917,16 @@ function CorsoWeb() {
             </div>
           </div>
         </div>
-        
       </div>
       <h2 className="h2-startups text-center module">
-      ¡EMPIEZA TU NUEVA VIDA COMO DESARROLLADOR WEB!
+        ¡EMPIEZA TU NUEVA VIDA COMO DESARROLLADOR WEB!
       </h2>
-      <div className="form-startups mb-5">
-        <h5 className="h5-startups text-center my-5 module">
+      <div className="form-startups mb-5 module">
+        <h5 className="h5-startups text-center my-5">
           ¡No lo dudes y contáctanos!
         </h5>
 
-        <form className="module">
+        <form className="">
           <input
             id="nombre"
             className="form-control form-control-sm w-50 m-auto my-3"

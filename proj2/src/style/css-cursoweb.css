@@ -5,12 +5,12 @@
   .title-cursoweb {
     margin-top: 18%;
     color: white;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: "Prototype", sans-serif;
   }
 
   .p-title-cursoweb {
-    margin: 8rem;
+    margin: 7rem;
     margin-top: 3%;
     color: white;
     font-size: 2rem;
@@ -98,7 +98,7 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    word-break: normal
+    word-break: break-all;
   }
   
   .nombre-docente {

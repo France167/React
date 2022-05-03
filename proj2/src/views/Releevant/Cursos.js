@@ -2,13 +2,14 @@ import React from "react";
 import Image from "../../components/images/programming3.jpg";
 import "../../style/css-cursos.css";
 import FooterRel from "../../components/FooterRel";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 function Cursos() {
   return (
     <div>
       <img
         className="foto-curso"
+        id="foto-curso"
         src={Image}
         alt="code"
         style={{
@@ -33,41 +34,45 @@ function Cursos() {
       <h2 className="title-h2-curso text-center module">
         BOOTCAMPS DE PROGRAMACIÓN EN RELEEVANT
       </h2>
-      <div class="container-cursos module">
-        <div class="box">
+      <div className="container-cursos module">
+        <div className="box">
           <span></span>
-          <div class="content">
+          <div className="content">
             <h2 className="h2-title-curso">DESARROLLO WEB</h2>
             <p>
               Bootcamp de 500 horas donde aprenderás a programar Javascript,
               Typescript y Node.js, MySQL, MongoDB, React.js, SCRUM... Te
               preparamos para trabajar.
             </p>
-            <HashLink to="/curso-desarrollo/foto-cursoweb">Saber más</HashLink>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">Saber más</HashLink>
           </div>
         </div>
-        <div class="box">
+        <div className="box">
           <span></span>
-          <div class="content">
+          <div className="content">
             <h2 className="h2-title-curso">JAVA Y ANGLULAR</h2>
             <p>
               En este bootcamp te enseñamos el stack J.A.M (Java, Angular y
               MongoDB), además del framework Spring, metodologías Agile y mucho
               más. La mayor demanda laboral IT.
             </p>
-            <HashLink to="/curso-desarrollo/#foto-cursoweb">En desarrollo</HashLink>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">
+              En desarrollo
+            </HashLink>
           </div>
         </div>
-        <div class="box">
+        <div className="box">
           <span></span>
-          <div class="content">
+          <div className="content">
             <h2 className="h2-title-curso">INTELIGENCIA ARTIFICIAL</h2>
             <p>
               Este bootcamp de Inteligencia Artificial le dará otro nivel a tu
               carrera profesional. Aprenderás Python, TensorFlow, Torch y mucho
               más. ¡Únete ahora al futuro de la tecnología!
             </p>
-            <HashLink to="/curso-desarrollo/#foto-cursoweb">En desarrollo</HashLink>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">
+              En desarrollo
+            </HashLink>
           </div>
         </div>
       </div>

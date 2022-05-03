@@ -3,6 +3,7 @@ import Powerslap from "../../components/video/video.mp4";
 import FooterRel from "../../components/FooterRel";
 import "../../style/css-inicio.css";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Inicio() {
   return (
@@ -38,8 +39,8 @@ function Inicio() {
       </h2>
       <div className="formacion module">
         <div className="formacion-divs module">
-          <h3 className="h3 text-center module mt-3">Profesionales</h3>
-          <p className="p-formacion module">
+          <h3 className="h3 text-center mt-3">Profesionales</h3>
+          <p className="p-formacion">
             Nuestro equipo no son docentes al uso, son programadores en activo
             del sector, que acumulan muchos años de experiencia y compaginan su
             trabajo con la docencia. Sólo de esta forma tendrás asegurada la
@@ -48,8 +49,8 @@ function Inicio() {
           </p>
         </div>
         <div className="formacion-divs module">
-          <h3 className="h3 text-center module mt-3">Tú eres único</h3>
-          <p className="p-formacion module">
+          <h3 className="h3 text-center mt-3">Tú eres único</h3>
+          <p className="p-formacion">
             Sabemos que cada persona tiene un nivel de conocimientos o una
             destreza particular. Si vienes desde cero, o tienes ya una
             experiencia en el sector de la programación, nuestra metodología nos
@@ -60,8 +61,8 @@ function Inicio() {
       </div>
       <div className="formacion module">
         <div className="formacion-divs module">
-          <h3 className="h3 text-center module mt-3">Presencialidad</h3>
-          <p className="p-formacion module">
+          <h3 className="h3 text-center mt-3">Presencialidad</h3>
+          <p className="p-formacion">
             Creemos en la presencialidad. El streaming fue imprescindible en lo
             más duro de la pandemia, pero la vuelta a la normalidad ya está
             aquí. El contacto real con los profesores es la mejor forma de
@@ -70,8 +71,8 @@ function Inicio() {
           </p>
         </div>
         <div className="formacion-divs module">
-          <h3 className="h3 text-center module mt-3">Empleabilidad</h3>
-          <p className="p-formacion module">
+          <h3 className="h3 text-center mt-3">Empleabilidad</h3>
+          <p className="p-formacion">
             Terminarás tu formación con unos conocimientos sólidos y
             actualizados, y estarás en disposición de empezar a trabajar como
             desarrollador junior. Te acompañamos en tu camino, no sólo
@@ -102,7 +103,7 @@ function Inicio() {
               SCRUM. También te asesoraremos y acompañaremos en tu primer
               trabajo como Programador Junior.
             </p>
-            <Link to="/curso-desarrollo">Saber más</Link>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">Saber más</HashLink>
           </div>
         </div>
         <div className="box">
@@ -119,7 +120,9 @@ function Inicio() {
               framework Spring, bases de datos relacionales y no relacionales,
               para acabar aprendiendo Angular y diseñando tu proyecto final.
             </p>
-            <Link to="/curso-desarrollo">En desarrollo</Link>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">
+              En desarrollo
+            </HashLink>
           </div>
         </div>
         <div className="box">
@@ -137,7 +140,9 @@ function Inicio() {
               Python, Tensorflow y muchos lenguajes más. ¿A qué esperas para
               unirte al futuro de la tecnología?
             </p>
-            <Link to="/curso-desarrollo">En desarrollo</Link>
+            <HashLink to="/curso-desarrollo/#foto-cursoweb">
+              En desarrollo
+            </HashLink>
           </div>
         </div>
       </div>
@@ -297,12 +302,12 @@ function Inicio() {
       <h2 className="h2-compania-inicio text-center module">
         ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
       </h2>
-      <div className="form-inicio mb-5">
-        <h5 className="h5-curso text-center my-5 module">
+      <div className="form-inicio mb-5 module">
+        <h5 className="h5-curso text-center my-5">
           ¡Escríbenos y te llamamos!
         </h5>
 
-        <form className="module">
+        <form className="">
           <input
             id="nombre"
             className="form-control form-control-sm w-50 m-auto my-3"

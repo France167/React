@@ -1,15 +1,15 @@
 import React from "react";
 import FooterRel from "../../components/FooterRel";
 import Image from "../../components/images/desarrollo.jpg";
-import "../../style/css-desarrollo.css"
-import {HashLink} from "react-router-hash-link"
+import "../../style/css-desarrollo.css";
+import { HashLink } from "react-router-hash-link";
 
 function Desarrollo() {
   return (
     <div>
       <img
         className="foto-curso"
-        id="foto-curso"
+        id="desarrollo"
         src={Image}
         alt="code"
         style={{
@@ -67,7 +67,11 @@ function Desarrollo() {
         encontrarás en cada una de las fases de tu proyecto.
       </p>
       <div className="d-grid gap-2 col-2 mx-auto">
-        <HashLink to="/startups/#foto-startup" className="btn btn-secondary mb-5 mt-3 module" type="submit">
+        <HashLink
+          to="/startups/#startup"
+          className="btn btn-secondary mb-5 mt-3 module"
+          type="submit"
+        >
           QUIERO TRABAJAR CON RELEEVANT
         </HashLink>
       </div>
@@ -101,13 +105,13 @@ function Desarrollo() {
         software. Aquí lo importante eres TÚ.
       </p>
       <div
-        class="accordion accordion-flush w-50 m-auto mb-5 module"
+        className="accordion accordion-flush w-50 m-auto mb-5 module"
         id="accordionFlushExample"
       >
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingOne">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
@@ -119,11 +123,11 @@ function Desarrollo() {
           </h2>
           <div
             id="flush-collapseOne"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <p className="p">
                 {" "}
                 <b>
@@ -133,24 +137,26 @@ function Desarrollo() {
                 </b>
               </p>
               <p className="p">
-              Para ello realizamos un <b>estudio profundo de la necesidad
-              tecnológica</b> que tiene el negocio y se especificarán las
-              <b>características operacionales</b> que tendrá el software a
-              desarrollar. Tenemos en cuenta las <b>diferentes áreas de trabajo</b>:
-              reconocimiento del problema, evaluación, modelado, especificación
-              y revisión. También construiremos la documentación por medio de
-              <b> entrevistas, talleres, observación</b>, indagación, revisión
-              documental y demás técnicas específicas recopilando la mayor
-              información posible. Una vez hecho esto, escribimos el <b>plan del
-              proyecto a seguir.</b>
+                Para ello realizamos un{" "}
+                <b>estudio profundo de la necesidad tecnológica</b> que tiene el
+                negocio y se especificarán las
+                <b>características operacionales</b> que tendrá el software a
+                desarrollar. Tenemos en cuenta las{" "}
+                <b>diferentes áreas de trabajo</b>: reconocimiento del problema,
+                evaluación, modelado, especificación y revisión. También
+                construiremos la documentación por medio de
+                <b> entrevistas, talleres, observación</b>, indagación, revisión
+                documental y demás técnicas específicas recopilando la mayor
+                información posible. Una vez hecho esto, escribimos el{" "}
+                <b>plan del proyecto a seguir.</b>
               </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingTwo">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
@@ -162,17 +168,17 @@ function Desarrollo() {
           </h2>
           <div
             id="flush-collapseTwo"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="flush-headingTwo"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <p className="p">
-              <b>La arquitectura de software</b> es de especial importancia ya que la
-                manera en que lo estructuremos tendrá un impacto directo sobre
-                la calidad: su capacidad, desempeño, la usabilidad,
-                escalabilidad y otras características que hacen un <b>software más
-                eficiente y rentable.</b>
+                <b>La arquitectura de software</b> es de especial importancia ya
+                que la manera en que lo estructuremos tendrá un impacto directo
+                sobre la calidad: su capacidad, desempeño, la usabilidad,
+                escalabilidad y otras características que hacen un{" "}
+                <b>software más eficiente y rentable.</b>
               </p>
               <p className="p">
                 Además de la calidad, la arquitectura de software es muy
@@ -185,17 +191,20 @@ function Desarrollo() {
               </p>
               <p className="p">
                 Así, la arquitectura que ha sido exitosa en un proyecto, puede
-                ser reutilizada para distintas aplicaciones, <b>lo que nos permite
-                reducir costes, aumentar la rentabilidad de tu negocio, y
-                asegurar la calidad</b>, ya demostrada en anteriores desarrollos.
+                ser reutilizada para distintas aplicaciones,{" "}
+                <b>
+                  lo que nos permite reducir costes, aumentar la rentabilidad de
+                  tu negocio, y asegurar la calidad
+                </b>
+                , ya demostrada en anteriores desarrollos.
               </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingThree">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
@@ -207,74 +216,79 @@ function Desarrollo() {
           </h2>
           <div
             id="flush-collapseThree"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="flush-headingThree"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <p className="p">
-                La adopción de un <b>proceso de desarrollo adecuado</b> es la base para
-                que podamos cumplir con los objetivos marcados: cumplir con los
-                presupuestos, predecir el tiempo de desarrollo y mantener, ante
-                todo, la calidad del software.
+                La adopción de un <b>proceso de desarrollo adecuado</b> es la
+                base para que podamos cumplir con los objetivos marcados:
+                cumplir con los presupuestos, predecir el tiempo de desarrollo y
+                mantener, ante todo, la calidad del software.
               </p>
               <p className="p">
-              <b>Construimos una guía de ejecución del desarrollo,</b> que define de
-                manera precisa el producto a desarrollar, las tareas y sus
-                tiempos. Así mismo, determina los roles para cada integrante del
-                equipo y sus actividades a lo largo del ciclo de programación.
+                <b>Construimos una guía de ejecución del desarrollo,</b> que
+                define de manera precisa el producto a desarrollar, las tareas y
+                sus tiempos. Así mismo, determina los roles para cada integrante
+                del equipo y sus actividades a lo largo del ciclo de
+                programación.
               </p>
               <p className="p">
                 Adoptamos para cada proyecto el rol de un Product Owner, que
                 maximiza y optimiza los resultados, vigila la naturaleza de la
-                aplicación para el cliente, <b>lidera las metodologías ágiles,</b> y
-                sirve de puente de comunicación continua entre nuestro equipo y
-                tu empresa u organización.
+                aplicación para el cliente,{" "}
+                <b>lidera las metodologías ágiles,</b> y sirve de puente de
+                comunicación continua entre nuestro equipo y tu empresa u
+                organización.
               </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFour">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingFour">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFour"
               aria-expanded="false"
               aria-controls="flush-collapseFour"
             >
-              <b className="accordion-title"> TESTING Y PRUEBAS DE RENDIMIENTO</b>
+              <b className="accordion-title">
+                {" "}
+                TESTING Y PRUEBAS DE RENDIMIENTO
+              </b>
             </button>
           </h2>
           <div
             id="flush-collapseFour"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="flush-headingFour"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <p className="p">
-                Uno de los aspectos críticos de un proyecto son las <b>pruebas de
-                rendimiento,</b> que controlan y <b>aseguran la fiabilidad y desempeño
-                del software.</b> Planificamos las fases de pruebas paralelas a las
-                de desarrollo, estimando los costes de las mismas y los test que
-                se realizarán. Estas pruebas verifican incidencias de
-                funcionalidad, las comunican al equipo de desarrollo, y validan
-                sus correcciones.
+                Uno de los aspectos críticos de un proyecto son las{" "}
+                <b>pruebas de rendimiento,</b> que controlan y{" "}
+                <b>aseguran la fiabilidad y desempeño del software.</b>{" "}
+                Planificamos las fases de pruebas paralelas a las de desarrollo,
+                estimando los costes de las mismas y los test que se realizarán.
+                Estas pruebas verifican incidencias de funcionalidad, las
+                comunican al equipo de desarrollo, y validan sus correcciones.
               </p>
               <p className="p">
-                El objetivo es <b>garantizar el funcionamiento</b> de tu aplicación,
-                verificar la experiencia de usuario perfecta y asegurar el
-                rendimiento del software en el tiempo y los cambios.
+                El objetivo es <b>garantizar el funcionamiento</b> de tu
+                aplicación, verificar la experiencia de usuario perfecta y
+                asegurar el rendimiento del software en el tiempo y los cambios.
               </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFive">
+        <div className="accordion-item">
+          <h2 className="accordion-header" id="flush-headingFive">
             <button
-              class="accordion-button collapsed"
+              className="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFive"
@@ -286,43 +300,51 @@ function Desarrollo() {
           </h2>
           <div
             id="flush-collapseFive"
-            class="accordion-collapse collapse"
+            className="accordion-collapse collapse"
             aria-labelledby="flush-headingFive"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
+            <div className="accordion-body">
               <p className="p">
-                Nuestra metodología de trabajo está basada en <b>entregas parciales</b>
+                Nuestra metodología de trabajo está basada en{" "}
+                <b>entregas parciales</b>
                 por funcionalidades terminadas, que nos aseguran el feedback del
                 cliente, acorta los tiempos de desarrollo y rentabiliza el
                 proyecto.
               </p>
               <p className="p">
-                En la fase final del proyecto, verificamos el <b>grado de
-                cumplimiento de la aplicación con los requisitos</b> especificados
-                en las fases iniciales, recopilando las incidencias que se hayan
-                producido y comprobando su resolución, así como estableciendo el
-                aseguramiento de la calidad con el equipo QA y el Product Owner.
+                En la fase final del proyecto, verificamos el{" "}
+                <b>grado de cumplimiento de la aplicación con los requisitos</b>{" "}
+                especificados en las fases iniciales, recopilando las
+                incidencias que se hayan producido y comprobando su resolución,
+                así como estableciendo el aseguramiento de la calidad con el
+                equipo QA y el Product Owner.
               </p>
               <p className="p">
                 Comprobamos el producto con pruebas finales y una vez
-                terminadas, procedemos a la entrega y su <b>lanzamiento a
-                producción.</b> Así mismo, realizamos la entrega de la documentación
-                a nuestro cliente.
+                terminadas, procedemos a la entrega y su{" "}
+                <b>lanzamiento a producción.</b> Así mismo, realizamos la
+                entrega de la documentación a nuestro cliente.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="proyecto module mb-5">
-     <h2 className="title-proyecto text-center">Lleva tu proyecto al siguiente nivel</h2>
-     <div className="d-grid gap-2 col-2 mx-auto">
-        <HashLink to="/startups/#foto-startup" className="bottone-proyecto btn btn-secondary mb-5 mt-3" type="submit">
-          Quiero trabajar con Releevant
-        </HashLink>
+        <h2 className="title-proyecto text-center">
+          Lleva tu proyecto al siguiente nivel
+        </h2>
+        <div className="d-grid gap-2 col-2 mx-auto">
+          <HashLink
+            to="/startups/#startup"
+            className="bottone-proyecto btn btn-secondary mb-5 mt-3"
+            type="submit"
+          >
+            Quiero trabajar con Releevant
+          </HashLink>
+        </div>
       </div>
-     </div>
-      <FooterRel/>
+      <FooterRel />
     </div>
   );
 }

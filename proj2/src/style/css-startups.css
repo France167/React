@@ -5,7 +5,7 @@
   .title-startups {
     margin-top: 18%;
     color: white;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: "Prototype", sans-serif;
   }
 
@@ -51,6 +51,8 @@
   .h3-startups{
     margin-bottom: 1.1vh;
     margin-top: 20px;
+    margin-right: 3vh;
+    margin-left: 3vh;
     font-family: 'Prototype', sans-serif;
   }
   
@@ -66,7 +68,7 @@
   .title-section{
     font-family: 'Prototype', sans-serif;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 3vh 10vh
   }
 

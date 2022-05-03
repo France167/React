@@ -5,11 +5,9 @@ import "animate.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
 
 function Expertos() {
-  const {expertos, setExpertos} = useGlobalContext();
+  const { expertos, setExpertos } = useGlobalContext();
   const [biografia, setBiografia] = useState("");
   const [nombreBio, setNombreBio] = useState("");
-
-  
 
   async function handleDelete(_id) {
     let response = await fetch(`http://localhost:8080/delete/experto/${_id}`, {
@@ -72,7 +70,7 @@ function Expertos() {
                   <button
                     onClick={() => bio(experto._id)}
                     type="button"
-                    className="btn btn-primary mr-3"
+                    className="btn btn-secondary mr-3"
                     data-toggle="modal"
                     data-target="#foo"
                   >
