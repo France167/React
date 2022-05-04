@@ -136,7 +136,6 @@ function Cursos() {
           </HashLink>
         </div>
       </div>
-      <FooterRel />
     </div>
   );
 }

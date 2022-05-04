@@ -11,7 +11,7 @@ html {
   color: #d85081;
 }
 .navbar.scrolled {
-  background: #f8f9fa;
+  background: #adb5bd;
   transition: background 500ms;
 }
 
@@ -243,7 +243,7 @@ html {
 }
 
 .title-curso {
-  margin-top: 18%;
+  margin-top: 16%;
   color: white;
   font-size: 6rem;
   font-family: "Prototype", sans-serif;

@@ -1,6 +1,5 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Powerslap from "../../components/video/video.mp4";
-import FooterRel from "../../components/FooterRel";
 import "../../style/css-inicio.css";
 import { HashLink } from "react-router-hash-link";
 import emailjs from "emailjs-com";
@@ -258,35 +257,35 @@ function Inicio() {
           <div className="carousel-item active">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/12/web3-2048x1181.jpg"
-              className="d-block w-50 m-auto"
+              className="d-block w-75 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/12/IMG_20211129_194754-2048x1152.jpg"
-              className="d-block w-50 m-auto"
+              className="d-block w-75 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_115930-2048x1152.jpg"
-              className="d-block w-50 m-auto"
+              className="d-block w-75 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_120213-2048x1152.jpg"
-              className="d-block w-50 m-auto"
+              className="d-block w-75 m-auto"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/IMG_20210726_115812-2048x1152.jpg"
-              className="d-block w-50 m-auto"
+              className="d-block w-75 m-auto"
               alt="..."
             />
           </div>
@@ -364,75 +363,76 @@ function Inicio() {
           </div>
         </div>
       </div>
-      <h2 className="h2-compania-inicio text-center module">
-        ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
-      </h2>
-      <div className="form-inicio mb-5 module">
-        <h5 className="h5-curso text-center my-5">
-          ¡Escríbenos y te llamamos!
-        </h5>
+      <div className="form-cont">
+        <h2 className="h2-compania-inicio text-center module">
+          ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
+        </h2>
+        <div className="form-inicio mb-5 module">
+          <h5 className="h5-curso text-center my-5">
+            ¡Escríbenos y te llamamos!
+          </h5>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            id="nombre"
-            name="nombre"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            onChange={handleChange}
-            placeholder="Nombre Completo"
-            value={formValues.nombre}
-            required
-          />
-          <p className="error">{formErrors.nombre}</p>
-          <input
-            id="email"
-            name="email"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="email"
-            value={formValues.email}
-            onChange={handleChange}
-            placeholder="Correo Eletronico"
-            required
-          />
-          <p className="error">{formErrors.email}</p>
-          <input
-            id="telefono"
-            name="telefono"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            value={formValues.telefono}
-            onChange={handleChange}
-            placeholder="Numero de telefono"
-            required
-          />
-          <p className="error">{formErrors.telefono}</p>
-          <div className="w-50 m-auto">
-            <textarea
-              id="info"
-              name="info"
-              wrap="hard"
-              className="form-control w-100 m-auto  my-3"
-              value={formValues.info}
+          <form onSubmit={handleSubmit}>
+            <input
+              id="nombre"
+              name="nombre"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
               onChange={handleChange}
-              placeholder="Quiero más información acerca de vuestros bootcamps."
-              rows="3"
-              cols="5"
-            ></textarea>
-            <p className="error">{formErrors.info}</p>
-          </div>
-          {Object.keys(formErrors).length === 0 && isSubmit && (
-          <div className="correct">
-            Su formulario se ha envíado correctamente!
-          </div>
-        )}
-          <div className="d-grid gap-2 col-2 mx-auto">
-            <button className="btn btn-secondary mb-5 mt-3" type="submit">
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
+              placeholder="Nombre Completo"
+              value={formValues.nombre}
+              required
+            />
+            <p className="error">{formErrors.nombre}</p>
+            <input
+              id="email"
+              name="email"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="email"
+              value={formValues.email}
+              onChange={handleChange}
+              placeholder="Correo Eletronico"
+              required
+            />
+            <p className="error">{formErrors.email}</p>
+            <input
+              id="telefono"
+              name="telefono"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
+              value={formValues.telefono}
+              onChange={handleChange}
+              placeholder="Numero de telefono"
+              required
+            />
+            <p className="error">{formErrors.telefono}</p>
+            <div className="w-50 m-auto">
+              <textarea
+                id="info"
+                name="info"
+                wrap="hard"
+                className="form-control w-100 m-auto  my-3"
+                value={formValues.info}
+                onChange={handleChange}
+                placeholder="Quiero más información acerca de vuestros bootcamps."
+                rows="3"
+                cols="5"
+              ></textarea>
+              <p className="error">{formErrors.info}</p>
+            </div>
+            {Object.keys(formErrors).length === 0 && isSubmit && (
+              <div className="correct">
+                Su formulario se ha envíado correctamente!
+              </div>
+            )}
+            <div className="d-grid gap-2 col-2 mx-auto">
+              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+                Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      <FooterRel />
     </div>
   );
 }

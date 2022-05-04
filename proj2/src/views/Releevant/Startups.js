@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import FooterRel from "../../components/FooterRel";
 import Image from "../../components/images/startups.jpg";
 import "../../style/css-startups.css";
@@ -198,10 +198,10 @@ function Startups() {
             placeholder="Correo Eletronico"
             required
           />
-           <p className="error">{formErrors.email}</p>
+          <p className="error">{formErrors.email}</p>
           <input
-             id="telefono"
-             name="telefono"
+            id="telefono"
+            name="telefono"
             className="form-control form-control-sm w-50 m-auto my-3"
             type="text"
             value={formValues.telefono}
@@ -209,11 +209,11 @@ function Startups() {
             placeholder="Numero de telefono"
             required
           />
-           <p className="error">{formErrors.telefono}</p>
+          <p className="error">{formErrors.telefono}</p>
           <div className="w-50 m-auto">
             <textarea
-                id="info"
-                name="info"
+              id="info"
+              name="info"
               className="form-control w-100 m-auto  my-3"
               placeholder="¡¡Quiero hablar con vosotros!!"
               value={formValues.info}
@@ -221,13 +221,13 @@ function Startups() {
               rows="3"
               cols="5"
             ></textarea>
-             <p className="error">{formErrors.info}</p>
+            <p className="error">{formErrors.info}</p>
           </div>
           {Object.keys(formErrors).length === 0 && isSubmit && (
-          <div className="correct">
-            Su formulario se ha envíado correctamente!
-          </div>
-        )}
+            <div className="correct">
+              Su formulario se ha envíado correctamente!
+            </div>
+          )}
           <div className="d-grid gap-2 col-2 mx-auto">
             <button className="btn btn-secondary mb-5 mt-3" type="submit">
               Enviar mensaje
@@ -235,7 +235,6 @@ function Startups() {
           </div>
         </form>
       </div>
-      <FooterRel />
     </div>
   );
 }

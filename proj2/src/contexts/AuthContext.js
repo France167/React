@@ -15,28 +15,28 @@ export const useAuthContext = () => {
 export default function AuthContextProvider({ children }) {
   const [auth, setAuth] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
-  let navigate = useNavigate()
+  let navigate = useNavigate();
 
   function logout() {
     setAuth(null);
-    window.localStorage.removeItem('loggedIn')
+    window.localStorage.removeItem("loggedIn");
     setErrorMessage("");
-    navigate("/inicio")
+    navigate("/inicio");
   }
 
   useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem('loggedIn')
-    if(loggedUserJSON){
-      const user = JSON.parse(loggedUserJSON)
-      setAuth(user)
+    const loggedUserJSON = window.localStorage.getItem("loggedIn");
+    if (loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON);
+      setAuth(user);
     }
-  }, [])
+  }, []);
 
   async function fetchApi(user) {
     let response = await fetch("http://localhost:8080/login", {
       mode: "cors",
       method: "POST",
-      headers: { "Content-Type": "application/json", "authorization" : "ejemplo" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: user.email,
         password: user.password,
@@ -44,9 +44,7 @@ export default function AuthContextProvider({ children }) {
     });
     let json = await response.json();
     console.log(json);
-    window.localStorage.setItem(
-      'loggedIn', JSON.stringify(json)
-    )
+    window.localStorage.setItem("loggedIn", JSON.stringify(json));
     setAuth(json);
   }
 

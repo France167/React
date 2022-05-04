@@ -27,7 +27,6 @@ export function GlobalContextProvider({ children }) {
   const [docentes, setDocentes] = useState([]);
   const [expertos, setExpertos] = useState([]);
 
-
   useEffect(function () {
     async function fetchApi() {
       let response = await fetch("http://localhost:8080/", {
@@ -39,8 +38,6 @@ export function GlobalContextProvider({ children }) {
 
     fetchApi();
   }, []);
-
-
 
   useEffect(function () {
     async function fetchApi() {
@@ -78,17 +75,20 @@ export function GlobalContextProvider({ children }) {
     fetchApi();
   }, []);
 
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch("http://localhost:8080/docentes", {
-        mode: "cors",
-      });
-      let json = await response.json();
-      setDocentes(json);
-    }
+  useEffect(
+    function () {
+      async function fetchApi() {
+        let response = await fetch("http://localhost:8080/docentes", {
+          mode: "cors",
+        });
+        let json = await response.json();
+        setDocentes(json);
+      }
 
-    fetchApi();
-  }, []);
+      fetchApi();
+    },
+    [docentes]
+  );
 
   useEffect(function () {
     async function fetchApi() {
@@ -114,7 +114,7 @@ export function GlobalContextProvider({ children }) {
     docentes,
     setDocentes,
     expertos,
-    setExpertos
+    setExpertos,
   };
 
   return (

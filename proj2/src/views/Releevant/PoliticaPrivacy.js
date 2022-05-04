@@ -21,9 +21,7 @@ function PoliticaPrivacy() {
           zIndex: -1,
         }}
       />
-      <h2 className="h2-privacy-tit">
-        POLÍTICA DE PRIVACIDAD
-      </h2>
+      <h2 className="h2-privacy-tit">POLÍTICA DE PRIVACIDAD</h2>
       <p className="p-cookies">
         Disbloked S.L. te informa sobre su Política de Privacidad respecto del
         tratamiento y protección de los datos de carácter personal de los
@@ -44,9 +42,7 @@ function PoliticaPrivacy() {
         El uso de sitio Web implica la aceptación de esta Política de Privacidad
         así como las condiciones incluidas en el Aviso Legal.
       </p>
-      <h2 className="h2-privacy">
-        Identidad del responsable
-      </h2>
+      <h2 className="h2-privacy">Identidad del responsable</h2>
       <p className="p-cookies">– Titular: Disbloked S.L.</p>
       <p className="p-cookies">– NIF/CIF: B06778997</p>
       <p className="p-cookies">
@@ -88,9 +84,7 @@ function PoliticaPrivacy() {
         necesarias para evitar el acceso no autorizado o uso indebido de los
         datos de sus usuarios por parte de terceros.
       </p>
-      <h2 className="h2-privacy">
-        Obtención de datos personales
-      </h2>
+      <h2 className="h2-privacy">Obtención de datos personales</h2>
       <p className="p-cookies">
         Para navegar por la página web no es necesario que facilites ningún dato
         personal. Los casos en los que sí proporcionas tus datos personales son
@@ -104,9 +98,7 @@ function PoliticaPrivacy() {
         - Al inscribirte en un formulario de suscripción o un boletín que el
         Titular gestiona con Forminator.
       </p>
-      <h2 className="h2-privacy">
-        Tus derechos
-      </h2>
+      <h2 className="h2-privacy">Tus derechos</h2>
       <p className="p-cookies">
         El Titular te informa que sobre tus datos personales tienes derecho a:
       </p>
@@ -232,9 +224,7 @@ function PoliticaPrivacy() {
         ello. Puedes consultar su política de privacidad para tener más
         información.
       </p>
-      <h2 className="h2-privacy">
-        Contenido de otros sitios web
-      </h2>
+      <h2 className="h2-privacy">Contenido de otros sitios web</h2>
       <p className="p-cookies">
         Las páginas de este sitio Web pueden incluir contenido incrustado (por
         ejemplo, vídeos, imágenes, artículos, etc.). El contenido incrustado de
@@ -261,9 +251,7 @@ function PoliticaPrivacy() {
         comentarios en este sitio Web tienes que aceptar la presente Política de
         Privacidad.
       </p>
-      <h2 className="h2-privacy">
-        Categorías de datos personales
-      </h2>
+      <h2 className="h2-privacy">Categorías de datos personales</h2>
       <p className="p-cookies">
         Las categorías de datos personales que trata el Titular son:
       </p>
@@ -355,9 +343,7 @@ function PoliticaPrivacy() {
         consientes el tratamiento de los mismos por parte de el Titular en la
         forma y para las finalidades indicadas en esta Política de Privacidad.
       </p>
-      <h2 className="h2-privacy">
-        Revocabilidad
-      </h2>
+      <h2 className="h2-privacy">Revocabilidad</h2>
       <p className="p-cookies">
         Para ejercitar tus derechos de acceso, rectificación, cancelación,
         portabilidad y oposición tienes que enviar un correo electrónico a
@@ -368,19 +354,16 @@ function PoliticaPrivacy() {
         El ejercicio de tus derechos no incluye ningún dato que el Titular esté
         obligado a conservar con fines administrativos, legales o de seguridad.
       </p>
-      <h2 className="h2-privacy">
-        Cambios en la Política de Privacidad
-      </h2>
+      <h2 className="h2-privacy">Cambios en la Política de Privacidad</h2>
       <p className="p-cookies">
         El Titular se reserva el derecho a modificar la presente Política de
         Privacidad para adaptarla a novedades legislativas o jurisprudenciales,
         así como a prácticas de la industria.
       </p>
       <p className="p-cookies mb-5">
-      Estas políticas estarán vigentes hasta que sean modificadas por otras debidamente publicadas.
+        Estas políticas estarán vigentes hasta que sean modificadas por otras
+        debidamente publicadas.
       </p>
-
-      <FooterRel />
     </div>
   );
 }

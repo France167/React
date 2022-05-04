@@ -14,30 +14,6 @@ function FooterRel() {
 
           <div>
             <a
-              href="https://www.facebook.com/releevant.tech"
-              className="me-4 text-reset"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.releevant.com/"
-              target="_blank"
-              className="me-4 text-reset"
-              rel="noreferrer"
-            >
-              <i className="fab fa-google"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/accounts/login/?next=/_releevant/"
-              className="me-4 text-reset"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a
               href="https://www.linkedin.com/company/releevant/"
               className="me-4 text-reset"
               target="_blank"
@@ -45,6 +21,15 @@ function FooterRel() {
             >
               <i className="fab fa-linkedin"></i>
             </a>
+            <a
+              href="https://www.facebook.com/releevant.tech"
+              className="me-4 text-reset"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+
             <a
               href="https://www.meetup.com/es-ES/releevant/?_cookie-check=Xd_hTaHLTwr8rzUr"
               className="me-4 text-reset"
@@ -74,7 +59,10 @@ function FooterRel() {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Releevant</h6>
                 <p>
-                  <HashLink to="/careers/#careers" className="link-foot text-reset">
+                  <HashLink
+                    to="/careers/#careers"
+                    className="link-foot text-reset"
+                  >
                     Careers
                   </HashLink>
                 </p>
@@ -124,7 +112,10 @@ function FooterRel() {
                   </HashLink>
                 </p>
                 <p>
-                  <HashLink to="/politica-privacy" className="link-foot text-reset">
+                  <HashLink
+                    to="/politica-privacy"
+                    className="link-foot text-reset"
+                  >
                     Política de Privacidad
                   </HashLink>
                 </p>

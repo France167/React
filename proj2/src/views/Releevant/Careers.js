@@ -15,7 +15,7 @@ function Careers() {
           position: "absolute",
           width: "100%",
           left: "50%",
-          top:  "50vh",
+          top: "50vh",
           minHeight: "30%",
           objectFit: "cover",
           transform: "translate(-50%, -50%)",
@@ -50,8 +50,8 @@ function Careers() {
           >
             <div className="accordion-body">
               <p className="p-career">
-                <b>Releevant</b> es una compañía joven, ligada a varias líneas de
-                negocio que comprenden formación IT, desarrollo de software y
+                <b>Releevant</b> es una compañía joven, ligada a varias líneas
+                de negocio que comprenden formación IT, desarrollo de software y
                 diseño de producto. Estamos en plena fase de crecimiento,
                 contratando diferentes perfiles para nuestros proyectos.
               </p>
@@ -111,7 +111,9 @@ function Careers() {
               <p className="p-career">- Zona de trabajo: Málaga capital</p>
               <p className="p-career">- Horario flexible</p>
               <p className="p-career">- Salario competitivo</p>
-              <p className="p-career">- Progresión laboral/económica dentro del Grupo</p>
+              <p className="p-career">
+                - Progresión laboral/económica dentro del Grupo
+              </p>
               <p className="p-career">- Cervezas los viernes !!</p>
             </div>
           </div>
@@ -137,8 +139,8 @@ function Careers() {
           >
             <div className="accordion-body">
               <p className="p-career">
-              <b>Releevant</b> es una compañía joven, ligada a varias líneas de
-                negocio que comprenden formación IT, desarrollo de software y
+                <b>Releevant</b> es una compañía joven, ligada a varias líneas
+                de negocio que comprenden formación IT, desarrollo de software y
                 diseño de producto. Estamos en plena fase de crecimiento,
                 contratando diferentes perfiles para nuestros proyectos.
               </p>
@@ -149,28 +151,40 @@ function Careers() {
                 releevant, con claras oportunidades de carrera laboral.
               </p>
               <h4 className="career-h4">¿Qué buscamos?</h4>
-              <p className="p-career">- Persona organizada y con capacidad de coordinación</p>
+              <p className="p-career">
+                - Persona organizada y con capacidad de coordinación
+              </p>
               <p className="p-career">- Conocimientos avanzados de Office</p>
               <p className="p-career">- Conocimientos avanzados de Drive</p>
               <p className="p-career">
                 - Alta capacidad de aprendizaje en herramientas colaborativas
               </p>
               <p className="p-career">- Empatía y representación de marca</p>
-              <p className="p-career">- Clara iniciativa, dinámica y proactiva</p>
+              <p className="p-career">
+                - Clara iniciativa, dinámica y proactiva
+              </p>
               <h4 className="career-h4">Requisitos</h4>
               <p className="p-career">- B2 Inglés</p>
-              <p className="p-career">- Manejo fluido de herramientas y paquetes informáticos</p>
+              <p className="p-career">
+                - Manejo fluido de herramientas y paquetes informáticos
+              </p>
               <p className="p-career">- Experiencia en trato con cliente</p>
               <p className="p-career">- Disponibilidad ocasional de viajar</p>
               <p className="p-career">- Excelente redacción documental</p>
-              <p className="p-career">- Habilidades de integración empresarial</p>
+              <p className="p-career">
+                - Habilidades de integración empresarial
+              </p>
               <h4 className="career-h4">¿Qué ofrecemos?</h4>
               <p className="p-career">- Incorporación inmediata</p>
               <p className="p-career">- Ambiente colaborativo y dinámico</p>
               <p className="p-career">- Zona de trabajo: Málaga capital</p>
-              <p className="p-career">- Horario intensivo/flexible (presencial 08:00-14:30)</p>
+              <p className="p-career">
+                - Horario intensivo/flexible (presencial 08:00-14:30)
+              </p>
               <p className="p-career">- Salario competitivo</p>
-              <p className="p-career">- Progresión laboral/económica dentro del Grupo</p>
+              <p className="p-career">
+                - Progresión laboral/económica dentro del Grupo
+              </p>
               <p className="p-career">- Cervezas los viernes !!</p>
             </div>
           </div>
@@ -196,7 +210,7 @@ function Careers() {
           >
             <div className="accordion-body">
               <p className="p-career">
-                We want the hiring of a graphic designer for one of our 
+                We want the hiring of a graphic designer for one of our
                 <b> releevant projects</b>.
               </p>
               <h4 className="career-h4">Your Role:</h4>
@@ -215,16 +229,14 @@ function Careers() {
                 how to use Sketch and/or Zeplin.
               </p>
               <p className="p-career">
-                  - You are a team player but can also work self-reliant and with minimal guidance
+                - You are a team player but can also work self-reliant and with
+                minimal guidance
               </p>
-              <p className="p-career">
-              Essential Spanish and English
-              </p>
+              <p className="p-career">Essential Spanish and English</p>
             </div>
           </div>
         </div>
       </div>
-      <FooterRel/>
     </div>
   );
 }

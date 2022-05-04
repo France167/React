@@ -10,7 +10,7 @@ html {
   color: #d85081;
 }
 .navbar.scrolled {
-  background: #f8f9fa;
+  background: #cccccc;
   transition: background 500ms;
 }
 

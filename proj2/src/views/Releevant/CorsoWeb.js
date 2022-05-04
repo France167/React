@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Image from "../../components/images/curso-des1.jpg";
 import "../../style/css-cursoweb.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
@@ -994,9 +994,9 @@ function CorsoWeb() {
 
         <form onSubmit={handleSubmit}>
           <input
-             id="nombre"
-             name="nombre"
-             onChange={handleChange}
+            id="nombre"
+            name="nombre"
+            onChange={handleChange}
             className="form-control form-control-sm w-50 m-auto my-3"
             type="text"
             value={formValues.nombre}
@@ -1005,8 +1005,8 @@ function CorsoWeb() {
           />
           <p className="error">{formErrors.nombre}</p>
           <input
-           id="email"
-           name="email"
+            id="email"
+            name="email"
             className="form-control form-control-sm w-50 m-auto my-3"
             type="email"
             value={formValues.email}
@@ -1025,11 +1025,11 @@ function CorsoWeb() {
             placeholder="Numero de telefono"
             required
           />
-           <p className="error">{formErrors.telefono}</p>
+          <p className="error">{formErrors.telefono}</p>
           <div className="w-50 m-auto">
             <textarea
-               id="info"
-               name="info"
+              id="info"
+              name="info"
               wrap="hard"
               className="form-control w-100 m-auto  my-3"
               placeholder="Quiero saber más acerca del bootcamp de Desarrollo Web."
@@ -1038,13 +1038,13 @@ function CorsoWeb() {
               rows="3"
               cols="5"
             ></textarea>
-              <p className="error">{formErrors.info}</p>
+            <p className="error">{formErrors.info}</p>
           </div>
           {Object.keys(formErrors).length === 0 && isSubmit && (
-          <div className="correct">
-            Su formulario se ha envíado correctamente!
-          </div>
-        )}
+            <div className="correct">
+              Su formulario se ha envíado correctamente!
+            </div>
+          )}
           <div className="d-grid gap-2 col-2 mx-auto">
             <button className="btn btn-secondary mb-5 mt-3" type="submit">
               Enviar mensaje
@@ -1052,7 +1052,6 @@ function CorsoWeb() {
           </div>
         </form>
       </div>
-      <FooterRel />
     </div>
   );
 }

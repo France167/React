@@ -344,7 +344,6 @@ function Desarrollo() {
           </HashLink>
         </div>
       </div>
-      <FooterRel />
     </div>
   );
 }

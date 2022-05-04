@@ -191,7 +191,6 @@ function Releevant() {
           </div>
         </div>
       </div>
-      <FooterRel />
     </div>
   );
 }

@@ -11,7 +11,7 @@ html {
     color:	#d85081; 
   } 
   .navbar.scrolled {
-    background: #f8f9fa;
+    background: #adb5bd;
     transition: background 500ms
   }
   
@@ -265,7 +265,7 @@ html {
   }
   
   .title{
-    margin-top: 18%;
+    margin-top: 16%;
     color: white;
     font-size: 6rem;
     font-family: 'Prototype', sans-serif;
@@ -362,5 +362,6 @@ html {
     border: 1px solid gray;
     border-radius: 2.5vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
   }
   

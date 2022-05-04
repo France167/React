@@ -6,7 +6,7 @@ import Image from "../../components/images/gray.png";
 function PoliticaCookies() {
   return (
     <div>
-       <img
+      <img
         className="foto-curso"
         id="foto-curso"
         src={Image}
@@ -22,7 +22,9 @@ function PoliticaCookies() {
           zIndex: -1,
         }}
       />
-      <h2 id="cookies" className="h2-cookies">USO DE COOKIES</h2>
+      <h2 id="cookies" className="h2-cookies">
+        USO DE COOKIES
+      </h2>
       <p className="p-cookies">
         La página web https://www.releevant.com, a partir de ahora nombrada como
         el Sitio Web utiliza un analizador de tráfico que emplea pequeños
@@ -103,10 +105,26 @@ function PoliticaCookies() {
         equipo mediante la configuración de las opciones del navegador instalado
         en su ordenador:
       </p>
-      <p className="p-cookies"><a href="https://support.google.com/chrome/answer/95647?hl=es">Chrome</a></p>
-      <p className="p-cookies"><a href="https://support.microsoft.com/en-gb/windows">Explorer / Edge</a></p>
-      <p className="p-cookies"><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we&redirectlocale=es">Firefox</a></p>
-      <p className="p-cookies"><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac">Safari</a></p>
+      <p className="p-cookies">
+        <a href="https://support.google.com/chrome/answer/95647?hl=es">
+          Chrome
+        </a>
+      </p>
+      <p className="p-cookies">
+        <a href="https://support.microsoft.com/en-gb/windows">
+          Explorer / Edge
+        </a>
+      </p>
+      <p className="p-cookies">
+        <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we&redirectlocale=es">
+          Firefox
+        </a>
+      </p>
+      <p className="p-cookies">
+        <a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac">
+          Safari
+        </a>
+      </p>
       <h2 className="h2-cookies-dos mt-5">USO DE COOKIES</h2>
       <p className="p-cookies my-4">
         Este sitio web utiliza cookies para que usted tenga la mejor experiencia
@@ -114,7 +132,6 @@ function PoliticaCookies() {
         aceptación de las mencionadas cookies y la aceptación de nuestra
         política de cookies, pinche el enlace para mayor información.
       </p>
-      <FooterRel/>
     </div>
   );
 }
