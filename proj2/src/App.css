@@ -134,18 +134,19 @@
 }
 
 .error {
-  font-size: x-large;
-  font-family: source-code-pro;
-  color: rgba(204, 58, 58);
+  font-size: normal;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(202, 24, 24);
   position: relative;
-  bottom: 4.3vh;
+  margin:auto;
+  text-align: center;
 }
 
 .correct {
-  font-size: x-large;
-  color: rgba(117, 226, 7);
-  font-family: "Roboto Mono", monospace;
-  margin: 5% auto;
+  font-size: large;
+  color: rgb(67, 129, 5);
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
   text-align: center;
 }
 

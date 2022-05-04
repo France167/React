@@ -2,11 +2,13 @@ import { Outlet, NavLink } from "react-router-dom";
 import { useAuthContext } from "../contexts/AuthContext";
 import Navbar from "./Navbar";
 import FooterRel from "./FooterRel";
+import ScrollToTop from "./ScrollTop";
 
 function Layout() {
   const { auth, logout } = useAuthContext();
   return (
     <div>
+      <ScrollToTop/>
       {!auth && <Navbar />}
       {auth && (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

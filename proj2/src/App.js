@@ -32,6 +32,7 @@ import Releevant from "./views/Releevant/Releevant";
 import CorsoWeb from "./views/Releevant/CorsoWeb";
 import PoliticaCookies from "./views/Releevant/PoliticaCookies";
 import PoliticaPrivacy from "./views/Releevant/PoliticaPrivacy";
+import Careers from "./views/Releevant/Careers";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="curso-desarrollo" element={<CorsoWeb />} />
         <Route path="politica-cookie" element={<PoliticaCookies />} />
         <Route path="politica-privacy" element={<PoliticaPrivacy />} />
+        <Route path="careers" element={<Careers />} />
         <Route path="login" element={<Login />} />
         <Route element={<RequireAuth />}>
           <Route index element={<Alumnos />} />

@@ -2,6 +2,7 @@
     margin-top: 20vh;
     margin-left: 30vh;
     margin-right: 30vh;
+    margin-bottom: 5vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -20,4 +21,20 @@
 
 p a{
     text-decoration: none;
+}
+
+.h2-privacy-tit{
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.h2-privacy{
+    margin-top: 3vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
 }

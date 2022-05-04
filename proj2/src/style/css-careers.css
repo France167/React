@@ -1,0 +1,34 @@
+.title-careers {
+    margin-top: 25%;
+    color: white;
+    font-size: 6rem;
+    font-family: "Prototype", sans-serif;
+  }
+  
+  .p-title-careers {
+    margin: 7rem;
+    margin-top: 3%;
+    margin-bottom: 35vh;
+    color: white;
+    font-size: 2rem;
+    font-family: "Prototype", sans-serif;
+  }
+  
+  .career-title{
+    font-family: 'Prototype', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .career-h4{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-family: 'Prototype', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .p-career{
+    font-size: 1.2rem;
+    color: gray;
+  }

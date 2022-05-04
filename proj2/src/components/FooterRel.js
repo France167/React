@@ -74,9 +74,9 @@ function FooterRel() {
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Releevant</h6>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/careers/#careers" className="link-foot text-reset">
                     Careers
-                  </a>
+                  </HashLink>
                 </p>
                 <p>
                   <HashLink
@@ -124,9 +124,9 @@ function FooterRel() {
                   </HashLink>
                 </p>
                 <p>
-                  <a href="#!" className="link-foot text-reset">
+                  <HashLink to="/politica-privacy" className="link-foot text-reset">
                     Política de Privacidad
-                  </a>
+                  </HashLink>
                 </p>
                 {/*  <p>
                   <a href="#!" className="link-foot text-reset">

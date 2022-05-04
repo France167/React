@@ -1,10 +1,27 @@
 import React from "react";
 import "../../style/cookie.css";
 import FooterRel from "../../components/FooterRel";
+import Image from "../../components/images/gray.png";
 
 function PoliticaCookies() {
   return (
     <div>
+       <img
+        className="foto-curso"
+        id="foto-curso"
+        src={Image}
+        alt="code"
+        style={{
+          position: "absolute",
+          width: "100%",
+          left: "50%",
+          top: "-13vh",
+          minHeight: "30%",
+          objectFit: "cover",
+          transform: "translate(-50%, -50%)",
+          zIndex: -1,
+        }}
+      />
       <h2 id="cookies" className="h2-cookies">USO DE COOKIES</h2>
       <p className="p-cookies">
         La página web https://www.releevant.com, a partir de ahora nombrada como

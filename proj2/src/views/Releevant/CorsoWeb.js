@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import Image from "../../components/images/curso-des1.jpg";
 import "../../style/css-cursoweb.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
@@ -6,9 +6,75 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import FooterRel from "../../components/FooterRel";
 import { HashLink } from "react-router-hash-link";
+import emailjs from "emailjs-com";
 
 function CorsoWeb() {
   const { docentes } = useGlobalContext();
+  const initialValues = { nombre: "", email: "", telefono: "", info: "" };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const validado = validate(formValues);
+    setFormErrors(validate(formValues));
+    if (Object.keys(validado).length === 0) {
+      setIsSubmit(true);
+      setFormValues(initialValues);
+      emailjs
+        .sendForm(
+          "service_miiwiqw",
+          "template_m5k9cvi",
+          e.target,
+          "KzzPds4TVC6qE0l-e"
+        )
+        .then((res) => {
+          console.log(res);
+        });
+    } else {
+      setFormErrors(validate(formValues));
+    }
+  };
+
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors, formValues, isSubmit]);
+
+  const validate = (values) => {
+    const errors = {};
+    const regexPhone =
+      /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i;
+    const regex = /^[^\s@]+@[^\s@].[^\s@]{2,}$/i;
+    if (!values.nombre) {
+      errors.nombre = "Introducir un nombre!";
+    }
+    if (!values.email) {
+      errors.email = "Introducir un correo eletrónico!";
+    } else if (!regex.test(values.email)) {
+      errors.email = "Introducir un correo eletrónico!";
+    }
+    if (!values.info) {
+      errors.info = "Introducir info!";
+    }
+    if (!values.telefono) {
+      errors.telefono = "Introducir un numero de telefono!";
+    } else if (
+      !regexPhone.test(values.telefono) ||
+      values.telefono.length < 9
+    ) {
+      errors.telefono = "Introducir un numero de telefono valido!";
+    }
+    return errors;
+  };
   return (
     <div>
       <img
@@ -926,38 +992,59 @@ function CorsoWeb() {
           ¡No lo dudes y contáctanos!
         </h5>
 
-        <form className="">
+        <form onSubmit={handleSubmit}>
           <input
-            id="nombre"
+             id="nombre"
+             name="nombre"
+             onChange={handleChange}
             className="form-control form-control-sm w-50 m-auto my-3"
             type="text"
+            value={formValues.nombre}
             placeholder="Nombre Completo"
             required
           />
+          <p className="error">{formErrors.nombre}</p>
           <input
-            id="nombre"
+           id="email"
+           name="email"
             className="form-control form-control-sm w-50 m-auto my-3"
             type="email"
+            value={formValues.email}
+            onChange={handleChange}
             placeholder="Correo Eletronico"
             required
           />
+          <p className="error">{formErrors.email}</p>
           <input
-            id="nombre"
+            id="telefono"
+            name="telefono"
             className="form-control form-control-sm w-50 m-auto my-3"
             type="text"
+            value={formValues.telefono}
+            onChange={handleChange}
             placeholder="Numero de telefono"
             required
           />
+           <p className="error">{formErrors.telefono}</p>
           <div className="w-50 m-auto">
             <textarea
-              id="fechaFalta"
+               id="info"
+               name="info"
               wrap="hard"
               className="form-control w-100 m-auto  my-3"
               placeholder="Quiero saber más acerca del bootcamp de Desarrollo Web."
+              value={formValues.info}
+              onChange={handleChange}
               rows="3"
               cols="5"
             ></textarea>
+              <p className="error">{formErrors.info}</p>
           </div>
+          {Object.keys(formErrors).length === 0 && isSubmit && (
+          <div className="correct">
+            Su formulario se ha envíado correctamente!
+          </div>
+        )}
           <div className="d-grid gap-2 col-2 mx-auto">
             <button className="btn btn-secondary mb-5 mt-3" type="submit">
               Enviar mensaje
