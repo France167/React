@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "../../components/images/programming3.jpg";
 import "../../style/css-cursos.css";
-import FooterRel from "../../components/FooterRel";
 import { HashLink } from "react-router-hash-link";
 
 function Cursos() {

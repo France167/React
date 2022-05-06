@@ -113,7 +113,7 @@ function FooterRel() {
                 </p>
                 <p>
                   <HashLink
-                    to="/politica-privacy"
+                    to="/politica-privacy/#privacy"
                     className="link-foot text-reset"
                   >
                     Política de Privacidad

@@ -40,14 +40,14 @@ html {
   flex-wrap: wrap;
   padding: 40px 0;
   background-color: #1d061a;
-  min-height: 1000px;
+  min-height: 800px;
 }
 
 .container-bootcamp .box
 {
   position: relative;
   width: 320px;
-  height: 800px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,22 +94,21 @@ html {
   
 }
 
+
 .container-bootcamp .box:nth-child(1):before,
 .container-bootcamp .box:nth-child(1):after
 {
   background: linear-gradient(315deg, #ffbc00, #ff0058)
 }
-
 .container-bootcamp .box:nth-child(2):before,
 .container-bootcamp .box:nth-child(2):after
 {
-  background: linear-gradient(315deg, #03a9f4, #ff0058)
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
 }
-
 .container-bootcamp .box:nth-child(3):before,
 .container-bootcamp .box:nth-child(3):after
 {
-  background: linear-gradient(315deg, #4dff03, #00d0ff)
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
 }
 
 .container-bootcamp .box span
@@ -268,6 +267,7 @@ html {
     margin-top: 16%;
     color: white;
     font-size: 6rem;
+    font-family: 'Sniglet', cursive;
     font-family: 'Prototype', sans-serif;
   }
   
@@ -280,13 +280,23 @@ html {
   }
   
   .title-h2{
-    margin-top: 18%;
-    margin-bottom: 5%;
+    margin-top: 20%;
+    margin-bottom: 1%;
     margin-right: 15%;
     margin-left: 15%;
     color: #d85081;
     font-family: 'Prototype', sans-serif;
     font-size: 2.5rem;
+  }
+  
+  .title-h3{
+    margin-top: 0%;
+    margin-bottom: 1%;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #d85081;
+    font-family: 'Prototype', sans-serif;
+    font-size: 2rem;
   }
   
   .h2-title-curso{
@@ -303,9 +313,9 @@ html {
   }
   
   .h2-curso{
-    color: #d85081;
+    color: #ffffff;
     font-family: 'Prototype', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 2rem;
   }
   
@@ -314,13 +324,40 @@ html {
     margin-bottom: 2%;
     margin-left: 15%;
     margin-right: 15%;
+    color: rgb(255, 255, 255);
+    font-family: "Prototype", sans-serif;
+    font-size: 2.5rem;
+    padding: 6vh
+  }
+
+  .docentes{
+    text-decoration: none;
+    color: #111;
+  }
+
+  .docentes:hover{
+    text-decoration: none;
+    color: #111;
+  }
+
+  .h2-compania-inicio1 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
     color: black;
     font-family: "Prototype", sans-serif;
     font-size: 2.5rem;
+    padding: 6vh
   }
   
   .h5-curso{
-    color:gray
+    color:gray;
+  }
+
+  .h5-curso1{
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
   }
   
   .p-formacion{
@@ -332,6 +369,12 @@ html {
     margin-bottom: 1.1vh;
     margin-top: 20px;
     font-family: 'Prototype', sans-serif;
+  }
+  .h4{
+    margin-bottom: 1.1vh;
+    margin-top: 20px;
+    font-family: 'Prototype', sans-serif;
+    font-size: 0.8rem
   }
   
   .formacion{
@@ -345,7 +388,7 @@ html {
     border: 1px solid gray;
     border-radius: 2.5vh;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 5vh 2vh;
+    margin: 2vh 2vh;
   }
   
   .h2-carousel{
@@ -365,3 +408,7 @@ html {
     background-color: white;
   }
   
+  .form-cont{
+    background-color: #1d061a ;
+    min-height: 750px;
+  }

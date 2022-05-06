@@ -32,17 +32,12 @@ function Navbar() {
         <div className="col-7 collapse navbar-collapse" id="navLinks">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <HashLink className="navLink nav-link" to="/inicio/#video-inicio">
-                Inicio
-              </HashLink>
-            </li>
-            <li className="nav-item">
               <HashLink
                 className="navLink nav-link"
                 aria-current="page"
-                to="/cursos/#foto-curso"
+                to="/curso-desarrollo/#foto-cursoweb"
               >
-                Cursos
+                Bootcamp
               </HashLink>
             </li>
             <li className="nav-item">
@@ -51,17 +46,20 @@ function Navbar() {
                 aria-current="page"
                 to="/desarrollo/#desarrollo"
               >
-                Desarrollo de Software
-              </HashLink>
-            </li>
-            <li className="nav-item">
-              <HashLink className="navLink nav-link" to="/startups/#startup">
-                Startups
+                Para empresas
               </HashLink>
             </li>
             <li className="nav-item">
               <HashLink className="navLink nav-link" to="/releevant/#releevant">
                 Releevant?
+              </HashLink>
+            </li>
+            <li className="nav-item">
+              <HashLink
+                className="btn-outline-light navLink nav-link"
+                to="/inicio/#form-inicio"
+              >
+                Más info!
               </HashLink>
             </li>
           </ul>

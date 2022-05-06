@@ -7,7 +7,7 @@ function PoliticaPrivacy() {
     <div>
       <img
         className="foto-curso"
-        id="foto-curso"
+        id="privacy"
         src={Image}
         alt="code"
         style={{

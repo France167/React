@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Image from "../../components/images/curso-des1.jpg";
+import Image from "../../components/images/programming3.jpg";
 import "../../style/css-cursoweb.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -86,7 +86,7 @@ function CorsoWeb() {
           position: "absolute",
           width: "100%",
           left: "50%",
-          top: "46vh",
+          top: "50vh",
           minHeight: "30%",
           objectFit: "cover",
           transform: "translate(-50%, -50%)",
@@ -95,14 +95,49 @@ function CorsoWeb() {
       />
       <h1 className="title-cursoweb text-center">BOOTCAMP DESARROLLO WEB</h1>
       <p className="p-title-cursoweb text-center">
-        Si buscas cómo aprender a programar desde cero, o qué estudiar para ser
-        programador, Releevant te trae los mejores bootcamps para que estudiar
-        programación sea tu futuro. Tenemos bootcamps de Desarrollo web,
-        Inteligencia artificial, Java y… viene mucho más! ¡No esperes más y
-        únete a la familia Releevant!
+        Releevant ofrece el mejor bootcamp de la Málaga tecnológica. Somos
+        pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a Málaga,
+        iniciando un tenaz camino que ha estado lleno de aprendizaje, pero
+        también repleto de éxitos; podemos presumir que gracias al modelo de
+        cómo aprender a programar desde 0, más de 200 programadores en activo
+        han pasado por nuestras formaciones
       </p>
+
+      <h2 className="h2-programar text-center module">
+        APRENDE A PROGRAMAR DESDE CERO CON RELEEVANT
+      </h2>
+      <div className="my-5">
+        <p className="p-rel-curso module">
+          En <b>Releevant</b> tenemos muchos años de experiencia en formación
+          tecnológica. Nuestros expertos, además, pertenecen a la industria IT,
+          por lo que nuestras formaciones son diseñadas, impartidas y dirigidas
+          por profesionales en activo, lo que proporciona un valor añadido al
+          aprender de especialistas que te enseñan cómo se trabaja en las
+          empresas con las herramientas que practicarás con nosotros.
+        </p>
+        <p className="p-rel-curso module">
+          Acumulamos a lo largo de los años{" "}
+          <b>
+            miles de horas en cursos para empresas y compañías, muchas ediciones
+            de Bootcamps
+          </b>{" "}
+          tecnológicos, y somos referentes en Málaga y Andalucía a la hora de
+          hablar de formación tecnológica.
+        </p>
+        <p className="p-rel-curso module mb-5">
+          <b>
+            Somos pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a
+            Málaga
+          </b>
+          , iniciando un tenaz camino que ha estado lleno de aprendizaje, pero
+          también repleto de éxitos; podemos presumir que gracias al modelo de
+          cómo aprender a programar desde 0, más de 200 programadores en activo
+          han pasado por nuestras formaciones.
+        </p>
+      </div>
+
       <h2 className="title-h2-cursoweb text-center module">
-        ¿CÓMO VA A SER MI CAMINO POR RELEEVANT?
+        ¿QUÉ APRENDERÉ EN EL BOOTCAMP?
       </h2>
       <div className="etapas module">
         <div className="row">
@@ -212,10 +247,10 @@ function CorsoWeb() {
                   (modelo-vista-controlador) y crearás tu propio servidor de la
                   mano de <b>Node.js y ExpressJS</b>. Empezarás a tratar y
                   manejar bases de datos de la mano de
-                  <b>MySQL</b> y <b>MongoDB</b>, aprenderás las diferencias
+                  <b> MySQL</b> y <b>MongoDB</b>, aprenderás las diferencias
                   entre ellas y te meterás de lleno en el mundo de las
-                  solicitudes <b>HTTP</b> y las
-                  <b>API</b>. También entrarás en el mundo de algunas de las
+                  solicitudes <b> HTTP</b> y las
+                  <b> API</b>. También entrarás en el mundo de algunas de las
                   tecnologías más punteras actualmente, como <b>AWS y Docker</b>
                   .
                 </p>
@@ -223,11 +258,11 @@ function CorsoWeb() {
                   Para finalizar, harás tu <b>segundo proyecto</b>, esta vez
                   para combinar todo lo que has aprendido en las dos etapas.
                   Podrás
-                  <b>crear una </b>web básica, tanto con su <b>front-end</b>{" "}
+                  <b> crear una </b>web básica, tanto con su <b>front-end</b>{" "}
                   como con su
-                  <b>back-end</b>, en la que podrás guardar, enviar, modificar y
-                  eliminar datos. Además, te ayudará a afianzar todavía más tus
-                  conocimientos para avanzar hacia tu último reto. →
+                  <b> back-end</b>, en la que podrás guardar, enviar, modificar
+                  y eliminar datos. Además, te ayudará a afianzar todavía más
+                  tus conocimientos para avanzar hacia tu último reto. →
                 </p>
               </div>
               <div
@@ -268,7 +303,7 @@ function CorsoWeb() {
                 </p>
                 <p className="p-web">
                   En este momento ya estarás listo para… ¡enfrentarte al
-                  <b>proyecto final</b>! Unirás todo lo aprendido en estas
+                  <b> proyecto final</b>! Unirás todo lo aprendido en estas
                   etapas, y como resultado{" "}
                   <b>crearás una auténtica aplicación full-stack</b>. Pondrás a
                   prueba tus conocimientos en front-end con React y la
@@ -324,8 +359,63 @@ function CorsoWeb() {
           </div>
         </div>
       </div>
-      <h2 className="h2-docentes text-center module">
-        TUS PROFESORES DE DESARROLLO WEB EN RELEEVANT
+      <h2 className="h2-cursoweb text-center module">
+        ¿ESTE BOOTCAMP ES PARA MI? Si....
+      </h2>
+      <div className="formacion-bootcamp module">
+        <div className="formacion-divs-bootcamp module">
+          <h3 className="h3-bootcamp text-center mt-3">
+            ...TE HAS GRADUADO DE RECIENTE
+          </h3>
+          <p className="p-formacion-bootcamp">
+            Si te acabas de graduar en FP o en la universidad, este{" "}
+            <b>bootcamp de programación</b> orientado a desarrollo web te
+            proporcionará las habilidades imprescindibles para poder iniciar tu
+            propia carrera como programador.
+          </p>
+        </div>
+        <div className="formacion-divs-bootcamp module">
+          <h3 className="h3-bootcamp text-center mt-3">
+            ...BUSCAS IMPULSAR TU CARRERA
+          </h3>
+          <p className="p-formacion-bootcamp">
+            Este <b>bootcamp de programación en Málaga</b> complementará los
+            conocimientos que ya tienes adquiridos, podrás optar a perfiles o
+            roles más técnicos, además tendrás una perspectiva más enfocada a
+            las últimas tecnologías.
+          </p>
+        </div>
+      </div>
+      <div className="formacion-bootcamp module">
+        <div className="formacion-divs-bootcamp module">
+          <h3 className="h3-bootcamp text-center mt-3">
+            ...BUSCAS UN CAMBIO DE VIDA LABORAL
+          </h3>
+          <p className="p-formacion-bootcamp">
+            Este <b>bootcamp de programación para desarrollo web</b> es perfecto
+            para alguien que está buscando entrar en el sector tecnológico. Te
+            ayudará a conseguir los conocimientos necesarios para poder
+            conseguir trabajo como desarrollador junior.
+          </p>
+        </div>
+        <div className="formacion-divs-bootcamp module">
+          <h3 className="h3-bootcamp text-center mt-3">
+            ...O CUALQUIER TIPO DE PERSONA
+          </h3>
+          <p className="p-formacion-bootcamp">
+            En realidad, para iniciarte en el mundo tecnológico y llegar a ser
+            un{" "}
+            <b>
+              <i>Full Stack Web Developer</i>
+            </b>{" "}
+            no necesitas ninguna característica en especial. Trabajes en lo que
+            trabajes, seas como seas, si tienes iniciativa, actitud y ganas de
+            aprender, conseguirás entrar en el sector IT.
+          </p>
+        </div>
+      </div>
+      <h2 className="h2-docentes text-center module" id="profesores">
+        TUS PROFESORES
       </h2>
       <div className="container module">
         <div className="row justify-content-between">
@@ -375,67 +465,9 @@ function CorsoWeb() {
           </Splide>
         </div>
       </div>
-      <h2 className="h2-cursoweb text-center module">
-        ¿A QUIÉN VA DIRIGIDO ESTE BOOTCAMP DE DESARROLLO WEB?
-      </h2>
-      <div className="formacion-bootcamp module">
-        <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center mt-3">
-            SI TE HAS GRADUADO RECIENTEMENTE
-          </h3>
-          <p className="p-formacion-bootcamp">
-            Si te acabas de graduar en FP o en la universidad, este{" "}
-            <b>bootcamp de programación</b> orientado a desarrollo web te
-            proporcionará las habilidades imprescindibles para poder iniciar tu
-            propia carrera como{" "}
-            <b>
-              <i>Full Stack Web Developer</i>
-            </b>
-            , o como programador.
-          </p>
-        </div>
-        <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center mt-3">
-            BUSCAS IMPULSAR TU CARRERA
-          </h3>
-          <p className="p-formacion-bootcamp">
-            Este <b>bootcamp de programación en Málaga</b> complementará los
-            conocimientos que ya tienes adquiridos, podrás optar a perfiles o
-            roles más técnicos, además tendrás una perspectiva más enfocada a
-            las últimas tecnologías.
-          </p>
-        </div>
-      </div>
-      <div className="formacion-bootcamp module">
-        <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center mt-3">
-            SI BUSCAS UN CAMBIO DE VIDA LABORAL
-          </h3>
-          <p className="p-formacion-bootcamp">
-            Este <b>bootcamp de programación para desarrollo web</b> es perfecto
-            para alguien que está buscando entrar en el sector tecnológico. Te
-            ayudará a conseguir los conocimientos necesarios para poder
-            conseguir trabajo como desarrollador junior.
-          </p>
-        </div>
-        <div className="formacion-divs-bootcamp module">
-          <h3 className="h3-bootcamp text-center mt-3">
-            … O CUALQUIER TIPO DE PERSONA
-          </h3>
-          <p className="p-formacion-bootcamp">
-            En realidad, para iniciarte en el mundo tecnológico y llegar a ser
-            un{" "}
-            <b>
-              <i>Full Stack Web Developer</i>
-            </b>{" "}
-            no necesitas ninguna característica en especial. Trabajes en lo que
-            trabajes, seas como seas, si tienes iniciativa, actitud y ganas de
-            aprender, conseguirás entrar en el sector IT.
-          </p>
-        </div>
-      </div>
+
       <div className="section-dos">
-        <h2 className="h2-cursoweb-sec text-center module">
+        <h2 className="h2-cursoweb-sec text-center module" id="precencialidad">
           ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP DE DESARROLLO WEB EN MÁLAGA?
         </h2>
         <div className="formacion-bootcamp module">
@@ -445,14 +477,8 @@ function CorsoWeb() {
             </h3>
             <p className="p-formacion-sec">
               Hemos diseñado un temario para que aprendas desde cero las
-              tecnologías que más demandadas las empresas. Con tus conocimientos
-              en HTML, CSS, Javascript, Node.js, MySQL, MongoDB, Git, GitHub,
-              React y SCRUM, serás un desarrollador{" "}
-              <b>
-                <i>Full Stack Web Developer</i>
-              </b>{" "}
-              muy atractivo para las empresas. Recuerda, en el sector IT hay una
-              enorme demanda.
+              tecnologías que más demandan las empresas. Recuerda, en el sector
+              IT hay una enorme demanda.
             </p>
           </div>
           <div className="formacion-divs-sec module">
@@ -460,13 +486,9 @@ function CorsoWeb() {
               DESARROLLARÁS TUS SOFT-SKILLS
             </h3>
             <p className="p-formacion-sec">
-              La programación es importante, pero también las empresas valoran
-              mucho las llamadas <i>soft-skills</i>. Por eso en Releevant,
-              dentro de
-              <b>nuestro bootcamp de programación en Málaga</b>, te ayudamos a
-              desarrollar tu trabajo en equipo, tu comunicación en un entorno de
-              trabajo, tu capacidad para realizar proyectos complejos en tiempo
-              y de la forma adecuada, y mucho más.
+              Te ayudamos a desarrollar tu trabajo en equipo, tu comunicación en
+              un entorno de trabajo, tu capacidad para realizar proyectos
+              complejos en tiempo y de la forma más adecuada.
             </p>
           </div>
         </div>
@@ -477,25 +499,23 @@ function CorsoWeb() {
             </h3>
             <p className="p-formacion-sec">
               Desde nuestra experiencia, la mejor forma de aprender programación
-              es… programando. Parece evidente, pero no suele ser como se hacen
-              las cosas. En Releevant presentamos una experiencia muy práctica
-              con este <b>bootcamp de programación</b>, haciendo que el alumno
+              es... programando. Parece evidente, pero no suele ser como se
+              hacen las cosas. En Releevant presentamos una experiencia muy
+              práctica con este bootcamp de programación, haciendo que el alumno
               realice proyectos por él mismo, sin olvidar el justo equilibrio
               con las bases de la teoría y los fundamentos de la programación.
             </p>
           </div>
           <div className="formacion-divs-sec module">
             <h3 className="h3-sec text-center mt-3">
-              PERTENECERÁS A LA FAMILIA RELEEVANT
+              PERTENECERÁS A #RELEEVANTPEOPLE
             </h3>
             <p className="p-formacion-sec">
-              Tenemos una gran comunidad de desarrolladores del sector dispuesta
-              a acogerte con los brazos abiertos. Además del{" "}
-              <b>bootcamp de programación en Málaga</b>, con nosotros también
-              tendrás accceso a los meetups, masterclassName y eventos.
-              Releevant es mucho más que un sitio para formarte. Te sentirás
-              desde el primer día dentro del sector tecnológico, y te integrarás
-              en el entorno con nosotros.
+              Formamos una gran comunidad de desarrolladores dispuestos a
+              acogerte con los brazos abiertos. Tendrás acceso a los meetups,
+              masterclass y eventos. Releevant es mucho más que un sitio para
+              formarte. Te sentirás desde el primer día dentro del sector
+              tecnológico, y te integrarás en el entorno con nosotros.
             </p>
           </div>
         </div>
@@ -852,7 +872,7 @@ function CorsoWeb() {
             <div className="accordion-body">
               <p className="p-faq">
                 Podrás trabajar como programador <b>Back-End</b>, programador
-                <b>Front-End</b>, desarrollador{" "}
+                <b> Front-End</b>, desarrollador{" "}
                 <b>Full-Stack, desarrollador de aplicaciones, diseñador web</b>…
                 son profesiones que requiere el mercado laboral y que su demanda
                 va a crecer de forma exponencial en los próximos años. Ten en
@@ -984,73 +1004,85 @@ function CorsoWeb() {
           </div>
         </div>
       </div>
-      <h2 className="h2-startups text-center module">
-        ¡EMPIEZA TU NUEVA VIDA COMO DESARROLLADOR WEB!
-      </h2>
-      <div className="form-startups mb-5 module">
-        <h5 className="h5-startups text-center my-5">
-          ¡No lo dudes y contáctanos!
-        </h5>
+      <div className="form-cont">
+        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
+          ¿QUIERES MÁS INFORMACIÓN?
+        </h2>
+        <div className="form-inicio mb-5 module">
+          <h5 className="h5-curso text-center my-5">
+            ¡Rellena nuestro formulario y la obtendrás!
+          </h5>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            id="nombre"
-            name="nombre"
-            onChange={handleChange}
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            value={formValues.nombre}
-            placeholder="Nombre Completo"
-            required
-          />
-          <p className="error">{formErrors.nombre}</p>
-          <input
-            id="email"
-            name="email"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="email"
-            value={formValues.email}
-            onChange={handleChange}
-            placeholder="Correo Eletronico"
-            required
-          />
-          <p className="error">{formErrors.email}</p>
-          <input
-            id="telefono"
-            name="telefono"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            value={formValues.telefono}
-            onChange={handleChange}
-            placeholder="Numero de telefono"
-            required
-          />
-          <p className="error">{formErrors.telefono}</p>
-          <div className="w-50 m-auto">
-            <textarea
-              id="info"
-              name="info"
-              wrap="hard"
-              className="form-control w-100 m-auto  my-3"
-              placeholder="Quiero saber más acerca del bootcamp de Desarrollo Web."
-              value={formValues.info}
+          <form onSubmit={handleSubmit}>
+            <input
+              id="nombre"
+              name="nombre"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
               onChange={handleChange}
-              rows="3"
-              cols="5"
-            ></textarea>
-            <p className="error">{formErrors.info}</p>
-          </div>
-          {Object.keys(formErrors).length === 0 && isSubmit && (
-            <div className="correct">
-              Su formulario se ha envíado correctamente!
+              placeholder="Nombre y apellido"
+              value={formValues.nombre}
+              required
+            />
+            <p className="error">{formErrors.nombre}</p>
+            <input
+              id="email"
+              name="email"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="email"
+              value={formValues.email}
+              onChange={handleChange}
+              placeholder="Correo eletrónico"
+              required
+            />
+            <p className="error">{formErrors.email}</p>
+            <input
+              id="telefono"
+              name="telefono"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
+              value={formValues.telefono}
+              onChange={handleChange}
+              placeholder="Móvil de contacto"
+              required
+            />
+            <p className="error">{formErrors.telefono}</p>
+            <div className="w-50 m-auto">
+              <textarea
+                id="info"
+                name="info"
+                wrap="hard"
+                className="form-control w-100 m-auto  my-3"
+                value={formValues.info}
+                onChange={handleChange}
+                placeholder="Quiero más información sobre Releevant."
+                rows="3"
+                cols="5"
+              ></textarea>
+              <p className="error">{formErrors.info}</p>
             </div>
-          )}
-          <div className="d-grid gap-2 col-2 mx-auto">
-            <button className="btn btn-secondary mb-5 mt-3" type="submit">
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
+            {Object.keys(formErrors).length === 0 && isSubmit && (
+              <div className="correct">
+                Su formulario se ha envíado correctamente!
+              </div>
+            )}
+            <div className="d-grid gap-2 col-2 mx-auto">
+              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+                MÁS INFO!{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-send"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -93,127 +93,101 @@ function Inicio() {
       </video>
       <h1 className="title text-center">CAMBIA TU FUTURO</h1>
       <p className="p-title-inicio text-center">
-        ¿Quieres dar un cambio a tu carrera profesional? En Releevant tienes esa
-        oportunidad. Te ayudamos a introducirte en el mundo de la programación.
-        Te preparamos para comenzar a trabajar en el sector tecnológico.
+        ¡Fórmate y comienza a trabajar en el sector tecnológico!
       </p>
       <h2 className="title-h2 text-center module">
-        RELEEVANT CAMBIA EL MUNDO DE LA FORMACIÓN: SOMOS PROGRAMADORES, TE
-        ENSEÑAMOS A PROGRAMAR.
+        SOMOS PROGRAMADORES, TE ENSEÑAMOS A PROGRAMAR DESDE CERO
       </h2>
+      <h3 className="title-h3 text-center module">¿POR QUÉ?</h3>
       <div className="formacion module">
         <div className="formacion-divs module">
-          <h3 className="h3 text-center mt-3">Profesionales</h3>
-          <p className="p-formacion">
-            Nuestro equipo no son docentes al uso, son programadores en activo
-            del sector, que acumulan muchos años de experiencia y compaginan su
-            trabajo con la docencia. Sólo de esta forma tendrás asegurada la
-            formación real, como se trabaja en la compañías de software hoy en
-            día.
-          </p>
-        </div>
-        <div className="formacion-divs module">
-          <h3 className="h3 text-center mt-3">Tú eres único</h3>
+          <h3 className="h3 text-center mt-3">ERES ÚNICO </h3>
+          <h4 className="h4 text-center mt-3"> Desde 0 al 100%!</h4>
           <p className="p-formacion">
             Sabemos que cada persona tiene un nivel de conocimientos o una
-            destreza particular. Si vienes desde cero, o tienes ya una
-            experiencia en el sector de la programación, nuestra metodología nos
-            permite extender el aprendizaje adaptándonos a ti, a tu nivel y tus
-            habilidades.
+            destreza particular. Ya vengas desde cero, o tengas experiencia en
+            programación, nos adaptamos a ti, a tu nivel y habilidades.
+          </p>
+        </div>
+        <div className="formacion-divs module">
+          <h3 className="h3 text-center mt-3">
+            <HashLink className="docentes" to="/curso-desarrollo/#profesores">
+              DOCENTES
+            </HashLink>{" "}
+          </h3>
+          <h4 className="h4 text-center mt-3">
+            Sólo los profesionales te enseñan a trabajar.
+          </h4>
+          <p className="p-formacion">
+            Nuestro equipo no son docentes al uso, son profesionales en activo
+            del sector y con muchos años de experiencia. Sólo de esta forma
+            tendrás asegurada la formación real, como se trabaja en la compañías
+            de software hoy en día.
           </p>
         </div>
       </div>
       <div className="formacion module">
         <div className="formacion-divs module">
-          <h3 className="h3 text-center mt-3">Presencialidad</h3>
+          <h3 className="h3 text-center mt-3">
+            <HashLink
+              className="docentes"
+              to="/curso-desarrollo/#precencialidad"
+            >
+              PRESENCIALIDAD
+            </HashLink>
+          </h3>
+          <h4 className="h4 text-center mt-3">
+            Face to face, porque creemos en las personas.
+          </h4>
           <p className="p-formacion">
-            Creemos en la presencialidad. El streaming fue imprescindible en lo
-            más duro de la pandemia, pero la vuelta a la normalidad ya está
-            aquí. El contacto real con los profesores es la mejor forma de
-            aprender, y así lo demuestran nuestros resultados. Tendrás en todo
-            momento una persona a tu lado para resolver tus dudas.
+            El streaming fue imprescindible en lo más duro de la pandemia, pero
+            sabemos que el contacto real es la mejor forma de aprender, gracias
+            al seguimiento de los profesores y la colaboración con tus
+            compañeros.
           </p>
         </div>
         <div className="formacion-divs module">
-          <h3 className="h3 text-center mt-3">Empleabilidad</h3>
+          <h3 className="h3 text-center mt-3">EMPLEABILIDAD</h3>
+          <h4 className="h4 text-center mt-3">
+            95% asegurado, sólo depende de ti.
+          </h4>
           <p className="p-formacion">
-            Terminarás tu formación con unos conocimientos sólidos y
-            actualizados, y estarás en disposición de empezar a trabajar como
-            desarrollador junior. Te acompañamos en tu camino, no sólo
-            introduciéndote en el sector a través de nuestros eventos
-            profesionales, sino que accederás a nuestra red de empresas
-            partners, que seguirán tu evolución y progresos y asistirán a la
-            presentación de tu proyecto final.
+            Con tu esfuerzo y dedicación durante el bootcamp, obtendrás los
+            conocimientos sólidos para empezar a trabajar como dev junior. Te
+            introducimos en el sector con nuestros eventos y accederás a nuestra
+            red de empresas partners, que asistirán a la presentación de tu
+            proyecto final.
           </p>
         </div>
       </div>
-      <h2 className="h2-curso text-center module">LOS BOOTCAMPS RELEEVANT</h2>
-      <h5 className="h5-curso text-center mb-5 module">
-        Las últimas tecnologías te acompañan
-      </h5>
       <div className="container-bootcamp module">
+        <div>
+          <h2 className="h2-curso text-center module">NUESTRO BOOTCAMP</h2>
+          <h5 className="h5-curso1 text-center mb-5 module">
+            Las últimas tecnologías te acompañan
+          </h5>
+        </div>
         <div className="box">
           <span></span>
           <div className="content">
             <h2 className="h2-title-curso">DESARROLLO WEB</h2>
             <p>
-              Con este Bootcamp serás capaz de aprender y desarrollar tus
-              habilidades como programador web desde cero hasta poder tener la
-              oportunidad de trabajar en el sector. Son más de 500 horas, en las
-              que, de forma totalmente práctica, aprenderás a programar,
-              maquetar, gestionar bases de datos y servidores. Dominarás
-              lenguajes como Javascript, Typescript y Node.js. Sabrás manejar
-              librerías como React.js, y aprenderás metodologías Agile como
-              SCRUM. También te asesoraremos y acompañaremos en tu primer
-              trabajo como Programador Junior.
-            </p>
-            <HashLink to="/curso-desarrollo/#foto-cursoweb">Saber más</HashLink>
-          </div>
-        </div>
-        <div className="box">
-          <span></span>
-          <div className="content">
-            <h2 className="h2-title-curso">JAVA Y ANGLULAR</h2>
-            <p>
-              En este Bootcamp de Java y Angular te enseñaremos el stack J.A.M
-              (Java, Angular y MongoDB), perfil es muy demandado por las
-              empresas en España. Por eso hemos creado un curso específico para
-              ti, que buscas entrar en el mundo tecnológico con un perfil
-              atractivo para las compañías. Empezarás aprendiendo Java desde
-              cero, con HTML y CSS como apoyo visual, y seguirás con el
-              framework Spring, bases de datos relacionales y no relacionales,
-              para acabar aprendiendo Angular y diseñando tu proyecto final.
+              Más de 600 horas, en tan solo 5 meses. <br />
+              Nuestra filosofía es que aprendas de forma totalmente práctica,
+              convirtiéndote en programador creando desde cero todo el ciclo de
+              desarrollo del producto web:
+              <br />- Prototipado, back-end, servidores, front-end,
+              repositorios, QA, Scrum...
             </p>
             <HashLink to="/curso-desarrollo/#foto-cursoweb">
-              En desarrollo
-            </HashLink>
-          </div>
-        </div>
-        <div className="box">
-          <span></span>
-          <div className="content">
-            <h2 className="h2-title-curso">INTELIGENCIA ARTIFICIAL</h2>
-            <p>
-              Nuestro Bootcamp de Inteligencia Artificial te ofrece una visión
-              inicial -pero detallada- sobre el uso de la IA en la gestión de
-              organizaciones, desarrollo de herramientas de analítica de datos y
-              predicción de resultados. Adquirirás habilidades analíticas y de
-              gestión de datos, necesarios en una industria que tiene una gran
-              demanda de perfiles IA, y que se encuentra inmersa en una
-              transformación en la que la Inteligencia Artificial. Aprenderás
-              Python, Tensorflow y muchos lenguajes más. ¿A qué esperas para
-              unirte al futuro de la tecnología?
-            </p>
-            <HashLink to="/curso-desarrollo/#foto-cursoweb">
-              En desarrollo
+              Saber más!
             </HashLink>
           </div>
         </div>
       </div>
-      <h2 className="h2-carousel text-center module">EL ESPACIO RELEEVANT</h2>
-      <h5 className="h5-curso text-center mb-5 module">
-        Las mejores instalaciones para nuestros alumnos y nuestra comunidad
-      </h5>
+      <h2 className="h2-carousel text-center module">
+        NUESTRA ESCUELA RELEEVANT
+      </h2>
       <div
         id="carouselExampleIndicators"
         className="carousel carousel-dark slide module"
@@ -315,12 +289,12 @@ function Inicio() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <h2 className="h2-compania-inicio text-center module">
-        COMPAÑÍAS QUE HAN CONFIADO EN NOSOTROS
+      <h2 className="h2-compania-inicio1 text-center module">
+        NUESTRAS RELEEVANT PARTNERS
       </h2>
       <h5 className="h5-curso text-center mb-5 module">
-        Tenemos la confianza de muchas compañías con las que han trabajado
-        nuestros equipos
+        Tenemos la confianza de diferentes compañías con las que han trabajado
+        nuestros equipos.
       </h5>
       <div className="container mt-5 module">
         <div className="row">
@@ -364,12 +338,12 @@ function Inicio() {
         </div>
       </div>
       <div className="form-cont">
-        <h2 className="h2-compania-inicio text-center module">
-          ¿QUIERES MÁS INFORMACIÓN DEL BOOTCAMP DE DESARROLLO WEB DE RELEEVANT?
+        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
+          ¿QUIERES MÁS INFORMACIÓN?
         </h2>
         <div className="form-inicio mb-5 module">
           <h5 className="h5-curso text-center my-5">
-            ¡Escríbenos y te llamamos!
+            ¡Rellena nuestro formulario y la obtendrás!
           </h5>
 
           <form onSubmit={handleSubmit}>
@@ -379,7 +353,7 @@ function Inicio() {
               className="form-control form-control-sm w-50 m-auto my-3"
               type="text"
               onChange={handleChange}
-              placeholder="Nombre Completo"
+              placeholder="Nombre y apellido"
               value={formValues.nombre}
               required
             />
@@ -391,7 +365,7 @@ function Inicio() {
               type="email"
               value={formValues.email}
               onChange={handleChange}
-              placeholder="Correo Eletronico"
+              placeholder="Correo eletrónico"
               required
             />
             <p className="error">{formErrors.email}</p>
@@ -402,7 +376,7 @@ function Inicio() {
               type="text"
               value={formValues.telefono}
               onChange={handleChange}
-              placeholder="Numero de telefono"
+              placeholder="Móvil de contacto"
               required
             />
             <p className="error">{formErrors.telefono}</p>
@@ -414,7 +388,7 @@ function Inicio() {
                 className="form-control w-100 m-auto  my-3"
                 value={formValues.info}
                 onChange={handleChange}
-                placeholder="Quiero más información acerca de vuestros bootcamps."
+                placeholder="Quiero más información sobre Releevant."
                 rows="3"
                 cols="5"
               ></textarea>
@@ -427,7 +401,17 @@ function Inicio() {
             )}
             <div className="d-grid gap-2 col-2 mx-auto">
               <button className="btn btn-secondary mb-5 mt-3" type="submit">
-                Enviar mensaje
+                MÁS INFO!{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-send"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                </svg>
               </button>
             </div>
           </form>

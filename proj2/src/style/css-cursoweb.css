@@ -13,12 +13,12 @@
     margin: 7rem;
     margin-top: 3%;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Prototype", sans-serif;
   }
 
   .title-h2-cursoweb{
-    margin-top: 18%;
+    margin-top: 1%;
     margin-bottom: 5%;
     margin-right: 15%;
     margin-left: 15%;
@@ -26,6 +26,16 @@
     font-family: 'Prototype', sans-serif;
     font-size: 2.5rem;
   }
+
+  
+.h2-programar{
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+  font-family: 'Prototype', sans-serif;
+  margin-top: 15rem;
+}
+
   
   .etapas{
       margin: 5vh 20vh

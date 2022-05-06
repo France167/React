@@ -167,73 +167,85 @@ function Startups() {
           </p>
         </div>
       </div>
-      <h2 className="h2-startups text-center module">
-        SI TIENES UNA STARTUP CON POTENCIAL DE SUBIR AL SIGUIENTE NIVEL,
-        HABLEMOS.
-      </h2>
-      <div className="form-startups mb-5 module">
-        <h5 className="h5-startups text-center my-5">
-          ¡No lo dudes y contáctanos!
-        </h5>
+      <div className="form-cont">
+        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
+          ¿QUIERES MÁS INFORMACIÓN?
+        </h2>
+        <div className="form-inicio mb-5 module">
+          <h5 className="h5-curso text-center my-5">
+            ¡Rellena nuestro formulario y la obtendrás!
+          </h5>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            id="nombre"
-            name="nombre"
-            onChange={handleChange}
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            value={formValues.nombre}
-            placeholder="Nombre Completo"
-            required
-          />
-          <p className="error">{formErrors.nombre}</p>
-          <input
-            id="email"
-            name="email"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="email"
-            value={formValues.email}
-            onChange={handleChange}
-            placeholder="Correo Eletronico"
-            required
-          />
-          <p className="error">{formErrors.email}</p>
-          <input
-            id="telefono"
-            name="telefono"
-            className="form-control form-control-sm w-50 m-auto my-3"
-            type="text"
-            value={formValues.telefono}
-            onChange={handleChange}
-            placeholder="Numero de telefono"
-            required
-          />
-          <p className="error">{formErrors.telefono}</p>
-          <div className="w-50 m-auto">
-            <textarea
-              id="info"
-              name="info"
-              className="form-control w-100 m-auto  my-3"
-              placeholder="¡¡Quiero hablar con vosotros!!"
-              value={formValues.info}
+          <form onSubmit={handleSubmit}>
+            <input
+              id="nombre"
+              name="nombre"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
               onChange={handleChange}
-              rows="3"
-              cols="5"
-            ></textarea>
-            <p className="error">{formErrors.info}</p>
-          </div>
-          {Object.keys(formErrors).length === 0 && isSubmit && (
-            <div className="correct">
-              Su formulario se ha envíado correctamente!
+              placeholder="Nombre y apellido"
+              value={formValues.nombre}
+              required
+            />
+            <p className="error">{formErrors.nombre}</p>
+            <input
+              id="email"
+              name="email"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="email"
+              value={formValues.email}
+              onChange={handleChange}
+              placeholder="Correo eletrónico"
+              required
+            />
+            <p className="error">{formErrors.email}</p>
+            <input
+              id="telefono"
+              name="telefono"
+              className="form-control form-control-sm w-50 m-auto my-3"
+              type="text"
+              value={formValues.telefono}
+              onChange={handleChange}
+              placeholder="Móvil de contacto"
+              required
+            />
+            <p className="error">{formErrors.telefono}</p>
+            <div className="w-50 m-auto">
+              <textarea
+                id="info"
+                name="info"
+                wrap="hard"
+                className="form-control w-100 m-auto  my-3"
+                value={formValues.info}
+                onChange={handleChange}
+                placeholder="Quiero más información sobre Releevant."
+                rows="3"
+                cols="5"
+              ></textarea>
+              <p className="error">{formErrors.info}</p>
             </div>
-          )}
-          <div className="d-grid gap-2 col-2 mx-auto">
-            <button className="btn btn-secondary mb-5 mt-3" type="submit">
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
+            {Object.keys(formErrors).length === 0 && isSubmit && (
+              <div className="correct">
+                Su formulario se ha envíado correctamente!
+              </div>
+            )}
+            <div className="d-grid gap-2 col-2 mx-auto">
+              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+                MÁS INFO!{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-send"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
