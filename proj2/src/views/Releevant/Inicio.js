@@ -95,8 +95,9 @@ function Inicio() {
       <p className="p-title-inicio text-center">
         ¡Fórmate y comienza a trabajar en el sector tecnológico!
       </p>
-      <h2 className="title-h2 text-center module">
-        SOMOS PROGRAMADORES, TE ENSEÑAMOS A PROGRAMAR DESDE CERO
+      <h2 className="title-h2 text-center module">SOMOS PROGRAMADORES,</h2>
+      <h2 className="title-h2-dos text-center module">
+        TE ENSEÑAMOS A PROGRAMAR DESDE CERO
       </h2>
       <h3 className="title-h3 text-center module">¿POR QUÉ?</h3>
       <div className="formacion module">
@@ -338,84 +339,173 @@ function Inicio() {
         </div>
       </div>
       <div className="form-cont">
-        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
-          ¿QUIERES MÁS INFORMACIÓN?
-        </h2>
-        <div className="form-inicio mb-5 module">
-          <h5 className="h5-curso text-center my-5">
+        <section id="contact">
+          <h2
+            className="h2-compania-inicio text-center module"
+            id="form-inicio"
+          >
+            ¿QUIERES MÁS INFORMACIÓN?
+          </h2>
+          <h5 className="h5-curso text-center">
             ¡Rellena nuestro formulario y la obtendrás!
           </h5>
-
-          <form onSubmit={handleSubmit}>
-            <input
-              id="nombre"
-              name="nombre"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="text"
-              onChange={handleChange}
-              placeholder="Nombre y apellido"
-              value={formValues.nombre}
-              required
-            />
-            <p className="error">{formErrors.nombre}</p>
-            <input
-              id="email"
-              name="email"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="email"
-              value={formValues.email}
-              onChange={handleChange}
-              placeholder="Correo eletrónico"
-              required
-            />
-            <p className="error">{formErrors.email}</p>
-            <input
-              id="telefono"
-              name="telefono"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="text"
-              value={formValues.telefono}
-              onChange={handleChange}
-              placeholder="Móvil de contacto"
-              required
-            />
-            <p className="error">{formErrors.telefono}</p>
-            <div className="text-area w-50 m-auto">
-              <textarea
-                id="info"
-                name="info"
-                wrap="hard"
-                className="form-control w-100 m-auto  my-3"
-                value={formValues.info}
-                onChange={handleChange}
-                placeholder="Quiero más información sobre Releevant."
-                rows="3"
-                cols="5"
-              ></textarea>
-              <p className="error">{formErrors.info}</p>
-            </div>
-            {Object.keys(formErrors).length === 0 && isSubmit && (
-              <div className="correct">
-                Su formulario se ha envíado correctamente!
+          <div className="contact-wrapper">
+            <form
+              id="contact-form"
+              className="form-horizontal"
+              role="form"
+              onSubmit={handleSubmit}
+            >
+              <div className="form-group">
+                <div className="">
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    className="form-control form-control w-100 m-auto my-3"
+                    type="text"
+                    onChange={handleChange}
+                    placeholder="Nombre y apellido"
+                    value={formValues.nombre}
+                    required
+                  />
+                  <p className="error">{formErrors.nombre}</p>
+                </div>
               </div>
-            )}
-            <div className="d-grid gap-2 col-2 mx-auto">
-              <button className="form-inicio-button btn btn-secondary mb-5 mt-3" type="submit">
-                MÁS INFO!{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-send"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                </svg>
+
+              <div className="form-group">
+                <div className="">
+                  <input
+                    id="email"
+                    name="email"
+                    className="form-control form-control w-100 m-auto my-3"
+                    type="email"
+                    value={formValues.email}
+                    onChange={handleChange}
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                  <p className="error">{formErrors.email}</p>
+                </div>
+              </div>
+
+              <p className="error">{formErrors.email}</p>
+              <input
+                id="telefono"
+                name="telefono"
+                className="form-control"
+                type="text"
+                value={formValues.telefono}
+                onChange={handleChange}
+                placeholder="Móvil de contacto"
+                required
+              />
+              <p className="error">{formErrors.telefono}</p>
+
+              <div className="text-area w-100 m-auto">
+                <textarea
+                  id="info"
+                  name="info"
+                  wrap="hard"
+                  className="form-control w-100 m-auto  my-3"
+                  value={formValues.info}
+                  onChange={handleChange}
+                  placeholder="Quiero más información sobre Releevant."
+                  rows="3"
+                  cols="5"
+                ></textarea>
+                <p className="error">{formErrors.info}</p>
+              </div>
+              {Object.keys(formErrors).length === 0 && isSubmit && (
+                <div className="correct">
+                  Su formulario se ha envíado correctamente!
+                </div>
+              )}
+
+              <button
+                className="btn btn-secondary send-button"
+                id="submit"
+                type="submit"
+              >
+                {" "}
+                <i className="fa fa-paper-plane"></i> &nbsp; Enviar
               </button>
+            </form>
+
+            <div className="direct-contact-container">
+              <ul className="contact-list">
+                <li className="list-item">
+                  <i className="fa fa-map-marker fa-2x">
+                    <span className="contact-text place">
+                      Polo de contenidos digitales
+                    </span>
+                  </i>
+                </li>
+                <li className="list-item">
+                  <i className="fa fa-phone fa-2x">
+                    <span className="contact-text phone">
+                      <a href="tel:+34 695 30 40 40" title="Give me a call">
+                        +34 695 30 40 40
+                      </a>
+                    </span>
+                  </i>
+                </li>
+
+                <li className="list-item">
+                  <i className="fa fa-envelope fa-2x">
+                    <span className="contact-text gmail">
+                      <a
+                        href="mailto:hola@releevant.com"
+                        title="Send me an email"
+                      >
+                        hola@releevant.com
+                      </a>
+                    </span>
+                  </i>
+                </li>
+              </ul>
+
+              <hr />
+              <ul className="social-media-list">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/releevant/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="contact-icon"
+                  >
+                    <i className="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/releevant.tech"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="contact-icon"
+                  >
+                    <i className="fab fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.meetup.com/es-ES/releevant/?_cookie-check=Xd_hTaHLTwr8rzUr"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="contact-icon"
+                  >
+                    <i className="fab fa-meetup" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" className="contact-icon">
+                    <i className="fab fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              <hr />
             </div>
-          </form>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   );

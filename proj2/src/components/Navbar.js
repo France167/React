@@ -56,7 +56,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <HashLink
-                className="btn-outline-light navLink nav-link"
+                className="btn-light navLink nav-link bottone-nav"
                 to="/inicio/#form-inicio"
               >
                 Más info!

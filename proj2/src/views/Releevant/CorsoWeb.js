@@ -125,233 +125,239 @@ function CorsoWeb() {
           han pasado por nuestras formaciones.
         </p>
       </div>
-
-      <h2 className="title-h2-cursoweb text-center module">
-        ¿QUÉ APRENDERÉ EN EL BOOTCAMP?
-      </h2>
-      <div className="etapas module">
-        <div className="row">
-          <div className="etapas-col col-2">
-            <div className="list-group" id="list-tab" role="tablist">
-              <a
-                className="title-cursow list-group-item list-group-item-action active"
-                id="list-home-list"
-                data-bs-toggle="list"
-                href="#list-home"
-                role="tab"
-                aria-controls="list-home"
-              >
-                ETAPA 1
-              </a>
-              <a
-                className="title-cursow list-group-item list-group-item-action"
-                id="list-profile-list"
-                data-bs-toggle="list"
-                href="#list-profile"
-                role="tab"
-                aria-controls="list-profile"
-              >
-                ETAPA 2
-              </a>
-              <a
-                className="title-cursow list-group-item list-group-item-action"
-                id="list-messages-list"
-                data-bs-toggle="list"
-                href="#list-messages"
-                role="tab"
-                aria-controls="list-messages"
-              >
-                ETAPA 3
-              </a>
-              <a
-                className="title-cursow list-group-item list-group-item-action"
-                id="list-settings-list"
-                data-bs-toggle="list"
-                href="#list-settings"
-                role="tab"
-                aria-controls="list-settings"
-              >
-                ETAPA 4
-              </a>
+      <div className="etapas-boot">
+        <h2 className="title-h2-cursoweb text-center module">
+          ¿QUÉ APRENDERÉ EN EL BOOTCAMP?
+        </h2>
+        <div className="etapas module">
+          <div className="row">
+            <div className="etapas-col col-2">
+              <div className="list-group" id="list-tab" role="tablist">
+                <a
+                  className="title-cursow list-group-item list-group-item-action active btn-secondary"
+                  id="list-home-list"
+                  data-bs-toggle="list"
+                  href="#list-home"
+                  role="tab"
+                  aria-controls="list-home"
+                >
+                  ETAPA 1
+                </a>
+                <a
+                  className="title-cursow list-group-item list-group-item-action btn-secondary"
+                  id="list-profile-list"
+                  data-bs-toggle="list"
+                  href="#list-profile"
+                  role="tab"
+                  aria-controls="list-profile"
+                >
+                  ETAPA 2
+                </a>
+                <a
+                  className="title-cursow list-group-item list-group-item-action btn-secondary"
+                  id="list-messages-list"
+                  data-bs-toggle="list"
+                  href="#list-messages"
+                  role="tab"
+                  aria-controls="list-messages"
+                >
+                  ETAPA 3
+                </a>
+                <a
+                  className="title-cursow list-group-item list-group-item-action btn-secondary"
+                  id="list-settings-list"
+                  data-bs-toggle="list"
+                  href="#list-settings"
+                  role="tab"
+                  aria-controls="list-settings"
+                >
+                  ETAPA 4
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="col-10">
-            <div className="tab-content" id="nav-tabContent">
-              <div
-                className="tab-pane fade show active"
-                id="list-home"
-                role="tabpanel"
-                aria-labelledby="list-home-list"
-              >
-                <h3 className="h3-web">MAQUETACIÓN Y BASES DE PROGRAMACIÓN</h3>
-                <div className="progress my-3">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    style={{ width: "25%" }}
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+            <div className="col-10">
+              <div className="tab-content" id="nav-tabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="list-home"
+                  role="tabpanel"
+                  aria-labelledby="list-home-list"
+                >
+                  <h3 className="h3-web">
+                    MAQUETACIÓN Y BASES DE PROGRAMACIÓN
+                  </h3>
+                  <div className="progress my-3">
+                    <div
+                      className="progress-bar bg-info"
+                      role="progressbar"
+                      style={{ width: "25%" }}
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <p className="p-web">
+                    En esta etapa aprenderás los conceptos más básicos de la
+                    programación web. Empezaremos con{" "}
+                    <b>HTML, CSS, SASS y SCSS</b>, junto con{" "}
+                    <b>diseños responsive, Flexbox y Bootstrap</b>. Todo ello
+                    para tener unas bases sólidas de maquetación web. Una vez
+                    tengamos el “esqueleto” de la web hecho, habrá que darle
+                    funcionalidades. Es ahí cuando entra <b>Javascript</b>.
+                    Aprenderemos a manipular el DOM, es decir, darle vida a las
+                    webs en todos los sentidos. Asentaremos los conceptos
+                    iniciales que iremos completando en el resto de etapas.
+                    También te familiarizarás con el <b>control de versiones</b>
+                    .
+                  </p>
+                  <p className="p-web">
+                    Para finalizar, harás tu <b>primer proyecto</b>, para
+                    asegurar y afianzar los conocimientos de los lenguajes que
+                    has aprendido. Pero eso no es todo, ¡hay más! →
+                  </p>
                 </div>
-                <p className="p-web">
-                  En esta etapa aprenderás los conceptos más básicos de la
-                  programación web. Empezaremos con{" "}
-                  <b>HTML, CSS, SASS y SCSS</b>, junto con{" "}
-                  <b>diseños responsive, Flexbox y Bootstrap</b>. Todo ello para
-                  tener unas bases sólidas de maquetación web. Una vez tengamos
-                  el “esqueleto” de la web hecho, habrá que darle
-                  funcionalidades. Es ahí cuando entra <b>Javascript</b>.
-                  Aprenderemos a manipular el DOM, es decir, darle vida a las
-                  webs en todos los sentidos. Asentaremos los conceptos
-                  iniciales que iremos completando en el resto de etapas.
-                  También te familiarizarás con el <b>control de versiones</b>.
-                </p>
-                <p className="p-web">
-                  Para finalizar, harás tu <b>primer proyecto</b>, para asegurar
-                  y afianzar los conocimientos de los lenguajes que has
-                  aprendido. Pero eso no es todo, ¡hay más! →
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="list-profile"
-                role="tabpanel"
-                aria-labelledby="list-profile-list"
-              >
-                <h3 className="h3-web">BACK-END Y PROGRAMACIÓN AVANZADA</h3>
-                <div className="progress my-3">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    style={{ width: "50%" }}
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div
+                  className="tab-pane fade"
+                  id="list-profile"
+                  role="tabpanel"
+                  aria-labelledby="list-profile-list"
+                >
+                  <h3 className="h3-web">BACK-END Y PROGRAMACIÓN AVANZADA</h3>
+                  <div className="progress my-3">
+                    <div
+                      className="progress-bar bg-info"
+                      role="progressbar"
+                      style={{ width: "50%" }}
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <p className="p-web">
+                    En la segunda etapa de este bootcamp nos metemos de lleno en
+                    la parte más abstracta de la programación: el{" "}
+                    <b>back-end</b>. Aprenderás conceptos como <b>MVC</b>{" "}
+                    (modelo-vista-controlador) y crearás tu propio servidor de
+                    la mano de <b>Node.js y ExpressJS</b>. Empezarás a tratar y
+                    manejar bases de datos de la mano de
+                    <b> MySQL</b> y <b>MongoDB</b>, aprenderás las diferencias
+                    entre ellas y te meterás de lleno en el mundo de las
+                    solicitudes <b> HTTP</b> y las
+                    <b> API</b>. También entrarás en el mundo de algunas de las
+                    tecnologías más punteras actualmente, como{" "}
+                    <b>AWS y Docker</b>.
+                  </p>
+                  <p className="p-web">
+                    Para finalizar, harás tu <b>segundo proyecto</b>, esta vez
+                    para combinar todo lo que has aprendido en las dos etapas.
+                    Podrás
+                    <b> crear una </b>web básica, tanto con su <b>front-end</b>{" "}
+                    como con su
+                    <b> back-end</b>, en la que podrás guardar, enviar,
+                    modificar y eliminar datos. Además, te ayudará a afianzar
+                    todavía más tus conocimientos para avanzar hacia tu último
+                    reto. →
+                  </p>
                 </div>
-                <p className="p-web">
-                  En la segunda etapa de este bootcamp nos metemos de lleno en
-                  la parte más abstracta de la programación: el <b>back-end</b>.
-                  Aprenderás conceptos como <b>MVC</b>{" "}
-                  (modelo-vista-controlador) y crearás tu propio servidor de la
-                  mano de <b>Node.js y ExpressJS</b>. Empezarás a tratar y
-                  manejar bases de datos de la mano de
-                  <b> MySQL</b> y <b>MongoDB</b>, aprenderás las diferencias
-                  entre ellas y te meterás de lleno en el mundo de las
-                  solicitudes <b> HTTP</b> y las
-                  <b> API</b>. También entrarás en el mundo de algunas de las
-                  tecnologías más punteras actualmente, como <b>AWS y Docker</b>
-                  .
-                </p>
-                <p className="p-web">
-                  Para finalizar, harás tu <b>segundo proyecto</b>, esta vez
-                  para combinar todo lo que has aprendido en las dos etapas.
-                  Podrás
-                  <b> crear una </b>web básica, tanto con su <b>front-end</b>{" "}
-                  como con su
-                  <b> back-end</b>, en la que podrás guardar, enviar, modificar
-                  y eliminar datos. Además, te ayudará a afianzar todavía más
-                  tus conocimientos para avanzar hacia tu último reto. →
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="list-messages"
-                role="tabpanel"
-                aria-labelledby="list-messages-list"
-              >
-                <h3 className="h3-web">FRONT-END: REACT</h3>
-                <div className="progress my-3">
-                  <div
-                    className="progress-bar bg-info"
-                    role="progressbar"
-                    style={{ width: "75%" }}
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div
+                  className="tab-pane fade"
+                  id="list-messages"
+                  role="tabpanel"
+                  aria-labelledby="list-messages-list"
+                >
+                  <h3 className="h3-web">FRONT-END: REACT</h3>
+                  <div className="progress my-3">
+                    <div
+                      className="progress-bar bg-info"
+                      role="progressbar"
+                      style={{ width: "75%" }}
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <p className="p-web">
+                    Esta va a ser la etapa del bootcamp más intensa. Pondrás a
+                    prueba todos los conocimientos adquiridos hasta ahora, y
+                    aprenderás la{" "}
+                    <b>librería de front-end más potente del mercado: React</b>.
+                    Desarrollado por <b>Facebook</b>, es uno de los lenguajes
+                    más demandados actualmente en el sector tecnológico.
+                    Aprenderás conceptos como <b>SPA</b> (Single Page
+                    Application) y la arquitectura basada en componentes se
+                    convertirá en algo habitual para ti.
+                  </p>
+                  <p className="p-web">
+                    Aparte de esto, aprenderás conocimientos de <b>SCRUM</b>,
+                    para saber cómo organizan y estructuran los proyectos las
+                    mejores empresas; sabrás todos los pasos para{" "}
+                    <b>organizar y crear un proyecto real</b>, y lograrás tener
+                    una base sólida de los conceptos de <b>UI</b> (User
+                    Interface) y <b>UX</b> (User Experience).
+                  </p>
+                  <p className="p-web">
+                    En este momento ya estarás listo para… ¡enfrentarte al
+                    <b> proyecto final</b>! Unirás todo lo aprendido en estas
+                    etapas, y como resultado{" "}
+                    <b>crearás una auténtica aplicación full-stack</b>. Pondrás
+                    a prueba tus conocimientos en front-end con React y la
+                    maquetación, y tus conocimientos en back-end con las bases
+                    de datos y Node.js. Además,{" "}
+                    <b>
+                      este proyecto final será expuesto a las empresas que te
+                      contratarán
+                    </b>
+                    . Pero… ¡eso te lo contamos en la siguiente etapa! →
+                  </p>
                 </div>
-                <p className="p-web">
-                  Esta va a ser la etapa del bootcamp más intensa. Pondrás a
-                  prueba todos los conocimientos adquiridos hasta ahora, y
-                  aprenderás la{" "}
-                  <b>librería de front-end más potente del mercado: React</b>.
-                  Desarrollado por <b>Facebook</b>, es uno de los lenguajes más
-                  demandados actualmente en el sector tecnológico. Aprenderás
-                  conceptos como <b>SPA</b> (Single Page Application) y la
-                  arquitectura basada en componentes se convertirá en algo
-                  habitual para ti.
-                </p>
-                <p className="p-web">
-                  Aparte de esto, aprenderás conocimientos de <b>SCRUM</b>, para
-                  saber cómo organizan y estructuran los proyectos las mejores
-                  empresas; sabrás todos los pasos para{" "}
-                  <b>organizar y crear un proyecto real</b>, y lograrás tener
-                  una base sólida de los conceptos de <b>UI</b> (User Interface)
-                  y <b>UX</b> (User Experience).
-                </p>
-                <p className="p-web">
-                  En este momento ya estarás listo para… ¡enfrentarte al
-                  <b> proyecto final</b>! Unirás todo lo aprendido en estas
-                  etapas, y como resultado{" "}
-                  <b>crearás una auténtica aplicación full-stack</b>. Pondrás a
-                  prueba tus conocimientos en front-end con React y la
-                  maquetación, y tus conocimientos en back-end con las bases de
-                  datos y Node.js. Además,{" "}
-                  <b>
-                    este proyecto final será expuesto a las empresas que te
-                    contratarán
-                  </b>
-                  . Pero… ¡eso te lo contamos en la siguiente etapa! →
-                </p>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="list-settings"
-                role="tabpanel"
-                aria-labelledby="list-settings-list"
-              >
-                <h3 className="h3-web">¡HIRING WEEK!</h3>
-                <div className="progress my-3">
-                  <div
-                    className="progress-bar bg-success"
-                    role="progressbar"
-                    style={{ width: "100%" }}
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                <div
+                  className="tab-pane fade"
+                  id="list-settings"
+                  role="tabpanel"
+                  aria-labelledby="list-settings-list"
+                >
+                  <h3 className="h3-web">¡HIRING DAY!</h3>
+                  <div className="progress my-3">
+                    <div
+                      className="progress-bar bg-success"
+                      role="progressbar"
+                      style={{ width: "100%" }}
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <p className="p-web">
+                    Esta es la última etapa del bootcamp de desarrollo web.
+                    ¡Aquí ya serás todo un{" "}
+                    <b>
+                      <i>Full Stack Web Developer</i>
+                    </b>
+                    ! En ella tendrás charlas de empresas y profesionales que
+                    vendrán a <b>reclutar</b> a los alumnos del bootcamp.
+                    También habrá <b>visitas a empresas</b>, para que conozcas
+                    de primera mano cómo funcionan por dentro. Por último,
+                    presentarás tu proyecto final ante{" "}
+                    <b>múltiples empresas del sector tecnológico</b>. ¡El
+                    trabajo estará hecho! En este momento estarás listo para
+                    optar a muchos puestos de trabajo en el sector.
+                  </p>
+                  <p className="p-web">
+                    <b>Releevant te acompañará y asesorará</b> sobre cómo hacer
+                    las entrevistas, información relevante sobre ellas, y
+                    mediará para que los procesos para que encuentres trabajo
+                    sean los mas cortos posibles.
+                  </p>
                 </div>
-                <p className="p-web">
-                  Esta es la última etapa del bootcamp de desarrollo web. ¡Aquí
-                  ya serás todo un{" "}
-                  <b>
-                    <i>Full Stack Web Developer</i>
-                  </b>
-                  ! En ella tendrás charlas de empresas y profesionales que
-                  vendrán a <b>reclutar</b> a los alumnos del bootcamp. También
-                  habrá <b>visitas a empresas</b>, para que conozcas de primera
-                  mano cómo funcionan por dentro. Por último, presentarás tu
-                  proyecto final ante{" "}
-                  <b>múltiples empresas del sector tecnológico</b>. ¡El trabajo
-                  estará hecho! En este momento estarás listo para optar a
-                  muchos puestos de trabajo en el sector.
-                </p>
-                <p className="p-web">
-                  <b>Releevant te acompañará y asesorará</b> sobre cómo hacer
-                  las entrevistas, información relevante sobre ellas, y mediará
-                  para que los procesos para que encuentres trabajo sean los mas
-                  cortos posibles.
-                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <h2 className="h2-cursoweb text-center module">
-        ¿ESTE BOOTCAMP ES PARA MI? Si....
+        ¿ESTE BOOTCAMP ES PARA MI?
       </h2>
+      <h2 className="h2-cursoweb-dos text-center module">Si....</h2>
       <div className="formacion-bootcamp module">
         <div className="formacion-divs-bootcamp div-1 module">
           <h3 className="h3-bootcamp text-center mt-3">
@@ -420,7 +426,7 @@ function CorsoWeb() {
                 700: {
                   perPage: 1,
                 },
-              }
+              },
             }}
           >
             {docentes.map((docente) => {
@@ -584,7 +590,7 @@ function CorsoWeb() {
         PREGUNTAS MÁS FRECUENTES
       </h2>
       <div
-        className="accordion-acc accordion accordion-flush m-auto module my-5"
+        className="accordion-acc accordion accordion-flush m-auto module my-5 w-50"
         id="accordionFlushExample"
       >
         <div className="accordion-item">
@@ -1000,84 +1006,170 @@ function CorsoWeb() {
         </div>
       </div>
       <div className="form-cont">
-        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
-          ¿QUIERES MÁS INFORMACIÓN?
-        </h2>
-        <div className="form-inicio mb-5 module">
-          <h5 className="h5-curso text-center my-5">
+        <section id="contact">
+          <h2
+            className="h2-compania-inicio text-center module"
+            id="form-inicio"
+          >
+            ¿QUIERES MÁS INFORMACIÓN?
+          </h2>
+          <h5 className="h5-curso text-center">
             ¡Rellena nuestro formulario y la obtendrás!
           </h5>
-
-          <form onSubmit={handleSubmit}>
-            <input
-              id="nombre"
-              name="nombre"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="text"
-              onChange={handleChange}
-              placeholder="Nombre y apellido"
-              value={formValues.nombre}
-              required
-            />
-            <p className="error">{formErrors.nombre}</p>
-            <input
-              id="email"
-              name="email"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="email"
-              value={formValues.email}
-              onChange={handleChange}
-              placeholder="Correo eletrónico"
-              required
-            />
-            <p className="error">{formErrors.email}</p>
-            <input
-              id="telefono"
-              name="telefono"
-              className="form-control form-control-sm w-50 m-auto my-3"
-              type="text"
-              value={formValues.telefono}
-              onChange={handleChange}
-              placeholder="Móvil de contacto"
-              required
-            />
-            <p className="error">{formErrors.telefono}</p>
-            <div className="w-50 m-auto">
-              <textarea
-                id="info"
-                name="info"
-                wrap="hard"
-                className="text-area2 form-control w-100 m-auto  my-3"
-                value={formValues.info}
-                onChange={handleChange}
-                placeholder="Quiero más información sobre Releevant."
-                rows="3"
-                cols="5"
-              ></textarea>
-              <p className="error">{formErrors.info}</p>
-            </div>
-            {Object.keys(formErrors).length === 0 && isSubmit && (
-              <div className="correct">
-                Su formulario se ha envíado correctamente!
+          <div class="contact-wrapper">
+            <form
+              id="contact-form"
+              class="form-horizontal"
+              role="form"
+              onSubmit={handleSubmit}
+            >
+              <div class="form-group">
+                <div class="">
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    className="form-control form-control w-100 m-auto my-3"
+                    type="text"
+                    onChange={handleChange}
+                    placeholder="Nombre y apellido"
+                    value={formValues.nombre}
+                    required
+                  />
+                  <p className="error">{formErrors.nombre}</p>
+                </div>
               </div>
-            )}
-            <div className="d-grid gap-2 col-2 mx-auto">
-              <button className="form-inicio-button btn btn-secondary mb-5 mt-3" type="submit">
-                MÁS INFO!{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-send"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-                </svg>
+
+              <div class="form-group">
+                <div class="">
+                  <input
+                    id="email"
+                    name="email"
+                    className="form-control form-control w-100 m-auto my-3"
+                    type="email"
+                    value={formValues.email}
+                    onChange={handleChange}
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                  <p className="error">{formErrors.email}</p>
+                </div>
+              </div>
+
+              <p className="error">{formErrors.email}</p>
+              <input
+                id="telefono"
+                name="telefono"
+                className="form-control"
+                type="text"
+                value={formValues.telefono}
+                onChange={handleChange}
+                placeholder="Móvil de contacto"
+                required
+              />
+              <p className="error">{formErrors.telefono}</p>
+
+              <div className="text-area w-100 m-auto">
+                <textarea
+                  id="info"
+                  name="info"
+                  wrap="hard"
+                  className="form-control w-100 m-auto  my-3"
+                  value={formValues.info}
+                  onChange={handleChange}
+                  placeholder="Quiero más información sobre Releevant."
+                  rows="3"
+                  cols="5"
+                ></textarea>
+                <p className="error">{formErrors.info}</p>
+              </div>
+              {Object.keys(formErrors).length === 0 && isSubmit && (
+                <div className="correct">
+                  Su formulario se ha envíado correctamente!
+                </div>
+              )}
+
+              <button
+                class="btn btn-primary send-button"
+                id="submit"
+                type="submit"
+              >
+                {" "}
+                <i class="fa fa-paper-plane"></i> &nbsp; Enviar
               </button>
+            </form>
+
+            <div class="direct-contact-container">
+              <ul class="contact-list">
+                <li class="list-item">
+                  <i class="fa fa-map-marker fa-2x">
+                    <span class="contact-text place">
+                      Polo de contenidos digitales
+                    </span>
+                  </i>
+                </li>
+                <li class="list-item">
+                  <i class="fa fa-phone fa-2x">
+                    <span class="contact-text phone">
+                      <a href="tel:+34 695 30 40 40" title="Give me a call">
+                        +34 695 30 40 40
+                      </a>
+                    </span>
+                  </i>
+                </li>
+
+                <li class="list-item">
+                  <i class="fa fa-envelope fa-2x">
+                    <span class="contact-text gmail">
+                      <a
+                        href="mailto:hola@releevant.com"
+                        title="Send me an email"
+                      >
+                        hola@releevant.com
+                      </a>
+                    </span>
+                  </i>
+                </li>
+              </ul>
+
+              <hr />
+              <ul class="social-media-list">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/releevant/"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/releevant.tech"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.meetup.com/es-ES/releevant/?_cookie-check=Xd_hTaHLTwr8rzUr"
+                    target="_blank"
+                    class="contact-icon"
+                  >
+                    <i class="fab fa-meetup" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="contact-icon">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              <hr />
             </div>
-          </form>
-        </div>
+          </div>
+        </section>
       </div>
     </div>
   );
