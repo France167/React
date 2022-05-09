@@ -16,7 +16,7 @@ function Navbar() {
             <img
               src="../../LogoDef.png"
               alt="logo Releevant"
-              style={{ width: "50%" }}
+              className="logo"
             />
           </HashLink>
           <button

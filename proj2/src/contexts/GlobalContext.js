@@ -100,7 +100,7 @@ export function GlobalContextProvider({ children }) {
     }
 
     fetchApi();
-  }, []);
+  }, [expertos]);
 
   const value = {
     alumnos,

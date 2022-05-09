@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import FooterRel from "../../components/FooterRel";
 import Image from "../../components/images/startups.jpg";
 import "../../style/css-startups.css";
 import emailjs from "emailjs-com";
@@ -77,16 +76,6 @@ function Startups() {
         id="startup"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "48vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
       />
       <h1 className="title-startups text-center">
         <span className="lanzamos">LANZAMOS</span> TU STARTUP
@@ -101,7 +90,7 @@ function Startups() {
         <b>financiación</b> y desarrollo, déjalo en nuestras manos.
       </p>
       <div className="formacion-startups module">
-        <div className="formacion-divs-startups module">
+        <div className="formacion-divs-startups div-1-start module">
           <h3 className="h3-startups text-center mt-3">
             Confianza en tus ideas
           </h3>
@@ -111,7 +100,7 @@ function Startups() {
             hacer real tu proyecto.
           </p>
         </div>
-        <div className="formacion-divs-startups module">
+        <div className="formacion-divs-startups div-2-start module">
           <h3 className="h3-startups text-center mt-3">
             Contacto con nuestros partners
           </h3>
@@ -121,7 +110,7 @@ function Startups() {
             mentorización y viabilidad a tu proyecto.
           </p>
         </div>
-        <div className="formacion-divs-startups module">
+        <div className="formacion-divs-startups div-3-start module">
           <h3 className="h3-startups text-center mt-3">
             Ayuda con el desarrollo
           </h3>
@@ -134,7 +123,7 @@ function Startups() {
         </div>
       </div>
       <div className="startups-section module">
-        <div className="section-one module">
+        <div className="section-one sec-one module">
           <h2 className="title-section">ACOMPAÑAMIENTO</h2>
           <p className="p-section">
             El apoyo a una startup no puede ser un acontecimiento aislado, con
@@ -151,7 +140,7 @@ function Startups() {
             es vital en las primeras fases del proyecto.
           </p>
         </div>
-        <div className="section-one module">
+        <div className="sec-two section-one module">
           <h2 className="title-section">VALIDACIÓN & INVERSIÓN</h2>
           <p className="p-section">
             Cuando estamos validando el modelo de negocio y obteniendo feedback
@@ -167,8 +156,8 @@ function Startups() {
           </p>
         </div>
       </div>
-      <div className="form-cont">
-        <h2 className="h2-compania-inicio text-center module" id="form-inicio">
+      <div className="form-cont-start">
+        <h2 className="h2-compania-startup text-center module" id="form-inicio">
           ¿QUIERES MÁS INFORMACIÓN?
         </h2>
         <div className="form-inicio mb-5 module">
@@ -210,7 +199,7 @@ function Startups() {
               required
             />
             <p className="error">{formErrors.telefono}</p>
-            <div className="w-50 m-auto">
+            <div className="text-area-start w-50 m-auto">
               <textarea
                 id="info"
                 name="info"
@@ -230,7 +219,7 @@ function Startups() {
               </div>
             )}
             <div className="d-grid gap-2 col-2 mx-auto">
-              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+              <button className="form-inicio-button btn btn-secondary mb-5 mt-3" type="submit">
                 MÁS INFO!{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

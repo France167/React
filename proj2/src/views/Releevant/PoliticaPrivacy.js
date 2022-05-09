@@ -10,16 +10,6 @@ function PoliticaPrivacy() {
         id="privacy"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "-13vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
       />
       <h2 className="h2-privacy-tit">POLÍTICA DE PRIVACIDAD</h2>
       <p className="p-cookies">

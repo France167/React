@@ -100,7 +100,7 @@ function Inicio() {
       </h2>
       <h3 className="title-h3 text-center module">¿POR QUÉ?</h3>
       <div className="formacion module">
-        <div className="formacion-divs module">
+        <div className="formacion-divs div-1 module">
           <h3 className="h3 text-center mt-3">ERES ÚNICO </h3>
           <h4 className="h4 text-center mt-3"> Desde 0 al 100%!</h4>
           <p className="p-formacion">
@@ -109,7 +109,7 @@ function Inicio() {
             programación, nos adaptamos a ti, a tu nivel y habilidades.
           </p>
         </div>
-        <div className="formacion-divs module">
+        <div className="formacion-divs div-2 module">
           <h3 className="h3 text-center mt-3">
             <HashLink className="docentes" to="/curso-desarrollo/#profesores">
               DOCENTES
@@ -127,7 +127,7 @@ function Inicio() {
         </div>
       </div>
       <div className="formacion module">
-        <div className="formacion-divs module">
+        <div className="formacion-divs div-3 module">
           <h3 className="h3 text-center mt-3">
             <HashLink
               className="docentes"
@@ -146,7 +146,7 @@ function Inicio() {
             compañeros.
           </p>
         </div>
-        <div className="formacion-divs module">
+        <div className="formacion-divs div-4 module">
           <h3 className="h3 text-center mt-3">EMPLEABILIDAD</h3>
           <h4 className="h4 text-center mt-3">
             95% asegurado, sólo depende de ti.
@@ -380,7 +380,7 @@ function Inicio() {
               required
             />
             <p className="error">{formErrors.telefono}</p>
-            <div className="w-50 m-auto">
+            <div className="text-area w-50 m-auto">
               <textarea
                 id="info"
                 name="info"
@@ -400,7 +400,7 @@ function Inicio() {
               </div>
             )}
             <div className="d-grid gap-2 col-2 mx-auto">
-              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+              <button className="form-inicio-button btn btn-secondary mb-5 mt-3" type="submit">
                 MÁS INFO!{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

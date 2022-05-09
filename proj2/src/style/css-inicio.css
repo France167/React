@@ -1,39 +1,37 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  /* NAVBAR */
-  #mainNavbar {
-    font-size: 1.7rem;
-  }
-  
-  #mainNavbar .nav-link:hover {
-    color:	#d85081; 
-  } 
-  .navbar.scrolled {
-    background: #adb5bd;
-    transition: background 500ms
-  }
-  
-  #mainNavbar .navLink{
-    color: #f8f9fa;
-    font-size: 1.3rem;
-  }
-  
-  #mainNavbar .navLink:hover{
-    color:	#d85081;
-  }
-  
-  
-  #mainNavbar .navLink.scrolled {
-    color: 	#343a40;
-    transition: background 500ms
-  }
+  scroll-behavior: smooth;
+}
 
-  /************** CURSO CARDS**************/
+/* NAVBAR */
+#mainNavbar {
+  font-size: 1.7rem;
+}
 
-  .container-bootcamp
-{
+#mainNavbar .nav-link:hover {
+  color: #d85081;
+}
+.navbar.scrolled {
+  background: #adb5bd;
+  transition: background 500ms;
+}
+
+#mainNavbar .navLink {
+  color: #f8f9fa;
+  font-size: 1.3rem;
+}
+
+#mainNavbar .navLink:hover {
+  color: #d85081;
+}
+
+#mainNavbar .navLink.scrolled {
+  color: #343a40;
+  transition: background 500ms;
+}
+
+/************** CURSO CARDS**************/
+
+.container-bootcamp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +41,7 @@ html {
   min-height: 800px;
 }
 
-.container-bootcamp .box
-{
+.container-bootcamp .box {
   position: relative;
   width: 320px;
   height: 600px;
@@ -55,9 +52,8 @@ html {
   transition: 0.5s;
 }
 
-.container-bootcamp .box::before
-{
-  content:' ';
+.container-bootcamp .box::before {
+  content: " ";
   position: absolute;
   top: 0;
   left: 50px;
@@ -70,9 +66,8 @@ html {
   transition: 0.5s;
 }
 
-.container-bootcamp .box::after
-{
-  content:'';
+.container-bootcamp .box::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 50;
@@ -86,33 +81,26 @@ html {
 }
 
 .container-bootcamp .box:hover:before,
-.container-bootcamp .box:hover:after
-{
+.container-bootcamp .box:hover:after {
   transform: skewX(0deg);
   left: 20px;
   width: calc(100% - 90px);
-  
 }
-
 
 .container-bootcamp .box:nth-child(1):before,
-.container-bootcamp .box:nth-child(1):after
-{
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+.container-bootcamp .box:nth-child(1):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 .container-bootcamp .box:nth-child(2):before,
-.container-bootcamp .box:nth-child(2):after
-{
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+.container-bootcamp .box:nth-child(2):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 .container-bootcamp .box:nth-child(3):before,
-.container-bootcamp .box:nth-child(3):after
-{
-  background: linear-gradient(315deg, #ffbc00, #ff0058)
+.container-bootcamp .box:nth-child(3):after {
+  background: linear-gradient(315deg, #ffbc00, #ff0058);
 }
 
-.container-bootcamp .box span
-{
+.container-bootcamp .box span {
   display: block;
   position: absolute;
   top: 0;
@@ -123,9 +111,8 @@ html {
   pointer-events: none;
 }
 
-.container-bootcamp .box span::before
-{
-  content:'';
+.container-bootcamp .box span::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -135,13 +122,12 @@ html {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: 0.1s;  
+  transition: 0.1s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.container-bootcamp .box:hover span::before
-{
+.container-bootcamp .box:hover span::before {
   top: -50px;
   left: 50px;
   width: 100px;
@@ -149,9 +135,8 @@ html {
   opacity: 1;
 }
 
-.container-bootcamp .box span::after
-{
-  content:'';
+.container-bootcamp .box span::after {
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -163,12 +148,11 @@ html {
   opacity: 0;
   transition: 0.5s;
   animation: animate 2s ease-in-out infinite;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   animation-delay: -1s;
 }
 
-.container-bootcamp .box:hover span:after
-{
+.container-bootcamp .box:hover span:after {
   bottom: -50px;
   right: 50px;
   width: 150px;
@@ -176,21 +160,18 @@ html {
   opacity: 1;
 }
 
-@keyframes animate
-{
-  0%, 100%
-  {
+@keyframes animate {
+  0%,
+  100% {
     transform: translateY(10px);
   }
-  
-  50%
-  {
+
+  50% {
     transform: translate(-10px);
   }
 }
 
-.container-bootcamp .box .content
-{
+.container-bootcamp .box .content {
   position: relative;
   left: 0;
   padding: 20px 40px;
@@ -203,28 +184,24 @@ html {
   color: #fff;
 }
 
-.container-bootcamp .box:hover .content
-{
+.container-bootcamp .box:hover .content {
   left: -25px;
   padding: 60px 40px;
 }
 
-.container-bootcamp .box .content h2
-{
+.container-bootcamp .box .content h2 {
   font-size: 2em;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.container-bootcamp .box .content p
-{
+.container-bootcamp .box .content p {
   font-size: 1.1em;
   margin-bottom: 10px;
   line-height: 1.4em;
 }
 
-.container-bootcamp .box .content a
-{
+.container-bootcamp .box .content a {
   display: inline-block;
   font-size: 1.1em;
   color: #111;
@@ -236,179 +213,353 @@ html {
   margin-top: 5px;
 }
 
-.container-bootcamp .box .content a:hover
-{
+.container-bootcamp .box .content a:hover {
   background: #ffcf4d;
   border: 1px solid rgba(255, 0, 88, 0.4);
   box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
 }
-  
-  /******** SLIDE IN ON SCROLL ******/
-  
-  .come-in {
-    transform: translateY(150px);
-    animation: come-in 0.8s ease forwards;
+
+/******** SLIDE IN ON SCROLL ******/
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
   }
-  .come-in:nth-child(odd) {
-    animation-duration: 0.6s; /* So they look staggered */
+}
+
+/**************************/
+
+.videoInicio {
+  opacity: 0.96;
+}
+
+.title {
+  margin-top: 16%;
+  color: white;
+  font-size: 6rem;
+  font-family: "Sniglet", cursive;
+  font-family: "Prototype", sans-serif;
+}
+
+.p-title-inicio {
+  margin: 6rem;
+  margin-top: 3%;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.title-h2 {
+  margin-top: 20%;
+  margin-bottom: 1%;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: #d85081;
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+}
+
+.title-h3 {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-right: 15%;
+  margin-left: 15%;
+  color: #d85081;
+  font-family: "Prototype", sans-serif;
+  font-size: 2rem;
+}
+
+.h2-title-curso {
+  font-family: "Prototype", sans-serif;
+}
+
+.carousel-control-next-icon:after {
+  display: none;
+}
+
+.carousel-control-prev-icon:after {
+  display: none;
+}
+
+.h2-curso {
+  color: #ffffff;
+  font-family: "Prototype", sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.h2-compania-inicio {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: rgb(255, 255, 255);
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+  padding: 6vh;
+}
+
+.docentes {
+  text-decoration: none;
+  color: #111;
+}
+
+.docentes:hover {
+  text-decoration: none;
+  color: #111;
+}
+
+.h2-compania-inicio1 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: black;
+  font-family: "Prototype", sans-serif;
+  font-size: 2.5rem;
+  padding: 6vh;
+}
+
+.h5-curso {
+  color: gray;
+}
+
+.h5-curso1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.p-formacion {
+  color: gray;
+  margin: 3vh 5vh;
+}
+
+.h3 {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: "Prototype", sans-serif;
+}
+.h4 {
+  margin-bottom: 1.1vh;
+  margin-top: 20px;
+  font-family: "Prototype", sans-serif;
+  font-size: 0.8rem;
+}
+
+.formacion {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0.5vh auto;
+}
+
+.formacion-divs {
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 2vh 2vh;
+}
+
+.h2-carousel {
+  color: #d85081;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: "Prototype", sans-serif;
+}
+
+.form-inicio {
+  width: 80%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 2.5vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+
+.form-cont {
+  background-color: #1d061a;
+  min-height: 750px;
+}
+
+/*********** MEDIA QUERIES ***************/
+
+@media screen and (max-width: 600px) {
+  .videoInicio {
+    width: 50%;
+    max-height: 500px;
   }
-  
-  @keyframes come-in {
-    to { transform: translateY(0); }
-  }
-  
-  /**************************/
-  
-  .videoInicio{
-    opacity: 0.96;
-  }
-  
-  .title{
-    margin-top: 16%;
+
+  .title {
+    margin-top: 75%;
     color: white;
-    font-size: 6rem;
-    font-family: 'Sniglet', cursive;
-    font-family: 'Prototype', sans-serif;
+    font-size: 2.3rem;
+    font-family: "Prototype", sans-serif;
   }
-  
-  .p-title-inicio{
-    margin: 6rem;
+
+  .p-title-inicio {
+    margin: 1rem;
     margin-top: 3%;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
-    font-family: 'Prototype', sans-serif;
+    font-size: 1.5rem;
+    font-family: "Prototype", sans-serif;
   }
-  
-  .title-h2{
-    margin-top: 20%;
+
+  .title-h2 {
+    margin-top: 115%;
     margin-bottom: 1%;
     margin-right: 15%;
     margin-left: 15%;
     color: #d85081;
-    font-family: 'Prototype', sans-serif;
-    font-size: 2.5rem;
+    font-family: "Prototype", sans-serif;
+    font-size: 1.5rem;
   }
-  
-  .title-h3{
-    margin-top: 0%;
+
+  .title-h3 {
+    margin-top: 5%;
     margin-bottom: 1%;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
     color: #d85081;
-    font-family: 'Prototype', sans-serif;
-    font-size: 2rem;
+    font-family: "Prototype", sans-serif;
+    font-size: 1.5rem;
   }
-  
-  .h2-title-curso{
-    font-family: 'Prototype', sans-serif;
+
+  .h2-title-curso {
+    font-family: "Prototype", sans-serif;
   }
-  
-  
-  .carousel-control-next-icon:after{
-    display: none;
+
+  .formacion {
+    width: 100%;
+    margin: 0.5vh auto;
   }
-  
-  .carousel-control-prev-icon:after{
-    display: none;
+
+  .div-1 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10vh 2vh;
+    position: relative;
+    left: 200px;
+    top: -60px;
+    min-width: 360px;
+    max-height: 289px;
   }
-  
-  .h2-curso{
+  .div-2 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 300px;
+    min-width: 360px;
+    left: -197px;
+    max-height: 320px;
+  }
+
+  .div-3 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 181px;
+    min-width: 360px;
+    left: 200px;
+    max-height: 320px;
+  }
+
+  .div-4 {
+    border: 1px solid gray;
+    border-radius: 2.5vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 5vh 2vh;
+    position: relative;
+    top: 530px;
+    min-width: 360px;
+    left: -197px;
+    max-height: 350px;
+  }
+
+  .container-bootcamp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background-color: #1d061a;
+    min-height: 800px;
+    position: relative;
+    top: 560px;
+  }
+
+  .h2-curso {
     color: #ffffff;
-    font-family: 'Prototype', sans-serif;
-    font-size: 3.5rem;
+    font-family: "Prototype", sans-serif;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
-  
-  .h2-compania-inicio {
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 15%;
-    margin-right: 15%;
+
+  .h5-curso1 {
     color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin: 1vh 5vh;
+  }
+
+  .h2-carousel {
+    color: #d85081;
+    font-size: 2rem;
+    margin-top: 37rem;
+    margin-bottom: 2rem;
     font-family: "Prototype", sans-serif;
-    font-size: 2.5rem;
-    padding: 6vh
-  }
-
-  .docentes{
-    text-decoration: none;
-    color: #111;
-  }
-
-  .docentes:hover{
-    text-decoration: none;
-    color: #111;
   }
 
   .h2-compania-inicio1 {
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 15%;
-    margin-right: 15%;
     color: black;
     font-family: "Prototype", sans-serif;
-    font-size: 2.5rem;
-    padding: 6vh
-  }
-  
-  .h5-curso{
-    color:gray;
+    font-size: 2rem;
+    padding: 5vh;
   }
 
-  .h5-curso1{
-    color:rgb(255, 255, 255);
-    font-size: 1.5rem;
+  .h5-curso {
+    color: gray;
+    font-size: 1rem;
+    margin: 1vh 5vh;
+  }
+
+  .h2-compania-inicio {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    font-family: "Prototype", sans-serif;
+    font-size: 2rem;
+    padding: 4vh;
+  }
+
+  .form-inicio-button{
+    position: relative;
+    right: 50px;
+  }
+
+  .form-control{
+    min-width: 250px!important;
+  }
+
+  .text-area{
+    min-width: 250px!important;
+  }
+
+  #mainNavbar{
+    background-color: #adb5bd;
+    color: #343a40;
   }
   
-  .p-formacion{
-    color:gray;
-    margin: 3vh 5vh;
-  }
-  
-  .h3{
-    margin-bottom: 1.1vh;
-    margin-top: 20px;
-    font-family: 'Prototype', sans-serif;
-  }
-  .h4{
-    margin-bottom: 1.1vh;
-    margin-top: 20px;
-    font-family: 'Prototype', sans-serif;
-    font-size: 0.8rem
-  }
-  
-  .formacion{
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 0.5vh auto;
-  }
-  
-  .formacion-divs{
-    border: 1px solid gray;
-    border-radius: 2.5vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 2vh 2vh;
-  }
-  
-  .h2-carousel{
-    color: #d85081;
-    font-size: 2.5rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-family: 'Prototype', sans-serif;
-  }
-  
-  .form-inicio{
-    width: 80%;
-    margin: auto;
-    border: 1px solid gray;
-    border-radius: 2.5vh;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: white;
-  }
-  
-  .form-cont{
-    background-color: #1d061a ;
-    min-height: 750px;
-  }
+}

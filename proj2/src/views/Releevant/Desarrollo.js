@@ -6,22 +6,13 @@ import { HashLink } from "react-router-hash-link";
 
 function Desarrollo() {
   return (
-    <div>
+    <div className="all">
       <img
-        className="foto-curso"
+        className="foto-curso-des"
         id="desarrollo"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "47vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
+        width={"100%"}
       />
       <h1 className="title-des text-center">DESARROLLOS A MEDIDA</h1>
       <h2 className="title-h2-des text-center module" id="desarrollo-title">
@@ -31,7 +22,7 @@ function Desarrollo() {
         En nuestra área de desarrollo tenemos los <b>mejores expertos</b> para{" "}
         <b>dirigir cualquier proyecto</b>, por ambicioso que sea. Somos amantes
         de las
-        <b>metodologías ágiles</b>, que aplicamos en nuestro trabajo, para que
+        <b> metodologías ágiles</b>, que aplicamos en nuestro trabajo, para que
         tu proyecto sea cercano, controles sus avances y te garanticen las
         entregas acordadas.
       </p>
@@ -69,7 +60,7 @@ function Desarrollo() {
       <div className="d-grid gap-2 col-2 mx-auto">
         <HashLink
           to="/startups/#startup"
-          className="btn btn-secondary mb-5 mt-3 module"
+          className="bottone-info btn btn-secondary mb-5 mt-3 module"
           type="submit"
         >
           Quiero más información{" "}
@@ -118,7 +109,7 @@ function Desarrollo() {
         software. Aquí lo importante eres TÚ.
       </p>
       <div
-        className="accordion accordion-flush w-50 m-auto mb-5 module"
+        className="accordion accordion-flush w-75 m-auto mb-5 module"
         id="accordionFlushExample"
       >
         <div className="accordion-item">

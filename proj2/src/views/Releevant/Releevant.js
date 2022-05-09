@@ -16,16 +16,7 @@ function Releevant() {
         id="releevant"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "40.85vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
+        width={"100%"}
       />
       <h1 className="title-releevant text-center">
         ¿QUÉ ES <span className="releevant-title">RELEEVANT?</span>
@@ -82,6 +73,11 @@ function Releevant() {
               arrows: true,
               pagination: false,
               drag: "free",
+              breakpoints: {
+                700: {
+                  perPage: 1,
+                },
+              },
               gap: "5rem",
               autoplay: true,
             }}
@@ -134,6 +130,11 @@ function Releevant() {
               arrows: true,
               pagination: false,
               drag: "free",
+              breakpoints: {
+                700: {
+                  perPage: 1,
+                },
+              },
               gap: "5rem",
               autoplay: true,
             }}
@@ -185,7 +186,7 @@ function Releevant() {
       </div>
       <h2 className="h2-expertos text-center module">DÓNDE ESTAMOS</h2>
       <div className="donde-estamos container module">
-        <div className="row">
+        <div className="map-row row">
           <div className="col">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.979189046157!2d-4.441873884429033!3d36.69903798108674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f77fe30405e5%3A0xb44f7091e40acc9e!2sPolo%20Contenidos%20Digitales%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1651349498603!5m2!1ses!2ses"

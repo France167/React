@@ -4,7 +4,6 @@ import "../../style/css-cursoweb.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import FooterRel from "../../components/FooterRel";
 import { HashLink } from "react-router-hash-link";
 import emailjs from "emailjs-com";
 
@@ -82,16 +81,7 @@ function CorsoWeb() {
         id="foto-cursoweb"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
+        width={"100%"}
       />
       <h1 className="title-cursoweb text-center">BOOTCAMP DESARROLLO WEB</h1>
       <p className="p-title-cursoweb text-center">
@@ -141,7 +131,7 @@ function CorsoWeb() {
       </h2>
       <div className="etapas module">
         <div className="row">
-          <div className="col-2">
+          <div className="etapas-col col-2">
             <div className="list-group" id="list-tab" role="tablist">
               <a
                 className="title-cursow list-group-item list-group-item-action active"
@@ -363,7 +353,7 @@ function CorsoWeb() {
         ¿ESTE BOOTCAMP ES PARA MI? Si....
       </h2>
       <div className="formacion-bootcamp module">
-        <div className="formacion-divs-bootcamp module">
+        <div className="formacion-divs-bootcamp div-1 module">
           <h3 className="h3-bootcamp text-center mt-3">
             ...TE HAS GRADUADO DE RECIENTE
           </h3>
@@ -374,7 +364,7 @@ function CorsoWeb() {
             propia carrera como programador.
           </p>
         </div>
-        <div className="formacion-divs-bootcamp module">
+        <div className="formacion-divs-bootcamp div-2 module">
           <h3 className="h3-bootcamp text-center mt-3">
             ...BUSCAS IMPULSAR TU CARRERA
           </h3>
@@ -387,7 +377,7 @@ function CorsoWeb() {
         </div>
       </div>
       <div className="formacion-bootcamp module">
-        <div className="formacion-divs-bootcamp module">
+        <div className="formacion-divs-bootcamp div-3 module">
           <h3 className="h3-bootcamp text-center mt-3">
             ...BUSCAS UN CAMBIO DE VIDA LABORAL
           </h3>
@@ -398,7 +388,7 @@ function CorsoWeb() {
             conseguir trabajo como desarrollador junior.
           </p>
         </div>
-        <div className="formacion-divs-bootcamp module">
+        <div className="formacion-divs-bootcamp div-4 module">
           <h3 className="h3-bootcamp text-center mt-3">
             ...O CUALQUIER TIPO DE PERSONA
           </h3>
@@ -426,6 +416,11 @@ function CorsoWeb() {
               pagination: false,
               drag: "free",
               gap: "5rem",
+              breakpoints: {
+                700: {
+                  perPage: 1,
+                },
+              }
             }}
           >
             {docentes.map((docente) => {
@@ -471,7 +466,7 @@ function CorsoWeb() {
           ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP DE DESARROLLO WEB EN MÁLAGA?
         </h2>
         <div className="formacion-bootcamp module">
-          <div className="formacion-divs-sec module">
+          <div className="formacion-divs-sec div-1 module">
             <h3 className="h3-sec text-center mt-3">
               APRENDERÁS LAS TECNOLOGÍAS MÁS VALORADAS
             </h3>
@@ -481,7 +476,7 @@ function CorsoWeb() {
               IT hay una enorme demanda.
             </p>
           </div>
-          <div className="formacion-divs-sec module">
+          <div className="formacion-divs-sec div-2 module">
             <h3 className="h3-sec text-center mt-3">
               DESARROLLARÁS TUS SOFT-SKILLS
             </h3>
@@ -493,7 +488,7 @@ function CorsoWeb() {
           </div>
         </div>
         <div className="formacion-bootcamp module">
-          <div className="formacion-divs-sec module">
+          <div className="formacion-divs-sec div-3-sec module">
             <h3 className="h3-sec text-center mt-3">
               LA MEJOR METODOLOGÍA PARA APRENDER
             </h3>
@@ -506,7 +501,7 @@ function CorsoWeb() {
               con las bases de la teoría y los fundamentos de la programación.
             </p>
           </div>
-          <div className="formacion-divs-sec module">
+          <div className="formacion-divs-sec div-4-sec module">
             <h3 className="h3-sec text-center mt-3">
               PERTENECERÁS A #RELEEVANTPEOPLE
             </h3>
@@ -525,7 +520,7 @@ function CorsoWeb() {
       </h2>
       <div className="container module">
         <div className="row my-5">
-          <div className="col-4 module">
+          <div className="fin-col col-4 module">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/Calendario-e1629179966774.png"
               alt="calendar"
@@ -537,7 +532,7 @@ function CorsoWeb() {
               <b>sin intereses, sin trampas y sin letra pequeña</b>.
             </p>
           </div>
-          <div className="col-4 module">
+          <div className="fin-col col-4 module">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/Cerdito-e1629179987717.png"
               alt="cerdito"
@@ -549,7 +544,7 @@ function CorsoWeb() {
               <b>préstamo de estudios</b> con unas condiciones muy ventajosas.
             </p>
           </div>
-          <div className="col-4 module">
+          <div className="fin-col col-4 module">
             <img
               src="https://www.releevant.com/wp-content/uploads/2021/08/Becas-e1629179983960.png"
               alt="beca"
@@ -562,7 +557,7 @@ function CorsoWeb() {
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="sec-dos-col row">
           <div className="col my-5 module">
             <h4 className="h4-fin mb-3">
               CONSTRUYE TU FUTURO CON LA FINANCIACIÓN QUE NECESITAS
@@ -589,7 +584,7 @@ function CorsoWeb() {
         PREGUNTAS MÁS FRECUENTES
       </h2>
       <div
-        className="accordion accordion-flush w-75 m-auto module my-5"
+        className="accordion-acc accordion accordion-flush m-auto module my-5"
         id="accordionFlushExample"
       >
         <div className="accordion-item">
@@ -1052,7 +1047,7 @@ function CorsoWeb() {
                 id="info"
                 name="info"
                 wrap="hard"
-                className="form-control w-100 m-auto  my-3"
+                className="text-area2 form-control w-100 m-auto  my-3"
                 value={formValues.info}
                 onChange={handleChange}
                 placeholder="Quiero más información sobre Releevant."
@@ -1067,7 +1062,7 @@ function CorsoWeb() {
               </div>
             )}
             <div className="d-grid gap-2 col-2 mx-auto">
-              <button className="btn btn-secondary mb-5 mt-3" type="submit">
+              <button className="form-inicio-button btn btn-secondary mb-5 mt-3" type="submit">
                 MÁS INFO!{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

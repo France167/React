@@ -171,4 +171,59 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .form-h2 {
+    color: white;
+    font-family: 'Prototype', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 
+  .form-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 90%;
+    padding: 4.3vh;
+    transform: translate(-50%, -50%);
+    background: rgba(14, 12, 12, 0.9);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .form-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Roboto Mono", monospace;
+    padding: 1.1vh 0;
+    font-size: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .form-box .user-box input {
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    padding: 1.1vh 0;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 3.2vh;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .error {
+    font-size: normal;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    position: relative;
+    bottom: 40px;
+    margin: 2vh auto;
+    text-align: center;
+  }
+}

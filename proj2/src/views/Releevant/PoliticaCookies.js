@@ -11,16 +11,6 @@ function PoliticaCookies() {
         id="foto-curso"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "-13vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
       />
       <h2 id="cookies" className="h2-cookies">
         USO DE COOKIES

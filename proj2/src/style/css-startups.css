@@ -1,5 +1,13 @@
 .foto-startups {
     opacity: 0.95;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 48vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
   }
 
   .title-startups {
@@ -65,6 +73,16 @@
     background-color: #616161;
   }
 
+  .h2-compania-startup {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    font-family: "Prototype", sans-serif;
+    font-size: 2rem;
+    padding: 4vh;
+  }
+
+
   .title-section{
     font-family: 'Prototype', sans-serif;
     color: white;
@@ -96,6 +114,11 @@
     color: gray;
   }
 
+  .form-cont-start {
+    background-color: #1d061a;
+    min-height: 750px;
+  }
+
   .form-startups{
     width: 80%;
     margin: auto;
@@ -104,3 +127,138 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
+  @media screen and (max-width: 600px) {
+    .foto-startups {
+      opacity: 0.95;
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 21vh;
+      min-height: 30%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    .title-startups {
+      margin-top: 38%;
+      color: white;
+      font-size: 2rem;
+      font-family: "Prototype", sans-serif;
+    }
+  
+    .lanzamos{
+      color: #d85081;
+    }
+
+    .title-h2-startups {
+      margin-top: +40%;
+      margin-bottom: 2%;
+      color: #d85081;
+      font-family: "Prototype", sans-serif;
+      font-size: 1.5rem;
+    }
+  
+    .p-rel-startups {
+      color: gray;
+      margin: 5vh 3vh;
+      font-size: 1.1rem;
+    }
+  
+    .formacion-startups{
+      width: 100%;
+      margin: 0.5vh auto;
+    }
+
+    .div-1-start {
+      border: 1px solid gray;
+      border-radius: 2.5vh;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 10vh 2vh;
+      position: relative;
+      left: 397px;
+      top: -60px;
+      min-width: 360px;
+      max-height: 289px;
+    }
+  
+    .div-2-start {
+      border: 1px solid gray;
+      border-radius: 2.5vh;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin: 5vh 2vh;
+      position: relative;
+      top: 300px;
+      min-width: 360px;
+      left: 1px;
+      max-height: 320px;
+    }
+  
+    .div-3-start {
+      border: 1px solid gray;
+      border-radius: 2.5vh;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
+      position: relative;
+      top: 662px;
+      min-width: 360px;
+      left: -396px;
+      max-height: 270px;
+    }
+    .startups-section {
+      flex-direction: column;
+      width: 100%;
+      margin: 8vh auto;
+      flex-wrap: wrap;
+      background-color: #616161;
+      position: relative;
+      top: 530px;
+    }
+    .title-section{
+      font-family: 'Prototype', sans-serif;
+      color: white;
+      font-size: 1.5rem;
+      margin: 3vh 3vh;
+      text-align: center;
+    }
+
+    .p-section{
+      color: white;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      margin: 2vh 2vh;
+  }
+
+  .h2-compania-startup {
+    margin-top: 140%;
+    margin-bottom: 2%;
+    color: rgb(255, 255, 255);
+    font-family: "Prototype", sans-serif;
+    font-size: 1.5rem;
+    padding: 4vh;
+  }
+
+  .section-one{
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    width:100%;
+  }
+
+  .form-cont-start {
+    background-color: #1d061a;
+    min-height: 680px;
+  }
+
+  .form-inicio-button{
+    position: relative;
+    right: 50px;
+  }
+
+  .form-control-start{
+    min-width: 250px!important;
+  }
+
+  .text-area-start{
+    min-width: 250px!important;
+  }
+  }

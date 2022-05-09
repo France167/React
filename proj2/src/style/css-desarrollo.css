@@ -89,4 +89,127 @@
     font-size: 2.5rem;
     padding: 3vh;
   }
+
+  .foto-curso{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 47vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
   
+  @media screen and (max-width: 600px) {
+    .foto-curso-des {
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 19.5vh;
+      min-height: 30%;
+      object-fit: contain;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    
+    .title-des{
+      margin: 35% 3%;
+      color: white;
+      font-size: 2rem;
+      font-family: 'Prototype', sans-serif;
+    }
+    .title-h2-des{
+      margin-top: 15vh;
+      margin-right: 3%;
+      margin-left: 3%;
+      color: #d85081;
+      font-family: 'Prototype', sans-serif;
+      font-size: 1.5rem;
+    }
+
+     .p-des {
+    color: gray;
+    margin: 5vh 3vh;
+    font-size: 1.1rem;
+  }
+
+    
+  .title-h2-plat{
+    margin-right: 3%;
+    margin-left: 3%;
+    color: #d85081;
+    font-family: 'Prototype', sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .bottone-info{
+    position: relative;
+    right: 108px;
+  }
+
+  .h2-desarrollo1 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: rgb(255, 255, 255);
+    font-family: "Prototype", sans-serif;
+    font-size: 1.5rem;
+    padding: 3vh;
+  }
+  .p-des1 {
+    color: white;
+    margin: 1vh 5vh;
+    font-size: 1.1rem;
+  }
+
+  .div-comun{
+    background-color: #1d061a ;
+    height: 750px;
+  }
+
+  .h2-desarrollo {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: black;
+    font-family: "Prototype", sans-serif;
+    font-size: 1.5rem;
+    padding: 3vh;
+  }
+
+  .p-des {
+    color: gray;
+    margin: 1vh 5vh;
+    font-size: larger;
+  }
+
+  .accordion-title{
+    font-family: 'Prototype', sans-serif;
+    font-size: 1rem;
+  }
+
+  .title-proyecto{
+    color: white;
+    font-size: 2rem;
+    font-family: "Prototype", sans-serif;
+    position: relative;
+    top: 100px;
+  }
+
+  .proyecto {
+    width: 100%;
+    min-height: 400px;
+    background-image: url("https://img.freepik.com/vector-gratis/flujo-diseno-codigo-binario_53876-97406.jpg?t=st=1651265879~exp=1651266479~hmac=1ed12f42540a7b55dbb5425cf1d16e184f5f4bea45f90d93e9a91a36ff64431c&w=740");
+    object-fit: scale-down;
+  }
+
+  .bottone-proyecto{
+    position: relative;
+    top: 20vh;
+    right: 108px;
+  }
+  }

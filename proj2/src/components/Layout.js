@@ -14,7 +14,7 @@ function Layout() {
         <>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-              <NavLink to="/">
+              <NavLink to="/inicio">
                 {" "}
                 <img
                   src="../../LogoDef.png"

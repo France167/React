@@ -191,3 +191,77 @@ html {
     margin-bottom: 5vh;
     position: relative;
 }
+
+.foto-releevant{
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40.85vh;
+  min-height: 30%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.logo{
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .logo{
+    width: 62%;
+  }
+
+  .foto-releevant{
+    position: absolute;
+      width: 100%;
+      left: 50%;
+      top: 20vh;
+      min-height: 30%;
+      object-fit: contain;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+
+  .releevant-title {
+    margin-top: 25%;
+    font-family: "Prototype", sans-serif;
+    font-size: 2.3rem;
+    color: #d85081;
+  }
+  
+  .title-releevant {
+    margin-top: 44%;
+    color: white;
+    font-size: 2rem;
+    font-family: "Prototype", sans-serif;
+  }
+  .container-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4.3vh 0;
+    margin-top: -32px;
+    background-color: #1d061a;
+  }
+
+  .h2-expertos {
+    color: #d85081;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Prototype", sans-serif;
+  }
+  
+  .h5-expertos {
+    color: gray;
+    font-size: 1rem;
+    margin: 0 3%;
+  }
+
+  .map-row{
+    flex-direction: column-reverse;
+    margin-bottom: 5vh;
+  }
+}

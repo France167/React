@@ -183,4 +183,14 @@ win.scroll(function(event) {
   
 });
   </script>
+  <script>
+    $(function(){
+    $(window).on('resize', function(){
+        if(window.innerWidth < 600){
+            $('.module').removeClass('module');
+            
+        }
+    });
+});
+  </script>
   </body>

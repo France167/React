@@ -11,16 +11,6 @@ function Careers() {
         id="careers"
         src={Image}
         alt="code"
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50vh",
-          minHeight: "30%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: -1,
-        }}
       />
       <h1 className="title-careers text-center">VEN A TRABAJAR CON NOSOTROS</h1>
       <p className="p-title-careers text-center">
