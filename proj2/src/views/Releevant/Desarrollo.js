@@ -14,7 +14,16 @@ function Desarrollo() {
         alt="code"
         width={"100%"}
       />
-      <h1 className="title-des text-center">DESARROLLOS A MEDIDA</h1>
+      <h1 className="title-des text-center">TRABAJAMOS CONTIGO</h1>
+      <div className="d-grid gap-2 d-md-flex justify-content-md-center">
+        <div className="w-75">
+          <button className="btn btn-secondary">DESARROLLO</button>
+        </div>
+        <div className="">
+          <button className="btn btn-secondary">FORMACIÓN</button>
+        </div>
+      </div>
+
       <h2 className="title-h2-des text-center module" id="desarrollo-title">
         SEA CUAL SEA EL PROYECTO, NOSOTROS NOS ENCARGAMOS
       </h2>
@@ -37,66 +46,46 @@ function Desarrollo() {
         operaciones y ahorrar costes empresariales, gracias a la optimización de
         recursos en todos nuestros proyectos.
       </p>
-      <h2 className="title-h2-plat text-center module">
-        DIFERENTES PLATAFORMAS Y TECNOLOGÍAS
-      </h2>
-      <p className="p-des module">
-        No importa cuál sea tu necesidad ni entorno, cuéntanos cuál es tu
-        proyecto y lo llevaremos a cabo. Nuestros compromisos son:{" "}
-        <b>la viabilidad, la agilidad y la calidad.</b>
-      </p>
-      <p className="p-des module mb-5">
-        Al igual que las tecnologías avanzan de forma inmediata, nosotros
-        evolucionamos con ellas, ya que somos profesionales que{" "}
-        <b>trabajan en las mejores compañías de software del mercado.</b>{" "}
-        Estamos a la última, testeando y analizando los últimos avances en
-        nuestro día a día y adoptándolos en nuestras soluciones.
-      </p>
-      <p className="p-des module mb-5">
-        Nuestras <b>estrategias de análisis y diseño avanzados</b>, y nuestra
-        decidida apuesta por la <b>innovación</b> son las capacidades que
-        encontrarás en cada una de las fases de tu proyecto.
-      </p>
-      <div className="d-grid gap-2 col-2 mx-auto">
-        <HashLink
-          to="/startups/#startup"
-          className="bottone-info btn btn-secondary mb-5 mt-3 module"
-          type="submit"
-        >
-          Quiero más información{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-send"
-            viewBox="0 0 16 16"
-          >
-            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-          </svg>
-        </HashLink>
-      </div>
       <div className="div-comun">
-        <h2 className="h2-desarrollo1 text-center module mt-2">
-          NO NOS VA LO COMÚN, BUSCAMOS ALGO DIFERENTE
+        <h2 className="title-h2-plat text-center module">
+          DIFERENTES PLATAFORMAS Y TECNOLOGÍAS
         </h2>
-        <p className="p-des1 module mb-5">
-          En <b>Releevant</b> sabemos que el <b>mundo está cambiando</b>, y
-          queremos estar a la vanguardia. Por eso estamos desarrollando
-          proyectos novedosos, donde la mejora de procesos, la optimización del
-          tiempo, las nuevas necesidades y el componente social es nuestro punto
-          de partida.
+        <p className="p-des2 module">
+          No importa cuál sea tu necesidad ni entorno, cuéntanos cuál es tu
+          proyecto y lo llevaremos a cabo. Nuestros compromisos son:{" "}
+          <b>la viabilidad, la agilidad y la calidad.</b>
         </p>
-        <p className="p-des1 module mb-5">
-          Ya estamos trabajando en un proyecto relevante, donde nuestra gran
-          aliada es la <b>inteligencia artificial</b>. Sabemos que todos los
-          campos profesionalizados requieren acciones <b>optimizadas</b> o{" "}
-          <b>automatizadas</b>. Por eso nuestras ideas van dirigidas hacia{" "}
-          <b>los datos</b>, la <b>analítica predictiva</b> y la{" "}
-          <b>toma de decisiones</b>, piezas potenciales en el presente e
-          imprescindibles en el futuro inmediato, y que van a generar valor
-          añadido en todos los sectores productivos y en la sociedad.
+        <p className="p-des2 module mb-5">
+          Al igual que las tecnologías avanzan de forma inmediata, nosotros
+          evolucionamos con ellas, ya que somos profesionales que{" "}
+          <b>trabajan en las mejores compañías de software del mercado.</b>{" "}
+          Estamos a la última, testeando y analizando los últimos avances en
+          nuestro día a día y adoptándolos en nuestras soluciones.
         </p>
+        <p className="p-des2 module mb-5">
+          Nuestras <b>estrategias de análisis y diseño avanzados</b>, y nuestra
+          decidida apuesta por la <b>innovación</b> son las capacidades que
+          encontrarás en cada una de las fases de tu proyecto.
+        </p>
+        <div className="d-grid gap-2 col-2 mx-auto">
+          <HashLink
+            to="/startups/#startup"
+            className="bottone-info btn btn-secondary mb-5 mt-3 module"
+            type="submit"
+          >
+            Quiero más información{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-send"
+              viewBox="0 0 16 16"
+            >
+              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+            </svg>
+          </HashLink>
+        </div>
       </div>
       <h2 className="h2-desarrollo text-center module mt-2">
         ¿CÓMO GESTIONAMOS TU PROYECTO?
@@ -334,29 +323,27 @@ function Desarrollo() {
           </div>
         </div>
       </div>
-      <div className="proyecto module mb-5">
-        <h2 className="title-proyecto text-center">
-          Lleva tu proyecto al siguiente nivel
+      <div className="div-comun">
+        <h2 className="h2-desarrollo1 text-center module mt-2">
+          NO NOS VA LO COMÚN, BUSCAMOS ALGO DIFERENTE
         </h2>
-        <div className="d-grid gap-2 col-2 mx-auto">
-          <HashLink
-            to="/startups/#form-startup"
-            className="bottone-proyecto btn btn-secondary mb-5 mt-3"
-            type="submit"
-          >
-            Quiero más información{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-send"
-              viewBox="0 0 16 16"
-            >
-              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
-            </svg>
-          </HashLink>
-        </div>
+        <p className="p-des1 module mb-5">
+          En <b>Releevant</b> sabemos que el <b>mundo está cambiando</b>, y
+          queremos estar a la vanguardia. Por eso estamos desarrollando
+          proyectos novedosos, donde la mejora de procesos, la optimización del
+          tiempo, las nuevas necesidades y el componente social es nuestro punto
+          de partida.
+        </p>
+        <p className="p-des1 module mb-5">
+          Ya estamos trabajando en un proyecto relevante, donde nuestra gran
+          aliada es la <b>inteligencia artificial</b>. Sabemos que todos los
+          campos profesionalizados requieren acciones <b>optimizadas</b> o{" "}
+          <b>automatizadas</b>. Por eso nuestras ideas van dirigidas hacia{" "}
+          <b>los datos</b>, la <b>analítica predictiva</b> y la{" "}
+          <b>toma de decisiones</b>, piezas potenciales en el presente e
+          imprescindibles en el futuro inmediato, y que van a generar valor
+          añadido en todos los sectores productivos y en la sociedad.
+        </p>
       </div>
     </div>
   );

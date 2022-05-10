@@ -38,6 +38,7 @@ html {
   flex-wrap: wrap;
   padding: 4.3vh 0;
   background-color: #1d061a;
+  margin-top: -74px;
 }
 
 .container-cursos .box {

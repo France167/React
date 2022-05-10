@@ -99,9 +99,9 @@ function Inicio() {
       <p className="p-title-inicio text-center">
         ¡Fórmate y comienza a trabajar en el sector tecnológico!
       </p>
-      <h2 className="title-h2 text-center module">SOMOS PROGRAMADORES,</h2>
-      <h2 className="title-h2-dos text-center module">
-        TE ENSEÑAMOS A PROGRAMAR DESDE CERO
+      <h2 className="title-h2 module">Somos programadores,</h2>
+      <h2 className="title-h2-dos module">
+        Te enseñamos a programar desde cero
       </h2>
       <div className="formacion module">
         <div className="formacion-divs div-1-inicio module">
@@ -129,7 +129,7 @@ function Inicio() {
           </div>
         </div>
         <div className="formacion-divs div-2-inicio module">
-        <div class="flip-card">
+          <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img
@@ -139,28 +139,31 @@ function Inicio() {
                   className="images-inicio"
                 />
                 <h3 className="h3 text-center mt-3">
-            <HashLink className="docentes" to="/curso-desarrollo/#profesores">
-              Docentes
-            </HashLink>{" "}
-          </h3>
+                  <HashLink
+                    className="docentes"
+                    to="/curso-desarrollo/#profesores"
+                  >
+                    Docentes
+                  </HashLink>{" "}
+                </h3>
               </div>
               <div class="flip-card-back">
-              <h4 className="h4 text-center mt-3">
-            Sólo los profesionales te enseñan a trabajar.
-          </h4>
-          <p className="p-formacion">
-            Nuestro equipo no son docentes al uso, son profesionales en activo
-            del sector y con muchos años de experiencia. Sólo de esta forma
-            tendrás asegurada la formación real, como se trabaja en la compañías
-            de software hoy en día.
-          </p>
+                <h4 className="h4 text-center mt-3">
+                  Sólo los profesionales te enseñan a trabajar.
+                </h4>
+                <p className="p-formacion">
+                  Nuestro equipo no son docentes al uso, son profesionales en
+                  activo del sector y con muchos años de experiencia. Sólo de
+                  esta forma tendrás asegurada la formación real, como se
+                  trabaja en la compañías de software hoy en día.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      
+
         <div className="formacion-divs div-3-inicio module">
-        <div class="flip-card">
+          <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img
@@ -169,24 +172,24 @@ function Inicio() {
                   style={{ width: "100%", height: "100%" }}
                   className="images-inicio"
                 />
-              <h3 className="h3 text-center mt-3">Presencialidad</h3>
+                <h3 className="h3 text-center mt-3">Presencialidad</h3>
               </div>
               <div class="flip-card-back">
-              <h4 className="h4 text-center mt-3">
-            Face to face, porque creemos en las personas.
-          </h4>
-          <p className="p-formacion">
-            El streaming fue imprescindible en lo más duro de la pandemia, pero
-            sabemos que el contacto real es la mejor forma de aprender, gracias
-            al seguimiento de los profesores y la colaboración con tus
-            compañeros.
-          </p>
+                <h4 className="h4 text-center mt-3">
+                  Face to face, porque creemos en las personas.
+                </h4>
+                <p className="p-formacion">
+                  El streaming fue imprescindible en lo más duro de la pandemia,
+                  pero sabemos que el contacto real es la mejor forma de
+                  aprender, gracias al seguimiento de los profesores y la
+                  colaboración con tus compañeros.
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="formacion-divs div-4-inicio module">
-        <div class="flip-card">
+          <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img
@@ -195,29 +198,29 @@ function Inicio() {
                   style={{ width: "100%", height: "100%" }}
                   className="images-inicio"
                 />
-               <h3 className="h3 text-center mt-3">Empleabilidad</h3>
+                <h3 className="h3 text-center mt-3">Empleabilidad</h3>
               </div>
               <div class="flip-card-back">
-              <h4 className="h4 text-center mt-3">
-            95% asegurado, sólo depende de ti.
-          </h4>
-          <p className="p-formacion">
-            Con tu esfuerzo y dedicación durante el bootcamp, obtendrás los
-            conocimientos sólidos para empezar a trabajar como dev junior. Te
-            introducimos en el sector con nuestros eventos y accederás a nuestra
-            red de empresas partners, que asistirán a la presentación de tu
-            proyecto final.
-          </p>
+                <h4 className="h4 text-center mt-3">
+                  95% asegurado, sólo depende de ti.
+                </h4>
+                <p className="p-formacion">
+                  Con tu esfuerzo y dedicación durante el bootcamp, obtendrás
+                  los conocimientos sólidos para empezar a trabajar como dev
+                  junior. Te introducimos en el sector con nuestros eventos y
+                  accederás a nuestra red de empresas partners, que asistirán a
+                  la presentación de tu proyecto final.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      
       </div>
+      <h2 className="title-h2-tres text-right module">Sólo depende de ti</h2>
       <div className="container-bootcamp module">
         <div>
-          <h2 className="h2-curso text-center module">NUESTRO BOOTCAMP</h2>
-          <h5 className="h5-curso1 text-center mb-5 module">
+          <h2 className="h2-curso mr-5 module">NUESTRO BOOTCAMP</h2>
+          <h5 className="h5-curso1 mb-5 module">
             Las últimas tecnologías te acompañan
           </h5>
         </div>
@@ -226,7 +229,7 @@ function Inicio() {
           <div className="content">
             <h2 className="h2-title-curso">DESARROLLO WEB</h2>
             <p>
-              Más de 600 horas, en tan solo 5 meses. <br />
+              Más de 600 horas, en tan solo 5 meses. <br /> <br />
               Nuestra filosofía es que aprendas de forma totalmente práctica,
               convirtiéndote en programador creando desde cero todo el ciclo de
               desarrollo del producto web:
@@ -344,7 +347,7 @@ function Inicio() {
         </button>
       </div>
       <h2 className="h2-compania-inicio1 text-center module">
-        NUESTRAS RELEEVANT PARTNERS
+        NUESTROS RELEEVANT PARTNERS
       </h2>
       <h5 className="h5-curso text-center mb-5 module">
         Tenemos la confianza de diferentes compañías con las que han trabajado
@@ -526,7 +529,9 @@ function Inicio() {
                     rel="noreferrer"
                     className="contact-icon"
                   >
-                    <i className="fab fa-linkedin" aria-hidden="true"></i>
+                    <i
+                      className="fab fa-linkedin" /*  aria-hidden="true" */
+                    ></i>
                   </a>
                 </li>
                 <li>
@@ -536,7 +541,9 @@ function Inicio() {
                     rel="noreferrer"
                     className="contact-icon"
                   >
-                    <i className="fab fa-facebook-f" aria-hidden="true"></i>
+                    <i
+                      className="fab fa-facebook-f" /*  aria-hidden="true" */
+                    ></i>
                   </a>
                 </li>
                 <li>
@@ -546,12 +553,19 @@ function Inicio() {
                     rel="noreferrer"
                     className="contact-icon"
                   >
-                    <i className="fab fa-meetup" aria-hidden="true"></i>
+                    <i className="fab fa-meetup" /*  aria-hidden="true" */></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" className="contact-icon">
-                    <i className="fab fa-whatsapp" aria-hidden="true"></i>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+34611163534&text=Hola, Nececito mas informacion!"
+                    className="contact-icon"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i
+                      className="fab fa-whatsapp" /*  aria-hidden="true" */
+                    ></i>
                   </a>
                 </li>
               </ul>

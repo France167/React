@@ -90,17 +90,20 @@ export function GlobalContextProvider({ children }) {
     [docentes]
   );
 
-  useEffect(function () {
-    async function fetchApi() {
-      let response = await fetch("http://localhost:8080/expertos", {
-        mode: "cors",
-      });
-      let json = await response.json();
-      setExpertos(json);
-    }
+  useEffect(
+    function () {
+      async function fetchApi() {
+        let response = await fetch("http://localhost:8080/expertos", {
+          mode: "cors",
+        });
+        let json = await response.json();
+        setExpertos(json);
+      }
 
-    fetchApi();
-  }, [expertos]);
+      fetchApi();
+    },
+    [expertos]
+  );
 
   const value = {
     alumnos,

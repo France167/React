@@ -183,7 +183,7 @@ html {
 .container-bootcamp .box .content {
   position: relative;
   left: 0;
-  padding: 20px 10px;
+  padding: 10px 5px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -195,7 +195,7 @@ html {
 
 .container-bootcamp .box:hover .content {
   left: -25px;
-  padding: 20px 10px;
+  padding: 10px 5px;
 }
 
 .container-bootcamp .box .content h2 {
@@ -251,7 +251,7 @@ html {
 }
 
 .title {
-  margin-top: 16%;
+  margin-top: 17%;
   color: white;
   font-size: 8rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -259,17 +259,27 @@ html {
 
 .p-title-inicio {
   margin: 6rem;
-  margin-top: 3%;
+  margin-top: -1%;
   color: rgb(255, 255, 255);
   font-size: 2.5rem;
   font-family: 'Lato', sans-serif;
 }
 
 .title-h2 {
-  margin-top: 16%;
+  margin-top: 20%;
   margin-bottom: 1%;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 2%;
+  margin-left: 2%;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+}
+
+.title-h2-tres {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3rem;
@@ -277,12 +287,12 @@ html {
 
 .title-h2-dos {
   margin-top: 0%;
-  margin-bottom: 1%;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+  margin-left: 2%;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .title-h3 {
@@ -363,6 +373,7 @@ html {
   font-family: 'Lato', sans-serif;
   text-align: justify;
   text-justify: inter-word;
+  font-size: 1.1rem;
 }
 
 .h3 {
@@ -418,10 +429,10 @@ html {
 
 .flip-card {
   background-color: transparent;
-  width: 37vh;
-  height: 37vh;
+  width: 48vh;
+  height: 48vh;
   perspective: 106vh;
-  margin: 8vh 5vh;
+  margin: 8vh 2vh;
 }
 
 .flip-card-inner {
@@ -702,6 +713,7 @@ textarea {
 /* Begin Right Contact Page */
 .direct-contact-container {
   max-width: 400px;
+  margin-top: 5vh;
 }
 
 /* Location, Phone, Email Section */
@@ -775,7 +787,6 @@ textarea {
 }
 
 .social-media-list li:after {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;

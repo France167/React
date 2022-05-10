@@ -84,14 +84,16 @@ function CorsoWeb() {
         width={"100%"}
       />
       <h1 className="title-cursoweb text-center">BOOTCAMP DESARROLLO WEB</h1>
-      <p className="p-title-cursoweb text-center">
-        Releevant ofrece el mejor bootcamp de la Málaga tecnológica. Somos
-        pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a Málaga,
-        iniciando un tenaz camino que ha estado lleno de aprendizaje, pero
-        también repleto de éxitos; podemos presumir que gracias al modelo de
-        cómo aprender a programar desde 0, más de 200 programadores en activo
-        han pasado por nuestras formaciones
-      </p>
+      <div className="boot">
+        <p className="p-title-cursoweb text-center">
+          Releevant ofrece el mejor bootcamp de la Málaga tecnológica. Somos
+          pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a Málaga,
+          iniciando un tenaz camino que ha estado lleno de aprendizaje, pero
+          también repleto de éxitos; podemos presumir que gracias al modelo de
+          cómo aprender a programar desde 0, más de 200 programadores en activo
+          han pasado por nuestras formaciones
+        </p>
+      </div>
 
       <h2 className="h2-programar text-center module">
         APRENDE A PROGRAMAR DESDE CERO CON RELEEVANT
@@ -188,10 +190,10 @@ function CorsoWeb() {
                   </h3>
                   <div className="progress my-3">
                     <div
-                      className="progress-bar bg-info"
+                      className="progress-bar progress-bar-striped progress-bar-animated  bg-info"
                       role="progressbar"
                       style={{ width: "25%" }}
-                      aria-valuenow="50"
+                      aria-valuenow="25"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -225,7 +227,7 @@ function CorsoWeb() {
                   <h3 className="h3-web">BACK-END Y PROGRAMACIÓN AVANZADA</h3>
                   <div className="progress my-3">
                     <div
-                      className="progress-bar bg-info"
+                      className="progress-bar progress-bar-striped progress-bar-animated bg-info"
                       role="progressbar"
                       style={{ width: "50%" }}
                       aria-valuenow="50"
@@ -268,10 +270,10 @@ function CorsoWeb() {
                   <h3 className="h3-web">FRONT-END: REACT</h3>
                   <div className="progress my-3">
                     <div
-                      className="progress-bar bg-info"
+                      className="progress-bar progress-bar-striped progress-bar-animated bg-info"
                       role="progressbar"
                       style={{ width: "75%" }}
-                      aria-valuenow="50"
+                      aria-valuenow="75"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -319,10 +321,10 @@ function CorsoWeb() {
                   <h3 className="h3-web">¡HIRING DAY!</h3>
                   <div className="progress my-3">
                     <div
-                      className="progress-bar bg-success"
+                      className="progress-bar progress-bar-striped progress-bar-animated bg-success"
                       role="progressbar"
                       style={{ width: "100%" }}
-                      aria-valuenow="50"
+                      aria-valuenow="100"
                       aria-valuemin="0"
                       aria-valuemax="100"
                     ></div>
@@ -410,6 +412,62 @@ function CorsoWeb() {
           </p>
         </div>
       </div>
+
+      <div className="section-dos">
+        <h2 className="h2-cursoweb-sec text-center module" id="precencialidad">
+          ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP DE DESARROLLO WEB EN MÁLAGA?
+        </h2>
+        <div className="formacion-bootcamp module">
+          <div className="formacion-divs-sec div-1 module">
+            <h3 className="h3-sec text-center mt-3">
+              APRENDERÁS LAS TECNOLOGÍAS MÁS VALORADAS
+            </h3>
+            <p className="p-formacion-sec">
+              Hemos diseñado un temario para que aprendas desde cero las
+              tecnologías que más demandan las empresas. Recuerda, en el sector
+              IT hay una enorme demanda.
+            </p>
+          </div>
+          <div className="formacion-divs-sec div-2 module">
+            <h3 className="h3-sec text-center mt-3">
+              DESARROLLARÁS TUS SOFT-SKILLS
+            </h3>
+            <p className="p-formacion-sec">
+              Te ayudamos a desarrollar tu trabajo en equipo, tu comunicación en
+              un entorno de trabajo, tu capacidad para realizar proyectos
+              complejos en tiempo y de la forma más adecuada.
+            </p>
+          </div>
+        </div>
+        <div className="formacion-bootcamp module">
+          <div className="formacion-divs-sec div-3-sec module">
+            <h3 className="h3-sec text-center mt-3">
+              LA MEJOR METODOLOGÍA PARA APRENDER
+            </h3>
+            <p className="p-formacion-sec">
+              Desde nuestra experiencia, la mejor forma de aprender programación
+              es... programando. Parece evidente, pero no suele ser como se
+              hacen las cosas. En Releevant presentamos una experiencia muy
+              práctica con este bootcamp de programación, haciendo que el alumno
+              realice proyectos por él mismo, sin olvidar el justo equilibrio
+              con las bases de la teoría y los fundamentos de la programación.
+            </p>
+          </div>
+          <div className="formacion-divs-sec div-4-sec module">
+            <h3 className="h3-sec text-center mt-3">
+              PERTENECERÁS A #RELEEVANTPEOPLE
+            </h3>
+            <p className="p-formacion-sec">
+              Formamos una gran comunidad de desarrolladores dispuestos a
+              acogerte con los brazos abiertos. Tendrás acceso a los meetups,
+              masterclassName y eventos. Releevant es mucho más que un sitio
+              para formarte. Te sentirás desde el primer día dentro del sector
+              tecnológico, y te integrarás en el entorno con nosotros.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <h2 className="h2-docentes text-center module" id="profesores">
         TUS PROFESORES
       </h2>
@@ -467,60 +525,6 @@ function CorsoWeb() {
         </div>
       </div>
 
-      <div className="section-dos">
-        <h2 className="h2-cursoweb-sec text-center module" id="precencialidad">
-          ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP DE DESARROLLO WEB EN MÁLAGA?
-        </h2>
-        <div className="formacion-bootcamp module">
-          <div className="formacion-divs-sec div-1 module">
-            <h3 className="h3-sec text-center mt-3">
-              APRENDERÁS LAS TECNOLOGÍAS MÁS VALORADAS
-            </h3>
-            <p className="p-formacion-sec">
-              Hemos diseñado un temario para que aprendas desde cero las
-              tecnologías que más demandan las empresas. Recuerda, en el sector
-              IT hay una enorme demanda.
-            </p>
-          </div>
-          <div className="formacion-divs-sec div-2 module">
-            <h3 className="h3-sec text-center mt-3">
-              DESARROLLARÁS TUS SOFT-SKILLS
-            </h3>
-            <p className="p-formacion-sec">
-              Te ayudamos a desarrollar tu trabajo en equipo, tu comunicación en
-              un entorno de trabajo, tu capacidad para realizar proyectos
-              complejos en tiempo y de la forma más adecuada.
-            </p>
-          </div>
-        </div>
-        <div className="formacion-bootcamp module">
-          <div className="formacion-divs-sec div-3-sec module">
-            <h3 className="h3-sec text-center mt-3">
-              LA MEJOR METODOLOGÍA PARA APRENDER
-            </h3>
-            <p className="p-formacion-sec">
-              Desde nuestra experiencia, la mejor forma de aprender programación
-              es... programando. Parece evidente, pero no suele ser como se
-              hacen las cosas. En Releevant presentamos una experiencia muy
-              práctica con este bootcamp de programación, haciendo que el alumno
-              realice proyectos por él mismo, sin olvidar el justo equilibrio
-              con las bases de la teoría y los fundamentos de la programación.
-            </p>
-          </div>
-          <div className="formacion-divs-sec div-4-sec module">
-            <h3 className="h3-sec text-center mt-3">
-              PERTENECERÁS A #RELEEVANTPEOPLE
-            </h3>
-            <p className="p-formacion-sec">
-              Formamos una gran comunidad de desarrolladores dispuestos a
-              acogerte con los brazos abiertos. Tendrás acceso a los meetups,
-              masterclassName y eventos. Releevant es mucho más que un sitio para
-              formarte. Te sentirás desde el primer día dentro del sector
-              tecnológico, y te integrarás en el entorno con nosotros.
-            </p>
-          </div>
-        </div>
-      </div>
       <h2 id="financiacion" className="h2-financiacion text-center module">
         OPCIONES DE FINANCIACIÓN Y BECAS
       </h2>

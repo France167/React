@@ -1,3 +1,7 @@
+.bottoni{
+  margin: 20vh 20vh;
+}
+
 .title-des{
     margin-top: -40%;
     color: white;
@@ -17,9 +21,10 @@
   .title-h2-plat{
     margin-right: 15%;
     margin-left: 15%;
-    color: black;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
+    padding-top: 25px;
   }
   
   .accordion-title{
@@ -31,6 +36,8 @@
     font-size: 1.2rem;
     color: gray;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .p-des {
@@ -38,12 +45,26 @@
     margin: 5vh 20vh;
     font-size: larger;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
   }
+
+  .p-des2 {
+    color: white;
+    margin: 5vh 20vh;
+    font-size: larger;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
   .p-des1 {
     color: white;
     margin: 5vh 20vh;
     font-size: larger;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
 .proyecto {
@@ -68,7 +89,7 @@
   
   .div-comun{
     background-color: #1d061a ;
-    min-height: 400px;
+    min-height: 450px;
   }
 
   .h2-desarrollo {
