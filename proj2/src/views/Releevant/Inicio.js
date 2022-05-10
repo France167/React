@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Powerslap from "../../components/video/video.mp4";
+import Div1 from "../../components/images/div1.jpg";
+import Div2 from "../../components/images/div2.jpg";
+import Div3 from "../../components/images/div3.jpg";
+import Div4 from "../../components/images/div4.jpg";
 import "../../style/css-inicio.css";
 import { HashLink } from "react-router-hash-link";
 import emailjs from "emailjs-com";
@@ -99,24 +103,49 @@ function Inicio() {
       <h2 className="title-h2-dos text-center module">
         TE ENSEÑAMOS A PROGRAMAR DESDE CERO
       </h2>
-      <h3 className="title-h3 text-center module">¿POR QUÉ?</h3>
       <div className="formacion module">
-        <div className="formacion-divs div-1 module">
-          <h3 className="h3 text-center mt-3">ERES ÚNICO </h3>
-          <h4 className="h4 text-center mt-3"> Desde 0 al 100%!</h4>
-          <p className="p-formacion">
-            Sabemos que cada persona tiene un nivel de conocimientos o una
-            destreza particular. Ya vengas desde cero, o tengas experiencia en
-            programación, nos adaptamos a ti, a tu nivel y habilidades.
-          </p>
+        <div className="formacion-divs div-1-inicio module">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src={Div1}
+                  alt="unico"
+                  style={{ width: "100%", height: "100%" }}
+                  className="images-inicio"
+                />
+                <h3 className="h3 text-center mt-3">Eres único </h3>
+              </div>
+              <div class="flip-card-back">
+                <h4 className="h4 text-center mt-3"> Desde 0 al 100%!</h4>
+                <p className="p-formacion">
+                  Sabemos que cada persona tiene un nivel de conocimientos o una
+                  destreza particular. Ya vengas desde cero, o tengas
+                  experiencia en programación, nos adaptamos a ti, a tu nivel y
+                  habilidades.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="formacion-divs div-2 module">
-          <h3 className="h3 text-center mt-3">
+        <div className="formacion-divs div-2-inicio module">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src={Div2}
+                  alt="unico"
+                  style={{ width: "100%", height: "100%" }}
+                  className="images-inicio"
+                />
+                <h3 className="h3 text-center mt-3">
             <HashLink className="docentes" to="/curso-desarrollo/#profesores">
-              DOCENTES
+              Docentes
             </HashLink>{" "}
           </h3>
-          <h4 className="h4 text-center mt-3">
+              </div>
+              <div class="flip-card-back">
+              <h4 className="h4 text-center mt-3">
             Sólo los profesionales te enseñan a trabajar.
           </h4>
           <p className="p-formacion">
@@ -125,19 +154,25 @@ function Inicio() {
             tendrás asegurada la formación real, como se trabaja en la compañías
             de software hoy en día.
           </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="formacion module">
-        <div className="formacion-divs div-3 module">
-          <h3 className="h3 text-center mt-3">
-            <HashLink
-              className="docentes"
-              to="/curso-desarrollo/#precencialidad"
-            >
-              PRESENCIALIDAD
-            </HashLink>
-          </h3>
-          <h4 className="h4 text-center mt-3">
+      
+        <div className="formacion-divs div-3-inicio module">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src={Div3}
+                  alt="unico"
+                  style={{ width: "100%", height: "100%" }}
+                  className="images-inicio"
+                />
+              <h3 className="h3 text-center mt-3">Presencialidad</h3>
+              </div>
+              <div class="flip-card-back">
+              <h4 className="h4 text-center mt-3">
             Face to face, porque creemos en las personas.
           </h4>
           <p className="p-formacion">
@@ -146,10 +181,24 @@ function Inicio() {
             al seguimiento de los profesores y la colaboración con tus
             compañeros.
           </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="formacion-divs div-4 module">
-          <h3 className="h3 text-center mt-3">EMPLEABILIDAD</h3>
-          <h4 className="h4 text-center mt-3">
+        <div className="formacion-divs div-4-inicio module">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src={Div4}
+                  alt="unico"
+                  style={{ width: "100%", height: "100%" }}
+                  className="images-inicio"
+                />
+               <h3 className="h3 text-center mt-3">Empleabilidad</h3>
+              </div>
+              <div class="flip-card-back">
+              <h4 className="h4 text-center mt-3">
             95% asegurado, sólo depende de ti.
           </h4>
           <p className="p-formacion">
@@ -159,7 +208,11 @@ function Inicio() {
             red de empresas partners, que asistirán a la presentación de tu
             proyecto final.
           </p>
+              </div>
+            </div>
+          </div>
         </div>
+      
       </div>
       <div className="container-bootcamp module">
         <div>

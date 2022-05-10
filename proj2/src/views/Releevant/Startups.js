@@ -154,7 +154,7 @@ function Startups() {
       <div className="form-cont">
         <section id="contact">
           <h2
-            className="h2-compania-inicio text-center module"
+            className="h2-compania-startup text-center module"
             id="form-inicio"
           >
             ¿QUIERES MÁS INFORMACIÓN?

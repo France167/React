@@ -59,7 +59,7 @@ function Navbar() {
                 className="btn-light navLink nav-link bottone-nav"
                 to="/inicio/#form-inicio"
               >
-                Más info!
+                <span>Más info!</span>
               </HashLink>
             </li>
           </ul>

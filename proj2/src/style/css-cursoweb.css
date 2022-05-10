@@ -28,7 +28,7 @@
 }
 
 .h2-programar {
-  color: #d85081;
+  color: black;
   font-size: 2.5rem;
   margin-bottom: 0rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -57,7 +57,7 @@
 }
 
 .h2-docentes {
-  color: #d85081;
+  color: black;
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -122,6 +122,7 @@
   color: gray;
   margin: 5vh 20vh;
   font-size: larger;
+  font-family: 'Lato', sans-serif;
 }
 
 .h2-cursoweb {
@@ -160,6 +161,7 @@
   font-size: 1.1rem;
   text-align: justify;
   text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
 }
 
 .etapas-boot{
@@ -203,6 +205,7 @@
   font-weight: 400;
   text-align: justify;
   text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
 }
 
 .formacion-divs-sec {
@@ -240,6 +243,7 @@
 .p-faq {
   font-size: 1.2rem;
   color: gray;
+  font-family: 'Lato', sans-serif;
 }
 
 .foto-cursoweb {
@@ -269,7 +273,7 @@
     margin: 25% 2%;
     color: white;
     font-size: 2.2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .p-title-cursoweb {
@@ -277,14 +281,14 @@
     margin-top: 19%;
     color: black;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
   .h2-programar {
-    color: #d85081;
+    color: black;
     font-size: 1.5rem;
     margin-bottom: 0rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 3rem;
   }
 
@@ -292,7 +296,7 @@
     color: gray;
     margin: 5vh 2vh;
     font-size: 1rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
   .title-h2-cursoweb {
@@ -300,8 +304,8 @@
     margin-bottom: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    color: #d85081;
-    font-family: "Prototype", sans-serif;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
   }
 
@@ -310,19 +314,19 @@
   }
 
   .title-cursow {
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 0.8rem;
   }
 
   .h3-web {
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
   }
 
   .p-web {
     font-size: 1rem;
     color: gray;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
   .etapas-col {
@@ -335,7 +339,7 @@
     color: black;
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 2rem 1rem;
   }
 
@@ -393,18 +397,18 @@
   }
 
   .h2-docentes {
-    color: #d85081;
+    color: black;
     font-size: 1.8rem;
     margin-top: 33rem;
     margin-bottom: 2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .h2-cursoweb-sec {
     color: white;
     font-size: 1.6rem;
     margin-bottom: 2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 4rem;
   }
   .section-dos {
@@ -425,7 +429,7 @@
     margin-bottom: 4rem;
     margin-right:1vh;
     margin-left: 1vh;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin-top: 3rem;
   }
   .div-3-sec {
@@ -466,7 +470,7 @@
   }
 
   .pregunta-title {
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 0.9rem;
     text-transform: uppercase;
   }

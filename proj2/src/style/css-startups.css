@@ -14,18 +14,19 @@
     margin-top: 18%;
     color: white;
     font-size: 6rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .lanzamos{
     color: #d85081;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .title-h2-startups {
     margin-top: 28%;
     margin-bottom: 2%;
-    color: #d85081;
-    font-family: "Prototype", sans-serif;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
   }
 
@@ -33,6 +34,7 @@
     color: gray;
     margin: 5vh 25vh;
     font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
   }
   
 
@@ -54,6 +56,7 @@
     color:gray;
     margin: 3vh 5vh;
     font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
   }
   
   .h3-startups{
@@ -61,7 +64,7 @@
     margin-top: 20px;
     margin-right: 3vh;
     margin-left: 3vh;
-    font-family: 'Prototype', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   .startups-section {
@@ -75,16 +78,16 @@
 
   .h2-compania-startup {
     margin-top: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
     color: rgb(255, 255, 255);
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
     padding: 4vh;
   }
 
 
   .title-section{
-    font-family: 'Prototype', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-size: 1.5rem;
     margin: 3vh 10vh
@@ -99,13 +102,13 @@
   .p-section{
       color: white;
       font-size: 1.1rem;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Lato', sans-serif;
   }
 
 
   .h2-startups{
-    color: #d85081;
-    font-family: 'Prototype', sans-serif;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
     margin: 10vh 5vh;
   }
@@ -143,18 +146,19 @@
       margin-top: 38%;
       color: white;
       font-size: 2rem;
-      font-family: "Prototype", sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
     }
   
     .lanzamos{
       color: #d85081;
+      font-family: 'Josefin Sans', sans-serif;
     }
 
     .title-h2-startups {
       margin-top: +40%;
       margin-bottom: 2%;
-      color: #d85081;
-      font-family: "Prototype", sans-serif;
+      color: black;
+      font-family: 'Josefin Sans', sans-serif;
       font-size: 1.5rem;
     }
   
@@ -162,6 +166,7 @@
       color: gray;
       margin: 5vh 3vh;
       font-size: 1.1rem;
+      font-family: 'Lato', sans-serif;
     }
   
     .formacion-startups{
@@ -215,7 +220,7 @@
       top: 530px;
     }
     .title-section{
-      font-family: 'Prototype', sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       color: white;
       font-size: 1.5rem;
       margin: 3vh 3vh;
@@ -225,7 +230,7 @@
     .p-section{
       color: white;
       font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Lato', sans-serif;
       margin: 2vh 2vh;
   }
 
@@ -233,7 +238,7 @@
     margin-top: 140%;
     margin-bottom: 2%;
     color: rgb(255, 255, 255);
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
     padding: 4vh;
   }

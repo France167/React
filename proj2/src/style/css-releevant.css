@@ -21,7 +21,12 @@ html {
 
 .bottone-nav{
   color: #d85081!important;
-  border-radius: 10px!important;
+  border-radius: 5px!important;
+}
+
+#mainNavbar .navLink .bottone-nav.scrolled{
+  background-color: rgb(51, 15, 15)!important;
+  color: #cccccc!important;
 }
 
 #mainNavbar .navLink:hover {
@@ -74,13 +79,13 @@ html {
   margin-top: 3%;
   color: white;
   font-size: 1.5rem;
-  font-family: "Prototype", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .title-h2-releevant {
   margin-top: 25%;
   margin-bottom: 5%;
-  color: #d85081;
+  color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
 }
@@ -102,6 +107,7 @@ html {
 .p-formacion-rel{
   color:gray;
   margin: 3vh 5vh;
+  font-family: 'Lato', sans-serif;
 }
 
 .h3-releevant{
@@ -110,15 +116,8 @@ html {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.h5-releevant {
-  margin-bottom: 1.1vh;
-  margin-top: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: #2a60a9;
-}
-
 .h2-expertos {
-  color: #d85081;
+  color: black;
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -127,6 +126,7 @@ html {
 
 .h5-expertos {
   color: gray;
+  font-family: 'Lato', sans-serif;
 }
 
 .container-expertos {
@@ -167,7 +167,7 @@ html {
 .text {
   color: white;
   font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   position: absolute;
   top: 46%;
   left: 35%;
@@ -184,6 +184,7 @@ html {
 .colore-empresa{
     color: #2a60a9;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: small;
 }
 
 .nombre-alumno{
@@ -232,16 +233,16 @@ html {
 
   .releevant-title {
     margin-top: 25%;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.3rem;
-    color: #d85081;
+    color: black;
   }
   
   .title-releevant {
     margin-top: 44%;
     color: white;
     font-size: 2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   .container-cursos {
     display: flex;
@@ -254,11 +255,11 @@ html {
   }
 
   .h2-expertos {
-    color: #d85081;
+    color: black;
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-family: "Prototype", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   .h5-expertos {

@@ -361,7 +361,7 @@ function CorsoWeb() {
       <div className="formacion-bootcamp module">
         <div className="formacion-divs-bootcamp div-1 module">
           <h3 className="h3-bootcamp text-center mt-3">
-            ...TE HAS GRADUADO DE RECIENTE
+            ...TE HAS GRADUADO HACE POCO
           </h3>
           <p className="p-formacion-bootcamp">
             Si te acabas de graduar en FP o en la universidad, este{" "}
@@ -514,7 +514,7 @@ function CorsoWeb() {
             <p className="p-formacion-sec">
               Formamos una gran comunidad de desarrolladores dispuestos a
               acogerte con los brazos abiertos. Tendrás acceso a los meetups,
-              masterclass y eventos. Releevant es mucho más que un sitio para
+              masterclassName y eventos. Releevant es mucho más que un sitio para
               formarte. Te sentirás desde el primer día dentro del sector
               tecnológico, y te integrarás en el entorno con nosotros.
             </p>
@@ -1016,15 +1016,15 @@ function CorsoWeb() {
           <h5 className="h5-curso text-center">
             ¡Rellena nuestro formulario y la obtendrás!
           </h5>
-          <div class="contact-wrapper">
+          <div className="contact-wrapper">
             <form
               id="contact-form"
-              class="form-horizontal"
+              className="form-horizontal"
               role="form"
               onSubmit={handleSubmit}
             >
-              <div class="form-group">
-                <div class="">
+              <div className="form-group">
+                <div className="">
                   <input
                     id="nombre"
                     name="nombre"
@@ -1039,8 +1039,8 @@ function CorsoWeb() {
                 </div>
               </div>
 
-              <div class="form-group">
-                <div class="">
+              <div className="form-group">
+                <div className="">
                   <input
                     id="email"
                     name="email"
@@ -1089,27 +1089,27 @@ function CorsoWeb() {
               )}
 
               <button
-                class="btn btn-primary send-button"
+                className="btn btn-secondary send-button"
                 id="submit"
                 type="submit"
               >
                 {" "}
-                <i class="fa fa-paper-plane"></i> &nbsp; Enviar
+                <i className="fa fa-paper-plane"></i> &nbsp; Enviar
               </button>
             </form>
 
-            <div class="direct-contact-container">
-              <ul class="contact-list">
-                <li class="list-item">
-                  <i class="fa fa-map-marker fa-2x">
-                    <span class="contact-text place">
+            <div className="direct-contact-container">
+              <ul className="contact-list">
+                <li className="list-item">
+                  <i className="fa fa-map-marker fa-2x">
+                    <span className="contact-text place">
                       Polo de contenidos digitales
                     </span>
                   </i>
                 </li>
-                <li class="list-item">
-                  <i class="fa fa-phone fa-2x">
-                    <span class="contact-text phone">
+                <li className="list-item">
+                  <i className="fa fa-phone fa-2x">
+                    <span className="contact-text phone">
                       <a href="tel:+34 695 30 40 40" title="Give me a call">
                         +34 695 30 40 40
                       </a>
@@ -1117,9 +1117,9 @@ function CorsoWeb() {
                   </i>
                 </li>
 
-                <li class="list-item">
-                  <i class="fa fa-envelope fa-2x">
-                    <span class="contact-text gmail">
+                <li className="list-item">
+                  <i className="fa fa-envelope fa-2x">
+                    <span className="contact-text gmail">
                       <a
                         href="mailto:hola@releevant.com"
                         title="Send me an email"
@@ -1132,37 +1132,37 @@ function CorsoWeb() {
               </ul>
 
               <hr />
-              <ul class="social-media-list">
+              <ul className="social-media-list">
                 <li>
                   <a
                     href="https://www.linkedin.com/company/releevant/"
                     target="_blank"
-                    class="contact-icon"
+                    className="contact-icon"
                   >
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <i className="fab fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.facebook.com/releevant.tech"
                     target="_blank"
-                    class="contact-icon"
+                    className="contact-icon"
                   >
-                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <i className="fab fa-facebook-f" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
                   <a
                     href="https://www.meetup.com/es-ES/releevant/?_cookie-check=Xd_hTaHLTwr8rzUr"
                     target="_blank"
-                    class="contact-icon"
+                    className="contact-icon"
                   >
-                    <i class="fab fa-meetup" aria-hidden="true"></i>
+                    <i className="fab fa-meetup" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" class="contact-icon">
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  <a href="#" target="_blank" className="contact-icon">
+                    <i className="fab fa-whatsapp" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>
