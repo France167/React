@@ -357,139 +357,144 @@ function CorsoWeb() {
           </div>
         </div>
       </div>
-      <div className="contenedor-boot row" style={{margin: "0vh 0vh"}}>
-        <div className="image-boot col-4">
-   
-        </div>
-      <div className="col-8">
-        <div className="row">
-      <div className="formacion-bootcamp module">
-        <div className="formacion-divs-bootcamp1 div-11 module">
-          <div class="flip-box" style={{margin: "0vh 1vh"}}>
-            <div class="flip-box-inner">
-              <div class="flip-box-front1">
-              <h3 className="h3-bootcamp text-center mt-3">
-            Si te ha graduato recientemente...
-          </h3>
+      <div className="contenedor-boot row" style={{ margin: "0vh 0vh" }}>
+        <div className="image-boot col-4"></div>
+        <div className="col-8">
+          <div className="row">
+            <div className="formacion-bootcamp module">
+              <div className="formacion-divs-bootcamp1 div-11 module">
+                <div class="flip-box" style={{ margin: "0vh 0vh" }}>
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front1">
+                      <h3 className="h3-bootcamp text-center mt-3">
+                        Si te ha graduato recientemente...
+                      </h3>
+                    </div>
+                    <div class="flip-box-back">
+                      <p className="p-formacion-bootcamp">
+                        Si te acabas de graduar en FP o en la universidad, este{" "}
+                        <b>bootcamp de programación</b> orientado a desarrollo
+                        web te proporcionará las habilidades imprescindibles
+                        para poder iniciar tu propia carrera como programador.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="flip-box-back">
-              <p className="p-formacion-bootcamp">
-            Si te acabas de graduar en FP o en la universidad, este{" "}
-            <b>bootcamp de programación</b> orientado a desarrollo web te
-            proporcionará las habilidades imprescindibles para poder iniciar tu
-            propia carrera como programador.
-          </p>
+              <div className="formacion-divs-bootcamp1 div-22 module">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front2">
+                      <h3 className="h3-bootcamp text-center mt-3">
+                        Si quieres trabajar en el sector tecnológico...
+                      </h3>
+                    </div>
+                    <div class="flip-box-back">
+                      <p className="p-formacion-bootcamp">
+                        Este <b>bootcamp de programación en Málaga</b>{" "}
+                        complementará los conocimientos que ya tienes
+                        adquiridos, podrás optar a perfiles o roles más
+                        técnicos, además tendrás una perspectiva más enfocada a
+                        las últimas tecnologías.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <h2 className="h2-cursoweb text-center module">
+              ¿Este bootcamp es para mi?
+            </h2>
+          </div>
+          <div className="row">
+            <div className="formacion-bootcamp module">
+              <div className="formacion-divs-bootcamp1 div-11 module">
+                <div class="flip-box" style={{ margin: "0vh 0vh" }}>
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front3">
+                      <h3 className="h3-bootcamp text-center mt-3">
+                        Si buscas impulsar tu carrera...
+                      </h3>
+                    </div>
+                    <div class="flip-box-back">
+                      <p className="p-formacion-bootcamp">
+                        Este <b>bootcamp de programación para desarrollo web</b>{" "}
+                        es perfecto para alguien que está buscando entrar en el
+                        sector tecnológico. Te ayudará a conseguir los
+                        conocimientos necesarios para poder conseguir trabajo
+                        como desarrollador junior.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="formacion-divs-bootcamp1 div-22 module">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front4">
+                      <h3 className="h3-bootcamp text-center mt-3">
+                        Si quieres cambiar de vida...
+                      </h3>
+                    </div>
+                    <div class="flip-box-back">
+                      <p className="p-formacion-bootcamp">
+                        En realidad, para iniciarte en el mundo tecnológico y
+                        llegar a ser un{" "}
+                        <b>
+                          <i>Full Stack Web Developer</i>
+                        </b>{" "}
+                        no necesitas ninguna característica en especial.
+                        Trabajes en lo que trabajes, seas como seas, si tienes
+                        iniciativa, actitud y ganas de aprender, conseguirás
+                        entrar en el sector IT.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="formacion-divs-bootcamp1 div-22 module">
-          <div class="flip-box">
-            <div class="flip-box-inner">
-              <div class="flip-box-front2">
-              <h3 className="h3-bootcamp text-center mt-3">
-            Si quieres trabajar en el sector tecnológico...
-          </h3>
-              </div>
-              <div class="flip-box-back">
-              <p className="p-formacion-bootcamp">
-            Este <b>bootcamp de programación en Málaga</b> complementará los
-            conocimientos que ya tienes adquiridos, podrás optar a perfiles o
-            roles más técnicos, además tendrás una perspectiva más enfocada a
-            las últimas tecnologías.
-          </p>
-          </div>
-              </div>
-            </div>
-          </div>
-        
-      </div>
-      </div>
-      
-      <div className="row">
-      <h2 className="h2-cursoweb text-center module">
-        ¿Este bootcamp es para mi?
-      </h2>
-      </div>
-      <div className="row">
-      <div className="formacion-bootcamp module">
-      <div className="formacion-divs-bootcamp1 div-11 module">
-        <div class="flip-box" style={{margin: "0vh 1vh"}}>
-          <div class="flip-box-inner">
-            <div class="flip-box-front3">
-            <h3 className="h3-bootcamp text-center mt-3">
-            Si buscas impulsar tu carrera...
-          </h3>
-            </div>
-            <div class="flip-box-back">
-            <p className="p-formacion-bootcamp">
-            Este <b>bootcamp de programación para desarrollo web</b> es perfecto
-            para alguien que está buscando entrar en el sector tecnológico. Te
-            ayudará a conseguir los conocimientos necesarios para poder
-            conseguir trabajo como desarrollador junior.
-          </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="formacion-divs-bootcamp1 div-22 module">
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front4">
-            <h3 className="h3-bootcamp text-center mt-3">
-            Si quieres cambiar de vida...
-          </h3>
-            </div>
-            <div class="flip-box-back">
-            <p className="p-formacion-bootcamp">
-            En realidad, para iniciarte en el mundo tecnológico y llegar a ser
-            un{" "}
-            <b>
-              <i>Full Stack Web Developer</i>
-            </b>{" "}
-            no necesitas ninguna característica en especial. Trabajes en lo que
-            trabajes, seas como seas, si tienes iniciativa, actitud y ganas de
-            aprender, conseguirás entrar en el sector IT.
-          </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
       </div>
 
-     <div className="section-dos d-flex justify-content-evenly">
-       <div className="sec-uno d-flex justify-content flex-column">
-         <div>
-         <h2 className="h2-cursoweb-sec-dos text-center module" id="precencialidad">
-          ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP?
-        </h2>
-         </div>
-         <div>
-           <img src={Image1} alt="coding" width={"95%"}/>
-         </div>
-         <div>
-           <p className="p-formacion-why">Releevant es mucho más que un sitio para formarte</p>
-         </div>
-       </div>
-       <div className="d-flex justify-content flex-column">
-         <div className="sec-why">
-         <h3 className="why">
-          <span>01</span> Aprenderás las últimas tecnologías
-        </h3>
-        <p className="p-formacion-sec-dos">
+      <div className="section-dos d-flex justify-content-evenly">
+        <div className="sec-uno d-flex justify-content flex-column">
+          <div>
+            <h2
+              className="h2-cursoweb-sec-dos text-center module"
+              id="precencialidad"
+            >
+              ¿POR QUÉ ESTUDIAR ESTE BOOTCAMP?
+            </h2>
+          </div>
+          <div>
+            <img src={Image1} alt="coding" width={"95%"} />
+          </div>
+          <div>
+            <p className="p-formacion-why">
+              Releevant es mucho más que un sitio para formarte
+            </p>
+          </div>
+        </div>
+        <div className="d-flex justify-content flex-column">
+          <div className="sec-why">
+            <h3 className="why">
+              <span>01</span> Aprenderás las últimas tecnologías
+            </h3>
+            <p className="p-formacion-sec-dos">
               Hemos diseñado un temario para que aprendas desde cero las
               tecnologías que más demandan las empresas. Recuerda, en el sector
               IT hay una enorme demanda.
             </p>
-         </div>
-         <div className="sec-why">
-         <h3 className="why">
-         <span>02</span> La mejor metodología para aprender
-        </h3>
-        <p className="p-formacion-sec-dos">
+          </div>
+          <div className="sec-why">
+            <h3 className="why">
+              <span>02</span> La mejor metodología para aprender
+            </h3>
+            <p className="p-formacion-sec-dos">
               Desde nuestra experiencia, la mejor forma de aprender programación
               es... programando. Parece evidente, pero no suele ser como se
               hacen las cosas. En Releevant presentamos una experiencia muy
@@ -497,31 +502,31 @@ function CorsoWeb() {
               realice proyectos por él mismo, sin olvidar el justo equilibrio
               con las bases de la teoría y los fundamentos de la programación.
             </p>
-         </div>
-         <div className="sec-why">
-         <h3 className="why">
-         <span>03</span> Desarrollarás tus soft-skills
-        </h3>
-        <p className="p-formacion-sec-dos">
+          </div>
+          <div className="sec-why">
+            <h3 className="why">
+              <span>03</span> Desarrollarás tus soft-skills
+            </h3>
+            <p className="p-formacion-sec-dos">
               Te ayudamos a desarrollar tu trabajo en equipo, tu comunicación en
               un entorno de trabajo, tu capacidad para realizar proyectos
               complejos en tiempo y de la forma más adecuada.
             </p>
-         </div>
-         <div className="sec-why">
-         <h3 className="why">
-         <span>04</span> Pertenecerás a #releevantpeople
-        </h3>
-        <p className="p-formacion-sec-dos">
+          </div>
+          <div className="sec-why">
+            <h3 className="why">
+              <span>04</span> Pertenecerás a #releevantpeople
+            </h3>
+            <p className="p-formacion-sec-dos">
               Formamos una gran comunidad de desarrolladores dispuestos a
               acogerte con los brazos abiertos. Tendrás acceso a los meetups,
               masterclassName y eventos. Releevant es mucho más que un sitio
               para formarte. Te sentirás desde el primer día dentro del sector
               tecnológico.
             </p>
-         </div>
-       </div>
-     </div>
+          </div>
+        </div>
+      </div>
       <h2 className="h2-docentes text-center module" id="profesores">
         TUS PROFESORES
       </h2>
@@ -578,71 +583,63 @@ function CorsoWeb() {
           </Splide>
         </div>
       </div>
-
       <h2 id="financiacion" className="h2-financiacion text-center module">
         OPCIONES DE FINANCIACIÓN Y BECAS
       </h2>
-      <div className="container module">
-        <div className="row my-5">
-          <div className="fin-col col-4 module">
-            <img
-              src="https://www.releevant.com/wp-content/uploads/2021/08/Calendario-e1629179966774.png"
-              alt="calendar"
-              width={"25%"}
-              className="rounded mx-auto d-block mb-5"
-            />
-            <p className="p-financiacion">
-              Puedes pagar el Bootcamp con Releevant en 5 meses,{" "}
-              <b>sin intereses, sin trampas y sin letra pequeña</b>.
-            </p>
-          </div>
-          <div className="fin-col col-4 module">
-            <img
-              src="https://www.releevant.com/wp-content/uploads/2021/08/Cerdito-e1629179987717.png"
-              alt="cerdito"
-              width={"25%"}
-              className="rounded mx-auto d-block mb-5"
-            />
-            <p className="p-financiacion">
-              Con nosotros tienes a tu disposición un{" "}
-              <b>préstamo de estudios</b> con unas condiciones muy ventajosas.
-            </p>
-          </div>
-          <div className="fin-col col-4 module">
-            <img
-              src="https://www.releevant.com/wp-content/uploads/2021/08/Becas-e1629179983960.png"
-              alt="beca"
-              width={"25%"}
-              className="rounded mx-auto d-block mb-5"
-            />
-            <p className="p-financiacion">
-              Tenemos <b>becas</b> para apoyar la inserción de las{" "}
-              <b>mujeres</b> en el mundo tecnológico. ¡Pregúntanos!
-            </p>
-          </div>
-        </div>
-        <div className="sec-dos-col row">
-          <div className="col my-5 module">
-            <h4 className="h4-fin mb-3">
-              CONSTRUYE TU FUTURO CON LA FINANCIACIÓN QUE NECESITAS
-            </h4>
-            <p className="p-financiacion">
-              Hemos diseñado un plan de financiación junto a Unicaja Banco
-              exclusivo para los alumnos de Releevant. Con este plan podrás
-              empezar a pagar el <b>Bootcamp de Málaga</b> hasta{" "}
-              <b>un año después de haber comenzado</b>. Además,{" "}
-              <b>no hay restricciones de edad</b>, y podrás pagar{" "}
-              <b>hasta en cinco años</b>.
-            </p>
-          </div>
-          <div className="col my-5 module">
-            <img
-              src="https://www.releevant.com/wp-content/uploads/2021/08/LOGO-UNICAJABANCO.png"
-              alt="beca"
-              width={"100%"}
-            />
+      <h5 className="h5-financiacion text-center">
+        Construye tu futuro con la financiación que necesites
+      </h5>
+      <div className="wrap">
+        <div className="picture">
+          <div className="container">
+            <div className="finanziazione row">
+              <div className="basico col">
+                <h3 className="h3-fin">Basico</h3>
+                <u className="list-fin">
+                  <li className="list-fin">Pago único inicial.</li>
+                  <li className="list-fin">Obtienes 5% de descuento.</li>
+                </u>
+                <button className="bottone1 btn btn-light mb-5">
+                  ¡5% de descuento!
+                </button>
+              </div>
+              <div className="basico col">
+                <h3 className="h3-fin">Pro</h3>
+                <u className="list-fin">
+                  <li className="list-fin">Te financiamos nosotros.</li>
+                  <li className="list-fin">Reserva matricula 25%</li>
+                  <li className="list-fin">Cuotas en 5 meses</li>
+                  <li className="list-fin">Sin interes, ni trampas.</li>
+                </u>
+                <button className="bottone2 btn btn-light">
+                  ¡Cuotas en 5 meses!
+                </button>
+              </div>
+              <div className="basico col">
+                <h3 className="h3-fin">Unicaja</h3>
+                <u className="list-fin">
+                  <li className="list-fin">Con Unicaja Banco Exclusivo</li>
+                  <li className="list-fin">
+                    Paga hasta un año despues de haber comenzado
+                  </li>
+                </u>
+                <button className="bottone3 btn btn-light">
+                  ¡Me interesa!
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="finan">
+        <h3 className="h3-pag text-center">
+          ¿Y si te dijéramos que no pagas hasta que no encuentres trabajo?*{" "}
+          <button className="btn btn-light">
+            ¡CUÉNTAME!
+            <br />
+            <span className="plazas">*Plazas limitadas</span>
+          </button>
+        </h3>
       </div>
       <h2 id="faq" className="h2-financiacion text-center module">
         PREGUNTAS MÁS FRECUENTES

@@ -17,10 +17,14 @@ function Desarrollo() {
       <h1 className="title-des text-center">TRABAJAMOS CONTIGO</h1>
       <div className="d-grid gap-2 d-md-flex justify-content-md-center">
         <div className="w-75">
-          <button className="btn btn-secondary">DESARROLLO</button>
+          <HashLink to="#desarrollo-title" className="btn btn-outline-light">
+            DESARROLLO
+          </HashLink>
         </div>
         <div className="">
-          <button className="btn btn-secondary">FORMACIÓN</button>
+          <HashLink to="#formacion-title" className="btn btn-outline-light">
+            FORMACIÓN
+          </HashLink>
         </div>
       </div>
 
@@ -343,6 +347,152 @@ function Desarrollo() {
           <b>toma de decisiones</b>, piezas potenciales en el presente e
           imprescindibles en el futuro inmediato, y que van a generar valor
           añadido en todos los sectores productivos y en la sociedad.
+        </p>
+      </div>
+      <h2
+        className="h2-desarrollo text-center module mt-2"
+        id="formacion-title"
+      >
+        FORMAR ES HACER CRECER TU NEGOCIO
+      </h2>
+      <p className="p-des module">
+        Mejorar a tus profesionales es hacer crecer tu negocio. El conocimiento
+        es imprescindible para avanzar con éxito en un mercado altamente
+        competitivo y carente de talento.
+      </p>
+      <p className="p-des module mb-5">
+        Gracias a nuestra fuerte conexión con el sector tecnológico, tenemos a
+        los mejores expertos en casi cualquier tecnología, que supone nuestra
+        propuesta de valor: proporcionamos la formación imprescindible para que
+        tus proyectos avancen, impartida por profesionales relevantes del
+        sector, con muchos años de trayectoria, que pueden hacer cumplir tus
+        objetivos de negocio.
+      </p>
+      <p className="p-des module mb-5">
+        En Releevant hemos formado desde hace años a cientos de alumnos de
+        empresas y compañías; tenemos el know-how imprescindible para modelar un
+        proyecto formativo para tu empresa.
+      </p>
+      <div className="div-comun1">
+        <h2 className="h2-desarrollo1 text-center module mt-2">
+          NO TENEMOS CATÁLOGO!
+        </h2>
+        <p className="p-des1 module mb-5">
+          Actualmente es imposible ofrecer una formación estática y cerrada, ya
+          que las tecnologías cambian a diario y surgen nuevas continuamente.
+          Por eso nosotros no te ofrecemos un listado de formaciones que
+          corrieran riesgo de caer obsoletas y no darte la calidad y
+          profesionalidad que requieren tus proyectos.
+        </p>
+      </div>
+      <h2 className="h2-desarrollo text-center module mt-2">
+        FORMACIÓN A MEDIDA: DINOS QUÉ NECESITAS
+      </h2>
+      <p className="p-des module">
+        Mejorar a tus profesionales es hacer crecer tu negocio. El conocimiento
+        es imprescindible para avanzar con éxito en un mercado altamente
+        competitivo y carente de talento.
+      </p>
+      <div role="tabpanel">
+        <div class="list-group w-25 m-auto mb-5" id="myList" role="tablist">
+          <a
+            class="bott btn-secondary list-group-item list-group-item-action active"
+            data-bs-toggle="list"
+            href="#home"
+            role="tab"
+          >
+            Visión del stack tecnológico de tus proyectos.
+          </a>
+          <a
+            class="bott btn-secondary list-group-item list-group-item-action"
+            data-bs-toggle="list"
+            href="#profile"
+            role="tab"
+          >
+            Identificación de necesidades.
+          </a>
+          <a
+            class="bott btn-secondary list-group-item list-group-item-action"
+            data-bs-toggle="list"
+            href="#messages"
+            role="tab"
+          >
+            Coordinación con expertos.
+          </a>
+          <a
+            class="bott btn-secondary list-group-item list-group-item-action"
+            data-bs-toggle="list"
+            href="#settings"
+            role="tab"
+          >
+            Elaboración de propuesta.
+          </a>
+          <a
+            class="bott btn-secondary list-group-item list-group-item-action"
+            data-bs-toggle="list"
+            href="#marcha"
+            role="tab"
+          >
+            En marcha!
+          </a>
+        </div>
+
+        <div class="tab-content">
+          <div
+            class="p-formacion-des tab-pane active w-50 m-auto mb-5"
+            id="home"
+            role="tabpanel"
+          >
+            Es necesario saber en qué tecnologías trabajáis, para poder adaptar
+            con precisión la formación.
+          </div>
+          <div
+            class="p-formacion-des tab-pane w-50 m-auto mb-5"
+            id="profile"
+            role="tabpanel"
+          >
+            Mediante reuniones con diferentes capas de la empresa, sabremos
+            exactamente vuestros objetivos y hacia dónde dirigir el itinerario.
+          </div>
+          <div
+            class="p-formacion-des tab-pane w-50 m-auto mb-5"
+            id="messages"
+            role="tabpanel"
+          >
+            Cada tecnología precisa un profesional que cubra con garantía la
+            formación de tu equipo. Nos aseguramos su disponibilidad.
+          </div>
+          <div
+            class="p-formacion-des tab-pane w-50 m-auto mb-5"
+            id="settings"
+            role="tabpanel"
+          >
+            Diseñamos un proyecto formativo totalmente adaptado a lo analizado
+            con tu empresa. Negociamos modalidad y fechas.
+          </div>
+          <div
+            class="p-formacion-des tab-pane w-50 m-auto mb-5"
+            id="marcha"
+            role="tabpanel"
+          >
+            Comienza la formación.
+          </div>
+        </div>
+      </div>
+      <div className="div-comun2">
+        <h2 className="h2-desarrollo1 text-center module mt-2">
+          NOS ADAPTAMOS A TI
+        </h2>
+        <p className="p-des module">
+          Realizamos nuestras formaciones tanto de forma presencial, ya sea en
+          nuestras instalaciones bien in company, como en streaming, cualquier
+          modalidad te darán la calidad y los resultados que necesitas.
+        </p>
+        <p className="p-des module">
+          Por supuesto, podrás aprovechar las ventajas de la formación
+          bonificada para tus proyectos. Utiliza tus créditos anuales para
+          cubrir parte o toda la formación. Te informamos de los trámites que
+          tendrás que realizar, muy sencillos y rápidos.
         </p>
       </div>
     </div>

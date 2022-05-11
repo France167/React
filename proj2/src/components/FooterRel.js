@@ -74,14 +74,7 @@ function FooterRel() {
                     Desarrolla con nosotros
                   </HashLink>
                 </p>
-                <p>
-                  <HashLink
-                    to="/startups/#startup"
-                    className="link-foot text-reset"
-                  >
-                    Ideas y Startups
-                  </HashLink>
-                </p>
+
                 <p>
                   <HashLink
                     to="/releevant/#releevant"

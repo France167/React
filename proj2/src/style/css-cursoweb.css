@@ -63,8 +63,8 @@
 }
 
 .image-boot{
-  background-image: url('../components/images/okay.jpg');
-  height: 138.7vh;
+  background-image: url('../components/images/okay2.jpg');
+  height: 137.2vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,7 +195,7 @@
 }
 
 .section-dos {
-  margin-top: 5vh;
+  margin-top: -4vh;
   background-color: #161616;
   padding: 2vh 5vh;
 }
@@ -221,6 +221,82 @@
 
 .sec-why{
   width: 80%;
+}
+
+ .picture{
+  background-image: url('../components/images/fin.jpg');
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}  
+
+.finanzizione{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrap {
+    width: 100%;
+}
+
+
+.basico{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.finan{
+  padding: 40px 0;
+  background-color: #1d061a;
+  min-height: 50px;
+}
+
+.plazas{
+  color: #161616;
+  font-size: 0.6rem;
+  text-transform: lowercase; 
+}
+.h3-pag{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.bottone1{
+  margin-top: 8rem;
+}
+
+.bottone2{
+  margin-top: 3.5rem;
+}
+
+.bottone3{
+  margin-top: 5.6rem;
+}
+
+
+
+.h3-fin{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  margin-top: 16vh;
+}
+
+.list-fin{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -8vh;
+  margin-bottom: 5vh;
 }
 
 .p-formacion-sec-dos {
@@ -337,7 +413,7 @@ h3 span{
   backface-visibility: hidden;
 }
 
-.flip-box-front1 {
+/* .flip-box-front1 {
   background-color: #2ec4b6;
   color: white;
 }
@@ -351,6 +427,23 @@ h3 span{
 }
 .flip-box-front4 {
   background-color: #ffd166;
+  color: white;
+} */
+
+.flip-box-front1 {
+  background-color: #f4e9cd;
+  color: white;
+}
+.flip-box-front2 {
+  background-color: #9dbebb;
+  color: white;
+}
+.flip-box-front3 {
+  background-color: #77aca2;
+  color: white;
+}
+.flip-box-front4 {
+  background-color: #468189;
   color: white;
 }
 

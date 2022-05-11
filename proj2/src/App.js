@@ -27,7 +27,6 @@ import UpdateExperto from "./views/Admin/UpdateExperto";
 import Inicio from "./views/Releevant/Inicio";
 import Cursos from "./views/Releevant/Cursos";
 import Desarrollo from "./views/Releevant/Desarrollo";
-import Startups from "./views/Releevant/Startups";
 import Releevant from "./views/Releevant/Releevant";
 import CorsoWeb from "./views/Releevant/CorsoWeb";
 import PoliticaCookies from "./views/Releevant/PoliticaCookies";
@@ -40,7 +39,6 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="inicio" element={<Inicio />} />
         <Route path="desarrollo" element={<Desarrollo />} />
-        <Route path="startups" element={<Startups />} />
         <Route path="releevant" element={<Releevant />} />
         <Route path="curso-desarrollo" element={<CorsoWeb />} />
         <Route path="politica-cookie" element={<PoliticaCookies />} />
