@@ -105,9 +105,9 @@ function Inicio() {
       </h2>
       <div className="formacion module">
         <div className="formacion-divs div-1-inicio module">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
                 <img
                   src={Div1}
                   alt="unico"
@@ -116,7 +116,7 @@ function Inicio() {
                 />
                 <h3 className="h3 text-center mt-3">Eres único </h3>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <h4 className="h4 text-center mt-3"> Desde 0 al 100%!</h4>
                 <p className="p-formacion">
                   Sabemos que cada persona tiene un nivel de conocimientos o una
@@ -129,9 +129,9 @@ function Inicio() {
           </div>
         </div>
         <div className="formacion-divs div-2-inicio module">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
                 <img
                   src={Div2}
                   alt="unico"
@@ -147,7 +147,7 @@ function Inicio() {
                   </HashLink>{" "}
                 </h3>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <h4 className="h4 text-center mt-3">
                   Sólo los profesionales te enseñan a trabajar.
                 </h4>
@@ -163,9 +163,9 @@ function Inicio() {
         </div>
 
         <div className="formacion-divs div-3-inicio module">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
                 <img
                   src={Div3}
                   alt="unico"
@@ -174,7 +174,7 @@ function Inicio() {
                 />
                 <h3 className="h3 text-center mt-3">Presencialidad</h3>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <h4 className="h4 text-center mt-3">
                   Face to face, porque creemos en las personas.
                 </h4>
@@ -189,9 +189,9 @@ function Inicio() {
           </div>
         </div>
         <div className="formacion-divs div-4-inicio module">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
                 <img
                   src={Div4}
                   alt="unico"
@@ -200,7 +200,7 @@ function Inicio() {
                 />
                 <h3 className="h3 text-center mt-3">Empleabilidad</h3>
               </div>
-              <div class="flip-card-back">
+              <div className="flip-card-back">
                 <h4 className="h4 text-center mt-3">
                   95% asegurado, sólo depende de ti.
                 </h4>

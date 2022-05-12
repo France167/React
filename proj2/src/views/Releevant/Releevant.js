@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Image from "../../components/images/releevant.jpg";
 import "../../style/css-releevant.css";
 import { useGlobalContext } from "../../contexts/GlobalContext";
@@ -35,7 +35,7 @@ function Releevant() {
         <div className="box">
           <span></span>
           <div className="content">
-            <h2 className="h2-title-curso">BOOTCAMP DE DESARROLLO WEB</h2>
+            <h2 className="h2-title-curso">BOOTCAMP DESARROLLO WEB</h2>
             <p>
               Bootcamp de 500 horas donde aprenderás a programar Javascript,
               Typescript y Node.js, MySQL, MongoDB, React.js, SCRUM... Te
@@ -47,11 +47,11 @@ function Releevant() {
         <div className="box">
           <span></span>
           <div className="content">
-            <h2 className="h2-title-curso">DESARROLLO DE SOFTWARE </h2>
+            <h2 className="h2-title-curso">DESARROLLO DE SOFTWARE</h2>
             <p>
-              En este bootcamp te enseñamos el stack J.A.M (Java, Angular y
-              MongoDB), además del framework Spring, metodologías Agile y mucho
-              más. La mayor demanda laboral IT.
+              No importa cuál sea tu necesidad ni entorno, cuéntanos cuál es tu
+              proyecto y lo llevaremos a cabo. Nuestros compromisos son:
+              viabilidad, agilidad y calidad.
             </p>
             <HashLink to="/desarrollo/#desarrollo">Saber más</HashLink>
           </div>
@@ -59,11 +59,11 @@ function Releevant() {
         <div className="box">
           <span></span>
           <div className="content">
-            <h2 className="h2-title-curso">STARTUPS</h2>
+            <h2 className="h2-title-curso">FORMACIÓN AD HOC</h2>
             <p>
-              Este bootcamp de Inteligencia Artificial le dará otro nivel a tu
-              carrera profesional. Aprenderás Python, TensorFlow, Torch y mucho
-              más. ¡Únete ahora al futuro de la tecnología!
+              Te modelamos la formación imprescindible para que tus proyectos
+              avancen, impartida por profesionales relevantes del sector.
+              Formamos a la medida de tus necesidades.
             </p>
             <HashLink to="/startups/#startup">Saber más</HashLink>
           </div>
@@ -94,31 +94,36 @@ function Releevant() {
             {expertos.map((experto) => {
               return (
                 <SplideSlide key={experto._id}>
-                    <div
-              className="animate__animated animate__fadeInUp col d-flex justify-content-around"
-              key={experto._id}
-            >
-              <div className="card mb-5" style={{ width: "19rem" }}>
-                <img
-                  src={experto.foto}
-                  className="card-img-top embed-responsive-item"
-                  alt="..."
-                  width={"15%"}
-                />
-                <div className="card-body">
-                  <h5 className="card-title">{experto.nombre}</h5>
-                  <h6>{experto.posicion}</h6>
-                  <p className="card-text overview">{experto.bio}</p>
-                  <button
-                    onClick={() => bio(experto._id)}
-                    type="button"
-                    className="btn btn-secondary mr-5"
-                    data-toggle="modal"
-                    data-target="#foo"
+                  <div
+                    className="animate__animated animate__fadeInUp col d-flex justify-content-around"
+                    key={experto._id}
                   >
-                    See full bio
-                  </button>
-                  <a className="btn btn-outline-secondary ml-5" href={experto.LinkedIn} target="_blank" rel="noreferrer">
+                    <div className="card mb-5" style={{ width: "19rem" }}>
+                      <img
+                        src={experto.foto}
+                        className="card-img-top embed-responsive-item"
+                        alt="..."
+                        width={"15%"}
+                      />
+                      <div className="card-body">
+                        <h5 className="card-title">{experto.nombre}</h5>
+                        <h6>{experto.posicion}</h6>
+                        <p className="card-text overview">{experto.bio}</p>
+                        <button
+                          onClick={() => bio(experto._id)}
+                          type="button"
+                          className="btn btn-secondary mr-5"
+                          data-toggle="modal"
+                          data-target="#foo"
+                        >
+                          See full bio
+                        </button>
+                        <a
+                          className="btn btn-outline-secondary ml-5"
+                          href={experto.LinkedIn}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -130,9 +135,9 @@ function Releevant() {
                             <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                           </svg>
                         </a>
-                </div>
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
                 </SplideSlide>
               );
             })}
@@ -140,43 +145,43 @@ function Releevant() {
         </div>
       </div>
       <div
-          className="modal fade"
-          id="foo"
-          tabIndex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog modal-dialog-centered" role="document">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLongTitle">
-                  {nombreBio} Bio
-                </h5>
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div className="modal-body example">
-                <div>{biografia}</div>
-              </div>
-              <div className="modal-footer">
-                <button
-                  type="button"
-                  className="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
+        className="modal fade"
+        id="foo"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">
+                {nombreBio} Bio
+              </h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body example">
+              <div>{biografia}</div>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
+      </div>
       <h2 className="h2-expertos text-center module">ALUMNI RELEEVANT</h2>
 
       <div className="container module">
@@ -190,6 +195,11 @@ function Releevant() {
               breakpoints: {
                 700: {
                   perPage: 1,
+                },
+              },
+              breakpoints: {
+                1024: {
+                  perPage: 2,
                 },
               },
               gap: "5rem",
@@ -218,7 +228,11 @@ function Releevant() {
                         <br />
                         <ul className="cards__list">
                           <li>
-                            <a href={alumno.alumno.datosPersonales.LinkedIn} target="_blank" rel="noreferrer">
+                            <a
+                              href={alumno.alumno.datosPersonales.LinkedIn}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               {" "}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"

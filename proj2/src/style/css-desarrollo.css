@@ -267,3 +267,47 @@
     right: 108px;
   }
   }
+
+  @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .title-des{
+    margin-top: -40%;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .title-h2-des {
+    margin-top: 26vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+.div-comun {
+  background-color: #1d061a;
+  height: 525px;
+}
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4.3vh 0;
+  background-color: #1d061a;
+  margin-top: -188px;
+}
+
+.h2-expertos {
+  color: black;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+}

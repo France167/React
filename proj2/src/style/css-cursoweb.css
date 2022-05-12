@@ -2,6 +2,14 @@
   opacity: 0.95;
 }
 
+.p-title-cursoweb {
+  margin: 1rem;
+  margin-top: 17%;
+  color: gray;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+
 .title-cursoweb {
   margin-top: 14%;
   color: white;
@@ -9,16 +17,14 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
-.p-title-cursoweb {
-  margin: 6rem;
-  margin-top: 18%;
+.h2-programar {
   color: black;
-  font-size: 1.5rem;
-  font-family: 'Lato', sans-serif;
-  text-align: justify;
-  text-justify: inter-word;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 .title-h2-cursoweb {
@@ -29,14 +35,6 @@
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.5rem;
-}
-
-.h2-programar {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 0rem;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: -2rem;
 }
 
 .etapas {
@@ -223,25 +221,21 @@
   width: 80%;
 }
 
- .picture{
+ /* .picture{
   background-image: url('../components/images/fin.jpg');
   height: 70vh;
+  opacity: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}  
+}  */
 
-.finanzizione{
+ .finanzizione{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.wrap {
-    width: 100%;
-}
-
-
+ 
 .basico{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
@@ -564,9 +558,7 @@ h3 span{
     height: 35vh;
     perspective: 1000px;
     position: relative;
- 
     margin-top: 35vh;
-   
   }
 
   .flip-box1:hover .flip-box-inner {
@@ -857,4 +849,151 @@ h3 span{
     right: 50px;
   }
 
+}
+
+/* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .foto-cursoweb {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 39vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .title-cursoweb {
+    margin-top: 15%;
+    margin-bottom: 18%;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .p-title-cursoweb {
+    margin: 1rem 2rem;
+    margin-top: 19%;
+    color: black;
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h2-programar {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .title-h2-cursoweb {
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+  }
+
+  .h3-web {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+  }
+  .title-cursow {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .image-boot{
+    display: none;
+  }
+
+  .p-formacion-sec-dos {
+  color: white;
+  margin: 3vh 2vh;
+  margin-right: -7rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+ 
+  float: right;
+}
+
+.h2-cursoweb-sec-dos {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 2rem;
+}
+
+.p-formacion-why{
+  color: white;
+  margin: 10vh 1vh;
+  font-size: 1rem;
+  margin-top: 10rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.h2-docentes {
+  color: black;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.h2-financiacion {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 4rem;
+}
+
+.h3-pag {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.bottone3 {
+  margin-top: 5.7rem;
+}
+.bottone2 {
+  margin-top: 3.8rem;
+}
+.bottone1 {
+  margin-top: 7.7rem;
+}
+
+.columna-8{
+  margin: auto;
+}
+
+.h3-fin {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 16vh;
+}
+
+.list-fin {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  list-style-type: none;
+}
 }

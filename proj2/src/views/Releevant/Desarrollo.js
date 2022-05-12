@@ -16,7 +16,19 @@ function Desarrollo() {
       />
       <h1 className="title-des text-center">TRABAJAMOS CONTIGO</h1>
       <div className="d-grid gap-2 d-md-flex justify-content-md-center">
-        <div className="w-75">
+        <div
+          class="btn-group btn-group-lg"
+          role="group"
+          aria-label="Basic example"
+        >
+          <button type="button" class="btn btn-light">
+            Left
+          </button>
+          <button type="button" class="btn btn-ligth">
+            Right
+          </button>
+        </div>
+        {/* <div className="w-75">
           <HashLink to="#desarrollo-title" className="btn btn-outline-light">
             DESARROLLO
           </HashLink>
@@ -25,7 +37,7 @@ function Desarrollo() {
           <HashLink to="#formacion-title" className="btn btn-outline-light">
             FORMACIÓN
           </HashLink>
-        </div>
+        </div> */}
       </div>
 
       <h2 className="title-h2-des text-center module" id="desarrollo-title">
@@ -494,7 +506,7 @@ function Desarrollo() {
           cubrir parte o toda la formación. Te informamos de los trámites que
           tendrás que realizar, muy sencillos y rápidos.
         </p>
-       <div className="d-grid gap-2 col-2 mx-auto">
+        <div className="d-grid gap-2 col-2 mx-auto">
           <HashLink
             to="/inicio/#contact-form"
             className="bottone-info btn btn-secondary mb-5 mt-3 module"

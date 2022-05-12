@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "../../components/images/programming3.jpg";
 import Image1 from "../../components/images/codeBoot.jpg";
 import "../../style/css-cursoweb.css";
+import "../../style/css.bootcamp.scss";
 import { useGlobalContext } from "../../contexts/GlobalContext";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -96,12 +97,12 @@ function CorsoWeb() {
       <h1 className="title-cursoweb text-center">BOOTCAMP DESARROLLO WEB</h1>
       <div className="boot">
         <p className="p-title-cursoweb text-center">
-          Releevant ofrece el mejor bootcamp de la Málaga tecnológica. Somos
-          pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a Málaga,
-          iniciando un tenaz camino que ha estado lleno de aprendizaje, pero
-          también repleto de éxitos; podemos presumir que gracias al modelo de
-          cómo aprender a programar desde 0, más de 200 programadores en activo
-          han pasado por nuestras formaciones
+          <b>Releevant</b> ofrece el mejor bootcamp de la Málaga tecnológica.
+          Somos pioneros. En 2016 trajimos el modelo de bootcamp tecnológico a
+          Málaga, iniciando un tenaz camino que ha estado lleno de aprendizaje,
+          pero también repleto de éxitos; podemos presumir que gracias al modelo
+          de cómo aprender a programar desde 0, más de 200 programadores en
+          activo han pasado por nuestras formaciones.
         </p>
       </div>
 
@@ -368,7 +369,7 @@ function CorsoWeb() {
       </div>
       <div className="contenedor-boot row" style={{ margin: "0vh 0vh" }}>
         <div className="image-boot col-4"></div>
-        <div className="col-8">
+        <div className="columna-8 col-8">
           <div className="row">
             <div className="formacion-bootcamp module">
               <div className="formacion-divs-bootcamp1 div-11 module">
@@ -553,15 +554,17 @@ function CorsoWeb() {
                   perPage: 1,
                 },
               },
+              breakpoints: {
+                900: {
+                  perPage: 2,
+                },
+              },
             }}
           >
             {docentes.map((docente) => {
               return (
                 <SplideSlide key={docente._id}>
-                  <div
-                    className="col d-flex justify-content-around"
-
-                  >
+                  <div className="col d-flex justify-content-around">
                     <div className="card mb-5" style={{ width: "19rem" }}>
                       <img
                         src={docente.foto}
@@ -582,7 +585,12 @@ function CorsoWeb() {
                         >
                           See full bio
                         </button>
-                        <a className="btn btn-outline-secondary ml-5" href={docente.LinkedIn} target="_blank" rel="noreferrer">
+                        <a
+                          className="btn btn-outline-secondary ml-5"
+                          href={docente.LinkedIn}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -647,56 +655,61 @@ function CorsoWeb() {
       <h5 className="h5-financiacion text-center">
         Construye tu futuro con la financiación que necesites
       </h5>
-      <div className="wrap">
-        <div className="picture">
-          <div className="container">
-            <div className="finanziazione row">
-              <div className="basico col">
-                <h3 className="h3-fin">Basico</h3>
-                <u className="list-fin">
-                  <li className="list-fin">Pago único inicial.</li>
-                  <li className="list-fin">Obtienes 5% de descuento.</li>
-                </u>
-                <button className="bottone1 btn btn-light mb-5">
-                  ¡5% de descuento!
-                </button>
-              </div>
-              <div className="basico col">
-                <h3 className="h3-fin">Pro</h3>
-                <u className="list-fin">
-                  <li className="list-fin">Te financiamos nosotros.</li>
-                  <li className="list-fin">Reserva matricula 25%</li>
-                  <li className="list-fin">Cuotas en 5 meses</li>
-                  <li className="list-fin">Sin interes, ni trampas.</li>
-                </u>
-                <button className="bottone2 btn btn-light">
-                  ¡Cuotas en 5 meses!
-                </button>
-              </div>
-              <div className="basico col">
-                <h3 className="h3-fin">Unicaja</h3>
-                <u className="list-fin">
-                  <li className="list-fin">Con Unicaja Banco Exclusivo</li>
-                  <li className="list-fin">
-                    Paga hasta un año despues de haber comenzado
-                  </li>
-                </u>
-                <button className="bottone3 btn btn-light">
-                  ¡Me interesa!
-                </button>
-              </div>
+      <div className="picture">
+        <div className="container">
+          <div className="finanziazione row">
+            <div className="basico col">
+              <h3 className="h3-fin">Basico</h3>
+              <u className="list-fin">
+                <li className="list-fin">Pago único inicial.</li>
+                <li className="list-fin">Obtienes 5% de descuento.</li>
+              </u>
+              <HashLink
+                to="/inicio/#form-inicio"
+                className="bottone1 btn btn-light mb-5"
+              >
+                ¡5% de descuento!
+              </HashLink>
+            </div>
+            <div className="basico col">
+              <h3 className="h3-fin">Pro</h3>
+              <u className="list-fin">
+                <li className="list-fin">Te financiamos nosotros.</li>
+                <li className="list-fin">Reserva matricula 25%</li>
+                <li className="list-fin">Cuotas en 5 meses</li>
+                <li className="list-fin">Sin interes, ni trampas.</li>
+              </u>
+              <HashLink
+                to="/inicio/#form-inicio"
+                className="bottone2 btn btn-light"
+              >
+                ¡Cuotas en 5 meses!
+              </HashLink>
+            </div>
+            <div className="basico col">
+              <h3 className="h3-fin">Unicaja</h3>
+              <u className="list-fin">
+                <li className="list-fin">Con Unicaja Banco Exclusivo</li>
+                <li className="list-fin">
+                  Paga hasta un año despues de haber comenzado
+                </li>
+              </u>
+              <HashLink
+                to="/inicio/#form-inicio"
+                className="bottone3 btn btn-light"
+              >
+                ¡Me interesa!
+              </HashLink>
             </div>
           </div>
         </div>
       </div>
       <div className="finan">
         <h3 className="h3-pag text-center">
-          ¿Y si te dijéramos que no pagas hasta que no encuentres trabajo?*{" "}
-          <button className="btn btn-light">
+          ¿Y si te dijéramos que no pagas hasta que no encuentres trabajo?{" "}
+          <HashLink to="/inicio/#form-inicio" className="btn btn-light">
             ¡CUÉNTAME!
-            <br />
-            <span className="plazas">*Plazas limitadas</span>
-          </button>
+          </HashLink>
         </h3>
       </div>
       <h2 id="faq" className="h2-financiacion text-center module">

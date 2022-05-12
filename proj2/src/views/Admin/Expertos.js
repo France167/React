@@ -76,7 +76,12 @@ function Expertos() {
                   >
                     See full bio
                   </button>
-                  <a className="ml-5" href={experto.LinkedIn} target="_blank" rel="noreferrer">
+                  <a
+                    className="ml-5"
+                    href={experto.LinkedIn}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     LinkedIn
                   </a>
 
