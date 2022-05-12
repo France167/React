@@ -14,11 +14,20 @@ function CorsoWeb() {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [biografia, setBiografia] = useState("");
+  const [nombreBio, setNombreBio] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
+
+  function bio(_id) {
+    var docente = docentes.find((d) => d._id === _id);
+    setBiografia(docente.bio);
+    var nomeDocente = docentes.find((n) => n._id === _id);
+    setNombreBio(nomeDocente.nombre);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -363,7 +372,7 @@ function CorsoWeb() {
           <div className="row">
             <div className="formacion-bootcamp module">
               <div className="formacion-divs-bootcamp1 div-11 module">
-                <div class="flip-box" style={{ margin: "0vh 0vh" }}>
+                <div class="flip-box1" style={{ margin: "0vh 0vh" }}>
                   <div class="flip-box-inner">
                     <div class="flip-box-front1">
                       <h3 className="h3-bootcamp text-center mt-3">
@@ -382,7 +391,7 @@ function CorsoWeb() {
                 </div>
               </div>
               <div className="formacion-divs-bootcamp1 div-22 module">
-                <div class="flip-box">
+                <div class="flip-box2">
                   <div class="flip-box-inner">
                     <div class="flip-box-front2">
                       <h3 className="h3-bootcamp text-center mt-3">
@@ -412,7 +421,7 @@ function CorsoWeb() {
           <div className="row">
             <div className="formacion-bootcamp module">
               <div className="formacion-divs-bootcamp1 div-11 module">
-                <div class="flip-box" style={{ margin: "0vh 0vh" }}>
+                <div class="flip-box3" style={{ margin: "0vh 0vh" }}>
                   <div class="flip-box-inner">
                     <div class="flip-box-front3">
                       <h3 className="h3-bootcamp text-center mt-3">
@@ -432,7 +441,7 @@ function CorsoWeb() {
                 </div>
               </div>
               <div className="formacion-divs-bootcamp1 div-22 module">
-                <div class="flip-box">
+                <div class="flip-box4">
                   <div class="flip-box-inner">
                     <div class="flip-box-front4">
                       <h3 className="h3-bootcamp text-center mt-3">
@@ -471,7 +480,7 @@ function CorsoWeb() {
             </h2>
           </div>
           <div>
-            <img src={Image1} alt="coding" width={"95%"} />
+            <img className="image-bo" src={Image1} alt="coding" width={"95%"} />
           </div>
           <div>
             <p className="p-formacion-why">
@@ -549,31 +558,42 @@ function CorsoWeb() {
             {docentes.map((docente) => {
               return (
                 <SplideSlide key={docente._id}>
-                  <div className="col mb-5 module">
-                    <div className="container-docentes module">
+                  <div
+                    className="col d-flex justify-content-around"
+
+                  >
+                    <div className="card mb-5" style={{ width: "19rem" }}>
                       <img
                         src={docente.foto}
-                        alt="Avatar"
-                        className="image-web"
-                        width={"100%"}
+                        className="card-img-top embed-responsive-item"
+                        alt="..."
+                        width={"15%"}
                       />
-                      <div className="overlay-web">
-                        <div className="text-web">
-                          {"    "}{" "}
-                          <b className="nombre-docente">{docente.nombre}</b>{" "}
-                          <a
-                            href="https://www.linkedin.com/company/releevant/"
-                            className="icon text-reset"
-                            target="_blank"
-                            rel="noreferrer"
+                      <div className="card-body">
+                        <h5 className="card-title">{docente.nombre}</h5>
+                        <h6>{docente.posicion}</h6>
+                        <p className="card-text overview">{docente.bio}</p>
+                        <button
+                          onClick={() => bio(docente._id)}
+                          type="button"
+                          className="btn btn-outline-secondary mr-5"
+                          data-toggle="modal"
+                          data-target="#foo"
+                        >
+                          See full bio
+                        </button>
+                        <a className="btn btn-outline-secondary ml-5" href={docente.LinkedIn} target="_blank" rel="noreferrer">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-linkedin"
+                            viewBox="0 0 16 16"
                           >
-                            <i className="fab fa-linkedin"></i>
-                          </a>{" "}
-                          <br />
-                          <b>{docente.posicion}</b> <br />
-                          {docente.bio}{" "}
-                        </div>
-                        <br />
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -581,6 +601,44 @@ function CorsoWeb() {
               );
             })}
           </Splide>
+        </div>
+      </div>
+      <div
+        className="modal fade"
+        id="foo"
+        tabIndex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLongTitle">
+                {nombreBio} Bio
+              </h5>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body example">
+              <div>{biografia}</div>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <h2 id="financiacion" className="h2-financiacion text-center module">

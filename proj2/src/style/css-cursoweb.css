@@ -385,7 +385,26 @@ h3 span{
   z-index: -1;
 }
 
-.flip-box {
+.flip-box1 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+.flip-box3 {
+  background-color: transparent;
+  width: 71vh;
+  height: 61vh;
+  perspective: 1000px;
+}
+.flip-box4 {
   background-color: transparent;
   width: 71vh;
   height: 61vh;
@@ -401,7 +420,16 @@ h3 span{
   transform-style: preserve-3d;
 }
 
-.flip-box:hover .flip-box-inner {
+.flip-box1:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box2:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box3:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box4:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
@@ -413,22 +441,6 @@ h3 span{
   backface-visibility: hidden;
 }
 
-/* .flip-box-front1 {
-  background-color: #2ec4b6;
-  color: white;
-}
-.flip-box-front2 {
-  background-color: #ef476f;
-  color: white;
-}
-.flip-box-front3 {
-  background-color: #cdb4db;
-  color: white;
-}
-.flip-box-front4 {
-  background-color: #ffd166;
-  color: white;
-} */
 
 .flip-box-front1 {
   background-color: #f4e9cd;
@@ -500,7 +512,7 @@ h3 span{
     margin-bottom: 5%;
     margin-right: 15%;
     margin-left: 15%;
-    color: black;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
   }
@@ -514,6 +526,87 @@ h3 span{
     font-size: 0.8rem;
   }
 
+  .image-boot{
+    display: none;
+  }
+  
+  .flip-box1 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    position: relative;
+    left: 27.7vh;
+    perspective: 1000px;
+  }
+  
+  .flip-box2 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+    right: 20vh;
+    margin-top: 35vh;
+    margin-left: 8vh;
+  }
+  .flip-box3 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 35vh;
+ 
+  }
+  .flip-box4 {
+    background-color: transparent;
+    width: 40vh;
+    height: 35vh;
+    perspective: 1000px;
+    position: relative;
+ 
+    margin-top: 35vh;
+   
+  }
+
+  .flip-box1:hover .flip-box-inner {
+    position: relative;
+    left: 27.7vh;
+    transform: rotateY(180deg);
+  }
+  .flip-box2:hover .flip-box-inner {
+    position: relative;
+    right: 20vh;
+    transform: rotateY(180deg);
+  }
+  .flip-box3:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-box4:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front1 {
+    background-color: #f4e9cd;
+    margin-left: 4vh;
+    color: white;
+    font-size: 0.8rem;
+  }
+  .flip-box-front2 {
+    background-color: #9dbebb;
+    margin-left: 3.6vh;
+    color: white;
+  }
+  .flip-box-front3 {
+    background-color: #77aca2;
+    color: white;
+    margin-left: 28vh;
+  }
+  .flip-box-front4 {
+    background-color: #468189;
+    color: white;
+    margin-left: -12vh;
+  }
   .h3-web {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
@@ -535,14 +628,66 @@ h3 span{
     color: black;
     font-size: 1.6rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     font-family: 'Josefin Sans', sans-serif;
-    margin: 2rem 1rem;
+    margin: 0rem 4.5rem;
   }
 
   .formacion-bootcamp {
     width: 100%;
     margin: 0.5vh auto;
   }
+
+  .image-bo{
+    display: none;
+  }
+  .h2-cursoweb-sec-dos {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: -15rem;
+    margin-left: -16rem;
+}
+
+.why {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  margin: 3vh 2vh;
+  margin-right: -7rem;
+  position: relative;
+  top: -55vh;
+  right: 5vh;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+.p-formacion-sec-dos {
+  color: white;
+  margin: 3vh 2vh;
+  margin-right: -9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: justify;
+  position: relative;
+  top: -56vh;
+  right: 5vh;
+  text-justify: inter-word;
+  font-family: 'Lato', sans-serif;
+  float: right;
+}
+
+.p-formacion-why {
+  display: none;
+}
+  .section-dos {
+    display: flex!important;
+    flex-direction: column;
+    margin-top: 5vh;
+    background-color: #616161;
+    padding: 2vh 5vh;
+    height: 2000px;
+}
 
   .div-1 {
     border: 1px solid gray;
@@ -595,7 +740,7 @@ h3 span{
   .h2-docentes {
     color: black;
     font-size: 1.8rem;
-    margin-top: 33rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'Josefin Sans', sans-serif;
   }
@@ -611,7 +756,7 @@ h3 span{
     margin-top: 5vh;
     background-color: #616161;
     padding: 2vh 5vh;
-    height: 2000px;
+    height: 1795px;
   }
 
   .formacion-bootcamp {
@@ -651,6 +796,23 @@ h3 span{
     left: -197px;
     max-height: 500px;
   }
+
+  .h2-financiacion {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 3rem;
+}
+
+.h5-financiacion {
+  color: gray;
+  margin-top: -4vh;
+  margin-bottom: 5vh;
+  font-size: 1rem;
+}
 
   .fin-col{
     width: 100%!important;

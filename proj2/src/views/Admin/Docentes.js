@@ -76,7 +76,7 @@ function Docentes() {
                   >
                     See full bio
                   </button>
-                  <a className="ml-5" href={docente.LinkedIn}>
+                  <a className="ml-5" href={docente.LinkedIn} target="_blank" rel="noreferrer">
                     LinkedIn
                   </a>
                   <Link

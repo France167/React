@@ -116,7 +116,7 @@ function Detalles() {
                   </p>
                   <p>
                     <b>LinkedIn</b>:{" "}
-                    <a href={alumno[0].alumno.datosPersonales.LinkedIn}>
+                    <a href={alumno[0].alumno.datosPersonales.LinkedIn} target="_blank" rel="noreferrer">
                       {alumno[0].alumno.datosPersonales.LinkedIn}
                     </a>
                   </p>

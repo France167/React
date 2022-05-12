@@ -120,7 +120,7 @@ function DetallesAlumni() {
                   </p>
                   <p>
                     <b>LinkedIn</b>:{" "}
-                    <a href={alumni[0].alumno.datosPersonales.LinkedIn}>
+                    <a href={alumni[0].alumno.datosPersonales.LinkedIn} target="_blank" rel="noreferrer">
                       {alumni[0].alumno.datosPersonales.LinkedIn}
                     </a>
                   </p>

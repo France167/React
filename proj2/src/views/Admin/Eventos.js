@@ -83,7 +83,7 @@ function Eventos() {
                 </p>
 
                 <p>
-                  <a href={evento.enlace}>Enlace a evento</a>
+                  <a href={evento.enlace} target="_blank" rel="noreferrer">Enlace a evento</a>
                 </p>
 
                 <h5>Info interna</h5>
