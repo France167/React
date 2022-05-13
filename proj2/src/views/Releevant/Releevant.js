@@ -198,8 +198,13 @@ function Releevant() {
                 },
               },
               breakpoints: {
-                1024: {
+                1425: {
                   perPage: 2,
+                },
+              },
+              breakpoints: {
+                1023: {
+                  perPage: 1,
                 },
               },
               gap: "5rem",

@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 
 function Desarrollo() {
   return (
-    <div className="all">
+    <div>
       <img
         className="foto-curso-des"
         id="desarrollo"
@@ -21,12 +21,12 @@ function Desarrollo() {
           role="group"
           aria-label="Basic example"
         >
-          <button type="button" class="btn btn-light">
-            Left
-          </button>
-          <button type="button" class="btn btn-ligth">
-            Right
-          </button>
+          <HashLink to="#desarrollo-title" class="btn btn-light">
+            Desarrollo
+          </HashLink>
+          <HashLink to="#formacion-title" class="btn btn-light">
+            Formación
+          </HashLink>
         </div>
         {/* <div className="w-75">
           <HashLink to="#desarrollo-title" className="btn btn-outline-light">
