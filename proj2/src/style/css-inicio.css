@@ -7,6 +7,17 @@ html {
   font-size: 1.7rem;
 }
 
+@media (max-width: 768px) { 
+  .navbar-xs{
+    display: flex;
+    justify-content: space-between
+  }
+
+}
+  
+ 
+
+
 .barra-inicio{
   background-color: #555;
   color: white;
@@ -1036,6 +1047,8 @@ and (max-device-width : 1024px)
   }
  
 }  
+
+
 
 /* For 1366 Resolution */  
 /* @media only screen   

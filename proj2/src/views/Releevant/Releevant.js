@@ -78,16 +78,23 @@ function Releevant() {
         <div className="row justify-content-between">
           <Splide
             options={{
+              type: "loop",
+              drag: "free",
+              focus: "center",
               perPage: 3,
+              autoScroll: {
+                speed: 2,
+              },
+
               arrows: true,
               pagination: false,
-              drag: "free",
+
               breakpoints: {
                 700: {
                   perPage: 1,
                 },
               },
-              gap: "5rem",
+              gap: "3rem",
               autoplay: true,
             }}
           >
@@ -98,7 +105,7 @@ function Releevant() {
                     className="animate__animated animate__fadeInUp col d-flex justify-content-around"
                     key={experto._id}
                   >
-                    <div className="card mb-5" style={{ width: "19rem" }}>
+                    <div className="card mb-5" style={{ width: "20rem" }}>
                       <img
                         src={experto.foto}
                         className="card-img-top embed-responsive-item"
@@ -119,16 +126,16 @@ function Releevant() {
                           See full bio
                         </button>
                         <a
-                          className="btn btn-outline-secondary ml-5"
+                          className="ml-5 linkedin"
                           href={experto.LinkedIn}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
+                            width="37"
+                            height="37"
+                            fill="gray"
                             className="bi bi-linkedin"
                             viewBox="0 0 16 16"
                           >
@@ -188,10 +195,15 @@ function Releevant() {
         <div className="row justify-content-between module module">
           <Splide
             options={{
+              type: "loop",
+              drag: "free",
+              focus: "center",
               perPage: 3,
+              autoScroll: {
+                speed: 2,
+              },
               arrows: true,
               pagination: false,
-              drag: "free",
               breakpoints: {
                 700: {
                   perPage: 1,
@@ -207,7 +219,7 @@ function Releevant() {
                   perPage: 1,
                 },
               },
-              gap: "5rem",
+              gap: "3rem",
               autoplay: true,
             }}
           >
@@ -241,8 +253,9 @@ function Releevant() {
                               {" "}
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="30"
+                                height="30"
+                                fill="gray"
                                 className="bi bi-linkedin"
                                 viewBox="0 0 16 16"
                               >

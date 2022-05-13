@@ -544,21 +544,32 @@ function CorsoWeb() {
         <div className="row justify-content-between">
           <Splide
             options={{
+              type: "loop",
+              drag: "free",
+              focus: "center",
+              snap: true,
               perPage: 3,
+              autoScroll: {
+                speed: 2,
+              },
               arrows: true,
               pagination: false,
-              drag: "free",
-              gap: "5rem",
               breakpoints: {
                 700: {
                   perPage: 1,
                 },
               },
               breakpoints: {
-                900: {
+                1425: {
                   perPage: 2,
                 },
               },
+              breakpoints: {
+                1023: {
+                  perPage: 1,
+                },
+              },
+              gap: "3rem",
             }}
           >
             {docentes.map((docente) => {
@@ -579,23 +590,23 @@ function CorsoWeb() {
                         <button
                           onClick={() => bio(docente._id)}
                           type="button"
-                          className="btn btn-outline-secondary mr-5"
+                          className="btn btn-secondary mr-5"
                           data-toggle="modal"
                           data-target="#foo"
                         >
                           See full bio
                         </button>
                         <a
-                          className="btn btn-outline-secondary ml-5"
+                          className="ml-5"
                           href={docente.LinkedIn}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
+                            width="37"
+                            height="37"
+                            fill="gray"
                             className="bi bi-linkedin"
                             viewBox="0 0 16 16"
                           >
@@ -661,8 +672,12 @@ function CorsoWeb() {
             <div className="basico col">
               <h3 className="h3-fin">Basico</h3>
               <u className="list-fin">
-                <li className="list-fin">Pago único inicial.</li>
-                <li className="list-fin">Obtienes 5% de descuento.</li>
+                <li className="list-fin">
+                  <b>Pago único inicial.</b>
+                </li>
+                <li className="list-fin">
+                  <b>Obtienes 5% de descuento</b>.
+                </li>
               </u>
               <HashLink
                 to="/inicio/#form-inicio"
@@ -674,10 +689,18 @@ function CorsoWeb() {
             <div className="basico col">
               <h3 className="h3-fin">Pro</h3>
               <u className="list-fin">
-                <li className="list-fin">Te financiamos nosotros.</li>
-                <li className="list-fin">Reserva matricula 25%</li>
-                <li className="list-fin">Cuotas en 5 meses</li>
-                <li className="list-fin">Sin interes, ni trampas.</li>
+                <li className="list-fin">
+                  <b>Te financiamos nosotros.</b>
+                </li>
+                <li className="list-fin">
+                  <b>Reserva matricula 25%</b>
+                </li>
+                <li className="list-fin">
+                  <b>Cuotas en 5 meses</b>
+                </li>
+                <li className="list-fin">
+                  <b>Sin interes, ni trampas.</b>
+                </li>
               </u>
               <HashLink
                 to="/inicio/#form-inicio"
@@ -689,9 +712,11 @@ function CorsoWeb() {
             <div className="basico col">
               <h3 className="h3-fin">Unicaja</h3>
               <u className="list-fin">
-                <li className="list-fin">Con Unicaja Banco Exclusivo</li>
                 <li className="list-fin">
-                  Paga hasta un año despues de haber comenzado
+                  <b>Con Unicaja Banco Exclusivo</b>
+                </li>
+                <li className="list-fin">
+                  <b>Paga hasta un año despues de haber comenzado</b>
                 </li>
               </u>
               <HashLink

@@ -25,7 +25,6 @@ import RequireAuth from "./components/RequireAuth";
 import UpdateDocente from "./views/Admin/UpdateDocente";
 import UpdateExperto from "./views/Admin/UpdateExperto";
 import Inicio from "./views/Releevant/Inicio";
-import Cursos from "./views/Releevant/Cursos";
 import Desarrollo from "./views/Releevant/Desarrollo";
 import Releevant from "./views/Releevant/Releevant";
 import CorsoWeb from "./views/Releevant/CorsoWeb";

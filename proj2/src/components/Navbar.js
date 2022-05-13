@@ -15,7 +15,7 @@ function Navbar() {
       </div>
       <nav id="mainNavbar" className="navbar navbar-expand-md  navbar-dark">
         <div className="row">
-          <div className="container col-5">
+          <div className="navbar-xs container col-md-5 col-xs-12">
             <HashLink to="/inicio/#video-inicio">
               {" "}
               <img
