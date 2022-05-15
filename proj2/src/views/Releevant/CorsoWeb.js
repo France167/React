@@ -590,7 +590,7 @@ function CorsoWeb() {
                         <button
                           onClick={() => bio(docente._id)}
                           type="button"
-                          className="btn btn-secondary mr-5"
+                          className="btn btn-secondary mr-1"
                           data-toggle="modal"
                           data-target="#foo"
                         >

@@ -14,7 +14,7 @@ function DetallesAlumni() {
     function () {
       async function fetchApi() {
         let response = await fetch(
-          `http://localhost:8080/buscare/alumni/${_id}`,
+          `http://localhost:3001/buscare/alumni/${_id}`,
           {
             mode: "cors",
           }
@@ -29,7 +29,7 @@ function DetallesAlumni() {
   );
 
   async function handleDelete(_id) {
-    let response = await fetch(`http://localhost:8080/delete/alumni/${_id}`, {
+    let response = await fetch(`http://localhost:3001/delete/alumni/${_id}`, {
       mode: "cors",
       method: "DELETE",
     });

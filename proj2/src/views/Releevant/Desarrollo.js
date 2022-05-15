@@ -15,7 +15,7 @@ function Desarrollo() {
         width={"100%"}
       />
       <h1 className="title-des text-center">TRABAJAMOS CONTIGO</h1>
-      <div className="d-grid gap-2 d-md-flex justify-content-md-center">
+      <div className="d-grid gap-2 d-md-flex justify-content-md-center mt-5">
         <div
           class="btn-group btn-group-lg"
           role="group"
@@ -406,7 +406,7 @@ function Desarrollo() {
         competitivo y carente de talento.
       </p>
       <div role="tabpanel">
-        <div class="list-group w-25 m-auto mb-5" id="myList" role="tablist">
+        <div class="list-group w-50 m-auto mb-5" id="myList" role="tablist">
           <a
             class="bott btn-secondary list-group-item list-group-item-action active"
             data-bs-toggle="list"
@@ -495,12 +495,12 @@ function Desarrollo() {
         <h2 className="h2-desarrollo1 text-center module mt-2">
           NOS ADAPTAMOS A TI
         </h2>
-        <p className="p-des module">
+        <p className="p-des2 module">
           Realizamos nuestras formaciones tanto de forma presencial, ya sea en
           nuestras instalaciones bien in company, como en streaming, cualquier
           modalidad te darán la calidad y los resultados que necesitas.
         </p>
-        <p className="p-des module">
+        <p className="p-des2 module">
           Por supuesto, podrás aprovechar las ventajas de la formación
           bonificada para tus proyectos. Utiliza tus créditos anuales para
           cubrir parte o toda la formación. Te informamos de los trámites que

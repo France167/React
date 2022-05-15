@@ -30,7 +30,7 @@ function AnadirEvento() {
         descripcion: data.descripcion,
         ponentes: data.ponentes,
         enlace: data.enlace,
-        foto: "http://localhost:8080/photos/" + splitFoto[2],
+        foto: "http://localhost:3001/photos/" + splitFoto[2],
         marketing: data.marketing,
         asistentes: {
           inscrito: data.asistentes.inscrito,
@@ -39,7 +39,7 @@ function AnadirEvento() {
       }),
     };
     let response = await fetch(
-      "http://localhost:8080/new/evento",
+      "http://localhost:3001/new/evento",
       requestOptions
     );
     let json = await response.json();

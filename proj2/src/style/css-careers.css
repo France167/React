@@ -93,7 +93,7 @@
       position: absolute;
       width: 100%;
       left: 50%;
-      top: 40vh;
+      top: 34vh;
       min-height: 30%;
       object-fit: cover;
       transform: translate(-50%, -50%);
@@ -115,3 +115,35 @@
   font-family: 'Josefin Sans', sans-serif;
 }
   }
+
+  @media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .foto-careers {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 46vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+}
+
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{ 
+  .foto-careers {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 41vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+}

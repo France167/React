@@ -280,17 +280,53 @@ and (max-device-width : 1024px)
   }
 
   .title-h2-des {
-    margin-top: 26vh;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-top: 18vh;
+    margin-right: 5%;
+    margin-left: 5%;
     color: black;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2.5rem;
 }
 
+.p-des {
+  color: gray;
+  margin: 5vh 10vh;
+  font-size: larger;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.p-des2 {
+  color: white;
+  margin: 5vh 10vh;
+  font-size: larger;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .div-comun {
   background-color: #1d061a;
-  height: 525px;
+  height: 620px;
+}
+
+.div-comun1 {
+  background-color: #1d061a;
+  height: 300px;
+}
+
+.bottone-info{
+  margin: 2vh -6vh;
+}
+
+.p-des1 {
+  color: white;
+  margin: 5vh 10vh;
+  font-size: larger;
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .container-cursos {
@@ -310,4 +346,38 @@ and (max-device-width : 1024px)
   margin-bottom: 2rem;
   font-family: 'Josefin Sans', sans-serif;
 }
+}
+
+@media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .title-des{
+    margin-top: -35%;
+    color: white;
+    font-size: 6rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .title-h2-des {
+    margin-top: 45vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5rem;
+}
+}
+
+@media only screen   
+and (min-width: 1440px)  
+and (max-width: 2560px)  
+{ 
+  .title-des{
+    margin-top: -40%;
+    color: white;
+    font-size: 10rem;
+  font-family: 'Josefin Sans', sans-serif;
+  }
 }

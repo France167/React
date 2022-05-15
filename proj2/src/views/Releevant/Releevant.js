@@ -53,7 +53,7 @@ function Releevant() {
               proyecto y lo llevaremos a cabo. Nuestros compromisos son:
               viabilidad, agilidad y calidad.
             </p>
-            <HashLink to="/desarrollo/#desarrollo">Saber más</HashLink>
+            <HashLink to="/desarrollo/#desarrollo-title">Saber más</HashLink>
           </div>
         </div>
         <div className="box">
@@ -65,7 +65,7 @@ function Releevant() {
               avancen, impartida por profesionales relevantes del sector.
               Formamos a la medida de tus necesidades.
             </p>
-            <HashLink to="/startups/#startup">Saber más</HashLink>
+            <HashLink to="/desarrollo/#formacion-title">Saber más</HashLink>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@ function Releevant() {
                         <button
                           onClick={() => bio(experto._id)}
                           type="button"
-                          className="btn btn-secondary mr-5"
+                          className="btn btn-secondary mr-1"
                           data-toggle="modal"
                           data-target="#foo"
                         >
@@ -175,7 +175,7 @@ function Releevant() {
               </button>
             </div>
             <div className="modal-body example">
-              <div>{biografia}</div>
+              <div className="text-wrap">{biografia}</div>
             </div>
             <div className="modal-footer">
               <button
@@ -208,15 +208,11 @@ function Releevant() {
                 700: {
                   perPage: 1,
                 },
-              },
-              breakpoints: {
-                1425: {
-                  perPage: 2,
+                1023:{
+                  perPage: 2
                 },
-              },
-              breakpoints: {
-                1023: {
-                  perPage: 1,
+                1425: {
+                  perPage: 3,
                 },
               },
               gap: "3rem",
@@ -276,7 +272,7 @@ function Releevant() {
       <h2 className="h2-expertos text-center module">¿DÓNDE ESTAMOS?</h2>
       <div className="donde-estamos container module">
         <div className="map-row row">
-          <div className="col">
+          <div className="col-lg-6 col-md-12 mb-3">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.979189046157!2d-4.441873884429033!3d36.69903798108674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f77fe30405e5%3A0xb44f7091e40acc9e!2sPolo%20Contenidos%20Digitales%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1651349498603!5m2!1ses!2ses"
               width="100%"

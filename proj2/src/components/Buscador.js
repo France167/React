@@ -15,7 +15,7 @@ export default function Search() {
   useEffect(
     function () {
       async function fetchApi() {
-        let url = encodeURI(`http://localhost:8080/busca/${debouncedSearch}`);
+        let url = encodeURI(`http://localhost:3001/busca/${debouncedSearch}`);
         let response = await fetch(url, {
           mode: "cors",
         });
@@ -23,7 +23,7 @@ export default function Search() {
         setAlumnos(json);
       }
       async function fetchAlumnos() {
-        let response = await fetch("http://localhost:8080/", {
+        let response = await fetch("http://localhost:3001/", {
           mode: "cors",
         });
         let json = await response.json();
@@ -43,7 +43,7 @@ export default function Search() {
     function () {
       async function fetchApi() {
         let url = encodeURI(
-          `http://localhost:8080/buscar/alumni/${debouncedSearch}`
+          `http://localhost:3001/buscar/alumni/${debouncedSearch}`
         );
         let response = await fetch(url, {
           mode: "cors",
@@ -52,7 +52,7 @@ export default function Search() {
         setAlumni(json);
       }
       async function fetchAlumni() {
-        let response = await fetch("http://localhost:8080/alumni", {
+        let response = await fetch("http://localhost:3001/alumni", {
           mode: "cors",
         });
         let json = await response.json();
@@ -72,7 +72,7 @@ export default function Search() {
     function () {
       async function fetchApi() {
         let url = encodeURI(
-          `http://localhost:8080/busca/candidatos/${debouncedSearch}`
+          `http://localhost:3001/busca/candidatos/${debouncedSearch}`
         );
         let response = await fetch(url, {
           mode: "cors",
@@ -81,7 +81,7 @@ export default function Search() {
         setCandidatos(json);
       }
       async function fetchCandidatos() {
-        let response = await fetch("http://localhost:8080/candidatos", {
+        let response = await fetch("http://localhost:3001/candidatos", {
           mode: "cors",
         });
         let json = await response.json();
@@ -101,7 +101,7 @@ export default function Search() {
     function () {
       async function fetchApi() {
         let url = encodeURI(
-          `http://localhost:8080/buscar/eventos/${debouncedSearch}`
+          `http://localhost:3001/buscar/eventos/${debouncedSearch}`
         );
         let response = await fetch(url, {
           mode: "cors",
@@ -110,7 +110,7 @@ export default function Search() {
         setEventos(json);
       }
       async function fetchEventos() {
-        let response = await fetch("http://localhost:8080/eventos", {
+        let response = await fetch("http://localhost:3001/eventos", {
           mode: "cors",
         });
         let json = await response.json();

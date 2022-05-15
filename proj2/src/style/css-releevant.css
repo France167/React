@@ -465,3 +465,74 @@ html {
     margin-bottom: 5vh;
   }
 }
+
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+  .foto-releevant {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 38.85vh;
+    min-height: 30%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.title-releevant {
+  margin-top: 23%;
+  color: white;
+  font-size: 5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  color: #d85081;
+}
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4.3vh 0;
+  background-color: #1d061a;
+  margin-top: -96px;
+}
+}
+
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{
+  .title-releevant {
+    margin-top: 26%;
+    color: white;
+    font-size: 8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+}
+
+@media only screen   
+and (min-width: 1304px)   
+and (max-width: 1440px)  
+{ 
+  .title-releevant {
+    margin-top: 18%;
+    color: white;
+    font-size: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.releevant-title {
+  margin-top: 18%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 7rem;
+  color: #d85081;
+}
+}

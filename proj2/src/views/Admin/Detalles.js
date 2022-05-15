@@ -12,7 +12,7 @@ function Detalles() {
   useEffect(
     function () {
       async function fetchApi() {
-        let response = await fetch(`http://localhost:8080/buscar/${_id}`, {
+        let response = await fetch(`http://localhost:3001/buscar/${_id}`, {
           mode: "cors",
         });
         let json = await response.json();
@@ -25,7 +25,7 @@ function Detalles() {
   );
 
   async function handleDelete(_id) {
-    let response = await fetch(`http://localhost:8080/delete/alumno/${_id}`, {
+    let response = await fetch(`http://localhost:3001/delete/alumno/${_id}`, {
       mode: "cors",
       method: "DELETE",
     });

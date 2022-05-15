@@ -29,7 +29,7 @@ export function GlobalContextProvider({ children }) {
 
   useEffect(function () {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/", {
+      let response = await fetch("http://localhost:3001/", {
         mode: "cors",
       });
       let json = await response.json();
@@ -41,7 +41,7 @@ export function GlobalContextProvider({ children }) {
 
   useEffect(function () {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/alumni", {
+      let response = await fetch("http://localhost:3001/alumni", {
         mode: "cors",
       });
       let json = await response.json();
@@ -53,7 +53,7 @@ export function GlobalContextProvider({ children }) {
 
   useEffect(function () {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/candidatos", {
+      let response = await fetch("http://localhost:3001/candidatos", {
         mode: "cors",
       });
       let json = await response.json();
@@ -65,7 +65,7 @@ export function GlobalContextProvider({ children }) {
 
   useEffect(function () {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/eventos", {
+      let response = await fetch("http://localhost:3001/eventos", {
         mode: "cors",
       });
       let json = await response.json();
@@ -78,7 +78,7 @@ export function GlobalContextProvider({ children }) {
   useEffect(
     function () {
       async function fetchApi() {
-        let response = await fetch("http://localhost:8080/docentes", {
+        let response = await fetch("http://localhost:3001/docentes", {
           mode: "cors",
         });
         let json = await response.json();
@@ -93,7 +93,7 @@ export function GlobalContextProvider({ children }) {
   useEffect(
     function () {
       async function fetchApi() {
-        let response = await fetch("http://localhost:8080/expertos", {
+        let response = await fetch("http://localhost:3001/expertos", {
           mode: "cors",
         });
         let json = await response.json();

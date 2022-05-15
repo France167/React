@@ -10,7 +10,7 @@ function Expertos() {
   const [nombreBio, setNombreBio] = useState("");
 
   async function handleDelete(_id) {
-    let response = await fetch(`http://localhost:8080/delete/experto/${_id}`, {
+    let response = await fetch(`http://localhost:3001/delete/experto/${_id}`, {
       mode: "cors",
       method: "DELETE",
     });

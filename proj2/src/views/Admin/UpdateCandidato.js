@@ -51,7 +51,7 @@ function UpdateCandidato() {
       }),
     };
     let response = await fetch(
-      `http://localhost:8080/update/candidatos/${_id}`,
+      `http://localhost:3001/update/candidatos/${_id}`,
       requestOptions
     );
     let json = await response.json();

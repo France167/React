@@ -24,7 +24,7 @@ function SendAlumni() {
       }),
     };
     let response = await fetch(
-      "http://localhost:8080/new/alumni",
+      "http://localhost:3001/new/alumni",
       requestOptions
     );
     let json = await response.json();

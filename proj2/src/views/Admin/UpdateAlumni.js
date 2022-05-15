@@ -53,7 +53,7 @@ function UpdateAlumni() {
           curso: data.curso,
           datosPersonales: {
             nombre: data.alumno.datosPersonales.nombre,
-            foto: "http://localhost:8080/photos/" + splitFoto[2],
+            foto: "http://localhost:3001/photos/" + splitFoto[2],
             fechaNacimiento: data.alumno.datosPersonales.fechaNacimiento,
             residencia: data.alumno.datosPersonales.residencia,
             telefono: data.alumno.datosPersonales.telefono,
@@ -72,7 +72,7 @@ function UpdateAlumni() {
           infoReleevant: {
             origen: data.alumno.infoReleevant.origen,
             pc: data.alumno.infoReleevant.pc,
-            matricula: "http://localhost:8080/docs/" + +splitPdf[2],
+            matricula: "http://localhost:3001/docs/" + +splitPdf[2],
             tipoDePago: data.alumno.infoReleevant.tipoDePago,
             detallesPago: data.alumno.infoReleevant.detallesPago,
           },
@@ -83,7 +83,7 @@ function UpdateAlumni() {
       }),
     };
     let response = await fetch(
-      `http://localhost:8080/update/alumni/${_id}`,
+      `http://localhost:3001/update/alumni/${_id}`,
       requestOptions
     );
     let json = await response.json();

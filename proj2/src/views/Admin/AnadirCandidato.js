@@ -50,7 +50,7 @@ function AnadirCandidato() {
       }),
     };
     let response = await fetch(
-      "http://localhost:8080/new/candidato",
+      "http://localhost:3001/new/candidato",
       requestOptions
     );
     let json = await response.json();

@@ -25,11 +25,11 @@ function UpdateDocente() {
         bio: data.bio,
         posicion: data.email,
         LinkedIn: data.LinkedIn,
-        foto: "http://localhost:8080/photos/" + splitFoto[2],
+        foto: "http://localhost:3001/photos/" + splitFoto[2],
       }),
     };
     let response = await fetch(
-      `http://localhost:8080/update/docente/${_id}`,
+      `http://localhost:3001/update/docente/${_id}`,
       requestOptions
     );
     let json = await response.json();

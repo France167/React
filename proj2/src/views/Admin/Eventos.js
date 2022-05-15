@@ -10,7 +10,7 @@ function Eventos() {
   let navigate = useNavigate();
 
   async function handleDelete(_id) {
-    let response = await fetch(`http://localhost:8080/delete/evento/${_id}`, {
+    let response = await fetch(`http://localhost:3001/delete/evento/${_id}`, {
       mode: "cors",
       method: "DELETE",
     });

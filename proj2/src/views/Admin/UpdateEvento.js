@@ -31,7 +31,7 @@ function UpdateEvento() {
         descripcion: data.descripcion,
         ponentes: data.ponentes,
         enlace: data.enlace,
-        foto: "http://localhost:8080/photos/" + splitFoto[2],
+        foto: "http://localhost:3001/photos/" + splitFoto[2],
         marketing: data.marketing,
         asistentes: {
           inscrito: data.asistentes.inscrito,
@@ -40,7 +40,7 @@ function UpdateEvento() {
       }),
     };
     let response = await fetch(
-      `http://localhost:8080/update/evento/${_id}`,
+      `http://localhost:3001/update/evento/${_id}`,
       requestOptions
     );
     let json = await response.json();

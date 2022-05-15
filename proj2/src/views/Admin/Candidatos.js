@@ -11,7 +11,7 @@ function Candidatos() {
 
   async function handleDelete(_id) {
     let response = await fetch(
-      `http://localhost:8080/delete/candidato/${_id}`,
+      `http://localhost:3001/delete/candidato/${_id}`,
       {
         mode: "cors",
         method: "DELETE",
@@ -24,7 +24,7 @@ function Candidatos() {
 
   function filterTodos() {
     async function fetchApi() {
-      let response = await fetch(`http://localhost:8080/candidatos`, {
+      let response = await fetch(`http://localhost:3001/candidatos`, {
         mode: "cors",
       });
       let json = await response.json();
@@ -36,7 +36,7 @@ function Candidatos() {
 
   function filter(prop) {
     async function fetchApi() {
-      let response = await fetch(`http://localhost:8080/candidato/${prop}`, {
+      let response = await fetch(`http://localhost:3001/candidato/${prop}`, {
         mode: "cors",
       });
       let json = await response.json();

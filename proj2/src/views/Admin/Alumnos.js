@@ -22,7 +22,7 @@ function Alumnos() {
 
   function filterProm1() {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/promocion1", {
+      let response = await fetch("http://localhost:3001/promocion1", {
         mode: "cors",
       });
       let json = await response.json();
@@ -34,7 +34,7 @@ function Alumnos() {
 
   function filterProm2() {
     async function fetchApi() {
-      let response = await fetch("http://localhost:8080/promocion2", {
+      let response = await fetch("http://localhost:3001/promocion2", {
         mode: "cors",
       });
       let json = await response.json();

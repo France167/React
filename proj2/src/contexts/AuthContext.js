@@ -33,7 +33,7 @@ export default function AuthContextProvider({ children }) {
   }, []);
 
   async function fetchApi(user) {
-    let response = await fetch("http://localhost:8080/login", {
+    let response = await fetch("http://localhost:3001/login", {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },

@@ -23,11 +23,11 @@ function AnadirExperto() {
         bio: data.bio,
         posicion: data.posicion,
         LinkedIn: data.LinkedIn,
-        foto: "http://localhost:8080/photos/" + splitFoto[2],
+        foto: "http://localhost:3001/photos/" + splitFoto[2],
       }),
     };
     let response = await fetch(
-      "http://localhost:8080/new/experto",
+      "http://localhost:3001/new/experto",
       requestOptions
     );
     let json = await response.json();
