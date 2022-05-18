@@ -1066,7 +1066,7 @@ and (max-device-width : 1024px)
 
 
  /* For 1366 Resolution */  
- /*@media only screen   
+ /* @media only screen   
 and (min-width: 1304px)   
 and (max-width: 1440px)  
 { 
@@ -1200,4 +1200,4 @@ and (max-width: 2560px)
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3rem;
 }
-} */
+}  */

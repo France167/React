@@ -25,7 +25,8 @@ function Login() {
     e.preventDefault();
     await login(user);
     /* setUser({ email: "", password: "", token: "" }); */
-    navigate(from, { replace: true });
+    navigate(from, { replace: true }); 
+   
   }
 
   return (

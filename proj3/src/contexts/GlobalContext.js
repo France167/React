@@ -61,7 +61,7 @@ export function GlobalContextProvider({ children }) {
     }
 
     fetchApi();
-  }, []);
+  }, [candidatos]);
 
   useEffect(function () {
     async function fetchApi() {

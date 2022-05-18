@@ -1,5 +1,7 @@
 import { createContext, useState, useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , useLocation} from "react-router-dom";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
 
 const AuthContext = createContext({
   auth: {},
@@ -15,7 +17,9 @@ export const useAuthContext = () => {
 export default function AuthContextProvider({ children }) {
   const [auth, setAuth] = useState(null);
   const [errorMessage, setErrorMessage] = useState("");
+  const location = useLocation();
   let navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   function logout() {
     setAuth(null);
@@ -44,18 +48,23 @@ export default function AuthContextProvider({ children }) {
     });
     let json = await response.json();
     console.log(json);
-    window.localStorage.setItem("loggedIn", JSON.stringify(json));
-    setAuth(json);
+    if(response.status === 200){
+      window.localStorage.setItem("loggedIn", JSON.stringify(json));
+      setAuth(json);
+    } else {
+       setErrorMessage("Error a introducir credenciales!!"); 
+     /*  Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Error a introducir credenciales!!',
+      }) */
+    }
+   
   }
 
   async function login(user) {
-    await fetchApi(user);
-    if (auth) {
-      setAuth(user);
-      setErrorMessage("");
-    } else {
-      setErrorMessage("Error a introducir credenciales!!");
-    }
+    await fetchApi(user); 
+      /* navigate(from, { replace: true });  */
   }
 
   const value = {

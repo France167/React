@@ -27,6 +27,13 @@
   margin-left: 3rem;
 }
 
+.testo {
+  white-space:pre-wrap;
+  word-break:break-word;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .title-h2-cursoweb {
   margin-top: 1%;
   margin-bottom: 5%;
@@ -1030,7 +1037,7 @@ and (max-device-width : 1024px)
 }
 }
 
- /* @media only screen   
+ /*  @media only screen   
 and (min-width: 1304px)   
 and (max-width: 1440px)  
 { 

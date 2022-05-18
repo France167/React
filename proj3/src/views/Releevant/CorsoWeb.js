@@ -653,7 +653,7 @@ function CorsoWeb() {
               </button>
             </div>
             <div className="modal-body example">
-              <div>{biografia}</div>
+              <div className="text-wrap testo">{biografia}</div>
             </div>
             <div className="modal-footer">
               <button

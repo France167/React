@@ -361,7 +361,7 @@ function Desarrollo() {
           añadido en todos los sectores productivos y en la sociedad.
         </p>
       </div>
-
+<hr/>
       <h2
         className="h2-desarrollo text-center module mt-2"
         id="formacion-title"

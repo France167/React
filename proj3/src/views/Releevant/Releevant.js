@@ -175,7 +175,7 @@ function Releevant() {
               </button>
             </div>
             <div className="modal-body example">
-              <div className="text-wrap">{biografia}</div>
+              <div className="text-wrap testo">{biografia}</div>
             </div>
             <div className="modal-footer">
               <button

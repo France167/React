@@ -506,7 +506,7 @@ and (max-device-width : 1024px)
 }
 }
 
-/* @media only screen   
+/*  @media only screen   
 and (min-width: 1370px)  
 and (max-width: 1605px)  
 {
@@ -516,9 +516,9 @@ and (max-width: 1605px)
     font-size: 8rem;
     font-family: 'Josefin Sans', sans-serif;
 }
-}
+} */
 
-@media only screen   
+/* @media only screen   
 and (min-width: 1304px)   
 and (max-width: 1440px)  
 { 
@@ -535,4 +535,4 @@ and (max-width: 1440px)
   font-size: 7rem;
   color: #d85081;
 }
-} */
+}  */
