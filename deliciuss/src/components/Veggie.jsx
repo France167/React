@@ -34,11 +34,21 @@ function Veggie() {
 
         <Splide
           options={{
+           
             perPage: 3,
+            breakpoints: {
+              720:{
+                perPage: 1,
+              },
+              
+
+            },
+            autoplay:true,
             arrows: false,
             pagination: false,
             drag: "free",
             gap: "5rem",
+
           }}
         >
           {veggie.map((recipe) => {

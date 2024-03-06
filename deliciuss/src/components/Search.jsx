@@ -29,9 +29,10 @@ function Search() {
 }
 
 const FormStyle = styled.form`
-  margin: 0rem 20rem;
+width: 60%;  
+margin: auto;
+
   div {
-    width: 100%;
     position: relative;
   }
 

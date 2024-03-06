@@ -6,14 +6,17 @@ import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { GiKnifeFork } from "react-icons/gi";
 
+
 function App() {
   return (
+    
+
     <div className="App">
       <BrowserRouter>
         <Nav>
           <Logo to={"/"}>
-            <IconContext.Provider value={{ size: 45 }}>
-              <GiKnifeFork /> Deliciuss
+            <IconContext.Provider value={{ size: 40 }}>
+              <GiKnifeFork /> Recipes DB
             </IconContext.Provider>{" "}
           </Logo>
         </Nav>
@@ -21,6 +24,7 @@ function App() {
         <Category />
         <Pages />
       </BrowserRouter>
+    
     </div>
   );
 }
@@ -30,6 +34,8 @@ const Logo = styled(Link)`
   font-size: 1.3rem;
   font-weight: 400;
   font-family: "Lobster Two", cursive;
+  display: flex;
+  align-items: center
 `;
 
 const Nav = styled.div`
@@ -37,6 +43,7 @@ const Nav = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  justify-items: center
 `;
 
 export default App;

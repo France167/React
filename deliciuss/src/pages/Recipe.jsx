@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-
 import React from "react";
 
 function Recipe() {
@@ -19,6 +18,8 @@ function Recipe() {
   useEffect(() => {
     fetchDetails();
   }, [params.name]);
+
+
   return (
     <DetailWrapper>
       <div>
@@ -60,9 +61,14 @@ const DetailWrapper = styled.div`
   margin-top: 10rem;
   margin-bottom: 5rem;
   display: flex;
+  flex-direction: column;
   .active {
     background: linear-gradient(35deg, #494949, #313131);
     color: white;
+  }
+  img {
+    border-radius: 10%;
+    width: 80vw;
   }
   h2 {
     margin-bottom: 2rem;
@@ -84,6 +90,7 @@ const Button = styled.button`
   font-weight: 600;
 `;
 const Info = styled.div`
-  margin-left: 10rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
 `;
 export default Recipe;
